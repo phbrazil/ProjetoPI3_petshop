@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -6,11 +7,32 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
     <body>
-        <div>trololo</div>
+        <form align = "center" action="Home" method="POST" >
+            <h1 style align = "center">Pet Shop login</h1>
+
+            <table align = "center" width="30%">
+
+                <tr> 
+                    <td width="48%">Usernames</td>
+                    <td width="52%">
+                        <input type="text" name="username" />
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td width="48%">Password</td>
+                    <td width="52%">
+                        <input type="text" name="password" />
+                    </td>
+                </tr>
+            </table>
+            <p> 
+                <input type="submit" name="Submit" value="Submit" />
+                <input type="reset" name="Reset" value="Clean" />
+            <p>
+                <a href="reset.jsp">Esqueci minha senha</a>
+        </form>
     </body>
 </html>
+
