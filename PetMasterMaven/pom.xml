@@ -22,6 +22,32 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    
+    <organization>
+        <name>Senac TADS PI3 - Turma B</name>
+    </organization>
+    <developers>
+        <developer>
+            <id>paulobezerra-senac</id>
+            <name>Paulo Bezerra</name>
+            <email>pauloh2012sul@gmail.com</email>
+        </developer>
+        <developer>
+            <id>pedropaulo-senac</id>
+            <name>Pedro Paulo Oliveira</name>
+            <email>pedro.p.oliveira09@gmail.com</email>
+        </developer>
+        <developer>
+            <id>lucasmedeiros-senac</id>
+            <name>Lucas Medeiros</name>
+            <email>luucasmeedeiros@gmail.com </email>
+        </developer>
+        <developer>
+            <id>andrepereira-senac</id>
+            <name>Andre Pereira Martins</name>
+            <email>andremartins98@hotmail.com </email>
+        </developer>
+    </developers>
 
     <build>
         <plugins>

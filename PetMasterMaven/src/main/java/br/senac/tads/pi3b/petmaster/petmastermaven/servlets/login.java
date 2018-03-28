@@ -27,7 +27,10 @@ public class login extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        if (username.equals("paulo") && password.equals("123")) {
+        if (username.equals("paulo") && password.equals("123")
+                || username.equals("lucas") && password.equals("123")
+                || username.equals("pedro") && password.equals("123")
+                || username.equals("andre") && password.equals("123")) {
             request.setAttribute("username", username);
             request.setAttribute("password", password);
             request.getRequestDispatcher("Home.jsp").forward(request, response);
