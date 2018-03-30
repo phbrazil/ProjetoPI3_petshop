@@ -82,32 +82,34 @@
                 <div class="col-md-8 order-md-1">
                     <h4 class="mb-3">Dados da Venda</h4>
                     <form class="needs-validation" novalidate>
+                        
+
+                        <div class="mb-3">
+                            <label for="cpf">CPF do cliente</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"></span>
+                                </div>
+                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    CPF obrigatório.
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="firstName">Primeiro nome</label>
+                                <label for="primeironome">Primeiro nome</label>
                                 <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
                                     Primeiro nome necessário
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="lastName">Último nome</label>
+                                <label for="ultimonome">Último nome</label>
                                 <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
                                     Último nome necessário
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="username">Username do Cliente</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">@</span>
-                                </div>
-                                <input type="text" class="form-control" id="username" placeholder="Username" required>
-                                <div class="invalid-feedback" style="width: 100%;">
-                                    Your username is required.
                                 </div>
                             </div>
                         </div>
@@ -121,7 +123,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="address">Endereço</label>
+                            <label for="endereco">Endereço</label>
                             <input type="text" class="form-control" id="address" placeholder="Rua hum 1234" required>
                             <div class="invalid-feedback">
                                 Favor inserir seu endereço de envio.
@@ -131,7 +133,7 @@
 
                         <div class="row">
                             <div class="col-md-5 mb-3">
-                                <label for="country">País</label>
+                                <label for="pais">País</label>
                                 <select class="custom-select d-block w-100" id="country" required>
                                     <option value="">Selecionar...</option>
                                     <option>Brasil</option>
@@ -141,7 +143,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 mb-3">
-                                <label for="state">Estado</label>
+                                <label for="estado">Estado</label>
                                 <select class="custom-select d-block w-100" id="state" required>
                                     <option value="">Selecionar...</option>
                                     <option>São Paulo</option>
@@ -157,7 +159,7 @@
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3">
-                                <label for="zip">CEP</label>
+                                <label for="cep">CEP</label>
                                 <input type="text" class="form-control" id="zip" placeholder="" required>
                                 <div class="invalid-feedback">
                                     CEP obrigatório
@@ -170,15 +172,15 @@
 
                         <div class="d-block my-3">
                             <div class="custom-control custom-radio">
-                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                                <input id="credit" name="credito" type="radio" class="custom-control-input" checked required>
                                 <label class="custom-control-label" for="credit">Cartão de crédito</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <input id="debit" name="debito" type="radio" class="custom-control-input" required>
                                 <label class="custom-control-label" for="debit">Cartão de débito</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <input id="paypal" name="cheque" type="radio" class="custom-control-input" required>
                                 <label class="custom-control-label" for="paypal">Cheque</label>
                             </div>
                         </div>
