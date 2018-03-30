@@ -1,5 +1,5 @@
 <%-- 
-    Document   : consultarprod
+    Document   : catalogo
     Created on : Mar 29, 2018, 12:13:17 PM
     Author     : paulo.bezerra
 --%>
@@ -72,7 +72,14 @@
                 <br>
                 <h1 >Catálogo de Serviços</h1><br>
 
-                <a href="banhotosa.jsp">Banho e Tosa</a>
+                <a href="banhotosa.jsp">Banho e Tosa</a><br>
+                <a href="rolezinho.jsp">Rolezinho com o dog</a><br>
+                <a href="rolezinho.jsp">Pet Hotel</a><br>
+                <a href="rolezinho.jsp">Rolezinho com o dog</a><br>
+                <a href="rolezinho.jsp">Rolezinho com o dog</a><br>
+                <a href="rolezinho.jsp">Rolezinho com o dog</a><br>
+                <a href="rolezinho.jsp">Rolezinho com o dog</a><br>
+
             </div>        
 
 
