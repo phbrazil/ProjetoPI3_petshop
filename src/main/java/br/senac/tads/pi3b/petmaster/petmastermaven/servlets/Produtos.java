@@ -25,6 +25,16 @@ public class Produtos {
     private Date dtCadastro;
 
     private String descricao;
+    
+    int qtdestoque;
+
+    public int getQtdestoque() {
+        return qtdestoque;
+    }
+
+    public void setQtdestoque(int qtdestoque) {
+        this.qtdestoque = qtdestoque;
+    }
 
 
     public double getValor() {
@@ -72,10 +82,11 @@ public class Produtos {
 
     
 
-    public Produtos(String nome, String dtCadastro, double valor) {
+    public Produtos(int qtdestoque, String nome, String dtCadastro, double valor) {
         DateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
         this.nome = nome;
         this.valor = valor;
+        this.qtdestoque = qtdestoque;
         try {
             this.dtCadastro = formatador.parse(dtCadastro);
         } catch (ParseException e) {

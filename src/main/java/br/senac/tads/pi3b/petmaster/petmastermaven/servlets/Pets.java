@@ -5,6 +5,9 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -26,6 +29,16 @@ public class Pets {
     private Date dtCadastro;
 
     private String descricao;
+    
+    int qtdestoque;
+
+    public int getQtdestoque() {
+        return qtdestoque;
+    }
+
+    public void setQtdestoque(int qtdestoque) {
+        this.qtdestoque = qtdestoque;
+    }
 
     public long getId() {
         return id;
@@ -83,4 +96,15 @@ public class Pets {
         this.descricao = descricao;
     }
 
+    public Pets(int qtdestoque, String nome, String dtCadastro, double valor) {
+        DateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
+        this.nome = nome;
+        this.valor = valor;
+        this.qtdestoque = qtdestoque;
+        try {
+            this.dtCadastro = formatador.parse(dtCadastro);
+        } catch (ParseException e) {
+
+        }
+    }
 }

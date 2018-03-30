@@ -34,6 +34,12 @@ public class login extends HttpServlet {
             request.setAttribute("username", username);
             request.setAttribute("password", password);
             request.getRequestDispatcher("Home.jsp").forward(request, response);
+            request.getRequestDispatcher("atualizarestoque.jsp").forward(request, response);
+            request.getRequestDispatcher("catalogo.jsp").forward(request, response);
+            request.getRequestDispatcher("consultaagend.jsp").forward(request, response);
+            request.getRequestDispatcher("consultapet.jsp").forward(request, response);
+            request.getRequestDispatcher("vender.jsp").forward(request, response);
+            request.getRequestDispatcher("consultaprodresult.jsp").forward(request, response);
 
         } else {
             request.getRequestDispatcher("loginerror.jsp").forward(request, response);

@@ -33,11 +33,11 @@ public class consultaprod extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        Produtos produtos = new Produtos("Vira-lata", "29/03/2018", 1000.00);
+        Produtos produtos = new Produtos(8, "Casinha de Cachorro", "29/03/2018", 800.00);
 
         String consultaprod = request.getParameter("consultaprod");
 
-        if (consultaprod.contains("vira")) {
+        if (consultaprod.contains("casinha")) {
 
             request.setAttribute("resultado", produtos);
 

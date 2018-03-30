@@ -52,7 +52,7 @@
                             <a class="nav-link js-scroll-trigger" href="atualizarestoque.jsp">Atualizar Estoque</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="catalogo.jsp">Catálogo de Produtos</a>
+                            <a class="nav-link js-scroll-trigger" href="catalogo.jsp">Catálogo de Serviços</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="vender.jsp">Vender</a>
