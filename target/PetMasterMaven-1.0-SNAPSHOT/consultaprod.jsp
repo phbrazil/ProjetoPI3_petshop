@@ -19,7 +19,7 @@
         <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="css/homepage.min.css" rel="stylesheet">
+        <link href="css/topodapagina.css" rel="stylesheet">
     <form action="consultaprod" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -70,6 +70,9 @@
 
             <div align ="center">
                 <br>
+                <br>
+                <br>
+
                 <h1 >Consultar Produto</h1>
                 <h2>Digite o código ou nome do produto</h2>
 

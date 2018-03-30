@@ -19,13 +19,13 @@
         <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="vender.css" rel="stylesheet">
+        <link href="topodapagina.css" rel="stylesheet">
 
 
     <form action="vender" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Consultar Pet</title>
+        <title>Vender</title>
     </head>
     <body id="page-top">
         <form>
@@ -82,8 +82,6 @@
                 <div class="col-md-8 order-md-1">
                     <h4 class="mb-3">Dados da Venda</h4>
                     <form class="needs-validation" novalidate>
-                        
-
                         <div class="mb-3">
                             <label for="cpf">CPF do cliente</label>
                             <div class="input-group">
@@ -172,11 +170,11 @@
 
                         <div class="d-block my-3">
                             <div class="custom-control custom-radio">
-                                <input id="credit" name="credito" type="radio" class="custom-control-input" checked required>
+                                <input id="credit" name="credito" type="radio" class="custom-control-input" required>
                                 <label class="custom-control-label" for="credit">Cartão de crédito</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input id="debit" name="debito" type="radio" class="custom-control-input" required>
+                                <input id="debit" name="debito" type="radio" class="custom-control-input" checked required>
                                 <label class="custom-control-label" for="debit">Cartão de débito</label>
                             </div>
                             <div class="custom-control custom-radio">
@@ -231,11 +229,6 @@
                     }, false);
                 })();
             </script>
-
-
-
             </div>        
-
-
     </body>
 </html>

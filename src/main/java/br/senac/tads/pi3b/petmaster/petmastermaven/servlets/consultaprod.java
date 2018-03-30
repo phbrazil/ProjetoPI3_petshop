@@ -41,7 +41,7 @@ public class consultaprod extends HttpServlet {
 
             request.setAttribute("resultado", produtos);
 
-            request.getRequestDispatcher("consultaprodresult.jsp").forward(request, response);
+            request.getRequestDispatcher("Produtos/consultaprodresult.jsp").forward(request, response);
 
         } else {
 
@@ -51,7 +51,7 @@ public class consultaprod extends HttpServlet {
 
             request.setAttribute("resultado", produtos);
 
-            request.getRequestDispatcher("consultaprodresult.jsp").forward(request, response);
+            request.getRequestDispatcher("Produtos/consultaprodresult.jsp").forward(request, response);
 
         }
 

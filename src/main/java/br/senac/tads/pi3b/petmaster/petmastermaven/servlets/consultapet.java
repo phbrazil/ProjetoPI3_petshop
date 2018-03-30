@@ -41,7 +41,7 @@ public class consultapet extends HttpServlet {
 
             request.setAttribute("resultado", pets);
 
-            request.getRequestDispatcher("consultapetresult.jsp").forward(request, response);
+            request.getRequestDispatcher("/Petsconsultapetresult.jsp").forward(request, response);
 
         } else {
 
@@ -51,7 +51,7 @@ public class consultapet extends HttpServlet {
 
             request.setAttribute("resultado", pets);
 
-            request.getRequestDispatcher("consultapetresult.jsp").forward(request, response);
+            request.getRequestDispatcher("Pets/consultapetresult.jsp").forward(request, response);
 
         }
 

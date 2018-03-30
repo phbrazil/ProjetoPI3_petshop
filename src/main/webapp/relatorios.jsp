@@ -19,7 +19,9 @@
         <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="css/homepage.min.css" rel="stylesheet">
+        <!--link href="css/homepage.min.css" rel="stylesheet"-->
+        <link href="topodapagina.css" rel="stylesheet">
+
     <form action="relatorios" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -27,6 +29,7 @@
     </head>
     <body id="page-top">
         <form>
+
 
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
 
@@ -70,6 +73,9 @@
 
             <div align ="center">
                 <br>
+                <br>
+                <br>
+                
                 <h1 >Relatórios</h1><br>
 
 
