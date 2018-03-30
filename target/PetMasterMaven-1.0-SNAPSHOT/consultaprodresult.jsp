@@ -35,7 +35,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/homepage.min.css" rel="stylesheet">
-    <form action="consultaprodresult" method="POST" >
+    <form action="consultaprod" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Consultar Produto</title>

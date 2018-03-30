@@ -30,7 +30,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/homepage.min.css" rel="stylesheet">
-    <form action="consultapetresult" method="POST" >
+    <form action="consultapet" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Consultar Pet</title>
