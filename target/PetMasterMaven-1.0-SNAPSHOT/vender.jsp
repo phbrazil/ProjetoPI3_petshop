@@ -22,7 +22,7 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form action="vender" method="POST" >
+    <form action="Vender" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Vender</title>
@@ -30,10 +30,10 @@
     <body id="page-top">
         <form>
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" id="sideNav">
 
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                    <span class="d-block d-lg-block">Bem-Vindo <c:out value="${username}" /></span>
+                <a class="navbar-brand js-scroll-trigger" href="Home.jsp>
+                   <span class="d-block d-lg-block">Bem-Vindo <c:out value="${username}" /></span>
                     <span class="d-none d-lg-block">
                         <!--img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/senac.jpg" alt=""-->
                     </span>
@@ -75,12 +75,11 @@
 
                 <div class="container">
                     <div class="py-5 text-center">
-                        <img class="d-block mx-auto mb-4" src="img/senac.jpg" alt="" width="100" height="100">
+                        <img class="d-block mx-auto mb-4" src="img/senac.jpg" alt="" width="200" height="100">
                         <h2>Vendas PetShop</h2>
                     </div>
                 </div>
                 <div class="col-md-8 order-md-1">
-                    <h4 class="mb-3">Dados da Venda</h4>
                     <form class="needs-validation" novalidate>
                         <div class="mb-3">
                             <label for="cpf">CPF do cliente</label>
@@ -88,24 +87,27 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"></span>
                                 </div>
+
                                 <input type="text" class="form-control" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+
+                                <button name="pesquisarcpf" type="button">Pesquisar</button>
                                 <div class="invalid-feedback" style="width: 100%;">
                                     CPF obrigatório.
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="primeironome">Primeiro nome</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <input type="text" class="form-control" id="primeironome" placeholder="" value="" required>
                                 <div class="invalid-feedback">
                                     Primeiro nome necessário
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="ultimonome">Último nome</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <input type="text" class="form-control" id="ultimonome" placeholder="" value="" required>
                                 <div class="invalid-feedback">
                                     Último nome necessário
                                 </div>
@@ -122,7 +124,7 @@
 
                         <div class="mb-3">
                             <label for="endereco">Endereço</label>
-                            <input type="text" class="form-control" id="address" placeholder="Rua hum 1234" required>
+                            <input type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" required>
                             <div class="invalid-feedback">
                                 Favor inserir seu endereço de envio.
                             </div>
@@ -132,7 +134,7 @@
                         <div class="row">
                             <div class="col-md-5 mb-3">
                                 <label for="pais">País</label>
-                                <select class="custom-select d-block w-100" id="country" required>
+                                <select class="custom-select d-block w-100" id="pais" required>
                                     <option value="">Selecionar...</option>
                                     <option>Brasil</option>
                                 </select>
@@ -142,7 +144,7 @@
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="estado">Estado</label>
-                                <select class="custom-select d-block w-100" id="state" required>
+                                <select class="custom-select d-block w-100" id="estado" required>
                                     <option value="">Selecionar...</option>
                                     <option>São Paulo</option>
                                     <option>Rio de Janeiro</option>
@@ -158,9 +160,42 @@
                             </div>
                             <div class="col-md-3 mb-3">
                                 <label for="cep">CEP</label>
-                                <input type="text" class="form-control" id="zip" placeholder="" required>
+                                <input type="text" class="form-control" id="cep" placeholder="" required>
                                 <div class="invalid-feedback">
                                     CEP obrigatório
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="codigoprod">Código do produto</label>
+                                <input type="text" class="form-control" id="codigoprod" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Código do produto obrigatório
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-6">
+                                <label for="descricao">Descrição</label>
+                                <input type="text" class="form-control" id="descricao" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Descrição obrigatória
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-3">
+                                <label for="cep">Valor</label>
+                                <input type="text" class="form-control" id="valor" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Valor obrigatório
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="cep">Desconto</label>
+                                <input type="text" class="form-control" id="desconto" placeholder="">
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="total">Valor Total</label>
+                                <input type="text" class="form-control" id="total" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Total obrigatório
                                 </div>
                             </div>
                         </div>
@@ -168,23 +203,22 @@
 
                         <h4 class="mb-3">Pagamento</h4>
 
-                        <div class="d-block my-3">
-                            <div class="custom-control custom-radio">
-                                <input id="credit" name="credito" type="radio" class="custom-control-input" required>
-                                <label class="custom-control-label" for="credit">Cartão de crédito</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input id="debit" name="debito" type="radio" class="custom-control-input" checked required>
-                                <label class="custom-control-label" for="debit">Cartão de débito</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input id="paypal" name="cheque" type="radio" class="custom-control-input" required>
-                                <label class="custom-control-label" for="paypal">Cheque</label>
-                            </div>
-                        </div>
+                        <div class="row">
+                            <div class="col-md-5 mb-3">
+                                <label for="pagamento">Pagamento</label>
+                                <select class="custom-select d-block w-100" id="pagamento"required>
+                                    <option>Débito</option>
+                                    <option>Crédito</option>
+                                    <option>Cheque</option>
 
-                        <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar Venda</button>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Favor selecionar o patamento.
+                                </div>
+                            </div>
+
+                            <hr class="mb-4">
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar Venda</button>
                     </form>
                 </div>
             </div>
@@ -194,7 +228,7 @@
                 <ul class="list-inline">
                     <li class="list-inline-item"><a href="#">Privacidade</a></li>
                     <li class="list-inline-item"><a href="#">Termos</a></li>
-                    <li class="list-inline-item"><a href="#">Suporte</a></li>
+                    <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
                 </ul>
             </footer>
             </div>

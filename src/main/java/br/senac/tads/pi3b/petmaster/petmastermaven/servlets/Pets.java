@@ -5,9 +5,11 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets;
 
+import java.awt.List;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -15,6 +17,8 @@ import java.util.Date;
  * @author paulo.bezerra
  */
 public class Pets {
+
+    private static java.util.List<Pets> listaPets = new ArrayList<Pets>();
 
     private long id;
 
@@ -29,7 +33,7 @@ public class Pets {
     private Date dtCadastro;
 
     private String descricao;
-    
+
     int qtdestoque;
 
     public int getQtdestoque() {
@@ -101,10 +105,39 @@ public class Pets {
         this.nome = nome;
         this.valor = valor;
         this.qtdestoque = qtdestoque;
+
         try {
             this.dtCadastro = formatador.parse(dtCadastro);
         } catch (ParseException e) {
 
         }
     }
+
+    public void inserirPets(Pets pets) {
+        listaPets.add(pets);
+
+    }
+
+    public Pets retornaLista(int indice) {
+        return listaPets.get(indice);
+
+    }
+
+    public int PetsTamanho() {
+
+        return listaPets.size();
+    }
+
+    public int obterPetsLista(String nome) {
+        if (nome != null && !listaPets.isEmpty()) {
+            for (int i = 0; i < listaPets.size(); i++) {
+                if (listaPets.get(i) != null && listaPets.get(i).getNome().toUpperCase().contains(nome.toUpperCase())) {
+                    return i;
+
+                }
+            }
+        }
+        return -1;
+    }
+
 }

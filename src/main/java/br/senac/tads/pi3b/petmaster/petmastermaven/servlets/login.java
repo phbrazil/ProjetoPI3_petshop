@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author Paulo.Bezerra
  */
 @WebServlet(name = "Home", urlPatterns = {"/Home"})
+
 public class login extends HttpServlet {
 
     @Override
@@ -27,19 +28,14 @@ public class login extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        if (username.equals("paulo@com") && password.equals("123")
-                || username.equals("lucas@com") && password.equals("123")
-                || username.equals("pedro@com") && password.equals("123")
-                || username.equals("andre@com") && password.equals("123")) {
+        if (username.equals("paulo@senac.com") && password.equals("123")
+                || username.equals("lucas@senac.com") && password.equals("123")
+                || username.equals("pedro@senac.com") && password.equals("123")
+                || username.equals("andre@senac.com") && password.equals("123")) {
             request.setAttribute("username", username);
             request.setAttribute("password", password);
             request.getRequestDispatcher("Home.jsp").forward(request, response);
-            request.getRequestDispatcher("atualizarestoque.jsp").forward(request, response);
-            request.getRequestDispatcher("catalogo.jsp").forward(request, response);
-            request.getRequestDispatcher("consultaagend.jsp").forward(request, response);
-            request.getRequestDispatcher("consultapet.jsp").forward(request, response);
-            request.getRequestDispatcher("vender.jsp").forward(request, response);
-            request.getRequestDispatcher("consultaprodresult.jsp").forward(request, response);
+
 
         } else {
             request.getRequestDispatcher("loginerror.jsp").forward(request, response);

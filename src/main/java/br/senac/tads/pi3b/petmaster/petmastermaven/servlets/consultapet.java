@@ -33,13 +33,23 @@ public class consultapet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        Pets pets = new Pets(23, "Vira-lata", "29/03/2018", 1000.00);
+        Pets pets = new Pets(23, "Vira-lata", "29/03/2018", 1.00);
+        Pets pets1 = new Pets(23, "Cachorro loko", "29/03/2018", 10.00);
+        Pets pets2 = new Pets(23, "Bulldog", "29/03/2018", 150.00);
+
+        pets.inserirPets(pets);
+
+        pets.inserirPets(pets1);
+
+        pets.inserirPets(pets2);
 
         String consultapet = request.getParameter("consultapet");
 
-        if (consultapet.contains("vira")) {
+        int resultado = pets.obterPetsLista(consultapet);
 
-            request.setAttribute("resultado", pets);
+        if (pets.retornaLista(resultado).getNome().toUpperCase().contains(consultapet.toUpperCase())) {
+
+            request.setAttribute("resultado", pets.retornaLista(resultado));
 
             request.getRequestDispatcher("consultapetresult.jsp").forward(request, response);
 
@@ -54,6 +64,7 @@ public class consultapet extends HttpServlet {
             request.getRequestDispatcher("consultapetresult.jsp").forward(request, response);
 
         }
+        consultapet = null;
 
     }
 
