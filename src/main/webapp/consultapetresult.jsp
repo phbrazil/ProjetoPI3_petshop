@@ -93,8 +93,6 @@
             <li align ="center">
                 <h3>Nome: <c:out value="${resultado.nome}" /></h3>
                 <h3>Valor: R$<c:out value="${resultado.valor}" /></h3>
-
-
                 <h3>Data de Cadastro: <fmt:formatDate value="${resultado.dtCadastro}" pattern="dd/MM/yyyy" /></h3>
                 <h3>Quantidade disponível: <c:out value="${resultado.qtdestoque}" /></h3>
 

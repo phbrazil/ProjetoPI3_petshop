@@ -89,7 +89,10 @@
 
             </div>  
 
-            <div align = "center" >        
+            <div align = "center" >  
+                
+                <table>
+                    <tr>
 
                 <c:forEach var ="i" begin = "1" end="${tamanho}">
                     <li>
@@ -99,6 +102,11 @@
 
                     </li>
                 </c:forEach>
+                    </tr>
+                    
+                    
+                </table>
+                    
             </div>
 
             
