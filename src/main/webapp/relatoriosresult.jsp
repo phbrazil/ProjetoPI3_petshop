@@ -93,6 +93,8 @@
                 <c:forEach var ="i" begin = "1" end="${tamanho}">
                     <li>
                         <h2><c:out value="${resultado.get(i-1).nome}" /></h2>
+                        <p><fmt:formatDate value="${resultado.get(i-1).dtCadastro}" pattern="dd/MM/yyyy" /></p>
+                        <h4><c:out value="${resultado.get(i-1).valor}" /></h4>
 
                     </li>
                 </c:forEach>
