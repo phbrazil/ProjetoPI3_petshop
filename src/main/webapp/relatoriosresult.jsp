@@ -84,12 +84,13 @@
                 <br>
                 <br>
                 <br>
-                <h1>Relatórios</h1>
+                <h1>Resultado</h1>
 
 
             </div>  
 
-            <ul align = "center">
+            <div align = "center" >        
+
                 <c:forEach var ="i" begin = "1" end="${tamanho}">
                     <li>
                         <h2><c:out value="${resultado.get(i-1).nome}" /></h2>
@@ -98,7 +99,13 @@
 
                     </li>
                 </c:forEach>
-            </ul>
+            </div>
+
+            
+
+
+
+
 
             <footer class="my-5 pt-5 text-muted text-center text-small">
                 <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
