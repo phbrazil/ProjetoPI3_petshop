@@ -25,7 +25,7 @@
     <form action="relatorios" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Consultar Pet</title>
+        <title>Relatórios</title>
     </head>
     <body id="page-top">
         <form>

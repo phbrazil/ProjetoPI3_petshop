@@ -23,7 +23,7 @@
     <form action="catalogo" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Consultar Pet</title>
+        <title>Catálogo</title>
     </head>
     <body id="page-top">
         <form>
