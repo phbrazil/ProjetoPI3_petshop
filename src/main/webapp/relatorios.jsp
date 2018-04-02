@@ -78,22 +78,33 @@
 
                 <h1 >Relatórios</h1><br>
 
-                <input type="submit" name="exportar" value ="Exportar" /><br><br>
+                <div class="col-md-4 mb-3">
+                    <label for="tiporeport">Tipo de relatório</label>
+                    <select class="custom-select d-block w-100" id="estado" required>
+                        <option value="">Selecionar...</option>
+                        <option>Todos os Produtos</option>
+                        <option>Todos os Pets</option>
+
+                    </select>
+                    <br>
 
 
-                
+                    <input type="submit" name="exportar" value ="Exportar" /><br><br>
 
 
-            </div>        
 
-            <footer class="my-5 pt-5 text-muted text-center text-small">
-                <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Privacidade</a></li>
-                    <li class="list-inline-item"><a href="#">Termos</a></li>
-                    <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
-                </ul>
-            </footer>
+
+
+                </div>        
+
+                <footer class="my-5 pt-5 text-muted text-center text-small">
+                    <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Privacidade</a></li>
+                        <li class="list-inline-item"><a href="#">Termos</a></li>
+                        <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
+                    </ul>
+                </footer>
             </div>
     </body>
 </html>

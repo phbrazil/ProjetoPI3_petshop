@@ -42,7 +42,7 @@ public class relatorios extends HttpServlet {
         listapets.add(pets1);
         Pets pets2 = new Pets(35, "Bulldog", "29/03/2018", 150.00);
         listapets.add(pets2);
-        Pets pets3 = new Pets(3, "Chiuaua", "29/03/2018", 150.00);
+        Pets pets3 = new Pets(3, "Chiuaua", "29/03/2018", 1500.00);
         listapets.add(pets);
         
         int tamanho = listapets.size();
@@ -54,19 +54,6 @@ public class relatorios extends HttpServlet {
         }
         request.getRequestDispatcher("relatoriosresult.jsp").forward(request, response);
 
-        /*List<Map<String, Object>> rows = new ArrayList<Map<String, Object>>();
-        ResultSetMetaData metaData = resultSet.getMetaData();
-        int columnCount = metaData.getColumnCount();
-
-        while (resultSet.next()) {
-            Map<String, Object> columns = new LinkedHashMap<String, Object>();
-
-            for (int i = 1; i <= columnCount; i++) {
-                columns.put(metaData.getColumnLabel(i), resultSet.getObject(i));
-            }
-
-            rows.add(columns);
-         */
     }
 
     @Override
