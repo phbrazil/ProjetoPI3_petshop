@@ -98,7 +98,6 @@
                 <h3>Quantidade disponível: <c:out value="${resultado.qtdestoque}" /></h3>
 
             </li>
-            </ul>
             <div align = "center">
                 <input type ="button" value ="Voltar" onclick="history.back()">    
             </div>
