@@ -181,14 +181,14 @@
                             </div>
 
                             <div class="col-md-3 mb-3">
-                                <label for="cep">Valor</label>
+                                <label for="valor">Valor</label>
                                 <input type="text" class="form-control" id="valor" placeholder="" required>
                                 <div class="invalid-feedback">
                                     Valor obrigatório
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3">
-                                <label for="cep">Desconto</label>
+                                <label for="desconto">Desconto</label>
                                 <input type="text" class="form-control" id="desconto" placeholder="">
                             </div>
                             <div class="col-md-3 mb-3">
@@ -201,7 +201,6 @@
                         </div>
                         <hr class="mb-4">
 
-                        <h4 class="mb-3">Pagamento</h4>
 
                         <div class="row">
                             <div class="col-md-5 mb-3">

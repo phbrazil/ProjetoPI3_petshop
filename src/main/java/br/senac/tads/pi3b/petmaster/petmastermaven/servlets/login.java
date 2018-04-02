@@ -31,7 +31,9 @@ public class login extends HttpServlet {
         if (username.equals("paulo@senac.com") && password.equals("123")
                 || username.equals("lucas@senac.com") && password.equals("123")
                 || username.equals("pedro@senac.com") && password.equals("123")
-                || username.equals("andre@senac.com") && password.equals("123")) {
+                || username.equals("andre@senac.com") && password.equals("123")
+                || username.equals("senac@senac.com") && password.equals("123")){
+
             request.setAttribute("username", username);
             request.setAttribute("password", password);
             request.getRequestDispatcher("Home.jsp").forward(request, response);
