@@ -47,9 +47,9 @@ public class consultapet extends HttpServlet {
 
         int resultado = pets.obterPetsLista(consultapet);
 
-        if (pets.retornaLista(resultado).getNome().toUpperCase().contains(consultapet.toUpperCase())) {
+        if (pets.obterPetsListaGeral(resultado).getNome().toUpperCase().contains(consultapet.toUpperCase())) {
 
-            request.setAttribute("resultado", pets.retornaLista(resultado));
+            request.setAttribute("resultado", pets.obterPetsListaGeral(resultado));
 
             request.getRequestDispatcher("consultapetresult.jsp").forward(request, response);
 

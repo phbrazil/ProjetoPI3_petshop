@@ -3,4 +3,5 @@ br/senac/tads/pi3b/petmaster/petmastermaven/servlets/Produtos.class
 br/senac/tads/pi3b/petmaster/petmastermaven/servlets/login.class
 br/senac/tads/pi3b/petmaster/petmastermaven/servlets/Pets.class
 br/senac/tads/pi3b/petmaster/petmastermaven/servlets/reset.class
+br/senac/tads/pi3b/petmaster/petmastermaven/servlets/relatorios.class
 br/senac/tads/pi3b/petmaster/petmastermaven/servlets/consultapet.class

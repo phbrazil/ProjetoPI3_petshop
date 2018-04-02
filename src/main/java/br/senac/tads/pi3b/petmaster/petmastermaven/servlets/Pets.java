@@ -18,7 +18,15 @@ import java.util.Date;
  */
 public class Pets {
 
-    private static java.util.List<Pets> listaPets = new ArrayList<Pets>();
+    private  java.util.List<Pets> listaPets = new ArrayList<Pets>();
+
+    public java.util.List<Pets> getListaPets() {
+        return listaPets;
+    }
+
+    
+    
+
 
     private long id;
 
@@ -118,10 +126,7 @@ public class Pets {
 
     }
 
-    public Pets retornaLista(int indice) {
-        return listaPets.get(indice);
-
-    }
+   
 
     public int PetsTamanho() {
 
@@ -139,5 +144,19 @@ public class Pets {
         }
         return -1;
     }
+    
+    
 
+    public Pets obterPetsListaGeral(int indice) {
+        if (!listaPets.isEmpty()) {
+            for (int i = 0; i < listaPets.size(); i++) {
+                if (listaPets.get(i) != null) {
+                    System.out.println(listaPets.get(indice).getNome());
+                    return listaPets.get(indice);
+
+                }
+            }
+        }
+        return null;
+    }
 }

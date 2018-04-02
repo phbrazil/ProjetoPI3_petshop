@@ -78,6 +78,11 @@
 
                 <h1 >Relatórios</h1><br>
 
+                <input type="submit" name="exportar" value ="Exportar" /><br><br>
+
+
+                
+
 
             </div>        
 
