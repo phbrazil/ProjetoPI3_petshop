@@ -28,16 +28,18 @@ public class login extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        if (username.equals("paulo@senac.com") && password.equals("123")
+        if (username.equals("senac@senac.com") && password.equals("123")) {
+            request.setAttribute("username", "aluno do terceiro semestre");
+            request.getRequestDispatcher("Home.jsp").forward(request, response);
+
+        } else if (username.equals("paulo@senac.com") && password.equals("123")
                 || username.equals("lucas@senac.com") && password.equals("123")
                 || username.equals("pedro@senac.com") && password.equals("123")
-                || username.equals("andre@senac.com") && password.equals("123")
-                || username.equals("senac@senac.com") && password.equals("123")){
+                || username.equals("andre@senac.com") && password.equals("123")) {
 
             request.setAttribute("username", username);
             request.setAttribute("password", password);
             request.getRequestDispatcher("Home.jsp").forward(request, response);
-
 
         } else {
             request.getRequestDispatcher("loginerror.jsp").forward(request, response);

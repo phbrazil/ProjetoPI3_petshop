@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" id="sideNav">
 
             <a class="navbar-brand js-scroll-trigger" href="Home.jsp">
-                <span class="d-block d-lg-block">Bem-Vindo <c:out value="${username}" /></span>
+                <span class="d-block d-lg-block">Bem-Vindo</span>
                 <span class="d-none d-lg-block">
                     <!--img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/senac.jpg" alt=""-->
                 </span>
@@ -59,7 +59,19 @@
                     </li>
                 </ul>
             </div>
+
         </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div align ="center">
+                <h1 class="mb-0">Olá
+                    <span class="text-dark"><c:out value="${username}"/></span>
+                </h1>
+
+
+        </div>
 
         <footer class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
@@ -69,8 +81,7 @@
                 <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
             </ul>
         </footer>
-    </div>
 
-</body>
+    </body>
 
 </html>
