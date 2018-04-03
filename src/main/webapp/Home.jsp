@@ -67,7 +67,7 @@
         <br>
         <div align ="center">
             <h1 class="mb-0">Olá
-                <span class="text-dark"><c:out value="${username}"/></span>
+                <span class="text-primary"><c:out value="${username}"/></span>
             </h1>
             <img class="mb-4" src="img/LogoPetMaster.png" alt="logo PetMaster" width="200" height="200">
 
