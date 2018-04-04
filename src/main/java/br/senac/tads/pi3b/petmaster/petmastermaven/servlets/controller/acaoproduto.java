@@ -28,7 +28,6 @@ public class acaoproduto extends HttpServlet {
             throws ServletException, IOException {
 
         String acaoproduto = request.getParameter("acaoproduto");
-        System.out.println(acaoproduto+"kkkkkkkkk");
 
         if (acaoproduto.equals("Incluir Produto")) {
 

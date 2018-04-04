@@ -117,7 +117,7 @@
 
                         <div class="col-md-4 mb-3">
                             <label for="valorprod">Valor</label>
-                            <input name="valorprod" type="current" class="form-control" id="valor" placeholder="00,00" required>
+                            <input name="valorprod" type="number" class="form-control" id="valor" pattern = "^\d+\.\d{2}" placeholder="00,00" required>
                             <div class="invalid-feedback">
                                 Favor inserir o Valor.
                             </div>

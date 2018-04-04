@@ -18,141 +18,115 @@ import java.util.Date;
  */
 public class Pets {
 
-    private  java.util.List<Pets> listaPets = new ArrayList<Pets>();
+    private java.util.List<Pets> listaPets = new ArrayList<Pets>();
+
+    private long codigopet;
+
+    private double valorpet;
+
+    private String nomepet;
+
+    private String categoriapet;
+
+    private String racapet;
+
+    private Date dtCadastropet;
+
+    private String descricaopet;
+
+    private int qtdestoquepet;
 
     public java.util.List<Pets> getListaPets() {
         return listaPets;
     }
 
-    
-    
+    public void inserirPets(Pets pets) {
+        this.listaPets.add(pets);
 
-
-    private long id;
-
-    private double valor;
-
-    private String nome;
-
-    private String categoria;
-
-    private String raca;
-
-    private Date dtCadastro;
-
-    private String descricao;
-
-    int qtdestoque;
-
-    public int getQtdestoque() {
-        return qtdestoque;
-    }
-
-    public void setQtdestoque(int qtdestoque) {
-        this.qtdestoque = qtdestoque;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public double getValor() {
-        return valor;
-    }
-
-    public void setValor(double valor) {
-        this.valor = valor;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
-
-    public String getRaca() {
-        return raca;
-    }
-
-    public void setRaca(String raca) {
-        this.raca = raca;
-    }
-
-    public Date getDtCadastro() {
-        return dtCadastro;
-    }
-
-    public void setDtCadastro(Date dtCadastro) {
-        this.dtCadastro = dtCadastro;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
     }
 
     public Pets(int qtdestoque, String nome, String dtCadastro, double valor) {
         DateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
-        this.nome = nome;
-        this.valor = valor;
-        this.qtdestoque = qtdestoque;
+        this.nomepet = nome;
+        this.valorpet = valor;
+        this.qtdestoquepet = qtdestoque;
 
         try {
-            this.dtCadastro = formatador.parse(dtCadastro);
+            this.dtCadastropet = formatador.parse(dtCadastro);
         } catch (ParseException e) {
 
         }
     }
 
-    public void inserirPets(Pets pets) {
-        listaPets.add(pets);
-
+    public long getCodigopet() {
+        return codigopet;
     }
 
-   
-
-    public int PetsTamanho() {
-
-        return listaPets.size();
+    public void setCodigopet(long codigopet) {
+        this.codigopet = codigopet;
     }
 
-    public int obterPetsLista(String nome) {
-        if (nome != null && !listaPets.isEmpty()) {
-            for (int i = 0; i < listaPets.size(); i++) {
-                if (listaPets.get(i) != null && listaPets.get(i).getNome().toUpperCase().contains(nome.toUpperCase())) {
-                    return i;
-
-                }
-            }
-        }
-        return -1;
+    public double getValorpet() {
+        return valorpet;
     }
-    
-    
 
-    public Pets obterPetsListaGeral(int indice) {
+    public void setValorpet(double valorpet) {
+        this.valorpet = valorpet;
+    }
+
+    public String getNomepet() {
+        return nomepet;
+    }
+
+    public void setNomepet(String nomepet) {
+        this.nomepet = nomepet;
+    }
+
+    public String getCategoriapet() {
+        return categoriapet;
+    }
+
+    public void setCategoriapet(String categoriapet) {
+        this.categoriapet = categoriapet;
+    }
+
+    public String getRacapet() {
+        return racapet;
+    }
+
+    public void setRacapet(String racapet) {
+        this.racapet = racapet;
+    }
+
+    public Date getDtCadastropet() {
+        return dtCadastropet;
+    }
+
+    public void setDtCadastropet(Date dtCadastropet) {
+        this.dtCadastropet = dtCadastropet;
+    }
+
+    public String getDescricaopet() {
+        return descricaopet;
+    }
+
+    public void setDescricaopet(String descricaopet) {
+        this.descricaopet = descricaopet;
+    }
+
+    public int getQtdestoquepet() {
+        return qtdestoquepet;
+    }
+
+    public void setQtdestoquepet(int qtdestoquepet) {
+        this.qtdestoquepet = qtdestoquepet;
+    }
+
+    public Pets obterPetsLista(String nome) {
         if (!listaPets.isEmpty()) {
             for (int i = 0; i < listaPets.size(); i++) {
-                if (listaPets.get(i) != null) {
-                    System.out.println(listaPets.get(indice).getNome());
-                    return listaPets.get(indice);
+                if (listaPets.get(i) != null && listaPets.get(i).nomepet.toUpperCase().contains(nome.toUpperCase())) {
+                    return listaPets.get(i);
 
                 }
             }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.senac.tads.pi3b.petmaster.petmastermaven.servlets;
+package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -31,6 +31,13 @@ public class cadastrarprod extends HttpServlet {
         String categoriaprod = request.getParameter("categoriaprod");
         String valorprod = request.getParameter("valorprod");
         String qtdestoque = request.getParameter("qtdestoque");
+        
+        System.out.println(nomeprod);
+        System.out.println(codigoprod);
+        System.out.println(descricaoprod);
+        System.out.println(categoriaprod);
+        System.out.println(valorprod);
+        System.out.println(qtdestoque);
 
     }
 
