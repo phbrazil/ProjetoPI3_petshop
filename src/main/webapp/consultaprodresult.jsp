@@ -6,7 +6,7 @@
 
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.Produtos"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
@@ -97,8 +97,8 @@
             </div>   
 
             <li align ="center">
-                <h3>Nome: <c:out value="${resultado.nome}" /></h3>
-                <h3>Valor: R$<c:out value="${resultado.valor}" /></h3>
+                <h3>Nome: <c:out value="${resultado.nomeprod}" /></h3>
+                <h3>Valor: R$<c:out value="${resultado.valorprod}" /></h3>
                 <h3>Data de Cadastro: <fmt:formatDate type = "both" 
                                 dateStyle = "short" timeStyle = "short" value ="${resultado.dtCadastro}"/></h3>
                 <h3>Quantidade disponível: <c:out value="${resultado.qtdestoque}" /></h3>

@@ -5,6 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;

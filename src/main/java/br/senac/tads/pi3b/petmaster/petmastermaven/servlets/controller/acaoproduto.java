@@ -1,9 +1,11 @@
+package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.senac.tads.pi3b.petmaster.petmastermaven.servlets;
+
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -26,10 +28,11 @@ public class acaoproduto extends HttpServlet {
             throws ServletException, IOException {
 
         String acaoproduto = request.getParameter("acaoproduto");
+        System.out.println(acaoproduto+"kkkkkkkkk");
 
         if (acaoproduto.equals("Incluir Produto")) {
 
-            request.getRequestDispatcher("incluirproduto.jsp").forward(request, response);
+            request.getRequestDispatcher("cadastrarprod.jsp").forward(request, response);
 
         }
 

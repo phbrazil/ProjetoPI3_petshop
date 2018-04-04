@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.senac.tads.pi3b.petmaster.petmastermaven.servlets;
+package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;

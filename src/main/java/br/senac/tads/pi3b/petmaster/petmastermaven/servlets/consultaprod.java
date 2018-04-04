@@ -5,6 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -45,9 +46,9 @@ public class consultaprod extends HttpServlet {
 
         } else {
 
-            produtos.setNome("Não encontrado");
-            produtos.setdtCadastro(null);
-            produtos.setValor(0);
+            produtos.setNomeprod("Não encontrado");
+            produtos.setDtCadastro(null);
+            produtos.setValorprod(0);
 
             request.setAttribute("resultado", produtos);
 

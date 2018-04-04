@@ -75,34 +75,34 @@
 
 
             <div class="col-md-6 mb-3">
-                <form class="needs-validation" novalidate action="Cadastrar" method="POST" >
+                <form class="needs-validation" novalidate action="cadastrarprod" method="POST" >
 
 
                     <div class="row">
                         <div class="col-md-4 mb-3">
-                            <label for="descricao">Código do Produto</label>
-                            <input type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                            <label>Código do Produto</label>
+                            <input name="codigoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Código obrigatório
                             </div>
                         </div>
                         <div class="col-md-8 mb-3">
-                            <label for="descricao">Nome do Produto</label>
-                            <input type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                            <label>Nome do Produto</label>
+                            <input name="nomeprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Nome obrigatório
                             </div>
                         </div>
                         <div class="col-md-12 mb-3">
-                            <label for="descricao">Descrição do Produto</label>
-                            <input type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                            <label>Descrição do Produto</label>
+                            <input name="descricaoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Descrição necessária
                             </div>
                         </div>
-                        <div class="col-md-8 mb-3">
-                            <label for="categoria">Categoria</label>
-                            <select name ="categoria" class="custom-select d-block w-100" id="categoria" required>
+                        <div class="col-md-4 mb-3">
+                            <label for="categoriaprod">Categoria</label>
+                            <select name ="categoriaprod" class="custom-select d-block w-100" id="categoria" required>
                                 <option value="">Selecionar...</option>
                                 <option>Cão</option>
                                 <option>Gato</option>
@@ -116,10 +116,17 @@
                         </div>
 
                         <div class="col-md-4 mb-3">
-                            <label for="valor">Valor</label>
-                            <input type="text" class="form-control" id="valor" placeholder="00,00" required>
+                            <label for="valorprod">Valor</label>
+                            <input name="valorprod" type="current" class="form-control" id="valor" placeholder="00,00" required>
                             <div class="invalid-feedback">
                                 Favor inserir o Valor.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="qtdestoque">Quantidade</label>
+                            <input name="qtdestoque" type="number" class="form-control" id="qtdestoque" placeholder="1" required>
+                            <div class="invalid-feedback">
+                                Favor inserir a quantidade.
                             </div>
                         </div>
 
