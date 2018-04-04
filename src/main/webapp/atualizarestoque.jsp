@@ -81,7 +81,6 @@
             <form  action="acaoproduto"  method="POST">
 
                 <div class="col-md-4 mb-3">
-                    <label for="acaoproduto">Produtos</label>
                     <select name ="acaoproduto" class="custom-select d-block w-100" id="acaoproduto" required>
                         <option value="">Selecionar...</option>
                         <option name ="incluir" >Incluir Produto</option>
