@@ -22,10 +22,10 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form action="Vender" method="POST" >
+    <form action="Cadastrar" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Vender</title>
+        <title>Incluir Produto</title>
     </head>
     <body id="page-top">
         <form>
@@ -75,24 +75,23 @@
 
                 <div class="container">
                     <div class="py-5 text-center">
-                        <img class="d-block mx-auto mb-4" src="img/senac.jpg" alt="" width="200" height="100">
-                        <h2>Vendas PetShop</h2>
+                        <img class="d-block mx-auto mb-4" src="img/LogoPetMaster.jpg" alt="" width="200" height="100">
+                        <h2>Incluir Produto</h2>
                     </div>
                 </div>
                 <div class="col-md-8 order-md-1">
                     <form class="needs-validation" novalidate>
                         <div class="mb-3">
-                            <label for="cpf">CPF do cliente</label>
+                            <label for="nomeprod">Nome do Produto</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"></span>
                                 </div>
 
-                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+                                <input type="text" class="form-control" id="nomeprod" name="nomeprod" placeholder="xxx.xxx.xxx-xx" required>
 
-                                <button name="pesquisarcpf" type="button">Pesquisar</button>
                                 <div class="invalid-feedback" style="width: 100%;">
-                                    CPF obrigatório.
+                                    Nome obrigatório.
                                 </div>
                             </div>
                         </div>
@@ -181,14 +180,14 @@
                             </div>
 
                             <div class="col-md-3 mb-3">
-                                <label for="valor">Valor</label>
+                                <label for="cep">Valor</label>
                                 <input type="text" class="form-control" id="valor" placeholder="" required>
                                 <div class="invalid-feedback">
                                     Valor obrigatório
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3">
-                                <label for="desconto">Desconto</label>
+                                <label for="cep">Desconto</label>
                                 <input type="text" class="form-control" id="desconto" placeholder="">
                             </div>
                             <div class="col-md-3 mb-3">
@@ -199,25 +198,10 @@
                                 </div>
                             </div>
                         </div>
+                        
+
                         <hr class="mb-4">
-
-
-                        <div class="row">
-                            <div class="col-md-5 mb-3">
-                                <label for="pagamento">Pagamento</label>
-                                <select class="custom-select d-block w-100" id="pagamento"required>
-                                    <option>Débito</option>
-                                    <option>Crédito</option>
-                                    <option>Cheque</option>
-
-                                </select>
-                                <div class="invalid-feedback">
-                                    Favor selecionar o pagamento.
-                                </div>
-                            </div>
-
-                            <hr class="mb-4">
-                            <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar Venda</button>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Gravar</button>
                     </form>
                 </div>
             </div>
