@@ -35,15 +35,13 @@ public class cadastrarprod extends HttpServlet {
         int qtdestoque = Integer.valueOf(request.getParameter("qtdestoque"));
 
         Produtos produtos = new Produtos(codigoprod, Double.valueOf(valorprod), nomeprod, descricaoprod, qtdestoque, categoriaprod);
-        
+
         gravarprod gravarprod = new gravarprod();
 
         gravarprod.gravarproduto(produtos);
-        
-        System.out.println(produtos.getNomeprod()+" suadhusahduahu");
+
+        request.getRequestDispatcher("cadastradosuccess.jsp").forward(request, response);
 
     }
-
-
 
 }

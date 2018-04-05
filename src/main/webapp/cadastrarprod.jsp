@@ -133,7 +133,7 @@
                     </div>
 
                     <hr class="mb-4">
-                    <button class="btn btn-primary btn-lg btn-block" type="submit">Gravar</button>
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit">Gravar</button>
                 </form>
             </div>
         </div>

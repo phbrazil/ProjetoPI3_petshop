@@ -1,4 +1,5 @@
 <%-- 
+<%-- 
     Document   : loginerror
     Created on : Mar 22, 2018, 4:18:31 PM
     Author     : Paulo.Bezerra
@@ -9,14 +10,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login Failed</title>
+        <title>Cadastrado</title>
     </head>
     <body>
-        
-        <a href="index.html"><img src="img/login_failed.png"</img></a>
+
+        <div class="popup" onclick="myFunction()">Click me!
+            <span class="popuptext" id="myPopup">Popup text...</span>
+        </div>
         <h1 style align = "center">Login Failed</h1>
         <form style align ="center">
-        <input type ="button" value ="back" onclick="history.back()">    
+            <input type ="button" value ="back" onclick="history.back()">    
         </form>
     </body>
 </html>
