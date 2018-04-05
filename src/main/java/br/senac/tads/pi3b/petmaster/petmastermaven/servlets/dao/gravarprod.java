@@ -27,7 +27,7 @@ public class gravarprod {
                     + "datacadastroprod, descricaoprod,categoriaprod, quantidadeprod)"
                     + " VALUES ('" + produtos.getCodigoprod() + "','" + produtos.getNomeprod()
                     + "'," + produtos.getValorprod() + ",now(),'"
-                    + produtos.getDescricaoprod() + "'," + produtos.getQtdestoque() + ");");
+                    + produtos.getDescricaoprod() + "','" +produtos.getCategoriaprod()+"',"+ produtos.getQtdestoque() + ");");
 
             conexao.close();
 
