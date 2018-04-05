@@ -16,7 +16,7 @@ import java.util.Date;
  */
 public class Produtos {
 
-    private long codigoprod;
+    private String codigoprod;
 
     private double valorprod;
 
@@ -25,32 +25,34 @@ public class Produtos {
     private Date dtCadastro;
 
     private String descricaoprod;
+
+    private int qtdestoque;
     
-    int qtdestoque;
+    private String categoriaprod;
 
-    
-
-
-
-    
-
-    public Produtos(int qtdestoque, String nome, String dtCadastro, double valor) {
-        DateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
-        this.nomeprod = nome;
-        this.valorprod = valor;
+    public Produtos(String codigoprod, double valorprod, String nomeprod, String descricaoprod, int qtdestoque, String categoriaprod) {
+        this.codigoprod = codigoprod;
+        this.valorprod = valorprod;
+        this.nomeprod = nomeprod;
+        this.descricaoprod = descricaoprod;
         this.qtdestoque = qtdestoque;
-        try {
-            this.dtCadastro = formatador.parse(dtCadastro);
-        } catch (ParseException e) {
+        this.categoriaprod = categoriaprod;
 
-        }
     }
 
-    public long getCodigoprod() {
+    public String getCodigoprod() {
         return codigoprod;
     }
 
-    public void setCodigoprod(long codigoprod) {
+    public String getCategoriaprod() {
+        return categoriaprod;
+    }
+
+    public void setCategoriaprod(String categoriaprod) {
+        this.categoriaprod = categoriaprod;
+    }
+
+    public void setCodigoprod(String codigoprod) {
         this.codigoprod = codigoprod;
     }
 

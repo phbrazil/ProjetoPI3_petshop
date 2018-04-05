@@ -5,8 +5,10 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -30,15 +32,18 @@ public class cadastrarprod extends HttpServlet {
         String descricaoprod = request.getParameter("descricaoprod");
         String categoriaprod = request.getParameter("categoriaprod");
         String valorprod = request.getParameter("valorprod");
-        String qtdestoque = request.getParameter("qtdestoque");
+        int qtdestoque = Integer.valueOf(request.getParameter("qtdestoque"));
+
+        Produtos produtos = new Produtos(codigoprod, Double.valueOf(valorprod), nomeprod, descricaoprod, qtdestoque, categoriaprod);
         
-        System.out.println(nomeprod);
-        System.out.println(codigoprod);
-        System.out.println(descricaoprod);
-        System.out.println(categoriaprod);
-        System.out.println(valorprod);
-        System.out.println(qtdestoque);
+        gravarprod gravarprod = new gravarprod();
+
+        gravarprod.gravarproduto(produtos);
+        
+        System.out.println(produtos.getNomeprod()+" suadhusahduahu");
 
     }
+
+
 
 }

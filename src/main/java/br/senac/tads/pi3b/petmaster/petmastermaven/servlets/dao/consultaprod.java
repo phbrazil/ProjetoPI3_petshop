@@ -9,8 +9,11 @@ import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,23 +37,26 @@ public class consultaprod extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        Produtos produtos = new Produtos(8, "Casinha de Cachorro", "29/03/2018", 800.00);
+        Date today = Calendar.getInstance().getTime();
+        
+
+        //Produtos produtos = new Produtos(8, "Casinha de Cachorro", "29/03/2018", 800.00);
 
         String consultaprod = request.getParameter("consultaprod");
 
         if (consultaprod.contains("casinha")) {
 
-            request.setAttribute("resultado", produtos);
+            //request.setAttribute("resultado", produtos);
 
             request.getRequestDispatcher("consultaprodresult.jsp").forward(request, response);
 
         } else {
 
-            produtos.setNomeprod("Não encontrado");
-            produtos.setDtCadastro(null);
-            produtos.setValorprod(0);
+           // produtos.setNomeprod("Não encontrado");
+            //produtos.setDtCadastro(null);
+            //produtos.setValorprod(0);
 
-            request.setAttribute("resultado", produtos);
+            ///request.setAttribute("resultado", produtos);
 
             request.getRequestDispatcher("consultaprodresult.jsp").forward(request, response);
 
