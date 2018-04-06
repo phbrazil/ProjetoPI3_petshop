@@ -76,19 +76,25 @@
                 <h1 >Consultar Produto</h1>
                 <h2>Digite o código ou nome do produto</h2>
 
-                <input type="text" name="consultaprod" />
-                <input type="submit" name="pesquisar" value ="Pesquisar" /><br><br>
+                <div class="col-md-5 order-md-1">
 
-            </div>        
+                    <input class="form-control" type="text" name="consultaprod" form-control required/>
+                    <div class="invalid-feedback" style="width: 100%;">
+                        Valor obrigatório.
+                    </div>
+                    <br>
+                    <input type="submit" name="pesquisar" value ="Pesquisar" /><br><br>
 
-            <footer class="my-5 pt-5 text-muted text-center text-small">
-                <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Privacidade</a></li>
-                    <li class="list-inline-item"><a href="#">Termos</a></li>
-                    <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
-                </ul>
-            </footer>
+                </div>        
+
+                <footer class="my-5 pt-5 text-muted text-center text-small">
+                    <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Privacidade</a></li>
+                        <li class="list-inline-item"><a href="#">Termos</a></li>
+                        <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
+                    </ul>
+                </footer>
             </div>
     </body>
 </html>

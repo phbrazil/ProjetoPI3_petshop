@@ -22,7 +22,7 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form action="acaoproduto" method="POST" >
+    <form action="acaocadastrar" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cadastrar</title>
@@ -78,13 +78,13 @@
             <br>
             <br>
             <br>
-            <form  action="acaoproduto"  method="POST">
+            <form  action="acaocadastrar"  method="POST">
 
                 <div class="col-md-4 mb-3">
-                    <select name ="acaoproduto" class="custom-select d-block w-100" id="acaoproduto" required>
+                    <select name ="acaocadastrar" class="custom-select d-block w-100" id="acaoproduto" required>
                         <option value="">Selecionar...</option>
-                        <option name ="incluir" >Incluir Produto</option>
-                        <option name ="consultar" >Consultar Produto</option>
+                        <option name ="incluir" >Cadastrar Produto</option>
+                        <option name ="consultar" >Cadastrar Pet</option>
 
 
                     </select>

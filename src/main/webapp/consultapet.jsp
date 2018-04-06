@@ -75,8 +75,16 @@
                 <h1 >Consultar Pet</h1>
                 <h2>Digite o código ou nome do Pet</h2>
 
-                <input type="text" name="consultapet" />
-                <input type="submit" name="pesquisar" value ="Pesquisar" /><br><br>
+                <div class="col-md-5 order-md-1">
+
+                    <input class="form-control" type="text" name="consultapet" form-control required/>
+                    <div class="invalid-feedback" style="width: 100%;">
+                        Valor obrigatório.
+                    </div>
+                    <br>
+                    <input type="submit" name="pesquisar" value ="Pesquisar" /><br><br>
+
+                </div> 
 
             </div>        
 

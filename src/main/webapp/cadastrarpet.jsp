@@ -24,7 +24,7 @@
 
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cadastrar Produto</title>
+        <title>Cadastrar Pet</title>
     </head>
     <body id="page-top">
 
@@ -80,21 +80,21 @@
 
                     <div class="row">
                         <div class="col-md-4 mb-3">
-                            <label>Código do Pet</label>
+                            <label>Código do Produto</label>
                             <input name="codigoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Código obrigatório
                             </div>
                         </div>
                         <div class="col-md-8 mb-3">
-                            <label>Nome do Pet</label>
+                            <label>Nome do Produto</label>
                             <input name="nomeprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Nome obrigatório
                             </div>
                         </div>
                         <div class="col-md-12 mb-3">
-                            <label>Descrição do Pet</label>
+                            <label>Descrição do Produto</label>
                             <input name="descricaoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Descrição necessária
@@ -110,12 +110,26 @@
                                 <option>Réptil</option>
                                 <option>Outros</option>
                             </select>
-
                             <div class="invalid-feedback">
-                                Favor selecionar a categoria.
+                                Favor selecionar uma categoria.
                             </div>
                         </div>
 
+                        <div class="col-md-4 mb-3">
+                            <label for="categoriaprod">Raça</label>
+
+                            <select name ="raca" class="custom-select d-block w-100" id="categoria" required>
+                                <option value="">Selecionar...</option>
+                                <option>Bulldog</option>
+                                <option>Pitbull</option>
+                                <option>Vira-Lata</option>
+                                <option>Pastor Alemão</option>
+                                <option>Yaza Apsu</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Favor selecionar uma raça.
+                            </div>
+                        </div>
 
                         <div class="col-md-4 mb-3">
                             <label for="valorprod">Valor</label>

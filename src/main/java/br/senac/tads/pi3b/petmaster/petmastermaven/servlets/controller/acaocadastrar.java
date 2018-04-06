@@ -5,8 +5,6 @@ package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -19,19 +17,22 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "acaoproduto", urlPatterns = {"/acaoproduto"})
+@WebServlet(name = "acaocadastrar", urlPatterns = {"/acaocadastrar"})
 
-public class acaoproduto extends HttpServlet {
+public class acaocadastrar extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String acaoproduto = request.getParameter("acaoproduto");
+        String acaocadastrar = request.getParameter("acaocadastrar");
 
-        if (acaoproduto.equals("Incluir Produto")) {
+        if (acaocadastrar.equals("Cadastrar Produto")) {
 
             request.getRequestDispatcher("cadastrarprod.jsp").forward(request, response);
+
+        } else if (acaocadastrar.equals("Cadastrar Pet")) {
+            request.getRequestDispatcher("cadastrarpet.jsp").forward(request, response);
 
         }
 
