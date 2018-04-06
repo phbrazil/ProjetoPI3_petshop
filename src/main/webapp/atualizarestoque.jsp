@@ -84,8 +84,6 @@
                     <select name ="acaoproduto" class="custom-select d-block w-100" id="acaoproduto" required>
                         <option value="">Selecionar...</option>
                         <option name ="incluir" >Incluir Produto</option>
-                        <option name ="alterar" >Alterar Produto</option>
-                        <option name ="excluir" >Excluir Produto</option>
                         <option name ="consultar" >Consultar Produto</option>
 
 

@@ -13,13 +13,11 @@
         <title>Cadastrado</title>
     </head>
     <body>
-
-        <div class="popup" onclick="myFunction()">Click me!
-            <span class="popuptext" id="myPopup">Popup text...</span>
-        </div>
+        
+        <a href="index.html"><img src="img/login_failed.png"</img></a>
         <h1 style align = "center">Login Failed</h1>
         <form style align ="center">
-            <input type ="button" value ="back" onclick="history.back()">    
+        <input type ="button" value ="back" onclick="history.back()">    
         </form>
     </body>
 </html>
