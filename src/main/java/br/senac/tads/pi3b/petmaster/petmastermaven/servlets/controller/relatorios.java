@@ -36,7 +36,7 @@ public class relatorios extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        java.util.List<Pets> listapets = new ArrayList<Pets>();
+        /*java.util.List<Pets> listapets = new ArrayList<Pets>();
         Pets pets = new Pets(2, "Vira-lata", "29/03/2018", 1.00);
         listapets.add(pets);
         Pets pets1 = new Pets(23, "Cachorro loko", "29/03/2018", 10.00);
@@ -52,7 +52,9 @@ public class relatorios extends HttpServlet {
         for (int i = 0; i < listapets.size(); i++) {
             request.setAttribute("resultado", listapets);
 
-        }
+        }*/
+        
+        
         request.getRequestDispatcher("relatoriosresult.jsp").forward(request, response);
 
     }

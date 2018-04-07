@@ -1,11 +1,11 @@
 
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.Produtos"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.Pets"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets"%>
 
 
 
@@ -93,20 +93,20 @@
                 <table>
                     <tr>
 
-                        <c:forEach var ="i" begin = "1" end="${tamanho}">
-                        <li>
-                            <h2><c:out value="${resultado.get(i-1).nome}" /></h2>
-                            <p><fmt:formatDate value="${resultado.get(i-1).dtCadastro}" pattern="dd/MM/yyyy" /></p>
-                            <h4><c:out value="${resultado.get(i-1).valor}" /></h4>
+            <c:forEach var ="i" begin = "1" end="${tamanho}">
+            <li>
+                <h2><c:out value="${resultado.get(i-1).nome}" /></h2>
+                <p><fmt:formatDate value="${resultado.get(i-1).dtCadastro}" pattern="dd/MM/yyyy" /></p>
+                <h4><c:out value="${resultado.get(i-1).valor}" /></h4>
 
-                        </li>
-                    </c:forEach>
-                    </tr>
+            </li>
+            </c:forEach>
+            </tr>
 
 
-                </table>
+        </table>
 
-            </div-->
+    </div-->
 
             <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
                 <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Pet Master</a>
@@ -389,13 +389,6 @@
                     }
                 });
             </script>
-
-
-
-
-
-
-
             <footer class="my-5 pt-5 text-muted text-center text-small">
                 <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
                 <ul class="list-inline">
