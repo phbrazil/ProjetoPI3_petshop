@@ -71,7 +71,9 @@
         <div align ="center">
 
             <img class="mb-4" src="img/LogoPetMaster.png" alt="logo PetMaster" width="200" height="200">
-
+            
+            <br>    
+            <a href="Apresentacao/Apresentação.pptx" target="blank">Apresentação</a><br>
 
         </div>
 

@@ -86,20 +86,33 @@
                 <br>
                 <br>
                 <h1>Consultar Pet</h1>
-                <h2>Resultado</h2>
 
                 <input type="text" name="consultapet" />
                 <input type="submit" name="pesquisar" value ="Pesquisar" /><br><br>
 
             </div>   
+            <div align ="center">
 
-            <li align ="center">
-                <h3>Nome: <c:out value="${resultado.nomepet}" /></h3>
-                <h3>Valor: R$<c:out value="${resultado.valorpet}" /></h3>
-                <h3>Data de Cadastro: <fmt:formatDate value="${resultado.dtCadastropet}" pattern="dd/MM/yyyy" /></h3>
-                <h3>Quantidade disponível: <c:out value="${resultado.qtdestoquepet}" /></h3>
+                <div class="container">
+                    <h2>Resultado</h2>
+                </div>
+            </div>               
 
-            </li>
+            <div align ="center">
+                <label for="name">Nome </label>
+                <input name = "name" value="${resultado.nomepet}" </input>
+                <br>
+                <label for="valor">Valor </label>
+                <input name = "name" value="${resultado.valorpet}" </input>
+                <br>
+                <br>
+                <label for="qtdpet">Quantidade </label>
+                <input name = "qtdpet" value="${resultado.qtdestoquepet}" </input>
+                <br>
+                <label for="datacad">Data de Cadastro </label>
+                <h1> <fmt:formatDate value="${resultado.dtCadastropet}" pattern ="dd/MM/yyyy"  ></fmt:formatDate></h1>
+            </div>
+
             <div align = "center">
                 <input type ="button" value ="Voltar" onclick="history.back()">    
             </div>
