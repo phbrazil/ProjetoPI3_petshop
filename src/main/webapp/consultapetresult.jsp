@@ -100,18 +100,97 @@
 
             <div align ="center">
                 <label for="name">Nome </label>
+                <br>
                 <input name = "name" value="${resultado.nomepet}" </input>
                 <br>
                 <label for="valor">Valor </label>
+                <br>
                 <input name = "name" value="${resultado.valorpet}" </input>
                 <br>
-                <br>
                 <label for="qtdpet">Quantidade </label>
+                <br>
                 <input name = "qtdpet" value="${resultado.qtdestoquepet}" </input>
                 <br>
                 <label for="datacad">Data de Cadastro </label>
-                <h1> <fmt:formatDate value="${resultado.dtCadastropet}" pattern ="dd/MM/yyyy"  ></fmt:formatDate></h1>
+                <br>
+                <h6> <fmt:formatDate value="${resultado.dtCadastropet}" pattern ="dd/MM/yyyy"  ></fmt:formatDate></h6>
             </div>
+            
+            
+            
+            <!-- teste daqui-->
+            
+            <div align ="center">
+            <br>
+            <br>
+            <br>
+
+
+            <div class="col-md-6 mb-3">
+                <form class="needs-validation" novalidate action="cadastrarprod" method="POST" >
+
+
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label>Código do Pet</label>
+                            <input name="codigoprod" type="text" class="form-control" id="primeironome" placeholder="" value="${resultado.codigobarraspet}" required>
+                            <div class="invalid-feedback">
+                                Código obrigatório
+                            </div>
+                        </div>
+                        <div class="col-md-8 mb-3">
+                            <label>Nome do Pet</label>
+                            <input name="nomeprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Nome obrigatório
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label>Descrição do Pet</label>
+                            <input name="descricaoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Descrição necessária
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="categoriaprod">Categoria</label>
+                            <select name ="categoriaprod" class="custom-select d-block w-100" id="categoria" required>
+                                <option value="">Selecionar...</option>
+                                <option>Cão</option>
+                                <option>Gato</option>
+                                <option>Peixe</option>
+                                <option>Réptil</option>
+                                <option>Outros</option>
+                            </select>
+
+                            <div class="invalid-feedback">
+                                Favor selecionar a categoria.
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 mb-3">
+                            <label for="valorprod">Valor</label>
+                            <input name="valorprod" type="number" class="form-control" id="valor" pattern = "^\d+\.\d{2}" placeholder="00,00" required>
+                            <div class="invalid-feedback">
+                                Favor inserir o Valor.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="qtdestoque">Quantidade</label>
+                            <input name="qtdestoque" type="number" class="form-control" id="qtdestoque" placeholder="1" required>
+                            <div class="invalid-feedback">
+                                Favor inserir a quantidade.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr class="mb-4">
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit">Gravar</button>
+                </form>
+            </div>
+        </div>
 
             <div align = "center">
                 <input type ="button" value ="Voltar" onclick="history.back()">    

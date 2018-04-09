@@ -99,14 +99,90 @@
 
             </div>   
 
-            <li align ="center">
+            <!--li align ="center">
                 <h3>Nome: <c:out value="${resultado.nomeprod}" /></h3>
                 <h3>Valor: R$<c:out value="${resultado.valorprod}" /></h3>
                 <h3>Data de Cadastro: <fmt:formatDate type = "both" 
                                 dateStyle = "short" timeStyle = "short" value ="${resultado.dtCadastro}"/></h3>
                 <h3>Quantidade disponível: <c:out value="${resultado.qtdestoque}" /></h3>
 
-            </li>
+            </li-->
+            
+                        <!-- teste daqui-->
+            
+            <div align ="center">
+            <br>
+            <br>
+            <br>
+
+
+            <div class="col-md-6 mb-3">
+                <form class="needs-validation" novalidate action="cadastrarprod" method="POST" >
+
+
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label>Código do Produto</label>
+                            <input name="codigoprod" type="text" class="form-control" id="primeironome" value="${resultado.codigobarrasprod}" required>
+                            <div class="invalid-feedback">
+                                Código obrigatório
+                            </div>
+                        </div>
+                        <div class="col-md-8 mb-3">
+                            <label>Nome do Produto</label>
+                            <input name="nomeprod" type="text" class="form-control" id="primeironome" value="${resultado.nomeprod}" required>
+                            <div class="invalid-feedback">
+                                Nome obrigatório
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label>Descrição do Pet</label>
+                            <input name="descricaoprod" type="text" class="form-control" id="primeironome"  value="${resultado.descricaoprod}" required>
+                            <div class="invalid-feedback">
+                                Descrição necessária
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="categoriaprod">Categoria</label>
+                            <select name ="categoriaprod" class="custom-select d-block w-100" id="categoria" required>
+                                <option value="${resultado.categoriaprod}"</option>
+                                <option>Cão</option>
+                                <option>Gato</option>
+                                <option>Peixe</option>
+                                <option>Réptil</option>
+                                <option>Outros</option>
+                            </select>
+
+                            <div class="invalid-feedback">
+                                Favor selecionar a categoria.
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 mb-3">
+                            <label for="valorprod">Valor</label>
+                            <input name="valorprod" type="number" class="form-control" id="valor" pattern = "^\d+\.\d{2}"  value="${resultado.categoriaprod}" required>
+                            <div class="invalid-feedback">
+                                Favor inserir o Valor.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="qtdestoque">Quantidade</label>
+                            <input name="qtdestoque" type="number" class="form-control" id="qtdestoque" value="${resultado.qtdestoque}" required>
+                            <div class="invalid-feedback">
+                                Favor inserir a quantidade.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr class="mb-4">
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit">Alterar</button>
+                </form>
+            </div>
+        </div>
+            
+            
             <div align = "center">
                 <input type ="button" value ="Voltar" onclick="history.back()">    
             </div>
