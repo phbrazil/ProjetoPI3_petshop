@@ -118,7 +118,7 @@
             
             
             
-            <!-- teste daqui-->
+            <!-- teste daqui>
             
             <div align ="center">
             <br>
@@ -133,7 +133,7 @@
                     <div class="row">
                         <div class="col-md-4 mb-3">
                             <label>Código do Pet</label>
-                            <input name="codigoprod" type="text" class="form-control" id="primeironome" placeholder="" value="${resultado.codigobarraspet}" required>
+                            <input name="codigoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Código obrigatório
                             </div>
@@ -190,7 +190,7 @@
                     <button class="btn btn-secondary btn-lg btn-block" type="submit">Gravar</button>
                 </form>
             </div>
-        </div>
+        </div-->
 
             <div align = "center">
                 <input type ="button" value ="Voltar" onclick="history.back()">    
