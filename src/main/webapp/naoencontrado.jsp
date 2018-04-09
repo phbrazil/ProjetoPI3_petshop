@@ -10,12 +10,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login Error</title>
+        <title>Nenhum Resultado</title>
     </head>
     <body>
         
-        <a href="index.html"><img src="img/login_failed.png"</img></a>
-        <h1 style align = "center">Login Failed</h1>
+        <h1 style align = "center">Nenhum Resultado</h1>
         <form style align ="center">
         <input type ="button" value ="back" onclick="history.back()">    
         </form>

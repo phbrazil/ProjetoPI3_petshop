@@ -8,6 +8,7 @@ package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -27,8 +28,10 @@ public class Produtos {
     private String descricaoprod;
 
     private int qtdestoque;
-    
+
     private String categoriaprod;
+
+    private java.util.List<Produtos> listaProd = new ArrayList<Produtos>();
 
     public Produtos(String codigoprod, double valorprod, String nomeprod, String descricaoprod, int qtdestoque, String categoriaprod) {
         this.codigoprod = codigoprod;
@@ -94,6 +97,18 @@ public class Produtos {
 
     public void setQtdestoque(int qtdestoque) {
         this.qtdestoque = qtdestoque;
+    }
+
+    public Produtos obterPetsLista(String nome) {
+        if (!listaProd.isEmpty()) {
+            for (int i = 0; i < listaProd.size(); i++) {
+                if (listaProd.get(i) != null && listaProd.get(i).nomeprod.toUpperCase().contains(nome.toUpperCase())) {
+                    return listaProd.get(i);
+
+                }
+            }
+        }
+        return null;
     }
 
 }

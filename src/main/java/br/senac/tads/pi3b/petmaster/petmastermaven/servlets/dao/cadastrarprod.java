@@ -31,10 +31,10 @@ public class cadastrarprod extends HttpServlet {
         String codigoprod = request.getParameter("codigoprod");
         String descricaoprod = request.getParameter("descricaoprod");
         String categoriaprod = request.getParameter("categoriaprod");
-        String valorprod = request.getParameter("valorprod");
+        double valorprod = Double.parseDouble(request.getParameter("valorprod"));
         int qtdestoque = Integer.valueOf(request.getParameter("qtdestoque"));
 
-        Produtos produtos = new Produtos(codigoprod, Double.valueOf(valorprod), nomeprod, descricaoprod, qtdestoque, categoriaprod);
+        Produtos produtos = new Produtos(codigoprod, valorprod, nomeprod, descricaoprod, qtdestoque, categoriaprod);
 
         gravarprod gravarprod = new gravarprod();
 
