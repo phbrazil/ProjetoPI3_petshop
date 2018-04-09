@@ -88,7 +88,7 @@
                                     <span class="input-group-text"></span>
                                 </div>
 
-                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-0x" required>
 
                                 <button name="pesquisarcpf" type="button">Pesquisar</button>
                                 <div class="invalid-feedback" style="width: 100%;">
