@@ -60,6 +60,9 @@
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="relatorios.jsp">Relatórios</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="sobre.jsp">Sobre o Sistema</a>
+                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="index.html">Sair</a>
