@@ -14,10 +14,10 @@ import java.sql.ResultSet;
  * @author killuminatti08
  */
 public class bancoprod {
-    
-    public void gravarproduto(Produtos produtos){
-    
-            bancoconexao bancoconexao = new bancoconexao();
+
+    public void gravarproduto(Produtos produtos) {
+
+        bancoconexao bancoconexao = new bancoconexao();
 
         try {
 
@@ -28,7 +28,7 @@ public class bancoprod {
                     + "datacadastroprod, descricaoprod,categoriaprod, quantidadeprod)"
                     + " VALUES ('" + produtos.getCodigoprod() + "','" + produtos.getNomeprod()
                     + "'," + produtos.getValorprod() + ",now(),'"
-                    + produtos.getDescricaoprod() + "','" +produtos.getCategoriaprod()+"',"+ produtos.getQtdestoque() + ");");
+                    + produtos.getDescricaoprod() + "','" + produtos.getCategoriaprod() + "'," + produtos.getQtdestoque() + ");");
 
             conexao.close();
 
@@ -39,22 +39,25 @@ public class bancoprod {
         }
 
     }
-    
-        public void atualizarprod(Produtos produtos){
-    
-            bancoconexao bancoconexao = new bancoconexao();
+
+    public void atualizarprod(Produtos produtos) {
+
+        bancoconexao bancoconexao = new bancoconexao();
 
         try {
 
             Connection conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("UPDATE PRODUTOS set (codigobarrasprod, nomeprod,valor,"
-                    +" descricaoprod,categoriaprod, quantidadeprod)"
-                    + " VALUES ('" + produtos.getCodigoprod() + "','" + produtos.getNomeprod()
-                    + "'," + produtos.getValorprod()+",'"
-                    + produtos.getDescricaoprod() + "','" +produtos.getCategoriaprod()+"',"+ produtos.getQtdestoque() + ");");
+            st.executeUpdate("UPDATE PRODUTOS set codigobarrasprod = '"+produtos.getCodigoprod()+"', nomeprod = '"+produtos.getNomeprod()+"',"
+                    +"valor = "+produtos.getValorprod()+",descricaoprod = '"+produtos.getDescricaoprod()+"','"+produtos.getCategoriaprod()+"',"
+                    +"quantidadeprod = "+produtos.getQtdestoque()+" where codigobarrasprod = '"+produtos.getCodigoprod());
+            
+            
+
             conexao.close();
+
+            System.out.println("fiz o update");
 
         } catch (Exception e) {
 
@@ -63,8 +66,8 @@ public class bancoprod {
         }
 
     }
-        
-        private Connection conexao = null;
+
+    private Connection conexao = null;
 
     Produtos produtos = new Produtos(null, 0, null, null, 0, null);
 
@@ -80,7 +83,7 @@ public class bancoprod {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select * from produtos where nomeprod like '%" + buscaprod+"%' or codigobarrasprod = '"+buscaprod+"'";
+            select = "select * from produtos where nomeprod like '%" + buscaprod + "%' or codigobarrasprod = '" + buscaprod + "'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
@@ -105,11 +108,11 @@ public class bancoprod {
 
         return produtos;
     }
-    
+
     public int validacadastradoprod(String buscaprod) {
 
         String select = "";
-        
+
         int qtdprodcadastrado = 0;
 
         bancoconexao bancoconexao = new bancoconexao();
@@ -120,13 +123,12 @@ public class bancoprod {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select count(*) quantidade from produtos where codigobarrasprod = '" + buscaprod+"'";
+            select = "select count(*) quantidade from produtos where codigobarrasprod = '" + buscaprod + "'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
 
                 qtdprodcadastrado = result.getInt("quantidade");
-
 
             }
 
@@ -140,5 +142,5 @@ public class bancoprod {
 
         return qtdprodcadastrado;
     }
-    
+
 }
