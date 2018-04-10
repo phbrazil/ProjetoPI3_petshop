@@ -31,7 +31,7 @@ public class selectprod {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select * from produtos where nomeprod like '%" + buscaprod+"%' or codigobarrasprod = "+buscaprod;
+            select = "select * from produtos where nomeprod like '%" + buscaprod+"%' or codigobarrasprod = '"+buscaprod+"'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
@@ -52,9 +52,6 @@ public class selectprod {
 
             System.out.println("erro" + e.getMessage());
 
-        }
-        if (produtos.getNomeprod()== null) {
-            //JOptionPane.showMessageDialog(null, "Produto não encontrado");
         }
 
         return produtos;
