@@ -50,8 +50,8 @@ public class bancoprod {
 
             java.sql.Statement st = conexao.createStatement();
             st.executeUpdate("UPDATE PRODUTOS set codigobarrasprod = '"+produtos.getCodigoprod()+"', nomeprod = '"+produtos.getNomeprod()+"',"
-                    +"valor = "+produtos.getValorprod()+",descricaoprod = '"+produtos.getDescricaoprod()+"','"+produtos.getCategoriaprod()+"',"
-                    +"quantidadeprod = "+produtos.getQtdestoque()+" where codigobarrasprod = '"+produtos.getCodigoprod());
+                    +"valor = "+produtos.getValorprod()+",descricaoprod = '"+produtos.getDescricaoprod()+"',categoriaprod = '"+produtos.getCategoriaprod()+"',"
+                    +"quantidadeprod = "+produtos.getQtdestoque()+" where codigobarrasprod = '"+produtos.getCodigoprod()+"'");
             
             
 
