@@ -58,7 +58,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" style="margin: 0 0 0 200px;" href="index.html">Sair</a>
+                        <a class="nav-link js-scroll-trigger" href="index.html">Sair</a>
                     </li>
                 </ul>
             </div>

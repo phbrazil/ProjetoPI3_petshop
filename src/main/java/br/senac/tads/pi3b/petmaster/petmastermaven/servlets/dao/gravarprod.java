@@ -39,4 +39,29 @@ public class gravarprod {
 
     }
     
+        public void atualizarprod(Produtos produtos){
+    
+            bancoconexao bancoconexao = new bancoconexao();
+
+        try {
+
+            Connection conexao = bancoconexao.getConnection();
+
+            java.sql.Statement st = conexao.createStatement();
+            st.executeUpdate("UPDATE PRODUTOS set (codigobarrasprod, nomeprod,valor,"
+                    +" descricaoprod,categoriaprod, quantidadeprod)"
+                    + " VALUES ('" + produtos.getCodigoprod() + "','" + produtos.getNomeprod()
+                    + "'," + produtos.getValorprod()+",'"
+                    + produtos.getDescricaoprod() + "','" +produtos.getCategoriaprod()+"',"+ produtos.getQtdestoque() + ");");
+
+            conexao.close();
+
+        } catch (Exception e) {
+
+            System.out.println("erro" + e.getMessage());
+
+        }
+
+    }
+    
 }
