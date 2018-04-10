@@ -74,11 +74,11 @@
         <img class="mb-4" src="img/LogoPetMaster.png" alt="logo PetMaster" width="200" height="200">
 
         <br>    
-        <img src="Apresentacao/Slide1.gif" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
-        <img src="Apresentacao/Slide2.gif" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
-        <img src="Apresentacao/Slide3.gif" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
-        <img src="Apresentacao/Slide4.gif" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
-        <img src="Apresentacao/Slide5.gif" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
+        <img src="Apresentacao/Slide1.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
+        <img src="Apresentacao/Slide2.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
+        <img src="Apresentacao/Slide3.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
+        <img src="Apresentacao/Slide4.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
+        <img src="Apresentacao/Slide5.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
         
         <!--a href="" onclick="swapImage(0);"><img src="/images/first.png" border=0 alt="First"></a>
         <a href="" onclick="swapImage(currentIndex - 1);"><img src="/images/left.png" border=0 alt="Back"></a>
