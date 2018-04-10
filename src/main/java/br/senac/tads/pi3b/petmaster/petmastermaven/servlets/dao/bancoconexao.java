@@ -29,7 +29,7 @@ public class bancoconexao {
             if (conexao == null) {
                 conexao = DriverManager.getConnection(url, userName, password);
             }
-            System.out.print("Conectou porraaaaaaa");
+            System.out.print("Conectou");
         } catch (Exception e) {
             System.out.print("Erro: " + e.getMessage());
         }

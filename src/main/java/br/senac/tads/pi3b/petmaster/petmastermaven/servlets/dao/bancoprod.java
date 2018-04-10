@@ -54,7 +54,6 @@ public class bancoprod {
                     + " VALUES ('" + produtos.getCodigoprod() + "','" + produtos.getNomeprod()
                     + "'," + produtos.getValorprod()+",'"
                     + produtos.getDescricaoprod() + "','" +produtos.getCategoriaprod()+"',"+ produtos.getQtdestoque() + ");");
-
             conexao.close();
 
         } catch (Exception e) {

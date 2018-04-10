@@ -19,14 +19,15 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "cadastrarprod", urlPatterns = {"/cadastrarprod"})
+@WebServlet(name = "consultaprodresult", urlPatterns = {"/consultaprodresult"})
 
-public class cadastrarprod extends HttpServlet {
+public class alterarprod extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        
         String nomeprod = request.getParameter("nomeprod");
         String codigobarrasprod = request.getParameter("codigoprod");
         String descricaoprod = request.getParameter("descricaoprod");
@@ -40,12 +41,11 @@ public class cadastrarprod extends HttpServlet {
         int qtdprodcadastrado = bancoprod.validacadastradoprod(codigobarrasprod);
 
         if (qtdprodcadastrado == 0) {
-            produtos = new Produtos(nomeprod, valorprod, codigobarrasprod, descricaoprod, qtdestoque, categoriaprod);
-
-            
-            bancoprod.gravarproduto(produtos);
+            produtos = new Produtos(codigobarrasprod, valorprod, nomeprod, descricaoprod, qtdestoque, categoriaprod);
+            bancoprod.atualizarprod(produtos);
             request.getRequestDispatcher("cadastradosuccess.jsp").forward(request, response);
 
+        
         } else {
 
             request.setAttribute("codigobarras", codigobarrasprod);
@@ -54,7 +54,7 @@ public class cadastrarprod extends HttpServlet {
             request.getRequestDispatcher("jacadastrado.jsp").forward(request, response);
 
         }
-
+         
     }
 
 }

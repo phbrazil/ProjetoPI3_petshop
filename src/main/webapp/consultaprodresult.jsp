@@ -35,7 +35,6 @@
 
         <!-- Custom styles for this template -->
         <link href="css/topodapagina.css" rel="stylesheet">
-    <form action="consultaprod" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Consultar Produto</title>
@@ -85,6 +84,8 @@
                     </ul>
                 </div>
             </nav>
+                    
+        </form> 
 
             <div align ="center">
                 <br>
@@ -99,16 +100,6 @@
 
             </div>   
 
-            <!--li align ="center">
-                <h3>Nome: <c:out value="${resultado.nomeprod}" /></h3>
-                <h3>Valor: R$<c:out value="${resultado.valorprod}" /></h3>
-                <h3>Data de Cadastro: <fmt:formatDate type = "both" 
-                            dateStyle = "short" timeStyle = "short" value ="${resultado.dtCadastro}"/></h3>
-            <h3>Quantidade disponível: <c:out value="${resultado.qtdestoque}" /></h3>
-
-        </li-->
-
-            <!-- teste daqui-->
 
             <div align ="center">
                 <br>
@@ -117,7 +108,7 @@
 
 
                 <div class="col-md-6 mb-3">
-                    <form class="needs-validation" novalidate action="cadastrarprod" method="POST" >
+                    <form class="needs-validation" novalidate action="alterarprod" method="POST" >
 
 
                         <div class="row">

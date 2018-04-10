@@ -33,10 +33,10 @@ public class Produtos {
 
     private java.util.List<Produtos> listaProd = new ArrayList<Produtos>();
 
-    public Produtos(String codigoprod, double valorprod, String codigobarrasprod, String descricaoprod, int qtdestoque, String categoriaprod) {
+    public Produtos(String nomeprod, double valorprod, String codigobarrasprod, String descricaoprod, int qtdestoque, String categoriaprod) {
         this.codigobarrasprod = codigobarrasprod;
-        this.valorprod = valorprod;
         this.nomeprod = nomeprod;
+        this.valorprod = valorprod;
         this.descricaoprod = descricaoprod;
         this.qtdestoque = qtdestoque;
         this.categoriaprod = categoriaprod;
