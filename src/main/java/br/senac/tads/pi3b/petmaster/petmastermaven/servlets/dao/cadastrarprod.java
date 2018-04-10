@@ -28,19 +28,30 @@ public class cadastrarprod extends HttpServlet {
             throws ServletException, IOException {
 
         String nomeprod = request.getParameter("nomeprod");
-        String codigoprod = request.getParameter("codigoprod");
+        String codigobarrasprod = request.getParameter("codigoprod");
         String descricaoprod = request.getParameter("descricaoprod");
         String categoriaprod = request.getParameter("categoriaprod");
         double valorprod = Double.parseDouble(request.getParameter("valorprod"));
         int qtdestoque = Integer.valueOf(request.getParameter("qtdestoque"));
+        Produtos produtos = new Produtos(null, 0, null, null, 0, null);
 
-        Produtos produtos = new Produtos(codigoprod, valorprod, nomeprod, descricaoprod, qtdestoque, categoriaprod);
+        bancoprod bancoprod = new bancoprod();
 
-        gravarprod gravarprod = new gravarprod();
+        int qtdprodcadastrado = bancoprod.validacadastradoprod(codigobarrasprod);
 
-        gravarprod.gravarproduto(produtos);
+        if (qtdprodcadastrado == 0) {
+            produtos = new Produtos(codigobarrasprod, valorprod, nomeprod, descricaoprod, qtdestoque, categoriaprod);
+            bancoprod.gravarproduto(produtos);
+            request.getRequestDispatcher("cadastradosuccess.jsp").forward(request, response);
 
-        request.getRequestDispatcher("cadastradosuccess.jsp").forward(request, response);
+        } else {
+
+            request.setAttribute("codigobarras", codigobarrasprod);
+            
+
+            request.getRequestDispatcher("jacadastrado.jsp").forward(request, response);
+
+        }
 
     }
 

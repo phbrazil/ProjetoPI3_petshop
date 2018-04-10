@@ -17,7 +17,7 @@ import java.util.Date;
  */
 public class Produtos {
 
-    private String codigoprod;
+    private String codigobarrasprod;
 
     private double valorprod;
 
@@ -33,8 +33,8 @@ public class Produtos {
 
     private java.util.List<Produtos> listaProd = new ArrayList<Produtos>();
 
-    public Produtos(String codigoprod, double valorprod, String nomeprod, String descricaoprod, int qtdestoque, String categoriaprod) {
-        this.codigoprod = codigoprod;
+    public Produtos(String codigoprod, double valorprod, String codigobarrasprod, String descricaoprod, int qtdestoque, String categoriaprod) {
+        this.codigobarrasprod = codigobarrasprod;
         this.valorprod = valorprod;
         this.nomeprod = nomeprod;
         this.descricaoprod = descricaoprod;
@@ -44,7 +44,7 @@ public class Produtos {
     }
 
     public String getCodigoprod() {
-        return codigoprod;
+        return codigobarrasprod;
     }
 
     public String getCategoriaprod() {
@@ -56,7 +56,7 @@ public class Produtos {
     }
 
     public void setCodigoprod(String codigoprod) {
-        this.codigoprod = codigoprod;
+        this.codigobarrasprod = codigoprod;
     }
 
     public double getValorprod() {

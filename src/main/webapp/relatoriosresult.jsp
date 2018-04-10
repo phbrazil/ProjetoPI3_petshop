@@ -126,43 +126,38 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#">
                                         <span data-feather="home"></span>
-                                        Dashboard <span class="sr-only">(current)</span>
+                                        Visão Geral <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
                                         <span data-feather="file"></span>
-                                        Orders
+                                        Pedidos
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
                                         <span data-feather="shopping-cart"></span>
-                                        Products
+                                        Produtos
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
                                         <span data-feather="users"></span>
-                                        Customers
+                                        Clientes
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
                                         <span data-feather="bar-chart-2"></span>
-                                        Reports
+                                        Relatórios
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <span data-feather="layers"></span>
-                                        Integrations
-                                    </a>
-                                </li>
+
                             </ul>
 
                             <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                                <span>Saved reports</span>
+                                <span>Relatórios salvos</span>
                                 <a class="d-flex align-items-center text-muted" href="#">
                                     <span data-feather="plus-circle"></span>
                                 </a>
@@ -171,25 +166,20 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
                                         <span data-feather="file-text"></span>
-                                        Current month
+                                        Mês atual
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
                                         <span data-feather="file-text"></span>
-                                        Last quarter
+                                        Última quinzena
                                     </a>
                                 </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
                                         <span data-feather="file-text"></span>
-                                        Social engagement
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <span data-feather="file-text"></span>
-                                        Year-end sale
+                                        Venda anual
                                     </a>
                                 </li>
                             </ul>
@@ -198,21 +188,21 @@
 
                     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
                         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                            <h1 class="h2">Dashboard</h1>
+                            <h1 class="h2">Visão Geral</h1>
                             <div class="btn-toolbar mb-2 mb-md-0">
                                 <div class="btn-group mr-2">
-                                    <button class="btn btn-sm btn-outline-secondary">Export</button>
+                                    <button class="btn btn-sm btn-outline-secondary">Exportar</button>
                                 </div>
                                 <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
                                     <span data-feather="calendar"></span>
-                                    This week
+                                    Essa Semana
                                 </button>
                             </div>
                         </div>
 
                         <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
 
-                        <h2>Section title</h2>
+                        <h2>Detalhes</h2>
                         <div class="table-responsive">
                             <table class="table table-striped table-sm">
                                 <thead>
