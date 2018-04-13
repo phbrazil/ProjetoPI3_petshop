@@ -27,29 +27,42 @@ public class alterarprod extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        System.out.println("to aqui");
-        String nomeprod = request.getParameter("nomeprod");
-        String codigobarrasprod = request.getParameter("codigoprod");
-        String descricaoprod = request.getParameter("descricaoprod");
-        String categoriaprod = request.getParameter("categoriaprod");
-        double valorprod = Double.parseDouble(request.getParameter("valorprod"));
-        int qtdestoque = Integer.valueOf(request.getParameter("qtdestoque"));
-        Produtos produtos = new Produtos(null, 0, null, null, 0, null);
-
+        boolean deletado = false;
         bancoprod bancoprod = new bancoprod();
 
-        int qtdprodcadastrado = bancoprod.validacadastradoprod(codigobarrasprod);
+        String alterar = String.valueOf(request.getParameter("alterar"));
+        String excluir = String.valueOf(request.getParameter("excluir"));
 
-            produtos = new Produtos(codigobarrasprod, valorprod, nomeprod, descricaoprod, qtdestoque, categoriaprod);
-            
+        if (alterar.equals("alterar")) {
+
+            String nomeprod = request.getParameter("nomeprod");
+            String codigobarrasprod = request.getParameter("codigoprod");
+            String descricaoprod = request.getParameter("descricaoprod");
+            String categoriaprod = request.getParameter("categoriaprod");
+            double valorprod = Double.parseDouble(request.getParameter("valorprod"));
+            int qtdestoque = Integer.valueOf(request.getParameter("qtdestoque"));
+            Produtos produtos = new Produtos(null, 0, null, null, 0, null);
+
+            produtos = new Produtos(nomeprod, valorprod, codigobarrasprod, descricaoprod, qtdestoque, categoriaprod);
+
             bancoprod.atualizarprod(produtos);
-            
+
             request.getRequestDispatcher("cadastradosuccess.jsp").forward(request, response);
 
-        
+        } else if (excluir.equals("excluir")) {
 
-        
-         
+            deletado = bancoprod.deletaprod(String.valueOf(request.getParameter("codigoprod")));
+
+            if (deletado == true) {
+                request.getRequestDispatcher("deletado.jsp").forward(request, response);
+
+            }else{
+                
+                System.out.println("fudeu na hora de deletar");
+            }
+
+        }
+
     }
 
 }

@@ -49,11 +49,9 @@ public class bancoprod {
             Connection conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("UPDATE PRODUTOS set codigobarrasprod = '"+produtos.getCodigoprod()+"', nomeprod = '"+produtos.getNomeprod()+"',"
-                    +"valor = "+produtos.getValorprod()+",descricaoprod = '"+produtos.getDescricaoprod()+"',categoriaprod = '"+produtos.getCategoriaprod()+"',"
-                    +"quantidadeprod = "+produtos.getQtdestoque()+" where codigobarrasprod = '"+produtos.getCodigoprod()+"'");
-            
-            
+            st.executeUpdate("UPDATE PRODUTOS set codigobarrasprod = '" + produtos.getCodigoprod() + "', nomeprod = '" + produtos.getNomeprod() + "',"
+                    + "valor = " + produtos.getValorprod() + ",descricaoprod = '" + produtos.getDescricaoprod() + "',categoriaprod = '" + produtos.getCategoriaprod() + "',"
+                    + "quantidadeprod = " + produtos.getQtdestoque() + " where codigobarrasprod = '" + produtos.getCodigoprod() + "'");
 
             conexao.close();
 
@@ -141,6 +139,32 @@ public class bancoprod {
         }
 
         return qtdprodcadastrado;
+    }
+
+    public boolean deletaprod(String codigobarrasprod) {
+
+        boolean deletado = false;
+
+        bancoconexao bancoconexao = new bancoconexao();
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            conexao = bancoconexao.getConnection();
+
+            java.sql.Statement st = conexao.createStatement();
+            st.executeUpdate("delete from produtos where codigobarrasprod = '" + codigobarrasprod + "'");
+
+            conexao.close();
+            deletado = true;
+
+        } catch (Exception e) {
+
+            System.out.println("erro" + e.getMessage());
+
+        }
+        return deletado;
+
     }
 
 }
