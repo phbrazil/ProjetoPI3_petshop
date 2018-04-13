@@ -21,49 +21,8 @@
     </head>
     <body id="page-top">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" id="sideNav">
+        <%@include  file="navbar.html" %>
 
-            <a class="navbar-brand js-scroll-trigger" href="Home.jsp">
-                <span class="d-block d-lg-block">Bem-Vindo</span>
-                <span class="d-none d-lg-block">
-                    <!--img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/senac.jpg" alt=""-->
-                </span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="consultaprod.jsp">Consultar Produto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="consultapet.jsp">Consultar Pet</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="atualizarestoque.jsp">Atualizar Estoque</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="catalogo.jsp">Catálogo de Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="vender.jsp">Vender</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="relatorios.jsp">Relatórios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="sobre.jsp">Sobre o Sistema</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html">Sair</a>
-                    </li>
-                </ul>
-            </div>
-
-        </nav>
         <br>
         <br>
         <br>
