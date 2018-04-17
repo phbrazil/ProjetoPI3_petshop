@@ -6,8 +6,10 @@
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
+import java.awt.List;
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 /**
  *
@@ -18,6 +20,8 @@ public class bancoprod {
     private Connection conexao = null;
 
     Produtos produtos = new Produtos(null, 0, null, null, 0, null);
+
+    private java.util.List<Produtos> listaProd = new ArrayList<Produtos>();
 
     public void gravarproduto(Produtos produtos) {
 
@@ -169,7 +173,8 @@ public class bancoprod {
         return deletado;
 
     }
-    public void PesquisarProdutoGeral() {
+
+    public List PesquisarProdutoGeral(List lista) {
 
         String select = "";
 
@@ -182,6 +187,7 @@ public class bancoprod {
 
             java.sql.Statement st = conexao.createStatement();
             select = "select * from produtos";
+            System.out.println("fiz o select");
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
@@ -195,8 +201,7 @@ public class bancoprod {
                 produtos.setQtdestoque(result.getInt("quantidadeprod"));
                 produtos.setListaProd(produtos);
 
-                System.out.println(produtos.getListaProd().get(0).getNomeprod() + "huahhadusahuda");
-                System.out.println(produtos.getListaProd().get(1).getNomeprod() + "huahhadusahuda");
+                System.out.println(produtos.getListaProd().get(0).getNomeprod() + "huahhadusahuda" + produtos.getListaProd().size());
 
             }
 
@@ -207,7 +212,7 @@ public class bancoprod {
             System.out.println("erro" + e.getMessage());
 
         }
-
+        return lista;
     }
 
 }

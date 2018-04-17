@@ -57,26 +57,16 @@
                 </div>
             </div>               
 
-            <div align ="center">
-                <label for="name">Nome </label>
-                <br>
-                <input name = "name" value="${resultado.nomepet}" </input>
-                <br>
-                <label for="valor">Valor </label>
-                <br>
-                <input name = "name" value="${resultado.valorpet}" </input>
-                <br>
-                <label for="qtdpet">Quantidade </label>
-                <br>
-                <input name = "qtdpet" value="${resultado.qtdestoquepet}" </input>
-                <br>
-                <label for="datacad">Data de Cadastro </label>
-                <br>
-                <h6> <fmt:formatDate value="${resultado.dtCadastropet}" pattern ="dd/MM/yyyy"  ></fmt:formatDate></h6>
-            </div>
-            
-            
-            
+            <c:forEach var = "i" begin = "0" end = "${t}">
+                <li>
+                    <h2><c:out value="${resultado.get(i).getNomeprod()}" /></h2>
+
+
+                </li>
+            </c:forEach>
+
+
+
             <!-- teste daqui>
             
             <div align ="center">

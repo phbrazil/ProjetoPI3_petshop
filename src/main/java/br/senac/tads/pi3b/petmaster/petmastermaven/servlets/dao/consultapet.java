@@ -6,6 +6,7 @@
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -33,48 +34,25 @@ public class consultapet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        
-        
-        
-        
-        
-        
-        
 
-        /*Pets pets = new Pets(2, "Vira-lata", "29/03/2018", 1.00);
-        Pets pets1 = new Pets(23, "Cachorro loko", "29/03/2018", 10.00);
-        Pets pets2 = new Pets(35, "Bulldog", "29/03/2018", 150.00);
+        //String consultapet = request.getParameter("consultapet");
 
-        pets.inserirPets(pets);
+        List produtosresult = new List();
 
-        pets.inserirPets(pets1);
+        //Produtos produtos = new Produtos(null, 0, null, null, 0, null);
 
-        pets.inserirPets(pets2);
+        bancoprod produtosgeral = new bancoprod();
 
-        String consultapet = request.getParameter("consultapet");
+        produtosresult = produtosgeral.PesquisarProdutoGeral(produtosresult);
 
-        Pets resultado = pets.obterPetsLista(consultapet);
+        request.setAttribute("resultado", produtosresult);
 
-       if (resultado.getNomepet().toUpperCase().contains(consultapet.toUpperCase())) {
+        request.setAttribute("t", produtosresult.getSize());
 
-           request.setAttribute("resultado", resultado);
-            
+        System.out.println("tamanho" + produtosresult.getSize());
 
-            request.getRequestDispatcher("consultapetresult.jsp").forward(request, response);
+        request.getRequestDispatcher("consultapetresult.jsp").forward(request, response);
 
-        } else {
-            
-           pets.setNomepet("Não encontrado");
-
-
-            request.setAttribute("resultado", resultado);
-
-            request.getRequestDispatcher("consultapetresult.jsp").forward(request, response);
-
-        }
-
-         */
     }
 
     @Override
