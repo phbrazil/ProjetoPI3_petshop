@@ -28,7 +28,7 @@
     <body id="page-top">
         <form>
 
-           <%@include  file="navbar.html" %>
+            <%@include  file="navbar.html" %>
 
             <div align ="center">
                 <br>
@@ -45,7 +45,10 @@
                 <a href="rolezinho.jsp">Rolezinho com o dog</a><br>
                 <a href="rolezinho.jsp">Rolezinho com o dog</a><br>
 
-            </div>        
+            </div>   
+
+            
+
 
             <footer class="my-5 pt-5 text-muted text-center text-small">
                 <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>

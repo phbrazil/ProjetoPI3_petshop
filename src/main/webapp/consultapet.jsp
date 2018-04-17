@@ -10,6 +10,7 @@
     <head>
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/tableprod.css" rel="stylesheet">
 
         <!-- Custom fonts for this template -->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -48,6 +49,29 @@
 
                 </div> 
 
+                <table id="table">
+                    <tr>
+                        <td>1 Ferrari F138</td>
+                        <td>1 000€</td>
+                        <td>1 200€</td>
+
+                    </tr>
+                    <tr>
+                        <td>2 Ferrari F138</td>
+                        <td>1 000€</td>
+                        <td>1 200€</td>
+
+                    </tr>
+                    <tr>
+                        <td>3 Ferrari F138</td>
+                        <td>1 000€</td>
+                        <td>1 200€</td>
+
+                    </tr>
+                </table>
+                <input type="button" id="tst" value="OK" onclick="fnselect()" />
+
+
             </div>        
 
             <footer class="my-5 pt-5 text-muted text-center text-small">
@@ -68,25 +92,18 @@
     <script src="../../../../dist/js/bootstrap.min.js"></script>
     <script src="../../../../assets/js/vendor/holder.min.js"></script>
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict';
-
-            window.addEventListener('load', function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
+                    var table = document.getElementById('table'),
+                            selected = table.getElementsByClassName('selected');
+                    table.onclick = highlight;
+                    function highlight(e) {
+                        if (selected[0])
+                            selected[0].className = '';
+                        e.target.parentNode.className = 'selected';
+                    }
+                    function fnselect() {
+                        var $row = $(this).parent().find('td');
+                        var clickeedID = $row.eq(0).text();
+                        alert(clickeedID);
+                    }
     </script>
 </html>

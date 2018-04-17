@@ -17,114 +17,73 @@
         <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
 
-    <!-- Custom styles for this template -->
-    <!--link href="css/homepage.css" rel="stylesheet"-->
-</head>
-<body id="page-top">
+        <!-- Custom styles for this template -->
+        <!--link href="css/homepage.css" rel="stylesheet"-->
+    </head>
+    <body id="page-top">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" id="sideNav">
+        <%@include  file="navbar.html" %>
 
-        <a class="navbar-brand js-scroll-trigger" href="Home.jsp">
-            <span class="d-block d-lg-block">Bem-Vindo</span>
-            <span class="d-none d-lg-block">
-                <!--img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/senac.jpg" alt=""-->
-            </span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div align ="center">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="consultaprod.jsp">Consultar Produto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="consultapet.jsp">Consultar Pet</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="atualizarestoque.jsp">Atualizar Estoque</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="catalogo.jsp">Catálogo de Serviços</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="vender.jsp">Vender</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="relatorios.jsp">Relatórios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="sobre.jsp">Sobre o Sistema</a>
-                </li>
+            <img class="mb-4" src="img/LogoPetMaster.png" alt="logo PetMaster" width="200" height="200">
 
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="index.html">Sair</a>
-                </li>
-            </ul>
+            <br>    
+            <img src="Apresentacao/Slide1.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
+            <img src="Apresentacao/Slide2.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
+            <img src="Apresentacao/Slide3.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
+            <img src="Apresentacao/Slide4.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
+            <img src="Apresentacao/Slide5.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
+
+            <!--a href="" onclick="swapImage(0);"><img src="/images/first.png" border=0 alt="First"></a>
+            <a href="" onclick="swapImage(currentIndex - 1);"><img src="/images/left.png" border=0 alt="Back"></a>
+            <a href="" onclick="swapImage(currentIndex + 1);"><img src="/images/right.png" border=0 alt="Next"></a>
+            <a href="" onclick="swapImage(maxIndex);"><img src="/images/last.png" border=0 alt="Last"></a-->
+
         </div>
 
-    </nav>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div align ="center">
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacidade</a></li>
+                <li class="list-inline-item"><a href="#">Termos</a></li>
+                <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
+            </ul>
+        </footer>
 
-        <img class="mb-4" src="img/LogoPetMaster.png" alt="logo PetMaster" width="200" height="200">
+    </body>
 
-        <br>    
-        <img src="Apresentacao/Slide1.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
-        <img src="Apresentacao/Slide2.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
-        <img src="Apresentacao/Slide3.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
-        <img src="Apresentacao/Slide4.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
-        <img src="Apresentacao/Slide5.png" id="mainImage" name="mainImage" width="100%" height="100%" alt="">
-        
-        <!--a href="" onclick="swapImage(0);"><img src="/images/first.png" border=0 alt="First"></a>
-        <a href="" onclick="swapImage(currentIndex - 1);"><img src="/images/left.png" border=0 alt="Back"></a>
-        <a href="" onclick="swapImage(currentIndex + 1);"><img src="/images/right.png" border=0 alt="Next"></a>
-        <a href="" onclick="swapImage(maxIndex);"><img src="/images/last.png" border=0 alt="Last"></a-->
-
-    </div>
-
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Privacidade</a></li>
-            <li class="list-inline-item"><a href="#">Termos</a></li>
-            <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
-        </ul>
-    </footer>
-
-</body>
-
-<!--script type="text/javascript">
-    //Initilize start value to 1 'For Slide1.GIF'
-    var currentIndex = 1;
-
-    //NOTE: Set this value to the number of slides you have in the presentation.
-    var maxIndex = 12;
-
-    function swapImage(imageIndex) {
-        //Check if we are at the last image already, return if we are.
-        if (imageIndex > maxIndex) {
-            currentIndex = maxIndex;
+    <!--script type="text/javascript">
+        //Initilize start value to 1 'For Slide1.GIF'
+        var currentIndex = 1;
+    
+        //NOTE: Set this value to the number of slides you have in the presentation.
+        var maxIndex = 12;
+    
+        function swapImage(imageIndex) {
+            //Check if we are at the last image already, return if we are.
+            if (imageIndex > maxIndex) {
+                currentIndex = maxIndex;
+                return;
+            }
+    
+            //Check if we are at the first image already, return if we are.
+            if (imageIndex < 1) {
+                currentIndex = 1;
+                return;
+            }
+    
+            currentIndex = imageIndex;
+            //Otherwise update mainImage
+            document.getElementById("mainImage").src = 'Slide' + currentIndex + '.GIF';
+            main
             return;
         }
-
-        //Check if we are at the first image already, return if we are.
-        if (imageIndex < 1) {
-            currentIndex = 1;
-            return;
-        }
-
-        currentIndex = imageIndex;
-        //Otherwise update mainImage
-        document.getElementById("mainImage").src = 'Slide' + currentIndex + '.GIF';
-        main
-        return;
-    }
-</script-->
+    </script-->
 
 
 </html>

@@ -33,8 +33,16 @@ public class consultapet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        
+        
+        
+        
+        
+        
+        
 
-        Pets pets = new Pets(2, "Vira-lata", "29/03/2018", 1.00);
+        /*Pets pets = new Pets(2, "Vira-lata", "29/03/2018", 1.00);
         Pets pets1 = new Pets(23, "Cachorro loko", "29/03/2018", 10.00);
         Pets pets2 = new Pets(35, "Bulldog", "29/03/2018", 150.00);
 
@@ -66,6 +74,7 @@ public class consultapet extends HttpServlet {
 
         }
 
+         */
     }
 
     @Override

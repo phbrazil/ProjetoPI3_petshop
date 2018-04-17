@@ -15,6 +15,10 @@ import java.sql.ResultSet;
  */
 public class bancoprod {
 
+    private Connection conexao = null;
+
+    Produtos produtos = new Produtos(null, 0, null, null, 0, null);
+
     public void gravarproduto(Produtos produtos) {
 
         bancoconexao bancoconexao = new bancoconexao();
@@ -65,10 +69,6 @@ public class bancoprod {
 
     }
 
-    private Connection conexao = null;
-
-    Produtos produtos = new Produtos(null, 0, null, null, 0, null);
-
     public Produtos PesquisarProduto(String buscaprod) {
 
         String select = "";
@@ -93,6 +93,9 @@ public class bancoprod {
                 produtos.setDescricaoprod(result.getString("descricaoprod"));
                 produtos.setCategoriaprod(result.getString("categoriaprod"));
                 produtos.setQtdestoque(result.getInt("quantidadeprod"));
+                produtos.setListaProd(produtos);
+
+                System.out.println(produtos.getListaProd().get(0).getNomeprod() + "huahhadusahuda");
 
             }
 
@@ -164,6 +167,46 @@ public class bancoprod {
 
         }
         return deletado;
+
+    }
+    public void PesquisarProdutoGeral() {
+
+        String select = "";
+
+        bancoconexao bancoconexao = new bancoconexao();
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            conexao = bancoconexao.getConnection();
+
+            java.sql.Statement st = conexao.createStatement();
+            select = "select * from produtos";
+            ResultSet result = st.executeQuery(select);
+
+            while (result.next()) {
+
+                produtos.setCodigoprod(result.getString("codigobarrasprod"));
+                produtos.setNomeprod(result.getString("nomeprod"));
+                produtos.setValorprod(result.getDouble("valor"));
+                produtos.setDtCadastro(result.getDate("datacadastroprod"));
+                produtos.setDescricaoprod(result.getString("descricaoprod"));
+                produtos.setCategoriaprod(result.getString("categoriaprod"));
+                produtos.setQtdestoque(result.getInt("quantidadeprod"));
+                produtos.setListaProd(produtos);
+
+                System.out.println(produtos.getListaProd().get(0).getNomeprod() + "huahhadusahuda");
+                System.out.println(produtos.getListaProd().get(1).getNomeprod() + "huahhadusahuda");
+
+            }
+
+            conexao.close();
+
+        } catch (Exception e) {
+
+            System.out.println("erro" + e.getMessage());
+
+        }
 
     }
 

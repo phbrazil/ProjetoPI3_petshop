@@ -10,6 +10,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  *
@@ -32,6 +33,16 @@ public class Produtos {
     private String categoriaprod;
 
     private java.util.List<Produtos> listaProd = new ArrayList<Produtos>();
+
+    public List<Produtos> getListaProd() {
+        return listaProd;
+    }
+    
+    
+
+    public void setListaProd(Produtos produtos) {
+        listaProd.add(produtos);
+    }
 
     public Produtos(String nomeprod, double valorprod, String codigobarrasprod, String descricaoprod, int qtdestoque, String categoriaprod) {
         this.codigobarrasprod = codigobarrasprod;
