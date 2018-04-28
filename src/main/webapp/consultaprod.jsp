@@ -20,7 +20,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/topodapagina.css" rel="stylesheet">
-    <form action="consultaprod" method="POST" >
+    <form action="${pageContext.request.contextPath}/consultaprod" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Consultar Produto</title>

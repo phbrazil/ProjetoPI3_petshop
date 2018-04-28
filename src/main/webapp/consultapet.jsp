@@ -21,7 +21,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/topodapagina.css" rel="stylesheet">
-    <form action="consultapet" method="POST" >
+    <form action="${pageContext.request.contextPath}/consultapet" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Consultar Pet</title>

@@ -22,7 +22,7 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form action="acaocadastrar" method="POST" >
+    <form action="${pageContext.request.contextPath}/acaocadastrar" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cadastrar</title>

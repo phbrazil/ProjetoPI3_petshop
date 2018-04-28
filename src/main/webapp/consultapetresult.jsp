@@ -1,7 +1,6 @@
-
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
@@ -9,7 +8,7 @@
 
 
 <%-- 
-    Document   : consultapetresult
+    Document   : consultarpetresult
     Created on : Mar 29, 2018, 12:13:17 PM
     Author     : paulo.bezerra
 --%>
@@ -30,7 +29,6 @@
 
         <!-- Custom styles for this template -->
         <link href="css/topodapagina.css" rel="stylesheet">
-    <form action="consultapet" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Consultar Pet</title>
@@ -39,95 +37,82 @@
         <form>
 
             <%@include  file="navbar.html" %>
-
-            <div align ="center">
-                <br>
-                <br>
-                <br>
-                <h1>Consultar Pet</h1>
-
-                <input type="text" name="consultapet" />
-                <input type="submit" name="pesquisar" value ="Pesquisar" /><br><br>
-
-            </div>   
-            <div align ="center">
-
-                <div class="container">
-                    <h2>Resultado</h2>
-                </div>
-            </div>               
-
-            <c:forEach var = "i" begin = "0" end = "${t}">
-                <li>
-                    <h2><c:out value="${resultado.get(i).getNomeprod()}" /></h2>
-
-
-                </li>
-            </c:forEach>
-
-
-
-            <!-- teste daqui>
             
-            <div align ="center">
+        </form> 
+
+        <div align ="center">
+            <br>
+            <br>
+            <br>
+
+            <h1 >Consultar Pet</h1>
+            <h2>Resultado</h2>
+
+            <input type="text" name="consultapet" />
+            <input type="submit" name="pesquisar" value ="Pesquisar" /><br><br>
+
+        </div>   
+
+
+        <div align ="center">
             <br>
             <br>
             <br>
 
 
             <div class="col-md-6 mb-3">
-                <form class="needs-validation" novalidate action="cadastrarprod" method="POST" >
+                <form class="needs-validation" novalidate action="${pageContext.request.contextPath}/alterarpet" method="POST" >
 
 
                     <div class="row">
                         <div class="col-md-4 mb-3">
                             <label>Código do Pet</label>
-                            <input name="codigoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                            <input name="codigopet" type="text" class="form-control" id="primeironome" value="${resultado.codigopet}" required>
                             <div class="invalid-feedback">
                                 Código obrigatório
                             </div>
                         </div>
                         <div class="col-md-8 mb-3">
                             <label>Nome do Pet</label>
-                            <input name="nomeprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                            <input name="nomepet" type="text" class="form-control" id="primeironome" value="${resultado.nomepet}" required>
                             <div class="invalid-feedback">
                                 Nome obrigatório
                             </div>
                         </div>
                         <div class="col-md-12 mb-3">
                             <label>Descrição do Pet</label>
-                            <input name="descricaoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                            <input name="descricaopet" type="text" class="form-control" id="primeironome"  value="${resultado.descricaopet}" required>
                             <div class="invalid-feedback">
                                 Descrição necessária
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="categoriaprod">Categoria</label>
-                            <select name ="categoriaprod" class="custom-select d-block w-100" id="categoria" required>
-                                <option value="">Selecionar...</option>
-                                <option>Cão</option>
-                                <option>Gato</option>
-                                <option>Peixe</option>
-                                <option>Réptil</option>
-                                <option>Outros</option>
-                            </select>
+                            <label for="categoriapet">Categoria</label>
+                            <select name ="categoriapet" class="custom-select d-block w-100" id="categoria" required>
+                                <option><c:out value = "${resultado.categoriapet}"></c:out></option>
+                                    <option>Cão</option>
+                                    <option>Gato</option>
+                                    <option>Peixe</option>
+                                    <option>Réptil</option>
+                                    <option>Outros</option>
+                                </select>
 
-                            <div class="invalid-feedback">
-                                Favor selecionar a categoria.
+                                <div class="invalid-feedback">
+                                    Favor selecionar a categoria.
+                                </div>
                             </div>
-                        </div>
 
 
-                        <div class="col-md-4 mb-3">
-                            <label for="valorprod">Valor</label>
-                            <input name="valorprod" type="number" class="form-control" id="valor" pattern = "^\d+\.\d{2}" placeholder="00,00" required>
+                            <div class="col-md-4 mb-3">
+                                <label for="valorpet">Valor</label>
+                                <input name="valorpet" type="number" class="form-control" id="valor"  value="${resultado.valorpet}" required>
                             <div class="invalid-feedback">
                                 Favor inserir o Valor.
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="qtdestoque">Quantidade</label>
-                            <input name="qtdestoque" type="number" class="form-control" id="qtdestoque" placeholder="1" required>
+                            <label for="qtdestoquepet">Quantidade</label>
+                            <input name="qtdestoquepet" type="number" class="form-control" id="qtdestoque" value="${resultado.qtdestoquepet}" required>
                             <div class="invalid-feedback">
                                 Favor inserir a quantidade.
                             </div>
@@ -136,24 +121,28 @@
                     </div>
 
                     <hr class="mb-4">
-                    <button class="btn btn-secondary btn-lg btn-block" type="submit">Gravar</button>
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="alterar" value = "alterar">Alterar</button>
+                    <br>
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="excluir" value ="excluir" >Excluir</button>
+
+
+
                 </form>
             </div>
-        </div-->
+        </div>
 
-            <div align = "center">
-                <input type ="button" value ="Voltar" onclick="history.back()">    
-            </div>
 
-            <footer class="my-5 pt-5 text-muted text-center text-small">
-                <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Privacidade</a></li>
-                    <li class="list-inline-item"><a href="#">Termos</a></li>
-                    <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
-                </ul>
-            </footer>
-            </div>
+        <div align = "center">
+            <input type ="button" value ="Voltar" onclick="history.back()">    
+        </div>
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacidade</a></li>
+                <li class="list-inline-item"><a href="#">Termos</a></li>
+                <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
+            </ul>
+        </footer>
 
     </body>
 </html>

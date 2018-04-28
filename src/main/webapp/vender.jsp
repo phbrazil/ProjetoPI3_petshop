@@ -22,7 +22,7 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form action="Vender" method="POST" >
+    <form action="${pageContext.request.contextPath}/vender" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Vender</title>
@@ -30,9 +30,9 @@
     <body id="page-top">
         <form>
             <div id="includedContent"></div>
-            
-             <%@include  file="navbar.html" %>
-            
+
+            <%@include  file="navbar.html" %>
+
 
             <div align ="center">
                 <br>
@@ -44,7 +44,8 @@
                     </div>
                 </div>
                 <div class="col-md-8 order-md-1">
-                    <form class="needs-validation" novalidate>
+                    <form  action="${pageContext.request.contextPath}/vender" method="POST">
+                        
                         <div class="mb-3">
                             <label for="cpf">CPF do cliente</label>
                             <div class="input-group">
@@ -52,148 +53,156 @@
                                     <span class="input-group-text"></span>
                                 </div>
 
-                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                                <input type="text" class="form-control" id="cpf" name="cpfcliente" placeholder="000.000.000-00" value ="${cpfcliente}">
 
-                                <button name="pesquisarcpf" type="button">Pesquisar</button>
+                                <button name="pesquisarcpf"  type="submit" >Pesquisar</button>
                                 <div class="invalid-feedback" style="width: 100%;">
                                     CPF obrigatório.
                                 </div>
                             </div>
                         </div>
-
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="primeironome">Primeiro nome</label>
-                                <input type="text" class="form-control" id="primeironome" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                    Primeiro nome necessário
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="ultimonome">Último nome</label>
-                                <input type="text" class="form-control" id="ultimonome" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                    Último nome necessário
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="email">Email <span class="text-muted">(Opcional)</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="voce@exemplo.com">
-                            <div class="invalid-feedback">
-                                Favor inserir um email válido para o frete.
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="endereco">Endereço</label>
-                            <input type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" required>
-                            <div class="invalid-feedback">
-                                Favor inserir seu endereço de envio.
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col-md-5 mb-3">
-                                <label for="pais">País</label>
-                                <select class="custom-select d-block w-100" id="pais" required>
-                                    <option value="">Selecionar...</option>
-                                    <option>Brasil</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Favor selecionar o país.
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="estado">Estado</label>
-                                <select class="custom-select d-block w-100" id="estado" required>
-                                    <option value="">Selecionar...</option>
-                                    <option>São Paulo</option>
-                                    <option>Rio de Janeiro</option>
-                                    <option>São Paulo</option>
-                                    <option>São Paulo</option>
-                                    <option>São Paulo</option>
-                                    <option>São Paulo</option>
-
-                                </select>
-                                <div class="invalid-feedback">
-                                    Favor selecionar um Estado..
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label for="cep">CEP</label>
-                                <input type="text" class="form-control" id="cep" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    CEP obrigatório
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label for="codigoprod">Código do produto</label>
-                                <input type="text" class="form-control" id="codigoprod" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Código do produto obrigatório
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-6">
-                                <label for="descricao">Descrição</label>
-                                <input type="text" class="form-control" id="descricao" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Descrição obrigatória
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 mb-3">
-                                <label for="valor">Valor</label>
-                                <input type="text" class="form-control" id="valor" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Valor obrigatório
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label for="desconto">Desconto</label>
-                                <input type="text" class="form-control" id="desconto" placeholder="">
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label for="total">Valor Total</label>
-                                <input type="text" class="form-control" id="total" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Total obrigatório
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="mb-4">
-
-
-                        <div class="row">
-                            <div class="col-md-5 mb-3">
-                                <label for="pagamento">Pagamento</label>
-                                <select class="custom-select d-block w-100" id="pagamento"required>
-                                    <option>Débito</option>
-                                    <option>Crédito</option>
-                                    <option>Cheque</option>
-
-                                </select>
-                                <div class="invalid-feedback">
-                                    Favor selecionar o pagamento.
-                                </div>
-                            </div>
-
-                            <hr class="mb-4">
-                            <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar Venda</button>
                     </form>
-                </div>
-            </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="primeironome">Primeiro nome</label>
+                            <input type="text" class="form-control" id="primeironome" placeholder="" value="${primeironome}">
 
-            <footer class="my-5 pt-5 text-muted text-center text-small">
-                <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Privacidade</a></li>
-                    <li class="list-inline-item"><a href="#">Termos</a></li>
-                    <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
-                </ul>
-            </footer>
+                        </div>
+
+                    <!--div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="primeironome">Primeiro nome</label>
+                            <input type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Primeiro nome necessário
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="ultimonome">Último nome</label>
+                            <input type="text" class="form-control" id="ultimonome" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Último nome necessário
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email <span class="text-muted">(Opcional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="voce@exemplo.com">
+                        <div class="invalid-feedback">
+                            Favor inserir um email válido para o frete.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" required>
+                        <div class="invalid-feedback">
+                            Favor inserir seu endereço de envio.
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="pais">País</label>
+                            <select class="custom-select d-block w-100" id="pais" required>
+                                <option value="">Selecionar...</option>
+                                <option>Brasil</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Favor selecionar o país.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="estado">Estado</label>
+                            <select class="custom-select d-block w-100" id="estado" required>
+                                <option value="">Selecionar...</option>
+                                <option>São Paulo</option>
+                                <option>Rio de Janeiro</option>
+                                <option>São Paulo</option>
+                                <option>São Paulo</option>
+                                <option>São Paulo</option>
+                                <option>São Paulo</option>
+
+                            </select>
+                            <div class="invalid-feedback">
+                                Favor selecionar um Estado..
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cep">CEP</label>
+                            <input type="text" class="form-control" id="cep" placeholder="" required>
+                            <div class="invalid-feedback">
+                                CEP obrigatório
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="codigoprod">Código do produto</label>
+                            <input type="text" class="form-control" id="codigoprod" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Código do produto obrigatório
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-6">
+                            <label for="descricao">Descrição</label>
+                            <input type="text" class="form-control" id="descricao" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Descrição obrigatória
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                            <label for="valor">Valor</label>
+                            <input type="text" class="form-control" id="valor" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Valor obrigatório
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="desconto">Desconto</label>
+                            <input type="text" class="form-control" id="desconto" placeholder="">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="total">Valor Total</label>
+                            <input type="text" class="form-control" id="total" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Total obrigatório
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+
+
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="pagamento">Pagamento</label>
+                            <select class="custom-select d-block w-100" id="pagamento"required>
+                                <option>Débito</option>
+                                <option>Crédito</option>
+                                <option>Cheque</option>
+
+                            </select>
+                            <div class="invalid-feedback">
+                                Favor selecionar o pagamento.
+                            </div>
+                        </div>
+
+                        <hr class="mb-4">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit" name = "finalizarvenda">Finalizar Venda</button>
+                        </form>
+                    </div-->
+                </div>
+
+                <footer class="my-5 pt-5 text-muted text-center text-small">
+                    <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Privacidade</a></li>
+                        <li class="list-inline-item"><a href="#">Termos</a></li>
+                        <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
+                    </ul>
+                </footer>
             </div>
 
             <!-- Bootstrap core JavaScript
@@ -228,6 +237,8 @@
 
 
             </script>
-            </div>        
+
+
+
     </body>
 </html>

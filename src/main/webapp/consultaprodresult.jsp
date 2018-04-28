@@ -67,7 +67,7 @@
 
 
             <div class="col-md-6 mb-3">
-                <form class="needs-validation" novalidate action="alterarprod" method="POST" >
+                <form class="needs-validation" novalidate action="${pageContext.request.contextPath}/alterarprod" method="POST" >
 
 
                     <div class="row">

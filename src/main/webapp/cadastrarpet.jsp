@@ -20,7 +20,7 @@
 
         <!-- Custom styles for this template -->
         <link href="topodapagina.css" rel="stylesheet">
-    <form class="needs-validation" novalidate action="cadastrarpet" method="POST" >
+    <form class="needs-validation" novalidate action="${pageContext.request.contextPath}/cadastrarpet" method="POST" >
 
 
 
