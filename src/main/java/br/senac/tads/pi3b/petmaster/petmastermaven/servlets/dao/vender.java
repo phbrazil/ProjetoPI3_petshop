@@ -32,7 +32,8 @@ public class vender extends HttpServlet {
 
         HttpSession sessao = null;
 
-        if (cpf != null) {
+        //sessao.invalidate();
+        if (!cpf.equals("")) {
             System.out.println("cpf é " + cpf);
 
             sessao = request.getSession();
@@ -41,15 +42,18 @@ public class vender extends HttpServlet {
             sessao.setAttribute("cpfcliente", cpf);
 
             request.getRequestDispatcher("vender.jsp").forward(request, response);
+            sessao.invalidate();
 
-        } else if (cpf.equals("")) {
-            System.out.println("diferente");
+        } else  {
+            sessao = request.getSession();
+
             sessao.setAttribute("primeironome", "Pesquise o CPF");
 
             request.getRequestDispatcher("vender.jsp").forward(request, response);
+            sessao.invalidate();
 
         }
-        
+
         sessao.invalidate();
 
     }
