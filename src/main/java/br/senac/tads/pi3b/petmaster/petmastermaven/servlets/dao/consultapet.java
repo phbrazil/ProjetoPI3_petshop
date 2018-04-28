@@ -35,23 +35,26 @@ public class consultapet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        //String consultapet = request.getParameter("consultapet");
+        String consultapet = request.getParameter("consultapet");
 
-        List produtosresult = new List();
+        bancopet selectpet = new bancopet();
 
-        //Produtos produtos = new Produtos(null, 0, null, null, 0, null);
+        Pets pets = new Pets(null, 0, null, null, 0, null);
 
-        bancoprod produtosgeral = new bancoprod();
+        pets = selectpet.PesquisarPet(consultapet);
 
-        produtosresult = produtosgeral.PesquisarProdutoGeral(produtosresult);
+        if (pets.getNomepet() != null) {
 
-        request.setAttribute("resultado", produtosresult);
+            request.setAttribute("resultado", pets);
 
-        request.setAttribute("t", produtosresult.getSize());
+            request.getRequestDispatcher("consultapetresult.jsp").forward(request, response);
 
-        System.out.println("tamanho" + produtosresult.getSize());
+        } else {
 
-        request.getRequestDispatcher("consultapetresult.jsp").forward(request, response);
+
+            request.getRequestDispatcher("naoencontrado.jsp").forward(request, response);
+
+        }
 
     }
 

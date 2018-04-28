@@ -49,27 +49,7 @@
 
                 </div> 
 
-                <table id="table">
-                    <tr>
-                        <td>1 Ferrari F138</td>
-                        <td>1 000€</td>
-                        <td>1 200€</td>
-
-                    </tr>
-                    <tr>
-                        <td>2 Ferrari F138</td>
-                        <td>1 000€</td>
-                        <td>1 200€</td>
-
-                    </tr>
-                    <tr>
-                        <td>3 Ferrari F138</td>
-                        <td>1 000€</td>
-                        <td>1 200€</td>
-
-                    </tr>
-                </table>
-                <input type="button" id="tst" value="OK" onclick="fnselect()" />
+                
 
 
             </div>        

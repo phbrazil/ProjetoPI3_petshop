@@ -20,7 +20,7 @@ public class Pets {
 
     private java.util.List<Pets> listaPets = new ArrayList<Pets>();
 
-    private long codigopet;
+    private String codigobarraspet;
 
     private double valorpet;
 
@@ -45,25 +45,22 @@ public class Pets {
 
     }
 
-    public Pets(int qtdestoque, String nome, String dtCadastro, double valor) {
-        DateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
-        this.nomepet = nome;
-        this.valorpet = valor;
-        this.qtdestoquepet = qtdestoque;
+    public Pets(String nomepet, double valorpet, String codigobarraspet, String descricaopet, int qtdestoquepet, String categoriapet) {
+        this.codigobarraspet = codigobarraspet;
+        this.nomepet = nomepet;
+        this.valorpet= valorpet;
+        this.descricaopet = descricaopet;
+        this.qtdestoquepet = qtdestoquepet;
+        this.categoriapet = categoriapet;
 
-        try {
-            this.dtCadastropet = formatador.parse(dtCadastro);
-        } catch (ParseException e) {
-
-        }
     }
 
-    public long getCodigopet() {
-        return codigopet;
+    public String getCodigopet() {
+        return codigobarraspet;
     }
 
-    public void setCodigopet(long codigopet) {
-        this.codigopet = codigopet;
+    public void setCodigopet(String codigobarraspet) {
+        this.codigobarraspet = codigobarraspet;
     }
 
     public double getValorpet() {
@@ -132,5 +129,9 @@ public class Pets {
             }
         }
         return null;
+    }
+    
+    public void setListaPet(Pets pets) {
+        listaPets.add(pets);
     }
 }

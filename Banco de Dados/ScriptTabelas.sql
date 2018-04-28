@@ -12,6 +12,17 @@ CREATE TABLE Produtos(
   Quantidadeprod INT NOT NULL,
   PRIMARY KEY (Idprod));
 
+CREATE TABLE Pets(
+  Idpet INT NOT NULL AUTO_INCREMENT,
+  Codigobarraspet Varchar (30) NOT NULL,
+  Nomepet Varchar (30) NOT NULL,
+  Valorpet FLOAT (10,2),
+  DataCadastropet DATE,
+  Descricaopet Varchar (60) NOT NULL,
+  Categoriapet Varchar (30) NOT NULL,
+  Quantidadepet INT NOT NULL,
+  PRIMARY KEY (Idpet));
+
 
 INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Paulo Henrique Bezerra","Paulo.Bezerra","Mortadela1");
 INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Lucas Medeiros","Lucas.Medeiros","Mortadela1");
