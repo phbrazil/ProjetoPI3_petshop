@@ -40,7 +40,7 @@
 
                 <div class="container">
                     <div class="py-5 text-center">
-                        <img class="d-block mx-auto mb-4" src="img/LogoPetMaster.png" alt="" width="200" height="200">
+                        <!--img class="d-block mx-auto mb-4" src="img/LogoPetMaster.png" alt="" width="200" height="200"-->
                         <h2>Vendas PetShop</h2>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                                 <span class="input-group-text"></span>
                             </div>
 
-                            <input type="text" class="form-control" id="cpf" name="cpfcliente" placeholder="000.000.000-00" value ="${resultado.cpfCliente}">
+                            <input type="text" class="form-control" id="cpf" name="cpfcliente" placeholder="000.000.000-00" value ="${resultado.cpfCliente}" required>
 
                             <div class="invalid-feedback" style="width: 100%;">
                                 CPF obrigatório.
@@ -94,8 +94,8 @@
                     <div class="row">
                         <div class="col-md-5 mb-3">
                             <label for="pais">País</label>
-                            <select class="custom-select d-block w-100" id="pais"  required>
-                                <option value = "${resultado.pais}"</option>
+                            <select class="custom-select d-block w-100" id="pais" value = "${resultado.pais}" required>
+                                <option value="">Selecionar...</option>
                                 <option>Brasil</option>
                             </select>
                             <div class="invalid-feedback">
@@ -104,8 +104,8 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="estado">Estado</label>
-                            <select class="custom-select d-block w-100" id="estado"  required>
-                                <option value = "${resultado.estado}"</option>
+                            <select class="custom-select d-block w-100" id="estado" value = "${resultado.estado}" required>
+                                <option value = "${resultado.estado}">Selecionar...</option>
                                 <option>São Paulo</option>
                                 <option>Rio de Janeiro</option>
                                 <option>São Paulo</option>
@@ -127,14 +127,15 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="codigoprod">Código do produto</label>
-                            <input type="text" class="form-control" id="codigoprod" placeholder="" required>
+                            <input type="text" class="form-control" id="codigoprod" name="codigoprod" placeholder="" required>
+                            <input type = "button" value ="Pesquisar" onClick="PesquisarProd()">
                             <div class="invalid-feedback">
                                 Código do produto obrigatório
                             </div>
                         </div>
                         <div class="col-md-6 mb-6">
                             <label for="descricao">Descrição</label>
-                            <input type="text" class="form-control" id="descricao" placeholder="" required>
+                            <input type="text" class="form-control" name = "descricao" id="descricao" placeholder="" required>
                             <div class="invalid-feedback">
                                 Descrição obrigatória
                             </div>
@@ -191,6 +192,20 @@
                     </ul>
                 </footer>
             </div>
+            <script>
+
+                function PesquisarProd() {
+
+                    var teste = document.vender.codigoprod.value
+
+                    //alert("Hue Hue Hue " + teste)
+                    
+                    vender.descricao.value = "KKKKK FUNCIONOU"
+                    
+                }
+
+
+            </script>
 
             <!-- Bootstrap core JavaScript
             ================================================== -->
@@ -225,16 +240,6 @@
 
             </script>
 
-            <script>
-                function pesquisarCPF() {
 
-                    var CPF = document.vender.cpfcliente.value
-
-
-                    //alert("O resultado é "+CPF)
-
-                }
-
-            </script>
     </body>
 </html>

@@ -47,7 +47,7 @@ statuscliente BOOLEAN NOT NULL,
 PRIMARY KEY (ClienteID, CPF));
 
 INSERT INTO Clientes (Nome,Logradouro,RG,CPF,Pais,Cidade,Bairro,Estado,UF,CEP,Telefone,Celular,Email,Sexo,EstadoCivil,Nascimento, DataCadastro, statuscliente) 
-VALUES ("Paulo Henrique Bezerra", "Rua mario Wilches 10", "466825523", "375.197.588-85","Brasil","São Paulo", "Santa Barbara","São Paulo","SP","04858390","55268573","11981997228",
+VALUES ("Paulo Henrique Bezerra", "Rua Paulo Egidio Carvalho 109", "466825523", "375.197.588-85","Brasil","São Paulo", "Santa Barbara","São Paulo","SP","04858390","55268573","11981997228",
 "pauloh2012sul@gmail.com","Masculino", "Solteiro",'1990-01-29',NOW(), true);
 
 
