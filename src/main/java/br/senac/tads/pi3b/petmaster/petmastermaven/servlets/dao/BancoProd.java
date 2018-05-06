@@ -15,7 +15,7 @@ import java.util.ArrayList;
  *
  * @author killuminatti08
  */
-public class bancoprod {
+public class BancoProd {
 
     private Connection conexao = null;
 
@@ -25,7 +25,7 @@ public class bancoprod {
 
     public void gravarproduto(Produtos produtos) {
 
-        bancoconexao bancoconexao = new bancoconexao();
+        BancoConexao bancoconexao = new BancoConexao();
 
         try {
 
@@ -50,7 +50,7 @@ public class bancoprod {
 
     public void atualizarprod(Produtos produtos) {
 
-        bancoconexao bancoconexao = new bancoconexao();
+        BancoConexao bancoconexao = new BancoConexao();
 
         try {
 
@@ -77,7 +77,7 @@ public class bancoprod {
 
         String select = "";
 
-        bancoconexao bancoconexao = new bancoconexao();
+        BancoConexao bancoconexao = new BancoConexao();
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -120,7 +120,7 @@ public class bancoprod {
 
         int qtdprodcadastrado = 0;
 
-        bancoconexao bancoconexao = new bancoconexao();
+        BancoConexao bancoconexao = new BancoConexao();
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -152,7 +152,7 @@ public class bancoprod {
 
         boolean deletado = false;
 
-        bancoconexao bancoconexao = new bancoconexao();
+        BancoConexao bancoconexao = new BancoConexao();
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -178,7 +178,7 @@ public class bancoprod {
 
         String select = "";
 
-        bancoconexao bancoconexao = new bancoconexao();
+        BancoConexao bancoconexao = new BancoConexao();
 
         try {
             Class.forName("com.mysql.jdbc.Driver");

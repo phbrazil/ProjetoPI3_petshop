@@ -14,7 +14,7 @@ import java.util.Properties;
  *
  * @author paulo.hbezerra
  */
-public class bancoconexao {
+public class BancoConexao {
 
     private String url = "jdbc:mysql://localhost:3306/PetMaster";
     private String driver = "com.mysql.jdbc.Driver";

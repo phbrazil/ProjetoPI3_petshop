@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "acaocadastrar", urlPatterns = {"/acaocadastrar"})
 
-public class acaocadastrar extends HttpServlet {
+public class AcaoCadastrar extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

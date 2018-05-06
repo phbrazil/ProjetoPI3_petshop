@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author Paulo.Bezerra
  */
 @WebServlet(name = "reset", urlPatterns = {"/reset"})
-public class reset extends HttpServlet {
+public class Reset extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

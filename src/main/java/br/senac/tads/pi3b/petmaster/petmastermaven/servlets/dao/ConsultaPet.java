@@ -10,11 +10,8 @@ import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -25,8 +22,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author paulo.bezerra
  */
-@WebServlet(name = "consultaprod", urlPatterns = {"/consultaprod"})
-public class consultaprod extends HttpServlet {
+@WebServlet(name = "consultapet", urlPatterns = {"/consultapet"})
+public class ConsultaPet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -38,21 +35,19 @@ public class consultaprod extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        Date today = Calendar.getInstance().getTime();
+        String consultapet = request.getParameter("consultapet");
 
-        String consultaprod = request.getParameter("consultaprod");
+        BancoPet selectpet = new BancoPet();
 
-        bancoprod selectprod = new bancoprod();
+        Pets pets = new Pets(null, 0, null, null, 0, null);
 
-        Produtos produtos = new Produtos(null, 0, null, null, 0, null);
+        pets = selectpet.PesquisarPet(consultapet);
 
-        produtos = selectprod.PesquisarProduto(consultaprod);
+        if (pets.getNomepet() != null) {
 
-        if (produtos.getNomeprod() != null) {
+            request.setAttribute("resultado", pets);
 
-            request.setAttribute("resultado", produtos);
-
-            request.getRequestDispatcher("consultaprodresult.jsp").forward(request, response);
+            request.getRequestDispatcher("consultapetresult.jsp").forward(request, response);
 
         } else {
 

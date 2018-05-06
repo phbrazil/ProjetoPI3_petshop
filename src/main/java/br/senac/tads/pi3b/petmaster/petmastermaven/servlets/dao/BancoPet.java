@@ -16,7 +16,7 @@ import java.util.ArrayList;
  *
  * @author killuminatti08
  */
-public class bancopet {
+public class BancoPet {
 
     private Connection conexao = null;
 
@@ -26,7 +26,7 @@ public class bancopet {
 
     public void gravarpet(Pets pets) {
 
-        bancoconexao bancoconexao = new bancoconexao();
+        BancoConexao bancoconexao = new BancoConexao();
 
         try {
 
@@ -51,14 +51,14 @@ public class bancopet {
 
     public void atualizarpet(Pets pets) {
 
-        bancoconexao bancoconexao = new bancoconexao();
+        BancoConexao bancoconexao = new BancoConexao();
 
         try {
 
             Connection conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("UPDATE PETS set codigobarraspet = '" + pets.getCodigopet() + "', nomepet = '" + pets.getNomepet() + "',"
+            st.executeUpdate("UPDATE pets set codigobarraspet = '" + pets.getCodigopet() + "', nomepet = '" + pets.getNomepet() + "',"
                     + "valorpet = " + pets.getValorpet() + ",descricaopet = '" + pets.getDescricaopet() + "',categoriapet = '" + pets.getCategoriapet() + "',"
                     + "quantidadepet = " + pets.getQtdestoquepet()+ " where codigobarraspet = '" + pets.getCodigopet() + "'");
 
@@ -78,7 +78,7 @@ public class bancopet {
 
         String select = "";
 
-        bancoconexao bancoconexao = new bancoconexao();
+        BancoConexao bancoconexao = new BancoConexao();
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -120,7 +120,7 @@ public class bancopet {
 
         int qtdpetcadastrado = 0;
 
-        bancoconexao bancoconexao = new bancoconexao();
+        BancoConexao bancoconexao = new BancoConexao();
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -152,7 +152,7 @@ public class bancopet {
 
         boolean deletado = false;
 
-        bancoconexao bancoconexao = new bancoconexao();
+        BancoConexao bancoconexao = new BancoConexao();
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -178,7 +178,7 @@ public class bancopet {
 
         String select = "";
 
-        bancoconexao bancoconexao = new bancoconexao();
+        BancoConexao bancoconexao = new BancoConexao();
 
         try {
             Class.forName("com.mysql.jdbc.Driver");

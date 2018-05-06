@@ -22,10 +22,11 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form action="${pageContext.request.contextPath}/vender" method="POST" >
+    <form name = "vender" action="${pageContext.request.contextPath}/vender" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Vender</title>
+
     </head>
     <body id="page-top">
         <form>
@@ -43,53 +44,39 @@
                         <h2>Vendas PetShop</h2>
                     </div>
                 </div>
+
+
                 <div class="col-md-8 order-md-1">
-                    <form  action="${pageContext.request.contextPath}/vender" method="POST">
-                        
-                        <div class="mb-3">
-                            <label for="cpf">CPF do cliente</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"></span>
-                                </div>
 
-                                <input type="text" class="form-control" id="cpf" name="cpfcliente" placeholder="000.000.000-00" value ="${cpfcliente}">
+                    <div class="mb-3">
+                        <label for="cpf">CPF do cliente</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"></span>
+                            </div>
 
-                                <button name="pesquisarcpf"  type="submit" >Pesquisar</button>
-                                <div class="invalid-feedback" style="width: 100%;">
-                                    CPF obrigatório.
-                                </div>
+                            <input type="text" class="form-control" id="cpf" name="cpfcliente" placeholder="000.000.000-00" value ="${resultado.cpfCliente}">
+
+                            <div class="invalid-feedback" style="width: 100%;">
+                                CPF obrigatório.
                             </div>
                         </div>
-                    </form>
-                    
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="primeironome">Primeiro nome</label>
-                            <input type="text" class="form-control" id="primeironome" placeholder="" value="${primeironome}">
+                    </div>
 
-                        </div>
 
-                    <!--div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="primeironome">Primeiro nome</label>
-                            <input type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                    <div class="mb-3">
+                        <label for="primeironome">Nome</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="primeironome" placeholder="" value="${resultado.nomeCliente}" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="ultimonome">Último nome</label>
-                            <input type="text" class="form-control" id="ultimonome" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Último nome necessário
                             </div>
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <label for="email">Email <span class="text-muted">(Opcional)</span></label>
-                        <input type="email" class="form-control" id="email" placeholder="voce@exemplo.com">
+                        <input type="email" class="form-control" id="email" placeholder="voce@exemplo.com" value ="${resultado.email}">
                         <div class="invalid-feedback">
                             Favor inserir um email válido para o frete.
                         </div>
@@ -97,7 +84,7 @@
 
                     <div class="mb-3">
                         <label for="endereco">Endereço</label>
-                        <input type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" required>
+                        <input type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value="${resultado.logradouro}"required>
                         <div class="invalid-feedback">
                             Favor inserir seu endereço de envio.
                         </div>
@@ -107,8 +94,8 @@
                     <div class="row">
                         <div class="col-md-5 mb-3">
                             <label for="pais">País</label>
-                            <select class="custom-select d-block w-100" id="pais" required>
-                                <option value="">Selecionar...</option>
+                            <select class="custom-select d-block w-100" id="pais"  required>
+                                <option value = "${resultado.pais}"</option>
                                 <option>Brasil</option>
                             </select>
                             <div class="invalid-feedback">
@@ -117,8 +104,8 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="estado">Estado</label>
-                            <select class="custom-select d-block w-100" id="estado" required>
-                                <option value="">Selecionar...</option>
+                            <select class="custom-select d-block w-100" id="estado"  required>
+                                <option value = "${resultado.estado}"</option>
                                 <option>São Paulo</option>
                                 <option>Rio de Janeiro</option>
                                 <option>São Paulo</option>
@@ -133,7 +120,7 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="cep">CEP</label>
-                            <input type="text" class="form-control" id="cep" placeholder="" required>
+                            <input type="text" class="form-control" id="cep" placeholder="" value = "${resultado.cep}" required>
                             <div class="invalid-feedback">
                                 CEP obrigatório
                             </div>
@@ -192,7 +179,7 @@
                         <hr class="mb-4">
                         <button class="btn btn-primary btn-lg btn-block" type="submit" name = "finalizarvenda">Finalizar Venda</button>
                         </form>
-                    </div-->
+                    </div>
                 </div>
 
                 <footer class="my-5 pt-5 text-muted text-center text-small">
@@ -238,7 +225,16 @@
 
             </script>
 
+            <script>
+                function pesquisarCPF() {
+
+                    var CPF = document.vender.cpfcliente.value
 
 
+                    //alert("O resultado é "+CPF)
+
+                }
+
+            </script>
     </body>
 </html>

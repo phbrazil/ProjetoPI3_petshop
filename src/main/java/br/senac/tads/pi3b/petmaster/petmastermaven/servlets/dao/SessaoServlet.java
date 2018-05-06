@@ -15,46 +15,33 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Sessao;
 
 /**
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "vender", urlPatterns = {"/vender"})
+@WebServlet(name = "sessao", urlPatterns = {"/sessao"})
 
-public class vender extends HttpServlet {
+public class SessaoServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String cpf = request.getParameter("cpfcliente");
+        boolean sessaovalida = false;
 
-        HttpSession sessao = null;
+        HttpSession sessaoatual = null;
 
-        //sessao.invalidate();
-        if (!cpf.equals("")) {
-            System.out.println("cpf é " + cpf);
+        Sessao sessao = new Sessao();
 
-            sessao = request.getSession();
+        sessaoatual = request.getSession();
+        sessaovalida = sessao.Sessao(sessaoatual);
 
-            sessao.setAttribute("primeironome", "achou caraio");
-            sessao.setAttribute("cpfcliente", cpf);
-
-            request.getRequestDispatcher("vender.jsp").forward(request, response);
-            sessao.invalidate();
-
-        } else  {
-            sessao = request.getSession();
-
-            sessao.setAttribute("primeironome", "Pesquise o CPF");
-
-            request.getRequestDispatcher("vender.jsp").forward(request, response);
-            sessao.invalidate();
+        if (sessaovalida == false) {
+            response.sendRedirect("index.html");
 
         }
-
-        sessao.invalidate();
 
     }
 

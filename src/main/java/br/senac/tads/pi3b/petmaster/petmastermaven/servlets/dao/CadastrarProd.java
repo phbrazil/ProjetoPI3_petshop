@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "cadastrarprod", urlPatterns = {"/cadastrarprod"})
 
-public class cadastrarprod extends HttpServlet {
+public class CadastrarProd extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -35,7 +35,7 @@ public class cadastrarprod extends HttpServlet {
         int qtdestoque = Integer.valueOf(request.getParameter("qtdestoque"));
         Produtos produtos = new Produtos(null, 0, null, null, 0, null);
 
-        bancoprod bancoprod = new bancoprod();
+        BancoProd bancoprod = new BancoProd();
 
         int qtdprodcadastrado = bancoprod.validacadastradoprod(codigobarrasprod);
 
