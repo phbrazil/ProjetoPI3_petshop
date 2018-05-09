@@ -56,8 +56,9 @@ public class consultaProd extends HttpServlet {
 
         } else {
 
+            request.setAttribute("resultado", "Produto não encontado");
 
-            request.getRequestDispatcher("naoEncontrado.jsp").forward(request, response);
+            request.getRequestDispatcher("consultaProd.jsp").forward(request, response);
 
         }
 

@@ -28,7 +28,7 @@
     <body id="page-top">
         <form>
 
-           <%@include  file="navbar.html" %>
+            <%@include  file="navbar.html" %>
 
             <div align ="center">
                 <br>
@@ -37,6 +37,7 @@
 
                 <h1 >Consultar Produto</h1>
                 <h2>Digite o código ou nome do produto</h2>
+
 
                 <div class="col-md-5 order-md-1">
 
@@ -59,4 +60,17 @@
                 </footer>
             </div>
     </body>
+    <script>
+
+
+        var resultado = "${resultado}"
+
+        if (resultado == "Produto não encontado") {
+            alert(resultado)
+
+        }
+
+
+
+    </script>
 </html>

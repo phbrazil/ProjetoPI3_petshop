@@ -51,8 +51,9 @@ public class consultaPet extends HttpServlet {
 
         } else {
 
+            request.setAttribute("resultado", "Pet não encontrado");
 
-            request.getRequestDispatcher("naoEncontrado.jsp").forward(request, response);
+            request.getRequestDispatcher("consultaPet.jsp").forward(request, response);
 
         }
 
