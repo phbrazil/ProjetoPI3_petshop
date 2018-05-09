@@ -93,13 +93,13 @@
                     <div class="row">
                         <div class="col-md-3 mb-3">
                             <label for="valor">Valor</label>
-                            <input class="form-control" id="valor" value = "" type="currency" >
+                            <input disabled class="form-control" id="valor" value = "" type="currency" >
 
                         </div>
                         
                         <div class="col-md-3 mb-3">
                             <label for="valor">Valor Desconto</label>
-                            <input class="form-control" id="valor" value = "" type="currency" >
+                            <input disabled class="form-control" id="valor" value = "" type="currency" >
 
                         </div>
                         
@@ -111,7 +111,7 @@
                         
                         <div class="col-md-3 mb-3">
                             <label for="valortotal">Valor Total</label>
-                            <input class="form-control" id="valor" value = "" type="currency" >
+                            <input disabled class="form-control" id="valor" value = "" type="currency" >
 
                         </div>
                         
