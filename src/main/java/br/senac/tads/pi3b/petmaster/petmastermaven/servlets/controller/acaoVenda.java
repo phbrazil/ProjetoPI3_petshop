@@ -1,6 +1,10 @@
-
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -13,22 +17,17 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "reset", urlPatterns = {"/reset"})
-public class Reset extends HttpServlet {
+@WebServlet(name = "acaoVenda", urlPatterns = {"/acaoVenda"})
+
+public class acaoVenda extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String emailreset = request.getParameter("emailreset");
+        String acaovenda = request.getParameter("acaovenda");
 
-        if (emailreset == null || !emailreset.contains("@")) {
-            request.getRequestDispatcher("loginerror.jsp").forward(request, response);
-
-        } else {
-            request.getRequestDispatcher("index.html").forward(request, response);
-
-        }
+        request.getRequestDispatcher("cadastrarProd.jsp").forward(request, response);
 
     }
 

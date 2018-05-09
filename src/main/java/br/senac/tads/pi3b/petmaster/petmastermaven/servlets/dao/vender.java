@@ -23,7 +23,7 @@ import javax.servlet.http.HttpSession;
  */
 @WebServlet(name = "vender", urlPatterns = {"/vender"})
 
-public class Vender extends HttpServlet {
+public class vender extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -31,7 +31,8 @@ public class Vender extends HttpServlet {
         
         boolean sessaovalida = false;
 
-        String cpf = request.getParameter("cpfcliente");
+        String cpfcliente = request.getParameter("cpfcliente");
+        String nomecliente = request.getParameter("nomecliente");
 
         HttpSession sessaoatual = null;
 
@@ -39,18 +40,18 @@ public class Vender extends HttpServlet {
         sessaoatual = request.getSession();
         sessaovalida = sessao.Sessao(sessaoatual);
 
-        if (!cpf.equals("")&& sessaovalida==true) {
+        if (!cpfcliente.equals("")) {
 
-            sessaoatual.setAttribute("primeironome", "achou caraio");
-            sessaoatual.setAttribute("cpfcliente", cpf);
+            sessaoatual.setAttribute("nomecliente", nomecliente);
+            sessaoatual.setAttribute("cpfcliente", cpfcliente);
 
             request.getRequestDispatcher("vender.jsp").forward(request, response);
 
         } else {
 
-            sessaoatual.setAttribute("primeironome", "Pesquise o CPF");
+            sessaoatual.setAttribute("nomecliente", "Pesquise o CPF");
 
-            request.getRequestDispatcher("vender.jsp").forward(request, response);
+            request.getRequestDispatcher("pesquisarcpf.jsp").forward(request, response);
 
         }
 

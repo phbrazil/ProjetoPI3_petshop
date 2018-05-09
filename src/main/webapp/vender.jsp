@@ -22,7 +22,7 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form name = "vender" action="${pageContext.request.contextPath}/vender" method="POST" >
+    <form name = "acaoVenda" action="${pageContext.request.contextPath}/acaoVenda" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Vender</title>
@@ -55,7 +55,7 @@
                                 <span class="input-group-text"></span>
                             </div>
 
-                            <input type="text" class="form-control" id="cpf" name="cpfcliente" placeholder="000.000.000-00" value ="${resultado.cpfCliente}" required>
+                            <input type="text" class="form-control" id="cpf" name="cpfcliente" placeholder="000.000.000-00" value ="${cpfcliente}" required>
 
                             <div class="invalid-feedback" style="width: 100%;">
                                 CPF obrigatório.
@@ -67,7 +67,7 @@
                     <div class="mb-3">
                         <label for="primeironome">Nome</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="primeironome" placeholder="" value="${resultado.nomeCliente}" required>
+                            <input type="text" class="form-control" id="primeironome" placeholder="" value="${nomecliente}" name="nomecliente" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
@@ -75,155 +75,108 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="email">Email <span class="text-muted">(Opcional)</span></label>
-                        <input type="email" class="form-control" id="email" placeholder="voce@exemplo.com" value ="${resultado.email}">
-                        <div class="invalid-feedback">
-                            Favor inserir um email válido para o frete.
-                        </div>
+                        <label for="codigoprod">Código do Produto <span class="text-muted">(Mandatório)</span></label>
+                        <input type="number" id="codigoprod" class="form-control" placeholder="" value ="">
+                        <button id="myBtn" formaction="consultaProd.jsp" onclick="Carrinho()">Pesquisar</button>
+
                     </div>
 
                     <div class="mb-3">
-                        <label for="endereco">Endereço</label>
-                        <input type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value="${resultado.logradouro}"required>
-                        <div class="invalid-feedback">
-                            Favor inserir seu endereço de envio.
-                        </div>
+                        <label for="descricaoprod">Descrição Produto</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="" value="">
+
                     </div>
 
 
                     <div class="row">
-                        <div class="col-md-5 mb-3">
-                            <label for="pais">País</label>
-                            <select class="custom-select d-block w-100" id="pais" value = "${resultado.pais}" required>
-                                <option value="">Selecionar...</option>
-                                <option>Brasil</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Favor selecionar o país.
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="estado">Estado</label>
-                            <select class="custom-select d-block w-100" id="estado" value = "${resultado.estado}" required>
-                                <option value = "${resultado.estado}">Selecionar...</option>
-                                <option>São Paulo</option>
-                                <option>Rio de Janeiro</option>
-                                <option>São Paulo</option>
-                                <option>São Paulo</option>
-                                <option>São Paulo</option>
-                                <option>São Paulo</option>
-
-                            </select>
-                            <div class="invalid-feedback">
-                                Favor selecionar um Estado..
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="cep">CEP</label>
-                            <input type="text" class="form-control" id="cep" placeholder="" value = "${resultado.cep}" required>
-                            <div class="invalid-feedback">
-                                CEP obrigatório
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="codigoprod">Código do produto</label>
-                            <input type="text" class="form-control" id="codigoprod" name="codigoprod" placeholder="" required>
-                            <input type = "button" value ="Pesquisar" onClick="PesquisarProd()">
-                            <div class="invalid-feedback">
-                                Código do produto obrigatório
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-6">
-                            <label for="descricao">Descrição</label>
-                            <input type="text" class="form-control" name = "descricao" id="descricao" placeholder="" required>
-                            <div class="invalid-feedback">
-                                Descrição obrigatória
-                            </div>
-                        </div>
-
                         <div class="col-md-3 mb-3">
                             <label for="valor">Valor</label>
-                            <input type="text" class="form-control" id="valor" placeholder="" required>
-                            <div class="invalid-feedback">
-                                Valor obrigatório
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="desconto">Desconto</label>
-                            <input type="text" class="form-control" id="desconto" placeholder="">
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="total">Valor Total</label>
-                            <input type="text" class="form-control" id="total" placeholder="" required>
-                            <div class="invalid-feedback">
-                                Total obrigatório
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="mb-4">
+                            <input class="form-control" id="valor" value = "" type="currency" >
 
+                        </div>
+                        
+                        <div class="col-md-3 mb-3">
+                            <label for="valor">Valor Desconto</label>
+                            <input class="form-control" id="valor" value = "" type="currency" >
 
-                    <div class="row">
-                        <div class="col-md-5 mb-3">
+                        </div>
+                        
+                        <div class="col-md-3 mb-3">
+                            <label for="quantidade">Quantidade</label>
+                            <input class="form-control" id="valor" value = "" type="number" >
+
+                        </div>
+                        
+                        <div class="col-md-3 mb-3">
+                            <label for="valortotal">Valor Total</label>
+                            <input class="form-control" id="valor" value = "" type="currency" >
+
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
                             <label for="pagamento">Pagamento</label>
-                            <select class="custom-select d-block w-100" id="pagamento"required>
+                            <select class="custom-select d-block w-100" id="pagamento" value = "" >
+                                <option value = "">Selecionar...</option>
                                 <option>Débito</option>
                                 <option>Crédito</option>
                                 <option>Cheque</option>
 
                             </select>
-                            <div class="invalid-feedback">
-                                Favor selecionar o pagamento.
-                            </div>
                         </div>
-
-                        <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit" name = "finalizarvenda">Finalizar Venda</button>
-                        </form>
                     </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit" formaction="${pageContext.request.contextPath}/finalizarVenda" name = "finalizarvenda">Finalizar Venda</button>
                 </div>
-
-                <footer class="my-5 pt-5 text-muted text-center text-small">
-                    <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">Privacidade</a></li>
-                        <li class="list-inline-item"><a href="#">Termos</a></li>
-                        <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
-                    </ul>
-                </footer>
             </div>
-            <script>
 
-                function PesquisarProd() {
+            <footer class="my-5 pt-5 text-muted text-center text-small">
+                <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Privacidade</a></li>
+                    <li class="list-inline-item"><a href="#">Termos</a></li>
+                    <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
+                </ul>
+            </footer>
+            </div>
 
-                    var teste = document.vender.codigoprod.value
+        </form>
 
-                    //alert("Hue Hue Hue " + teste)
-                    
-                    vender.descricao.value = "KKKKK FUNCIONOU"
-                    
+        <script>
+            var input = document.getElementById("codigoprod");
+            input.addEventListener("keyup", function (event) {
+                event.preventDefault();
+                if (event.keyCode === 13) {
+                    document.getElementById("myBtn").click();
                 }
+            });
+
+        </script>
+
+        <script>
+
+            function Carrinho() {
 
 
-            </script>
+                alert("shaudhsduhdsau")
 
-            <!-- Bootstrap core JavaScript
-            ================================================== -->
-            <!-- Placed at the end of the document so the pages load faster -->
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-            <script src="../../../../assets/js/vendor/popper.min.js"></script>
-            <script src="../../../../dist/js/bootstrap.min.js"></script>
-            <script src="../../../../assets/js/vendor/holder.min.js"></script>
-            <script>
+        </script>
+
+
+
+        <!-- Bootstrap core JavaScript
+=== === === === === === === === === === === === === === === === == -- ><!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="../../../../assets/js/vendor/popper.min.js"></script>
+        <script src="../../../../dist/js/bootstrap.min.js"></script>
+        <script src="../../../../assets/js/vendor/holder.min.js"></script>
+        <script>
                 // Example starter JavaScript for disabling form submissions if there are invalid fields
                 (function () {
                     'use strict';
-
                     window.addEventListener('load', function () {
                         // Fetch all the forms we want to apply custom Bootstrap validation styles to
                         var forms = document.getElementsByClassName('needs-validation');
-
                         // Loop over them and prevent submission
                         var validation = Array.prototype.filter.call(forms, function (form) {
                             form.addEventListener('submit', function (event) {
@@ -235,10 +188,11 @@
                             }, false);
                         });
                     }, false);
-                })();
+                }
+                )();
 
 
-            </script>
+        </script>
 
 
     </body>

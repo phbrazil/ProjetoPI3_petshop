@@ -5,8 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -25,8 +24,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author paulo.bezerra
  */
-@WebServlet(name = "consultaprod", urlPatterns = {"/consultaprod"})
-public class ConsultaProd extends HttpServlet {
+@WebServlet(name = "consultaCPF", urlPatterns = {"/consultaCPF"})
+public class consultaCPF extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -38,26 +37,25 @@ public class ConsultaProd extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        Date today = Calendar.getInstance().getTime();
 
-        String consultaprod = request.getParameter("consultaprod");
+        String cpfcliente = request.getParameter("cpfcliente");
 
-        BancoProd selectprod = new BancoProd();
+        Cliente cliente = new Cliente(null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+       
+        bancoCPF selectcpf = new bancoCPF();
 
-        Produtos produtos = new Produtos(null, 0, null, null, 0, null);
+        cliente = selectcpf.PesquisarCPF(cpfcliente);
+        
 
-        produtos = selectprod.PesquisarProduto(consultaprod);
+        if (cliente.getNomeCliente()!= null) {
 
-        if (produtos.getNomeprod() != null) {
+            request.setAttribute("resultado", cliente);
 
-            request.setAttribute("resultado", produtos);
-
-            request.getRequestDispatcher("consultaprodresult.jsp").forward(request, response);
+            request.getRequestDispatcher("dadosCliente.jsp").forward(request, response);
 
         } else {
 
-
-            request.getRequestDispatcher("naoencontrado.jsp").forward(request, response);
+            request.getRequestDispatcher("naoEncontrado.jsp").forward(request, response);
 
         }
 

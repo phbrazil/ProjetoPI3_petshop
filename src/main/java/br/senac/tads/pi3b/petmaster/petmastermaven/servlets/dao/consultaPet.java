@@ -5,15 +5,13 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -24,8 +22,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author paulo.bezerra
  */
-@WebServlet(name = "consultacpf", urlPatterns = {"/consultacpf"})
-public class ConsultaCPF extends HttpServlet {
+@WebServlet(name = "consultapet", urlPatterns = {"/consultapet"})
+public class consultaPet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -37,23 +35,22 @@ public class ConsultaCPF extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        String consultapet = request.getParameter("consultapet");
 
-        String cpfcliente = request.getParameter("cpfcliente");
+        bancoPet selectpet = new bancoPet();
 
-        Cliente cliente = new Cliente(null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-       
-        BancoCPF selectcpf = new BancoCPF();
+        Pets pets = new Pets(null, 0, null, null, 0, null);
 
-        cliente = selectcpf.PesquisarCPF(cpfcliente);
-        
+        pets = selectpet.PesquisarPet(consultapet);
 
-        if (cliente.getNomeCliente()!= null) {
+        if (pets.getNomepet() != null) {
 
-            request.setAttribute("resultado", cliente);
+            request.setAttribute("resultado", pets);
 
-            request.getRequestDispatcher("vender.jsp").forward(request, response);
+            request.getRequestDispatcher("consultapetresult.jsp").forward(request, response);
 
         } else {
+
 
             request.getRequestDispatcher("naoencontrado.jsp").forward(request, response);
 

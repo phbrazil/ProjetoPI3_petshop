@@ -20,12 +20,12 @@
 
         <!-- Custom styles for this template -->
         <link href="topodapagina.css" rel="stylesheet">
-    <form class="needs-validation" novalidate action="${pageContext.request.contextPath}/cadastrarpet" method="POST" >
+    <form class="needs-validation" novalidate action="${pageContext.request.contextPath}/cadastrarProd" method="POST" >
 
 
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cadastrar Pet</title>
+        <title>Cadastrar Produto</title>
     </head>
     <body id="page-top">
 
@@ -42,29 +42,29 @@
 
                 <div class="row">
                     <div class="col-md-4 mb-3">
-                        <label>Código do Pet</label>
-                        <input name="codigopet" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                        <label>Código do Produto</label>
+                        <input name="codigoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
                         <div class="invalid-feedback">
                             Código obrigatório
                         </div>
                     </div>
                     <div class="col-md-8 mb-3">
-                        <label>Nome do Pet</label>
-                        <input name="nomepet" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                        <label>Nome do Produto</label>
+                        <input name="nomeprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
                         <div class="invalid-feedback">
                             Nome obrigatório
                         </div>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label>Descrição do Pet</label>
-                        <input name="descricaopet" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                        <label>Descrição do Produto</label>
+                        <input name="descricaoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
                         <div class="invalid-feedback">
                             Descrição necessária
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <label for="categoriapet">Categoria</label>
-                        <select name ="categoriapet" class="custom-select d-block w-100" id="categoria" required>
+                        <label for="categoriaprod">Categoria</label>
+                        <select name ="categoriaprod" class="custom-select d-block w-100" id="categoria" required>
                             <option value="">Selecionar...</option>
                             <option>Cão</option>
                             <option>Gato</option>
@@ -80,15 +80,15 @@
 
 
                     <div class="col-md-4 mb-3">
-                        <label for="valorpet">Valor</label>
-                        <input name="valorpet" type="number" class="form-control" id="valor" pattern = "^\d+\.\d{2}" placeholder="00,00" required>
+                        <label for="valorprod">Valor</label>
+                        <input name="valorprod" type="number" class="form-control" id="valor" pattern = "^\d+\.\d{2}" placeholder="00,00" required>
                         <div class="invalid-feedback">
                             Favor inserir o Valor.
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <label for="qtdestoquepet">Quantidade</label>
-                        <input name="qtdestoquepet" type="number" class="form-control" id="qtdestoque" placeholder="1" required>
+                        <label for="qtdestoque">Quantidade</label>
+                        <input name="qtdestoque" type="number" class="form-control" id="qtdestoque" placeholder="1" required>
                         <div class="invalid-feedback">
                             Favor inserir a quantidade.
                         </div>

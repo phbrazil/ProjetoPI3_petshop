@@ -5,7 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -19,39 +19,39 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "alterarpet", urlPatterns = {"/alterarpet"})
+@WebServlet(name = "alterarProd", urlPatterns = {"/alterarProd"})
 
-public class AlterarPet extends HttpServlet {
+public class alterarProd extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         boolean deletado = false;
-        BancoPet bancopet = new BancoPet();
+        bancoProd bancoprod = new bancoProd();
 
         String alterar = String.valueOf(request.getParameter("alterar"));
         String excluir = String.valueOf(request.getParameter("excluir"));
 
         if (alterar.equals("alterar")) {
 
-            String nomepet = request.getParameter("nomepet");
-            String codigobarraspet = request.getParameter("codigopet");
-            String descricaopet = request.getParameter("descricaopet");
-            String categoriapet = request.getParameter("categoriapet");
-            double valorpet = Double.parseDouble(request.getParameter("valorpet"));
-            int qtdestoquepet = Integer.valueOf(request.getParameter("qtdestoquepet"));
-            Pets pets = new Pets(null, 0, null, null, 0, null);
+            String nomeprod = request.getParameter("nomeprod");
+            String codigobarrasprod = request.getParameter("codigoprod");
+            String descricaoprod = request.getParameter("descricaoprod");
+            String categoriaprod = request.getParameter("categoriaprod");
+            double valorprod = Double.parseDouble(request.getParameter("valorprod"));
+            int qtdestoque = Integer.valueOf(request.getParameter("qtdestoque"));
+            Produtos produtos = new Produtos(null, 0, null, null, 0, null);
 
-            pets = new Pets(nomepet, valorpet, codigobarraspet, descricaopet, qtdestoquepet, categoriapet);
+            produtos = new Produtos(nomeprod, valorprod, codigobarrasprod, descricaoprod, qtdestoque, categoriaprod);
 
-            bancopet.atualizarpet(pets);
+            bancoprod.atualizarprod(produtos);
 
-            request.getRequestDispatcher("cadastradosuccess.jsp").forward(request, response);
+            request.getRequestDispatcher("cadastradoSuccess.jsp").forward(request, response);
 
         } else if (excluir.equals("excluir")) {
 
-            deletado = bancopet.deletapet(String.valueOf(request.getParameter("codigopet")));
+            deletado = bancoprod.deletaprod(String.valueOf(request.getParameter("codigoprod")));
 
             if (deletado == true) {
                 request.getRequestDispatcher("deletado.jsp").forward(request, response);

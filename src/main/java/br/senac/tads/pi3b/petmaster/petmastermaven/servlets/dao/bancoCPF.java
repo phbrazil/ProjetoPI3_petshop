@@ -15,7 +15,7 @@ import java.util.ArrayList;
  *
  * @author paulo.bezerra
  */
-public class BancoCPF {
+public class bancoCPF {
 
     private Connection conexao = null;
 
@@ -27,7 +27,7 @@ public class BancoCPF {
 
         String select = "";
 
-        BancoConexao bancoconexao = new BancoConexao();
+        bancoConexao bancoconexao = new bancoConexao();
 
         try {
             Class.forName("com.mysql.jdbc.Driver");

@@ -1,6 +1,12 @@
+<%-- 
+    Document   : consultaprodresult
+    Created on : Mar 29, 2018, 12:44:33 PM
+    Author     : paulo.bezerra
+--%>
+
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
@@ -8,7 +14,7 @@
 
 
 <%-- 
-    Document   : consultarpetresult
+    Document   : consultarprod
     Created on : Mar 29, 2018, 12:13:17 PM
     Author     : paulo.bezerra
 --%>
@@ -31,7 +37,7 @@
         <link href="css/topodapagina.css" rel="stylesheet">
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Consultar Pet</title>
+        <title>Consultar Produto</title>
     </head>
     <body id="page-top">
         <form>
@@ -45,10 +51,10 @@
             <br>
             <br>
 
-            <h1 >Consultar Pet</h1>
+            <h1 >Consultar Produto</h1>
             <h2>Resultado</h2>
 
-            <input type="text" name="consultapet" />
+            <input type="text" name="consultaprod" />
             <input type="submit" name="pesquisar" value ="Pesquisar" /><br><br>
 
         </div>   
@@ -61,35 +67,35 @@
 
 
             <div class="col-md-6 mb-3">
-                <form class="needs-validation" novalidate action="${pageContext.request.contextPath}/alterarpet" method="POST" >
+                <form class="needs-validation" novalidate action="${pageContext.request.contextPath}/alterarProd" method="POST" >
 
 
                     <div class="row">
                         <div class="col-md-4 mb-3">
-                            <label>Código do Pet</label>
-                            <input name="codigopet" type="text" class="form-control" id="primeironome" value="${resultado.codigopet}" required>
+                            <label>Código do Produto</label>
+                            <input name="codigoprod" type="text" class="form-control" id="primeironome" value="${resultado.codigoprod}" required>
                             <div class="invalid-feedback">
                                 Código obrigatório
                             </div>
                         </div>
                         <div class="col-md-8 mb-3">
-                            <label>Nome do Pet</label>
-                            <input name="nomepet" type="text" class="form-control" id="primeironome" value="${resultado.nomepet}" required>
+                            <label>Nome do Produto</label>
+                            <input name="nomeprod" type="text" class="form-control" id="primeironome" value="${resultado.nomeprod}" required>
                             <div class="invalid-feedback">
                                 Nome obrigatório
                             </div>
                         </div>
                         <div class="col-md-12 mb-3">
                             <label>Descrição do Pet</label>
-                            <input name="descricaopet" type="text" class="form-control" id="primeironome"  value="${resultado.descricaopet}" required>
+                            <input name="descricaoprod" type="text" class="form-control" id="primeironome"  value="${resultado.descricaoprod}" required>
                             <div class="invalid-feedback">
                                 Descrição necessária
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="categoriapet">Categoria</label>
-                            <select name ="categoriapet" class="custom-select d-block w-100" id="categoria" required>
-                                <option><c:out value = "${resultado.categoriapet}"></c:out></option>
+                            <label for="categoriaprod">Categoria</label>
+                            <select name ="categoriaprod" class="custom-select d-block w-100" id="categoria" required>
+                                <option><c:out value = "${resultado.categoriaprod}"></c:out></option>
                                     <option>Cão</option>
                                     <option>Gato</option>
                                     <option>Peixe</option>
@@ -104,15 +110,15 @@
 
 
                             <div class="col-md-4 mb-3">
-                                <label for="valorpet">Valor</label>
-                                <input name="valorpet" type="number" class="form-control" id="valor"  value="${resultado.valorpet}" required>
+                                <label for="valorprod">Valor</label>
+                                <input name="valorprod" type="number" class="form-control" id="valor"  value="${resultado.valorprod}" required>
                             <div class="invalid-feedback">
                                 Favor inserir o Valor.
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="qtdestoquepet">Quantidade</label>
-                            <input name="qtdestoquepet" type="number" class="form-control" id="qtdestoque" value="${resultado.qtdestoquepet}" required>
+                            <label for="qtdestoque">Quantidade</label>
+                            <input name="qtdestoque" type="number" class="form-control" id="qtdestoque" value="${resultado.qtdestoque}" required>
                             <div class="invalid-feedback">
                                 Favor inserir a quantidade.
                             </div>

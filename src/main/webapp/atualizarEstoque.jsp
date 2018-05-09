@@ -22,7 +22,7 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form action="${pageContext.request.contextPath}/acaocadastrar" method="POST" >
+    <form action="${pageContext.request.contextPath}/acaoCadastrar" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cadastrar</title>
@@ -34,13 +34,13 @@
     <form>
 
 
-       <%@include  file="navbar.html" %>
+        <%@include  file="navbar.html" %>
 
         <div align ="center">
             <br>
             <br>
             <br>
-            <form  action="acaocadastrar"  method="POST">
+            <form  action="acaoCadastrar"  method="POST">
 
                 <div class="col-md-4 mb-3">
                     <select name ="acaocadastrar" class="custom-select d-block w-100" id="acaoproduto" required>

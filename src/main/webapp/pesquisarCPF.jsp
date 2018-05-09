@@ -22,7 +22,7 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form name = "consultacpf" action="${pageContext.request.contextPath}/consultacpf" method="POST" >
+    <form name = "consultaCPF" action="${pageContext.request.contextPath}/consultaCPF" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Vender</title>

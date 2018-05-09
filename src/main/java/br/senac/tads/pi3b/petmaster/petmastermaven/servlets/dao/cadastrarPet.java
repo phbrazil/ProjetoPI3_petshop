@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "cadastrarpet", urlPatterns = {"/cadastrarpet"})
 
-public class CadastrarPet extends HttpServlet {
+public class cadastrarPet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -35,7 +35,7 @@ public class CadastrarPet extends HttpServlet {
         int qtdestoquepet = Integer.valueOf(request.getParameter("qtdestoquepet"));
         Pets pets = new Pets(null, 0, null, null, 0, null);
 
-        BancoPet bancopet = new BancoPet();
+        bancoPet bancopet = new bancoPet();
 
         int qtdpetcadastrado = bancopet.validacadastradopet(codigobarraspet);
 

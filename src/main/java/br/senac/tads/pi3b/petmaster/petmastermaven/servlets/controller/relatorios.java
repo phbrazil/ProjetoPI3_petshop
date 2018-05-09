@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author paulo.bezerra
  */
 @WebServlet(name = "relatorios", urlPatterns = {"/relatorios"})
-public class Relatorios extends HttpServlet {
+public class relatorios extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -55,7 +55,7 @@ public class Relatorios extends HttpServlet {
         }*/
         
         
-        request.getRequestDispatcher("relatoriosresult.jsp").forward(request, response);
+        request.getRequestDispatcher("relatoriosResult.jsp").forward(request, response);
 
     }
 

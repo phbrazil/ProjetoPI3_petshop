@@ -17,24 +17,17 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "acaocadastrar", urlPatterns = {"/acaocadastrar"})
+@WebServlet(name = "finalizarVenda", urlPatterns = {"/finalizarVenda"})
 
-public class AcaoCadastrar extends HttpServlet {
+public class finalizarVenda extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String acaocadastrar = request.getParameter("acaocadastrar");
+        String acaovenda = request.getParameter("acaovenda");
 
-        if (acaocadastrar.equals("Cadastrar Produto")) {
-
-            request.getRequestDispatcher("cadastrarprod.jsp").forward(request, response);
-
-        } else if (acaocadastrar.equals("Cadastrar Pet")) {
-            request.getRequestDispatcher("cadastrarpet.jsp").forward(request, response);
-
-        }
+        request.getRequestDispatcher("vendaSuccess.jsp").forward(request, response);
 
     }
 
