@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "alterarpet", urlPatterns = {"/alterarpet"})
+@WebServlet(name = "alterarPet", urlPatterns = {"/alterarPet"})
 
 public class alterarPet extends HttpServlet {
 
@@ -47,7 +47,7 @@ public class alterarPet extends HttpServlet {
 
             bancopet.atualizarpet(pets);
 
-            request.getRequestDispatcher("cadastradosuccess.jsp").forward(request, response);
+            request.getRequestDispatcher("cadastradoSuccess.jsp").forward(request, response);
 
         } else if (excluir.equals("excluir")) {
 

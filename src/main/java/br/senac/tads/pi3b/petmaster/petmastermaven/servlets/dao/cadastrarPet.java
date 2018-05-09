@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "cadastrarpet", urlPatterns = {"/cadastrarpet"})
+@WebServlet(name = "cadastrarPet", urlPatterns = {"/cadastrarPet"})
 
 public class cadastrarPet extends HttpServlet {
 
@@ -44,14 +44,14 @@ public class cadastrarPet extends HttpServlet {
 
             
             bancopet.gravarpet(pets);
-            request.getRequestDispatcher("cadastradosuccess.jsp").forward(request, response);
+            request.getRequestDispatcher("cadastradoSuccess.jsp").forward(request, response);
 
         } else {
 
             request.setAttribute("codigobarras", codigobarraspet);
             
 
-            request.getRequestDispatcher("jacadastrado.jsp").forward(request, response);
+            request.getRequestDispatcher("jaCadastrado.jsp").forward(request, response);
 
         }
 

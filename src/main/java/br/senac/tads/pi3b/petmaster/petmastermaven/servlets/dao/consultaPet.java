@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author paulo.bezerra
  */
-@WebServlet(name = "consultapet", urlPatterns = {"/consultapet"})
+@WebServlet(name = "consultaPet", urlPatterns = {"/consultaPet"})
 public class consultaPet extends HttpServlet {
 
     @Override
@@ -47,12 +47,12 @@ public class consultaPet extends HttpServlet {
 
             request.setAttribute("resultado", pets);
 
-            request.getRequestDispatcher("consultapetresult.jsp").forward(request, response);
+            request.getRequestDispatcher("consultaPetResult.jsp").forward(request, response);
 
         } else {
 
 
-            request.getRequestDispatcher("naoencontrado.jsp").forward(request, response);
+            request.getRequestDispatcher("naoEncontrado.jsp").forward(request, response);
 
         }
 

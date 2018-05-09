@@ -55,7 +55,7 @@
                                 <span class="input-group-text"></span>
                             </div>
 
-                            <input type="text" class="form-control" id="cpf" name="cpfcliente" placeholder="000.000.000-00" value ="${cpfcliente}" required>
+                            <input disabled type="text" class="form-control" id="cpf" name="cpfcliente" placeholder="000.000.000-00" value ="${cpfcliente}" required>
 
                             <div class="invalid-feedback" style="width: 100%;">
                                 CPF obrigatório.
@@ -67,7 +67,7 @@
                     <div class="mb-3">
                         <label for="primeironome">Nome</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="primeironome" placeholder="" value="${nomecliente}" name="nomecliente" required>
+                            <input disabled type="text" class="form-control" id="primeironome" placeholder="" value="${nomecliente}" name="nomecliente" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
@@ -77,7 +77,9 @@
                     <div class="mb-3">
                         <label for="codigoprod">Código do Produto <span class="text-muted">(Mandatório)</span></label>
                         <input type="number" id="codigoprod" class="form-control" placeholder="" value ="">
-                        <button id="myBtn" formaction="consultaProd.jsp" onclick="Carrinho()">Pesquisar</button>
+                        <br>
+                        <button id="pesquisarprod" formaction="consultaProd.jsp" >Pesquisar</button>
+                        <button id="addcarrinho" formaction="consultaProd.jsp" >Adicionar no Carrinho</button>
 
                     </div>
 
@@ -152,14 +154,6 @@
 
         </script>
 
-        <script>
-
-            function Carrinho() {
-
-
-                alert("shaudhsduhdsau")
-
-        </script>
 
 
 
