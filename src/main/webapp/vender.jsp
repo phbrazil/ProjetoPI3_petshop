@@ -55,7 +55,7 @@
                                 <span class="input-group-text"></span>
                             </div>
 
-                            <input disabled type="text" class="form-control" id="cpf" name="cpfcliente" placeholder="000.000.000-00" value ="${cpfcliente}" required>
+                            <input readonly type="text" class="form-control" id="cpf" name="cpfcliente" placeholder="000.000.000-00" value ="${cpfcliente}" required>
 
                             <div class="invalid-feedback" style="width: 100%;">
                                 CPF obrigatório.
@@ -67,7 +67,7 @@
                     <div class="mb-3">
                         <label for="primeironome">Nome</label>
                         <div class="input-group">
-                            <input disabled type="text" class="form-control" id="primeironome" placeholder="" value="${nomecliente}" name="nomecliente" required>
+                            <input readonly type="text" class="form-control" id="primeironome" placeholder="" value="${nomecliente}" name="nomecliente" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
@@ -93,13 +93,13 @@
                     <div class="row">
                         <div class="col-md-3 mb-3">
                             <label for="valor">Valor</label>
-                            <input disabled class="form-control" id="valor" value = "" type="currency" >
+                            <input readonly class="form-control" id="valor" value = "" type="currency" >
 
                         </div>
                         
                         <div class="col-md-3 mb-3">
                             <label for="valor">Valor Desconto</label>
-                            <input disabled class="form-control" id="valor" value = "" type="currency" >
+                            <input readonly class="form-control" id="valor" value = "" type="currency" >
 
                         </div>
                         
@@ -111,7 +111,7 @@
                         
                         <div class="col-md-3 mb-3">
                             <label for="valortotal">Valor Total</label>
-                            <input disabled class="form-control" id="valor" value = "" type="currency" >
+                            <input readonly class="form-control" id="valor" value = "" type="currency" >
 
                         </div>
                         

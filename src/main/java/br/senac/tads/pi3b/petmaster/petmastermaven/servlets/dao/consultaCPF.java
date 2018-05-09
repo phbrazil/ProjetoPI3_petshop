@@ -37,17 +37,15 @@ public class consultaCPF extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-
         String cpfcliente = request.getParameter("cpfcliente");
 
         Cliente cliente = new Cliente(null, null, null, null, null, null, null, null, null, null, null, null, null, null);
-       
+
         bancoCPF selectcpf = new bancoCPF();
 
         cliente = selectcpf.PesquisarCPF(cpfcliente);
-        
 
-        if (cliente.getNomeCliente()!= null) {
+        if (cliente.getNomeCliente() != null) {
 
             request.setAttribute("resultado", cliente);
 
@@ -55,7 +53,9 @@ public class consultaCPF extends HttpServlet {
 
         } else {
 
-            request.getRequestDispatcher("naoEncontrado.jsp").forward(request, response);
+            request.setAttribute("resultado", "CPF não encontrado");
+
+            request.getRequestDispatcher("pesquisarCPF.jsp").forward(request, response);
 
         }
 

@@ -53,7 +53,8 @@ public class bancoCPF {
                 cliente.setCelular(result.getString("celular"));
                 cliente.setEmail(result.getString("email"));
                 cliente.setSexo(result.getString("sexo"));
-                cliente.setEstado(result.getString("estadocivil"));
+                cliente.setEstado(result.getString("estado"));
+                cliente.setEstadoCivil(result.getString("estadocivil"));
                 cliente.setNascimento(result.getDate("nascimento"));
                 cliente.setListaCliente(cliente);
 

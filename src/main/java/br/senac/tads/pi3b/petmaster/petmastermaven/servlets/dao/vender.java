@@ -51,7 +51,7 @@ public class vender extends HttpServlet {
 
             sessaoatual.setAttribute("nomecliente", "Pesquise o CPF");
 
-            request.getRequestDispatcher("pesquisarcpf.jsp").forward(request, response);
+            request.getRequestDispatcher("pesquisarCPF.jsp").forward(request, response);
 
         }
 
