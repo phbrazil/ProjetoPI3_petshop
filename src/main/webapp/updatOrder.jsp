@@ -1,7 +1,7 @@
-<%-- 
-    Document   : updatOrder
-    Created on : May 15, 2012, 6:59:54 PM
-    Author     : Diaa
+<<%-- 
+    Document   : vender
+    Created on : May 29, 2018, 12:13:17 PM
+    Author     : paulo.bezerra
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -40,7 +40,7 @@
   }
   catch(Exception e)
   {
-      response.sendRedirect("buy.jsp");//// On error it will send back to addRecord.jsp page
+      response.sendRedirect("vender.jsp");//// On error it will send back to addRecord.jsp page
   }
   
 

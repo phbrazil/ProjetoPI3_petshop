@@ -35,12 +35,12 @@ public class bancoCPF {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select * from clientes where cpf  = '" + CPF + "'";
+            select = "select * from clientes where cpfcliente  = '" + CPF + "'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
 
-                cliente.setCPFcliente(result.getString("cpf"));
+                cliente.setCPFcliente(result.getString("cpfcliente"));
                 cliente.setNomeCliente(result.getString("nome"));
                 cliente.setLogradouro(result.getString("logradouro"));
                 cliente.setBairro(result.getString("bairro"));
