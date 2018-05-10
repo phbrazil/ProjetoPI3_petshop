@@ -38,6 +38,8 @@ public class bancoProd {
                     + "'," + produtos.getValorprod() + ",now(),'"
                     + produtos.getDescricaoprod() + "','" + produtos.getCategoriaprod() + "'," + produtos.getQtdestoque() + ");");
 
+            
+            
             conexao.close();
 
         } catch (Exception e) {
