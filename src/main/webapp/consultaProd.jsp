@@ -20,7 +20,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/topodapagina.css" rel="stylesheet">
-    <form action="${pageContext.request.contextPath}/consultaProd" method="POST" >
+    <form name = "consultaprod" action="${pageContext.request.contextPath}/consultaProd" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Consultar Produto</title>
@@ -64,6 +64,7 @@
 
 
         var resultado = "${resultado}"
+        
 
         if (resultado == "Produto não encontado") {
             alert(resultado)
