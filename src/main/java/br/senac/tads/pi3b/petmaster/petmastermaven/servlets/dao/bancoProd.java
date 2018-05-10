@@ -101,7 +101,6 @@ public class bancoProd {
                 produtos.setQtdestoque(result.getInt("quantidadeprod"));
                 produtos.setListaProd(produtos);
 
-                System.out.println(produtos.getListaProd().get(0).getNomeprod() + "huahhadusahuda");
 
             }
 
