@@ -18,13 +18,16 @@ public class AcessoLogin {
 
     private Connection conexao = null;
 
+    private String username = null;
+    private String nomeUser = null;
+    private String password = null;
 
     public boolean ValidaAcesso(LoginDados logindados) {
 
         boolean usuarionabase = false;
         String select = "";
 
-        long validado = 0;
+        //long validado = 0;
         bancoConexao bancoconexao = new bancoConexao();
 
         try {
@@ -33,19 +36,26 @@ public class AcessoLogin {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select count(*) validado from usuarios where username = '" + logindados.getUserName() + "' and password = '" + logindados.getPassword() + "'";
+
+            //select = "select count(*) validado from usuarios where username = '" + logindados.getUserName() + "' and password = '" + logindados.getPassword() + "'";
+            select = "select nomeuser, username, password from usuarios where username = '" + logindados.getUserName() + "' and password = '" + logindados.getPassword() + "'";
+
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
-                validado = result.getInt("validado");
+                username = result.getString("username");
+                password = result.getString("password");
+                nomeUser = result.getString("nomeuser");
 
             }
-            if (validado == 0) {
-                usuarionabase = false;
+            if (username.equals(logindados.getUserName()) && password.equals(logindados.getPassword())) {
+
+                usuarionabase = true;
+                logindados.setNomeUser(nomeUser);
 
             } else {
 
-                usuarionabase = true;
+                usuarionabase = false;
 
             }
 

@@ -41,13 +41,9 @@ public class login extends HttpServlet {
 
         acessopermitido = acessologin.ValidaAcesso(logindados);
 
-        if (acessopermitido == true && logindados.getUserName().equals("visitante@senac.com")) {
-            request.setAttribute("username", "aluno do terceiro semestre");
-            request.getRequestDispatcher("Home.jsp").forward(request, response);
+        if (acessopermitido == true) {
 
-        } else if (acessopermitido == true) {
-
-            request.setAttribute("username", logindados.getUserName());
+            request.setAttribute("NomeDoUser", logindados.getNomeUser());
             request.getRequestDispatcher("Home.jsp").forward(request, response);
 
         } else {

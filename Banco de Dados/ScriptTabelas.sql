@@ -10,11 +10,11 @@ CREATE TABLE Usuarios(
   PRIMARY KEY (CodigoUser));
 
 
-INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Paulo Henrique Bezerra","Paulo.Bezerra@senac.com","123");
-INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Lucas Medeiros","Lucas.Medeiros@senac.com","123");
-INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Andre Pereira","Andre.Pereira@senac.com","123");
-INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Pedro Paulo Olivira","Pedro.Oliveira@senac.com","123");
-INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Visitante","visitante@senac.com","123");
+INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Paulo Henrique Bezerra","paulo.bezerra@senac.com","123");
+INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Lucas Medeiros","lucas.medeiros@senac.com","123");
+INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Andre Pereira","andre.pereira@senac.com","123");
+INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Pedro Paulo Olivira","pedro.oliveira@senac.com","123");
+INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Aluno do terceiro semestre","visitante@senac.com","123");
 
 
 CREATE TABLE produtos(
