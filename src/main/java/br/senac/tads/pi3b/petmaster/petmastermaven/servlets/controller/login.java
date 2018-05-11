@@ -5,6 +5,8 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.AcessoLogin;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.LoginDados;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -25,24 +27,31 @@ public class login extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        LoginDados logindados = new LoginDados();
+
+        boolean acessopermitido = false;
+
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        if (username.equals("senac@senac.com") && password.equals("123")) {
+        logindados.setUsername(username);
+        logindados.setPassword(password);
+
+        AcessoLogin acessologin = new AcessoLogin();
+
+        acessopermitido = acessologin.ValidaAcesso(logindados);
+
+        if (acessopermitido == true && logindados.getUserName().equals("visitante@senac.com")) {
             request.setAttribute("username", "aluno do terceiro semestre");
             request.getRequestDispatcher("Home.jsp").forward(request, response);
 
-        } else if (username.equals("paulo@senac.com") && password.equals("123")
-                || username.equals("lucas@senac.com") && password.equals("123")
-                || username.equals("pedro@senac.com") && password.equals("123")
-                || username.equals("andre@senac.com") && password.equals("123")) {
+        } else if (acessopermitido == true) {
 
-            request.setAttribute("username", username);
-            request.setAttribute("password", password);
+            request.setAttribute("username", logindados.getUserName());
             request.getRequestDispatcher("Home.jsp").forward(request, response);
 
         } else {
-            request.getRequestDispatcher("loginerror.jsp").forward(request, response);
+            request.getRequestDispatcher("loginError.jsp").forward(request, response);
 
         }
 

@@ -2,6 +2,21 @@ drop database PetMaster;
 CREATE DATABASE PetMaster;
 USE PetMaster;
 
+CREATE TABLE Usuarios(
+  CodigoUser INT NOT NULL AUTO_INCREMENT,
+  NomeUser Varchar (30) NOT NULL,
+  Username VARCHAR(50) NOT NULL,
+  Password VARCHAR(20), 
+  PRIMARY KEY (CodigoUser));
+
+
+INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Paulo Henrique Bezerra","Paulo.Bezerra@senac.com","123");
+INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Lucas Medeiros","Lucas.Medeiros@senac.com","123");
+INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Andre Pereira","Andre.Pereira@senac.com","123");
+INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Pedro Paulo Olivira","Pedro.Oliveira@senac.com","123");
+INSERT INTO Usuarios(NomeUser, username,Password) VALUES ("Visitante","visitante@senac.com","123");
+
+
 CREATE TABLE produtos(
   idprod INT NOT NULL AUTO_INCREMENT,
   codigobarrasprod Varchar (30) NOT NULL,

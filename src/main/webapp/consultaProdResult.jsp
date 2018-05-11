@@ -52,7 +52,6 @@
             <br>
 
             <h1 >Consultar Produto</h1>
-            <h2>Resultado</h2>
 
             <input type="text" name="consultaprod" />
             <input type="submit" name="pesquisar" value ="Pesquisar" /><br><br>

@@ -28,15 +28,17 @@ public class acaoConsulta extends HttpServlet {
         String acaoconsulta = request.getParameter("acaoconsulta");
 
         if (acaoconsulta.equals("Consultar Produto")) {
-                        System.out.println("to aqui no prod");
-
+            System.out.println("to aqui no prod");
 
             request.getRequestDispatcher("consultaProd.jsp").forward(request, response);
 
         } else if (acaoconsulta.equals("Consultar Pet")) {
-                        System.out.println("to aqui no pet");
+            System.out.println("to aqui no pet");
 
             request.getRequestDispatcher("consultaPet.jsp").forward(request, response);
+
+        } else if (acaoconsulta.equals("Listar Estoque Produtos")) {
+            request.getRequestDispatcher("EstoqueProd.jsp").forward(request, response);
 
         }
 

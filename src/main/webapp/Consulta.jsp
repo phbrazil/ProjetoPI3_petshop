@@ -47,6 +47,7 @@
                         <option value="">Selecionar...</option>
                         <option name ="consultaprod" >Consultar Produto</option>
                         <option name ="consultapet" >Consultar Pet</option>
+                        <option name ="listarestoqueprod" >Listar Estoque Produtos</option>
 
 
                     </select>

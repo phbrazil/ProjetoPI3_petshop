@@ -46,7 +46,6 @@
             <br>
 
             <h1 >Consultar Pet</h1>
-            <h2>Resultado</h2>
 
             <input type="text" name="consultapet" />
             <input type="submit" name="pesquisar" value ="Pesquisar" /><br><br>
