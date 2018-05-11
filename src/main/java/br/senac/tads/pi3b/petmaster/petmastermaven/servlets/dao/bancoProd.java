@@ -87,7 +87,7 @@ public class bancoProd {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select * from produtos where nomeprod like '%" + buscaprod + "%' or codigobarrasprod = '" + buscaprod + "'";
+            select = "select * from produtos where codigobarrasprod = '" + buscaprod.trim() + "'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {

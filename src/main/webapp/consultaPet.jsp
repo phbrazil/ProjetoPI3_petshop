@@ -36,7 +36,7 @@
                 <br>
                 <br>
                 <h1 >Consultar Pet</h1>
-                <h2>Digite o código ou nome do Pet</h2>
+                <h2>Digite o código do Pet</h2>
 
                 <div class="col-md-5 order-md-1">
 

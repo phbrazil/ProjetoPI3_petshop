@@ -36,7 +36,7 @@
                 <br>
 
                 <h1 >Consultar Produto</h1>
-                <h2>Digite o código ou nome do produto</h2>
+                <h2>Digite o código do produto</h2>
 
 
                 <div class="col-md-5 order-md-1">
@@ -65,9 +65,15 @@
 
         var resultado = "${resultado}"
 
+        var prodalterado = "${prodAlterado}"
+
 
         if (resultado == "Produto não encontado") {
             alert(resultado)
+
+        } else if (prodalterado == "Produto Alterado") {
+            
+            alert(prodalterado)
 
         }
 

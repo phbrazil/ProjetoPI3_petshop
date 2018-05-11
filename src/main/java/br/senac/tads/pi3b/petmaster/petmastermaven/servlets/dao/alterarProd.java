@@ -47,7 +47,9 @@ public class alterarProd extends HttpServlet {
 
             bancoprod.atualizarprod(produtos);
 
-            request.getRequestDispatcher("cadastradoSuccess.jsp").forward(request, response);
+            request.setAttribute("prodAlterado", "Produto Alterado");
+
+            request.getRequestDispatcher("consultaProd.jsp").forward(request, response);
 
         } else if (excluir.equals("excluir")) {
 
@@ -56,8 +58,8 @@ public class alterarProd extends HttpServlet {
             if (deletado == true) {
                 request.getRequestDispatcher("deletado.jsp").forward(request, response);
 
-            }else{
-                
+            } else {
+
                 System.out.println("falhou na hora de deletar");
             }
 

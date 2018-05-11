@@ -86,7 +86,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 mb-3">
-                            <label>Descrição do Pet</label>
+                            <label>Descrição do Produto</label>
                             <input name="descricaoprod" type="text" class="form-control" id="primeironome"  value="${resultado.descricaoprod}" required>
                             <div class="invalid-feedback">
                                 Descrição necessária

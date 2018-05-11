@@ -18,12 +18,27 @@
         conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/PetMaster", "root", "admin");
 
         PreparedStatement listagemProdutos = null;
-        ResultSet selectProduto = null;
-        String sqlSelectRecord = null;
+        PreparedStatement Produtosqtd = null;
 
+        ResultSet selectProduto = null;
+        ResultSet selectcountProduto = null;
+
+        String sqlSelectRecord = null;
+        String sqlSelectqtd = null;
+        int quantidadeprodutos = 0;
         sqlSelectRecord = "SELECT * FROM produtos";
+        sqlSelectqtd = "SELECT COUNT(*) as quantidadeprod FROM produtos";
+
         listagemProdutos = conexao.prepareStatement(sqlSelectRecord);
+        Produtosqtd = conexao.prepareStatement(sqlSelectqtd);
         selectProduto = listagemProdutos.executeQuery();
+        selectcountProduto = Produtosqtd.executeQuery();
+
+        while (selectcountProduto.next()) {
+
+            quantidadeprodutos = selectcountProduto.getInt("quantidadeprod");
+
+        }
     %>
     <head>
         <!-- Bootstrap core CSS -->
@@ -39,7 +54,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/topodapagina.css" rel="stylesheet">
-    <form name = "consultaprod" action="${pageContext.request.contextPath}/consultaProd" method="POST" >
+    <form name = "consultaProd" action="${pageContext.request.contextPath}/consultaProd" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Estoque Produtos</title>
@@ -52,37 +67,38 @@
             <br>
             <br>
             <br>
-            <h1>Estoque Produtos</h1>
-            <table border='2' cellpadding='10' width='900'>
+            <h2>Estoque de Produtos</h2>
+            <table border='2' cellpadding='10' width='1100'>
                 <tr>
                     <td  bgcolor="#33CCCC">Linha</td>
                     <td  bgcolor="#33CCCC">Produto ID</td>
                     <td  bgcolor="#33CCCC">Nome do Produto</td>
-                    <td  bgcolor="#33CCCC">Quantitade do Produto</td>
+                    <td  bgcolor="#33CCCC">Quantidade do Produto</td>
                     <td  bgcolor="#33CCCC">Categoria do Produto</td>
                     <td  bgcolor="#33CCCC">Valor</td> 
                     <td  bgcolor="#33CCCC">Alterar Produto</td> 
                 </tr>
-                <%
-                    int linha = 1;
+                <%                    int linha = 1;
+                    String[] listaprodutos = new String[quantidadeprodutos];
                     while (selectProduto.next()) {
+                        listaprodutos[linha - 1] = selectProduto.getString("idprod");
+
+
                 %>
                 <tr>
                     <td bgcolor="#FF9900"><%=linha%></td>
-                    <td><%=selectProduto.getInt("idprod")%></td>
+                    <td><input readonly name ="idproduto<%=linha - 1%>" type ="text" value = "<%=listaprodutos[linha - 1]%>"</td>
                     <td><%=selectProduto.getString("nomeprod")%></td>
                     <td><%=selectProduto.getInt("quantidadeprod")%></td>
                     <td><%=selectProduto.getString("categoriaprod")%></td>
                     <td><%=selectProduto.getString("valor")%></td> 
+
                 
-                
-                <td><input type="submit" name="alterar" value ="Alterar" /><br>
-                    <!--span lang="en-us"><a href="consultaProdResult.jsp">Alterar</a></span--></b></td>
+
+                    <td><input  type="submit" name="alterar" value ="Alterar" /><br>
+                        <!--span lang="en-us"><a href="consultaProdResult.jsp">Alterar</a></span--></b></td>
                 <tr>
-                    <%
-                            linha++;
-                        }
-                    %>
+                    <%}                                 %>
             </table>
         </div>
 
@@ -116,6 +132,20 @@
 
 </form>
 </body>
+
+<script>
+
+
+    var teste = document.consultaprod.idproduto.value
+
+
+    alert(teste)
+
+
+
+
+
+</script>
 
 
 

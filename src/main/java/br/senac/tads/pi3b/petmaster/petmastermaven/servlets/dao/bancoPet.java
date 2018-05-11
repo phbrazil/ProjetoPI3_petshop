@@ -86,7 +86,7 @@ public class bancoPet {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select * from pets where nomepet like '%" + buscapet + "%' or codigobarraspet = '" + buscapet + "'";
+            select = "select * from pets where codigobarraspet = '" + buscapet.trim() + "'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
