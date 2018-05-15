@@ -154,7 +154,7 @@ public class Cliente {
 
     public Cliente(String cpfCliente, String nascimento, String nomeCliente, String logradouro, 
             String bairro, String cidade, String cep, String estado, String UF, String email,
-            String sexo, String telefone, String RG, String pais) {
+            String sexo, String telefone,String celular, String RG, String pais, String estadoCivil) {
         this.cpfCliente = cpfCliente;
         this.nascimento = nascimento;
         this.nomeCliente = nomeCliente;
@@ -169,6 +169,8 @@ public class Cliente {
         this.telefone = telefone;
         this.RG = RG;
         this.pais = pais;
+        this.celular = celular;
+        this.estadoCivil = estadoCivil;
 
     }
 
@@ -206,7 +208,7 @@ public class Cliente {
         return nascimento;
     }
 
-    public void setNascimento(Date nascimento) {
+    public void setNascimento(String nascimento) {
         this.nascimento = nascimento;
     }
 

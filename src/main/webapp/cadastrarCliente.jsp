@@ -120,9 +120,8 @@
 
                     <div class="row">
                         <div class="col-md-5 mb-3">
-                            <label for="pais">País</label>
-                            <select name ="pais" class="custom-select d-block w-100" id="pais" value = "" required>
-                                <option>${resultado.pais}</option>
+                            <label >País</label>
+                            <select name ="pais" class="custom-select d-block w-100" id="pais" required>
                                 <option>Brasil</option>
                             </select>
                             <div class="invalid-feedback">
@@ -314,6 +313,27 @@
                 return num
             }
         </script>
+        
+            <script>
+
+
+        var resultado = "${resultado}"
+
+        var cpfcliente = "${cpfcliente}"
+
+
+        if (resultado == "CPF já está Cadastrado") {
+            alert(resultado)
+
+        } else if (resultado == "Cliente Cadastrado") {
+            
+            alert(resultado+" para o CPF"+cpfcliente)
+
+        }
+
+
+
+    </script>
 
     </body>
 </html>

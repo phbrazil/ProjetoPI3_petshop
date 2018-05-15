@@ -20,7 +20,7 @@ public class bancoCli {
 
     private Connection conexao = null;
 
-    Cliente cliente = new Cliente(null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    Cliente cliente = new Cliente(null,null,null, null, null, null, null, null, null, null, null, null, null, null, null, null);
 
     private java.util.List<Cliente> listaCli = new ArrayList<Cliente>();
 
@@ -35,13 +35,13 @@ public class bancoCli {
             java.sql.Statement st = conexao.createStatement();
             st.executeUpdate("INSERT INTO clientes (nome, logradouro,rg,"
                     + "cpfcliente, pais,cidade, bairro, estado, uf, cep, telefone,celular,email,sexo,"
-                    + "estadocivil, nascimento,datacadastro VALUES ('" + cliente.getNomeCliente()+ "','" 
+                    + "estadocivil, nascimento,datacadastro, statuscliente) VALUES ('" + cliente.getNomeCliente()+ "','" 
                     + cliente.getLogradouro()+"','"+cliente.getRG()+"','"+cliente.getCPFCliente()+"','"
                     + cliente.getPais()+"','"+cliente.getCidade()+"','"+cliente.getBairro()+"','"
                     +cliente.getEstado()+"','"+cliente.getUF()+"','"+cliente.getCep()+"','"
                     +cliente.getTelefone()+"','"+cliente.getCelular()+"','"+cliente.getEmail()+"','"
                     +cliente.getSexo()+"','"+cliente.getEstadoCivil()+"','"+cliente.getNascimento()+"',"
-                    +"now());");        
+                    +"now(), true);");        
             conexao.close();
 
         } catch (Exception e) {

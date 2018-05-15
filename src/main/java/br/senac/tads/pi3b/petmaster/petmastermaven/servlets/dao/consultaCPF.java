@@ -39,7 +39,7 @@ public class consultaCPF extends HttpServlet {
 
         String cpfcliente = request.getParameter("cpfcliente");
 
-        Cliente cliente = new Cliente(null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+        Cliente cliente = new Cliente(null,null,null,null, null, null, null, null, null, null, null, null, null, null, null, null);
 
         bancoCPF selectcpf = new bancoCPF();
 

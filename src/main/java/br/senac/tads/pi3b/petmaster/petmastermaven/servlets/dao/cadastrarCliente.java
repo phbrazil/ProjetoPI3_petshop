@@ -50,10 +50,11 @@ public class cadastrarCliente extends HttpServlet {
         int qtdclicadastrado = bancocli.ValidaCadastradoCliente(CPFCliente);
 
         if (qtdclicadastrado == 0) {
-            
-        Cliente cliente = new Cliente(CPFCliente, nascimento, nomeCliente, logradouro, bairro, cidade, cep, estado, uf, email, sexo, telefone, uf, pais);
+
+            Cliente cliente = new Cliente(CPFCliente, nascimento, nomeCliente, logradouro, bairro, cidade, cep, estado, uf, email, sexo, telefone, uf, pais, RGCliente, estadocivil);
 
             bancocli.gravarCliente(cliente);
+            request.setAttribute("cpfcliente", CPFCliente);
             request.setAttribute("resultado", "Cliente Cadastrado");
 
             request.getRequestDispatcher("cadastrarCliente.jsp").forward(request, response);

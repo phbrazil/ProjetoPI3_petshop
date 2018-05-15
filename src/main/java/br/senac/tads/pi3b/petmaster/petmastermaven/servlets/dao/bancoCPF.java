@@ -19,7 +19,7 @@ public class bancoCPF {
 
     private Connection conexao = null;
 
-    Cliente cliente = new Cliente(null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    Cliente cliente = new Cliente(null, null,null, null, null, null, null, null, null, null, null, null, null, null, null, null);
 
     private java.util.List<Cliente> listacliente = new ArrayList<Cliente>();
 
@@ -41,6 +41,7 @@ public class bancoCPF {
             while (result.next()) {
 
                 cliente.setCPFcliente(result.getString("cpfcliente"));
+                cliente.setRG(result.getString("rg"));
                 cliente.setNomeCliente(result.getString("nome"));
                 cliente.setLogradouro(result.getString("logradouro"));
                 cliente.setBairro(result.getString("bairro"));
@@ -55,7 +56,7 @@ public class bancoCPF {
                 cliente.setSexo(result.getString("sexo"));
                 cliente.setEstado(result.getString("estado"));
                 cliente.setEstadoCivil(result.getString("estadocivil"));
-                cliente.setNascimento(result.getDate("nascimento"));
+                cliente.setNascimento(result.getString("nascimento"));
                 cliente.setListaCliente(cliente);
 
             }
