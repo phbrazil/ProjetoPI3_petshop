@@ -55,19 +55,32 @@
                                 <span class="input-group-text"></span>
                             </div>
 
-                            <input  type="text" class="form-control" id="cpf" name="cpfcliente" placeholder="000.000.000-00" value ="${resultado.cpfCliente}" required>
+                            <input onkeydown="javascript: fMasc(this, mCPF);" type="text" class="form-control" id="cpf" name="cpfcliente" maxlength="14"  required>
 
                             <div class="invalid-feedback" style="width: 100%;">
                                 CPF obrigatório.
                             </div>
                         </div>
                     </div>
+                    <div class="mb-3">
+                        <label for="rg">RG do cliente</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"></span>
+                            </div>
 
+                            <input  type="text" class="form-control" id="rg" name="rgcliente" placeholder="00.000.000-0" value ="" required>
+
+                            <div class="invalid-feedback" style="width: 100%;">
+                                RG obrigatório.
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="mb-3">
                         <label for="primeironome">Nome</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="primeironome" placeholder="" value="" name="nomecliente" required>
+                            <input name="nomecliente" type="text" class="form-control" id="primeironome" placeholder="" value="" name="nomecliente" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
@@ -76,17 +89,31 @@
 
                     <div class="mb-3">
                         <label for="email">Email <span class="text-muted">(Opcional)</span></label>
-                        <input type="email" class="form-control" id="email" placeholder="voce@exemplo.com" value ="">
+                        <input name ="email" type="email" class="form-control" id="email" placeholder="voce@exemplo.com" value ="">
                         <div class="invalid-feedback">
                             Favor inserir um email válido para o frete.
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="endereco">Endereço</label>
-                        <input type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value=""required>
+                        <label for="endereco">Rua</label>
+                        <input name ="logradouro" type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value=""required>
                         <div class="invalid-feedback">
                             Favor inserir seu endereço de envio.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bairro">Bairro</label>
+                        <input name ="bairro" type="text" class="form-control" id="endereco" placeholder="Bairro" value=""required>
+                        <div class="invalid-feedback">
+                            Favor inserir o Bairro.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cidade">Cidade</label>
+                        <input name ="cidade" type="text" class="form-control" id="endereco" placeholder="Cidade" value=""required>
+                        <div class="invalid-feedback">
+                            Favor inserir a Cidade.
                         </div>
                     </div>
 
@@ -94,7 +121,7 @@
                     <div class="row">
                         <div class="col-md-5 mb-3">
                             <label for="pais">País</label>
-                            <select class="custom-select d-block w-100" id="pais" value = "" required>
+                            <select name ="pais" class="custom-select d-block w-100" id="pais" value = "" required>
                                 <option>${resultado.pais}</option>
                                 <option>Brasil</option>
                             </select>
@@ -103,9 +130,8 @@
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="estado">Estado</label>
-                            <select class="custom-select d-block w-100" id="estado" value = "" required>
-                                <option>${resultado.estado}</option>
+                            <label  for="estado">Estado</label>
+                            <select name = "estado" class="custom-select d-block w-100" id="estado" value = "" required>
                                 <option>São Paulo</option>
                                 <option>Rio de Janeiro</option>
                                 <option>São Paulo</option>
@@ -121,9 +147,63 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="cep">CEP</label>
-                            <input type="text" class="form-control" id="cep" placeholder="" value = "" required>
+                            <input name ="cep" type="text" class="form-control" id="cep" placeholder="" value = "" required>
                             <div class="invalid-feedback">
                                 CEP obrigatório
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label name ="sexo" >UF</label>
+                            <select name ="uf" class="custom-select d-block w-100" id="sexo" value = "" required>
+                                <option>SP</option>
+                                <option>RJ</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Favor selecionar a UF
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" class="form-control" id="cep" placeholder="" value = "">
+                            <div class="invalid-feedback">
+                                Telefone obrigatório
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="celular">Celular</label>
+                            <input name ="celular" type="text" class="form-control" id="cep" placeholder="" value = "" required>
+                            <div class="invalid-feedback">
+                                Celular obrigatório
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label name ="sexo" >Sexo</label>
+                            <select class="custom-select d-block w-100" id="sexo" value = "" required>
+                                <option selected>Selecionar...</option>
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Favor selecionar o Sexo
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label  >Estado Civil</label>
+                            <select name ="estadocivil" class="custom-select d-block w-100" id="sexo" value = "" required>
+                                <option selected>Selecionar...</option>
+                                <option>Solteiro</option>
+                                <option>Casado</option>
+                                <option>Divorciado</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Favor selecionar o Estado Civil
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="nascimento">Nascimento</label>
+                            <input name = "nascimento" type="date" class="form-control" id="cep" placeholder="" value = "" required>
+                            <div class="invalid-feedback">
+                                Nascimento obrigatório
                             </div>
                         </div>
 
@@ -157,31 +237,83 @@
         <script src="../../../../assets/js/vendor/holder.min.js"></script>
 
         <script>
-                    // Example starter JavaScript for disabling form submissions if there are invalid fields
-                            (function () {
-                                'use strict';
+                                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                (function () {
+                                    'use strict';
 
-                                window.addEventListener('load', function () {
-                                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                    var forms = document.getElementsByClassName('needs-validation');
+                                    window.addEventListener('load', function () {
+                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                        var forms = document.getElementsByClassName('needs-validation');
 
-                                    // Loop over them and prevent submission
-                                    var validation = Array.prototype.filter.call(forms, function (form) {
-                                        form.addEventListener('submit', function (event) {
-                                            if (form.checkValidity() === false) {
-                                                event.preventDefault();
-                                                event.stopPropagation();
-                                            }
-                                            form.classList.add('was-validated');
-                                        }, false);
-                                    });
-                                }, false);
-                            }
-                            )();
+                                        // Loop over them and prevent submission
+                                        var validation = Array.prototype.filter.call(forms, function (form) {
+                                            form.addEventListener('submit', function (event) {
+                                                if (form.checkValidity() === false) {
+                                                    event.preventDefault();
+                                                    event.stopPropagation();
+                                                }
+                                                form.classList.add('was-validated');
+                                            }, false);
+                                        });
+                                    }, false);
+                                }
+                                )();
 
 
         </script>
 
+        <script type="text/javascript">
+            function fMasc(objeto, mascara) {
+                obj = objeto
+                masc = mascara
+                setTimeout("fMascEx()", 1)
+            }
+            function fMascEx() {
+                obj.value = masc(obj.value)
+            }
+            function mTel(tel) {
+                tel = tel.replace(/\D/g, "")
+                tel = tel.replace(/^(\d)/, "($1")
+                tel = tel.replace(/(.{3})(\d)/, "$1)$2")
+                if (tel.length == 9) {
+                    tel = tel.replace(/(.{1})$/, "-$1")
+                } else if (tel.length == 10) {
+                    tel = tel.replace(/(.{2})$/, "-$1")
+                } else if (tel.length == 11) {
+                    tel = tel.replace(/(.{3})$/, "-$1")
+                } else if (tel.length == 12) {
+                    tel = tel.replace(/(.{4})$/, "-$1")
+                } else if (tel.length > 12) {
+                    tel = tel.replace(/(.{4})$/, "-$1")
+                }
+                return tel;
+            }
+            function mCNPJ(cnpj) {
+                cnpj = cnpj.replace(/\D/g, "")
+                cnpj = cnpj.replace(/^(\d{2})(\d)/, "$1.$2")
+                cnpj = cnpj.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3")
+                cnpj = cnpj.replace(/\.(\d{3})(\d)/, ".$1/$2")
+                cnpj = cnpj.replace(/(\d{4})(\d)/, "$1-$2")
+                return cnpj
+            }
+            function mCPF(cpf) {
+                cpf = cpf.replace(/\D/g, "")
+                cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2")
+                cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2")
+                cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2")
+                return cpf
+            }
+            function mCEP(cep) {
+                cep = cep.replace(/\D/g, "")
+                cep = cep.replace(/^(\d{2})(\d)/, "$1.$2")
+                cep = cep.replace(/\.(\d{3})(\d)/, ".$1-$2")
+                return cep
+            }
+            function mNum(num) {
+                num = num.replace(/\D/g, "")
+                return num
+            }
+        </script>
 
     </body>
 </html>

@@ -32,7 +32,7 @@ public class Cliente {
     private String email;
     private String sexo;
     private String estadoCivil;
-    private Date nascimento;
+    private String nascimento;
     private boolean statusCliente;
 
     public String getPais() {
@@ -152,7 +152,7 @@ public class Cliente {
         listaCliente.add(clientes);
     }
 
-    public Cliente(String cpfCliente, Date nascimento, String nomeCliente, String logradouro, 
+    public Cliente(String cpfCliente, String nascimento, String nomeCliente, String logradouro, 
             String bairro, String cidade, String cep, String estado, String UF, String email,
             String sexo, String telefone, String RG, String pais) {
         this.cpfCliente = cpfCliente;
@@ -202,7 +202,7 @@ public class Cliente {
         this.cpfCliente = cpfcliente;
     }
 
-    public Date getNascimento() {
+    public String getNascimento() {
         return nascimento;
     }
 
