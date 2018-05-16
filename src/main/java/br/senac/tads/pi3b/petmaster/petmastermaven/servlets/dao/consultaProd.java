@@ -41,19 +41,19 @@ public class consultaProd extends HttpServlet {
         Date today = Calendar.getInstance().getTime();
 
         String consultaProd = request.getParameter("consultaProd");
-        String idprodutolistagem = request.getParameter("idproduto");
+        String codigobarrasprod = request.getParameter("idproduto");
 
-        System.out.println("shuadhuas" + idprodutolistagem);
+        System.out.println("shuadhuas" + codigobarrasprod);
 
         bancoProd selectprod = new bancoProd();
 
         Produtos produtos = new Produtos(null, 0, null, null, 0, null);
 
         if (consultaProd == null) {
-            produtos = selectprod.PesquisarProduto(idprodutolistagem);
+            produtos = selectprod.PesquisarProduto(codigobarrasprod);
 
         }else
-        if (idprodutolistagem == null) {
+        if (codigobarrasprod == null) {
             produtos = selectprod.PesquisarProduto(consultaProd);
 
         }

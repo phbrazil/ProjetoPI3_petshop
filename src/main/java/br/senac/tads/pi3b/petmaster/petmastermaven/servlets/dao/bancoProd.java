@@ -75,7 +75,7 @@ public class bancoProd {
 
     }
 
-    public Produtos PesquisarProduto(String buscaprod) {
+    public Produtos PesquisarProduto(String codigobarrasprod) {
 
         String select = "";
 
@@ -87,7 +87,7 @@ public class bancoProd {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select * from produtos where codigobarrasprod = '" + buscaprod.trim() + "'";
+            select = "select * from produtos where codigobarrasprod = '" + codigobarrasprod.trim() + "'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
