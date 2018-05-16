@@ -41,6 +41,25 @@
         }
     %>
     <head>
+
+        <style>
+            .button {
+                background-color: #33CCCC;
+                border: none;
+                color: white;
+                padding: 8px 16px;
+                text-align: center;
+                font-size: 16px;
+                margin: 4px 2px;
+                opacity: 0.6;
+                transition: 0.3s;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .button:hover {opacity: 1}
+        </style>
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/tableprod.css" rel="stylesheet">
@@ -81,7 +100,7 @@
                 <%  int linha = 1;
                     String[] listaprodutos = new String[quantidadeprodutos];
                     while (selectProduto.next()) {
-                        listaprodutos[linha-1] = selectProduto.getString("codigobarrasprod");
+                        listaprodutos[linha - 1] = selectProduto.getString("codigobarrasprod");
 
                 %>
                 <tr>
@@ -91,7 +110,7 @@
                     <td><%=selectProduto.getInt("quantidadeprod")%></td>
                     <td><%=selectProduto.getString("categoriaprod")%></td>
                     <td><%=selectProduto.getString("valor")%></td> 
-                    <td><button type="submit" style="background-color:green;font-weight:bold;color:white;" formaction="consultaProd?idproduto=<%=selectProduto.getString("codigobarrasprod")%>">Alterar</button></td>
+                    <td><button type="submit" class="button" formaction="consultaProd?idproduto=<%=selectProduto.getString("codigobarrasprod")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
                         }                                 %>
