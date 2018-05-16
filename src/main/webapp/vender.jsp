@@ -20,9 +20,27 @@
 
         <!-- Custom styles for this template -->
         <link href="topodapagina.css" rel="stylesheet">
+        <style>
+            .button {
+                background-color: #33CCCC;
+                border: none;
+                color: white;
+                padding: 8px 16px;
+                text-align: center;
+                font-size: 16px;
+                margin: 4px 2px;
+                opacity: 0.6;
+                transition: 0.3s;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .button:hover {opacity: 2}
+        </style>
 
 
-    <form name = "acaoVenda" action="${pageContext.request.contextPath}/acaoVenda" method="POST" >
+    <form name = "vender" action="${pageContext.request.contextPath}/acaoVenda" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Vender</title>
@@ -75,10 +93,10 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="codigoprod">Código do Produto <span class="text-muted">(Mandatório)</span></label>
-                        <input type="number" id="codigoprod" class="form-control" placeholder="" value ="">
+                        <label>Código do Produto <span class="text-muted">(Mandatório)</span></label>
+                        <input type="number" name ="codigoprod" id="codigoprod" class="form-control" placeholder="" value ="">
                         <br>
-                        <button id="pesquisarprod" formaction="consultaProd.jsp" >Pesquisar</button>
+                        <input type="button" name="pesquisar" value="Pesquisar" class="button" onclick="Carrinho((1));" ></td>
                         <button id="addcarrinho" formaction="consultaProd.jsp" >Adicionar no Carrinho</button>
 
                     </div>
@@ -89,6 +107,29 @@
 
                     </div>
 
+                    <h2>Carrinho</h2>
+                    <table border='2' cellpadding='5' width='800'>
+                        <tr>
+                            <td  bgcolor="#33CCCC">Código Produto</td>
+                            <td  bgcolor="#33CCCC">Nome Produto</td>
+                            <td  bgcolor="#33CCCC">Quantidade</td>
+                            <td  bgcolor="#33CCCC">Valor</td>
+                            <td  bgcolor="#33CCCC">Remover</td>
+
+                        </tr>
+
+                        <tr>
+                            <td bgcolor="#FF9900"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="button" name="edit" value="Remover" class="button" onclick="Carrinho((idproduto));" ></td>
+
+
+                        <tr>
+                    </table>
+                    <br>
+
 
                     <div class="row">
                         <div class="col-md-3 mb-3">
@@ -96,25 +137,25 @@
                             <input readonly class="form-control" id="valor" value = "" type="currency" >
 
                         </div>
-                        
+
                         <div class="col-md-3 mb-3">
                             <label for="valor">Valor Desconto</label>
                             <input readonly class="form-control" id="valor" value = "" type="currency" >
 
                         </div>
-                        
+
                         <div class="col-md-3 mb-3">
                             <label for="quantidade">Quantidade</label>
                             <input class="form-control" id="valor" value = "" type="number" >
 
                         </div>
-                        
+
                         <div class="col-md-3 mb-3">
                             <label for="valortotal">Valor Total</label>
                             <input readonly class="form-control" id="valor" value = "" type="currency" >
 
                         </div>
-                        
+
                         <div class="col-md-4 mb-3">
                             <label for="pagamento">Pagamento</label>
                             <select class="custom-select d-block w-100" id="pagamento" value = "" >
@@ -143,17 +184,6 @@
 
         </form>
 
-        <script>
-            var input = document.getElementById("codigoprod");
-            input.addEventListener("keyup", function (event) {
-                event.preventDefault();
-                if (event.keyCode === 13) {
-                    document.getElementById("myBtn").click();
-                }
-            });
-
-        </script>
-
 
 
 
@@ -165,27 +195,38 @@
         <script src="../../../../dist/js/bootstrap.min.js"></script>
         <script src="../../../../assets/js/vendor/holder.min.js"></script>
         <script>
-                // Example starter JavaScript for disabling form submissions if there are invalid fields
-                (function () {
-                    'use strict';
-                    window.addEventListener('load', function () {
-                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                        var forms = document.getElementsByClassName('needs-validation');
-                        // Loop over them and prevent submission
-                        var validation = Array.prototype.filter.call(forms, function (form) {
-                            form.addEventListener('submit', function (event) {
-                                if (form.checkValidity() === false) {
-                                    event.preventDefault();
-                                    event.stopPropagation();
+                                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                (function () {
+                                    'use strict';
+                                    window.addEventListener('load', function () {
+                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                        var forms = document.getElementsByClassName('needs-validation');
+                                        // Loop over them and prevent submission
+                                        var validation = Array.prototype.filter.call(forms, function (form) {
+                                            form.addEventListener('submit', function (event) {
+                                                if (form.checkValidity() === false) {
+                                                    event.preventDefault();
+                                                    event.stopPropagation();
+                                                }
+                                                form.classList.add('was-validated');
+                                            }, false);
+                                        });
+                                    }, false);
                                 }
-                                form.classList.add('was-validated');
-                            }, false);
-                        });
-                    }, false);
-                }
-                )();
+                                )();
 
 
+        </script>
+
+        <script>
+            function Carrinho(codigoprod) {
+
+                var f = document.vender
+               
+                f.method = "post";
+                f.action = 'consultaProd?idproduto=' + codigoprod;
+                f.submit();
+            }
         </script>
 
 

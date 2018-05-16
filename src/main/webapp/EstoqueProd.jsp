@@ -11,7 +11,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <%
+    <%      
         Connection conexao = null;
 
         Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -58,7 +58,7 @@
                 cursor: pointer;
             }
 
-            .button:hover {opacity: 1}
+            .button:hover {opacity: 2}
         </style>
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -109,7 +109,7 @@
                     <td><%=selectProduto.getString("nomeprod")%></td>
                     <td><%=selectProduto.getInt("quantidadeprod")%></td>
                     <td><%=selectProduto.getString("categoriaprod")%></td>
-                    <td><%=selectProduto.getString("valor")%></td> 
+                    <td>R$<%=selectProduto.getString("valor")%></td> 
                     <td><button type="submit" class="button" formaction="consultaProd?idproduto=<%=selectProduto.getString("codigobarrasprod")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
