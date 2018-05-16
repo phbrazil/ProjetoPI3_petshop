@@ -41,7 +41,7 @@ public class consultaProd extends HttpServlet {
         Date today = Calendar.getInstance().getTime();
 
         String consultaProd = request.getParameter("consultaProd");
-        String idprodutolistagem = request.getParameter("idproduto0");
+        String idprodutolistagem = request.getParameter("idproduto");
 
         System.out.println("shuadhuas" + idprodutolistagem);
 

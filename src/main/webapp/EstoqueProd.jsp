@@ -54,7 +54,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/topodapagina.css" rel="stylesheet">
-    <form name = "consultaProd" action="${pageContext.request.contextPath}/consultaProd" method="POST" >
+    <form name = "consultaProd" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Estoque Produtos</title>
@@ -78,27 +78,29 @@
                     <td  bgcolor="#33CCCC">Valor</td> 
                     <td  bgcolor="#33CCCC">Alterar Produto</td> 
                 </tr>
-                <%                    int linha = 1;
+                <%  int linha = 1;
                     String[] listaprodutos = new String[quantidadeprodutos];
                     while (selectProduto.next()) {
-                        listaprodutos[linha - 1] = selectProduto.getString("idprod");
-
+                        listaprodutos[linha] = selectProduto.getString("idprod");
 
                 %>
                 <tr>
                     <td bgcolor="#FF9900"><%=linha%></td>
-                    <td><input readonly name ="idproduto<%=linha - 1%>" type ="text" value = "<%=listaprodutos[linha - 1]%>"</td>
+                    <td><input readonly name ="idproduto" type ="text" value = "<%=selectProduto.getString("idprod")%>"</td>
                     <td><%=selectProduto.getString("nomeprod")%></td>
                     <td><%=selectProduto.getInt("quantidadeprod")%></td>
                     <td><%=selectProduto.getString("categoriaprod")%></td>
                     <td><%=selectProduto.getString("valor")%></td> 
 
-                
 
-                    <td><input  type="submit" name="alterar" value ="Alterar" /><br>
-                        <!--span lang="en-us"><a href="consultaProdResult.jsp">Alterar</a></span--></b></td>
+                    <!--td><input type="submit" name="edit" value="Alterar" style="background-color:green;font-weight:bold;color:white;" ></td-->
+                    <td><button type="submit" style="background-color:green;font-weight:bold;color:white;" formaction="consultaProd?idproduto=<%=selectProduto.getString("idprod")%>">Alterar</button></td>
+
+                    <!--td><input type="button" name="edit" value="Alterar" style="background-color:green;font-weight:bold;color:white;" onclick="editarProd((<%=selectProduto.getString("idprod")%>));"></td-->
+                    <!--td><span lang="en-us"><a href="consultaProd?idproduto=<%=selectProduto.getString("idprod")%>">Alterar</a></span></td-->
                 <tr>
-                    <%}                                 %>
+                    <% linha++;
+                        }                                 %>
             </table>
         </div>
 
@@ -133,21 +135,16 @@
 </form>
 </body>
 
+
 <script>
+    function editarProd(id) {
 
-
-    var teste = document.consultaprod.idproduto.value
-
-
-    alert(teste)
-
-
-
-
-
+        var f = document.consultaProd;
+        f.method = "post";
+        f.action = 'consultaProd?idproduto=' + id;
+        f.submit();
+    }
 </script>
-
-
 
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
