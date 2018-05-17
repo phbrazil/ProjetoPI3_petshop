@@ -46,7 +46,10 @@ public class login extends HttpServlet {
             request.getRequestDispatcher("Home.jsp").forward(request, response);
 
         } else {
-            request.getRequestDispatcher("loginError.jsp").forward(request, response);
+            
+            request.setAttribute("loginfailed", "Usuário ou senha incorreto!");
+
+            request.getRequestDispatcher("index.jsp").forward(request, response);
 
         }
 

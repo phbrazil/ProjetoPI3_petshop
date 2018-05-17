@@ -6,7 +6,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Pet Shop Chronos</title>
+        <title>Welcome to Pet Master</title>
 
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,5 +32,22 @@
             <p class="mt-5 mb-3 text-muted">&copy; Javazeiros - Projeto Semestre 3 </p>
         </form>
     </body>
+    
+        <script>
+
+
+        var loginfailed = "${loginfailed}"
+
+
+
+        if (loginfailed == "Usuário ou senha incorreto!") {
+            
+        alert(loginfailed)
+
+        } 
+
+
+
+    </script>
     
 </html>
