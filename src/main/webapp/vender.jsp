@@ -50,7 +50,7 @@
         <form>
             <div id="includedContent"></div>
 
-            <%@include  file="navbar.html" %>
+            <%@include  file="navbar.jsp" %>
 
 
             <div align ="center">

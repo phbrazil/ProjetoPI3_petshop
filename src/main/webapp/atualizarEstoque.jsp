@@ -34,7 +34,7 @@
     <form>
 
 
-        <%@include  file="navbar.html" %>
+        <%@include  file="navbar.jsp" %>
 
         <div align ="center">
             <br>

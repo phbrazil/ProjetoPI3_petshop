@@ -43,6 +43,8 @@ public class login extends HttpServlet {
         if (acessopermitido == true) {
 
             request.setAttribute("NomeDoUser", logindados.getNomeUser());
+            request.setAttribute("userName", logindados.getUserName());
+
             request.getRequestDispatcher("Home.jsp").forward(request, response);
 
         } else {

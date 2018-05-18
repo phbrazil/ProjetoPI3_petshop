@@ -80,7 +80,7 @@
     </head>
     <body id="page-top">
 
-        <%@include  file="navbar.html" %>
+        <%@include  file="navbar.jsp" %>
 
         <div align ="center">
             <br>

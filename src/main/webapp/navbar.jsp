@@ -34,8 +34,8 @@ Author     : paulo.bezerra
 
             <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" id="sideNav">
 
-                <a class="navbar-brand js-scroll-trigger" href="Home.jsp>
-                   <span class="d-block d-lg-block">Bem-Vindo <!--c:out value="${username}" /--></span>
+                <a class="navbar-brand js-scroll-trigger" href="Home.jsp">
+                   <span class="d-block d-lg-block">Bem-Vindo <!--c:out value="${userName}" /--></span>
                     <span class="d-none d-lg-block">
 
                     </span>

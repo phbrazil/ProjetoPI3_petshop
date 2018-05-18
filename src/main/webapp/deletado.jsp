@@ -27,7 +27,7 @@
     </head>
     <body id="page-top">
 
-       <%@include  file="navbar.html" %>
+       <%@include  file="navbar.jsp" %>
        
         <br>
         <br>
