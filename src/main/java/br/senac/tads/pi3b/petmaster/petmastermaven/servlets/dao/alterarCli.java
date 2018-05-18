@@ -5,6 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -40,19 +41,19 @@ public class alterarCli extends HttpServlet {
             String categoriaprod = request.getParameter("categoriaprod");
             double valorprod = Double.parseDouble(request.getParameter("valorprod"));
             int qtdestoque = Integer.valueOf(request.getParameter("qtdestoque"));
-            Produtos produtos = new Produtos(null, 0, null, null, 0, null);
+            Cliente clientes = new Cliente(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
 
-            produtos = new Produtos(nomeprod, valorprod, codigobarrasprod, descricaoprod, qtdestoque, categoriaprod);
+            //clientes = new Cliente(nomeprod, valorprod, codigobarrasprod, descricaoprod, qtdestoque, categoriaprod);
 
-            bancoprod.atualizarprod(produtos);
+            bancocli.atualizarCli(clientes);
 
-            request.setAttribute("prodAlterado", "Produto Alterado");
+            request.setAttribute("mensagem", "Cliente Alterado");
 
-            request.getRequestDispatcher("consultaProd.jsp").forward(request, response);
+            request.getRequestDispatcher("consultaCli.jsp").forward(request, response);
 
         } else if (acaocliente.equals("excluir")) {
 
-            deletado = bancoprod.deletaprod(String.valueOf(request.getParameter("codigoprod")));
+            deletado = bancocli.deletaCliente(String.valueOf(request.getParameter("cpfcliente")));
 
             if (deletado == true) {
                 request.setAttribute("mensagem", "Cliente Deletado");
