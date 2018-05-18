@@ -40,7 +40,7 @@
         </style>
 
 
-    <form name = "vender" action="${pageContext.request.contextPath}/acaoVenda" method="POST" >
+    <form name = "shop" action="${pageContext.request.contextPath}/shopServlet" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Vender</title>
@@ -94,47 +94,27 @@
 
                     <div class="mb-3">
                         <label>Código do Produto <span class="text-muted">(Mandatório)</span></label>
-                        <input type="number" name ="codigoprod" id="codigoprod" class="form-control" placeholder="" value ="">
+                        <input type="number" name ="codigoprod" id="codigoprod" class="form-control" placeholder="" value ="" required>
                         <br>
-                        <input type="button" name="pesquisar" value="Pesquisar" class="button" onclick="Carrinho((1));" ></td>
-                        <button id="addcarrinho" formaction="consultaProd.jsp" >Adicionar no Carrinho</button>
+                        <input type="submit" name="pesquisar" value="Pesquisar" class="button" action="shopServlet" ></td>
+                        <input type="button" name="pesquisar" value="Adicionar no Carrinho" class="button" action="shopServlet" ></td>
 
                     </div>
 
                     <div class="mb-3">
                         <label for="descricaoprod">Descrição Produto</label>
-                        <input type="text" class="form-control" id="endereco" placeholder="" value="">
+                        <input readonly type="text" class="form-control" id="endereco" placeholder="" value="${produtos.get(0).getDescricaoprod()}">
 
                     </div>
 
-                    <h2>Carrinho</h2>
-                    <table border='2' cellpadding='5' width='800'>
-                        <tr>
-                            <td  bgcolor="#33CCCC">Código Produto</td>
-                            <td  bgcolor="#33CCCC">Nome Produto</td>
-                            <td  bgcolor="#33CCCC">Quantidade</td>
-                            <td  bgcolor="#33CCCC">Valor</td>
-                            <td  bgcolor="#33CCCC">Remover</td>
 
-                        </tr>
-
-                        <tr>
-                            <td bgcolor="#FF9900"></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><input type="button" name="edit" value="Remover" class="button" onclick="Carrinho((idproduto));" ></td>
-
-
-                        <tr>
-                    </table>
                     <br>
 
 
                     <div class="row">
                         <div class="col-md-3 mb-3">
                             <label for="valor">Valor</label>
-                            <input readonly class="form-control" id="valor" value = "" type="currency" >
+                            <input readonly class="form-control" id="valor" value = "${produtos.get(0).getValorprod()}" type="currency" >
 
                         </div>
 
@@ -156,21 +136,56 @@
 
                         </div>
 
-                        <div class="col-md-4 mb-3">
-                            <label for="pagamento">Pagamento</label>
-                            <select class="custom-select d-block w-100" id="pagamento" value = "" >
-                                <option value = "">Selecionar...</option>
-                                <option>Débito</option>
-                                <option>Crédito</option>
-                                <option>Cheque</option>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <label for="carrinho">Carrinho</label>
+                    </div>
+                    <table border='1' cellpadding='5' width='800'>
 
-                            </select>
-                        </div>
+                        <tr>
+                            <td  bgcolor="#33CCCC">Código Produto</td>
+                            <td  bgcolor="#33CCCC">Nome do Produto</td>
+                        </tr>
+                        <c:if test="${not empty sessionScope.produtos}">
+                            <c:forEach items="${sessionScope.produtos}" var="produtos">
+                                <%for (int i = 0; i <100;i++) {
+
+
+                                %>
+                                <tr>
+                                    <td>${produtos.get(0).getCodigoprod()}</td>
+                                    <td>${produtos.get(0).getNomeprod()}</td>
+                                </tr>
+                                <%
+                                }
+                                %>
+
+                            </c:forEach>
+                        </c:if>
+
+                    </table>
+
+
+
+                    <br>
+                    <div class="col-md-4 mb-3">
+                        <label for="pagamento">Pagamento</label>
+                        <select class="custom-select d-block w-100" id="pagamento" value = "" >
+                            <option value = "">Selecionar...</option>
+                            <option>Débito</option>
+                            <option>Crédito</option>
+                            <option>Cheque</option>
+
+                        </select>
                     </div>
                     <hr class="mb-4">
                     <button class="btn btn-primary btn-lg btn-block" type="submit" formaction="${pageContext.request.contextPath}/finalizarVenda" name = "finalizarvenda">Finalizar Venda</button>
                 </div>
             </div>
+
+
+
 
             <footer class="my-5 pt-5 text-muted text-center text-small">
                 <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
@@ -195,37 +210,37 @@
         <script src="../../../../dist/js/bootstrap.min.js"></script>
         <script src="../../../../assets/js/vendor/holder.min.js"></script>
         <script>
-                                // Example starter JavaScript for disabling form submissions if there are invalid fields
-                                (function () {
-                                    'use strict';
-                                    window.addEventListener('load', function () {
-                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                        var forms = document.getElementsByClassName('needs-validation');
-                                        // Loop over them and prevent submission
-                                        var validation = Array.prototype.filter.call(forms, function (form) {
-                                            form.addEventListener('submit', function (event) {
-                                                if (form.checkValidity() === false) {
-                                                    event.preventDefault();
-                                                    event.stopPropagation();
-                                                }
-                                                form.classList.add('was-validated');
-                                            }, false);
-                                        });
-                                    }, false);
-                                }
-                                )();
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            }
+            )();
 
 
         </script>
 
-        <script>
-            function Carrinho(codigoprod) {
 
-                var f = document.vender
-               
-                f.method = "post";
-                f.action = 'consultaProd?idproduto=' + codigoprod;
-                f.submit();
+        <script>
+
+
+            var mensagem = "${mensagem}"
+
+            if (mensagem == "Produto não encontrado") {
+                alert(mensagem)
             }
         </script>
 
