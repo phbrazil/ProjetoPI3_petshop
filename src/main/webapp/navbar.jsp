@@ -70,7 +70,7 @@ Author     : paulo.bezerra
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="index.jsp">Sair</a>
+                            <a class="nav-link js-scroll-trigger" href="logout.jsp">Sair</a>
 
 
                         </li>

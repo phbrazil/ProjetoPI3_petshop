@@ -43,7 +43,6 @@ public class consultaProd extends HttpServlet {
         String consultaProd = request.getParameter("consultaProd");
         String codigobarrasprod = request.getParameter("idproduto");
 
-        System.out.println("shuadhuas" + codigobarrasprod);
 
         bancoProd selectprod = new bancoProd();
 

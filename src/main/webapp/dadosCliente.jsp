@@ -67,7 +67,7 @@
                     <div class="mb-3">
                         <label for="primeironome">Nome</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="primeironome" placeholder="" value="${resultado.nomeCliente}" name="nomecliente" required>
+                            <input readonly type="text" class="form-control" id="primeironome" placeholder="" value="${resultado.nomeCliente}" name="nomecliente" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
@@ -76,7 +76,7 @@
 
                     <div class="mb-3">
                         <label for="email">Email <span class="text-muted">(Opcional)</span></label>
-                        <input type="email" class="form-control" id="email" placeholder="voce@exemplo.com" value ="${resultado.email}">
+                        <input readonly type="email" class="form-control" id="email" placeholder="voce@exemplo.com" value ="${resultado.email}">
                         <div class="invalid-feedback">
                             Favor inserir um email válido para o frete.
                         </div>
@@ -84,7 +84,7 @@
 
                     <div class="mb-3">
                         <label for="endereco">Endereço</label>
-                        <input type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value="${resultado.logradouro}"required>
+                        <input readonly type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value="${resultado.logradouro}"required>
                         <div class="invalid-feedback">
                             Favor inserir seu endereço de envio.
                         </div>
@@ -94,9 +94,8 @@
                     <div class="row">
                         <div class="col-md-5 mb-3">
                             <label for="pais">País</label>
-                            <select class="custom-select d-block w-100" id="pais" value = "${resultado.pais}" required>
+                            <select readonly class="custom-select d-block w-100" id="pais" value = "${resultado.pais}" required>
                                 <option>${resultado.pais}</option>
-                                <option>Brasil</option>
                             </select>
                             <div class="invalid-feedback">
                                 Favor selecionar o país.
@@ -104,14 +103,8 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="estado">Estado</label>
-                            <select class="custom-select d-block w-100" id="estado" value = "${resultado.estado}" required>
+                            <select readonly class="custom-select d-block w-100" id="estado" value = "${resultado.estado}" required>
                                 <option>${resultado.estado}</option>
-                                <option>São Paulo</option>
-                                <option>Rio de Janeiro</option>
-                                <option>São Paulo</option>
-                                <option>São Paulo</option>
-                                <option>São Paulo</option>
-                                <option>São Paulo</option>
 
                             </select>
 
@@ -121,7 +114,7 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="cep">CEP</label>
-                            <input type="text" class="form-control" id="cep" placeholder="" value = "${resultado.cep}" required>
+                            <input readonly type="text" class="form-control" id="cep" placeholder="" value = "${resultado.cep}" required>
                             <div class="invalid-feedback">
                                 CEP obrigatório
                             </div>

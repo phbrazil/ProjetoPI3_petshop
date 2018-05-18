@@ -35,13 +35,23 @@ public class consultaPet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String consultapet = request.getParameter("consultapet");
+        String consultaPet = request.getParameter("consultaPet");
+        String codigobarraspet = request.getParameter("idpet");
 
         bancoPet selectpet = new bancoPet();
 
         Pets pets = new Pets(null, 0, null, null, 0, null);
 
-        pets = selectpet.PesquisarPet(consultapet);
+        pets = selectpet.PesquisarPet(consultaPet);
+        
+        if (consultaPet == null) {
+            pets = selectpet.PesquisarPet(codigobarraspet);
+
+        }else
+        if (codigobarraspet == null) {
+            pets = selectpet.PesquisarPet(consultaPet);
+
+        }
 
         if (pets.getNomepet() != null) {
 

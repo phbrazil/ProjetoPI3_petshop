@@ -148,10 +148,10 @@
                             <td  bgcolor="#33CCCC">Código do Produto</td>
                         </tr>
                         <c:if test="${not empty sessionScope.produtos}">
-                            <c:forEach items="${sessionScope.produtos}" var="produtos" items="${sessionScope.produtosCodigo}" var="produtosCodigo">
+                            <c:forEach items="${sessionScope.produtos}" var="produtosNome" items="${sessionScope.produtosCodigo}" var="produtosCodigo">
 
                                 <tr>
-                                    <td>${produtos}</td>
+                                    <td>${produtosNome}</td>
                                     <td>${produtosCodigo}</td>
                                 </tr>
 

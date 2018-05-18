@@ -17,26 +17,26 @@
         Class.forName("com.mysql.jdbc.Driver").newInstance();
         conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/PetMaster", "root", "admin");
 
-        PreparedStatement listagemProdutos = null;
-        PreparedStatement Produtosqtd = null;
+        PreparedStatement listagemPets = null;
+        PreparedStatement Petsqtd = null;
 
-        ResultSet selectProduto = null;
-        ResultSet selectcountProduto = null;
+        ResultSet selectPet = null;
+        ResultSet selectcountPet = null;
 
         String sqlSelectRecord = null;
         String sqlSelectqtd = null;
-        int quantidadeprodutos = 0;
-        sqlSelectRecord = "SELECT * FROM produtos";
-        sqlSelectqtd = "SELECT COUNT(*) as quantidadeprod FROM produtos";
+        int quantidadepets = 0;
+        sqlSelectRecord = "SELECT * FROM pets";
+        sqlSelectqtd = "SELECT COUNT(*) as quantidadepet FROM pets";
 
-        listagemProdutos = conexao.prepareStatement(sqlSelectRecord);
-        Produtosqtd = conexao.prepareStatement(sqlSelectqtd);
-        selectProduto = listagemProdutos.executeQuery();
-        selectcountProduto = Produtosqtd.executeQuery();
+        listagemPets = conexao.prepareStatement(sqlSelectRecord);
+        Petsqtd = conexao.prepareStatement(sqlSelectqtd);
+        selectPet = listagemPets.executeQuery();
+        selectcountPet = Petsqtd.executeQuery();
 
-        while (selectcountProduto.next()) {
+        while (selectcountPet.next()) {
 
-            quantidadeprodutos = selectcountProduto.getInt("quantidadeprod");
+            quantidadepets = selectcountPet.getInt("quantidadepet");
 
         }
     %>
@@ -98,19 +98,19 @@
                     <td  bgcolor="#33CCCC">Alterar Produto</td> 
                 </tr>
                 <%  int linha = 1;
-                    String[] listaprodutos = new String[quantidadeprodutos];
-                    while (selectProduto.next()) {
-                        listaprodutos[linha - 1] = selectProduto.getString("codigobarrasprod");
+                    String[] listaprodutos = new String[quantidadepets];
+                    while (selectPet.next()) {
+                        listaprodutos[linha - 1] = selectPet.getString("codigobarraspet");
 
                 %>
                 <tr>
                     <td bgcolor="#FF9900"><%=linha%></td>
-                    <td><%=selectProduto.getString("codigobarrasprod")%></td>
-                    <td><%=selectProduto.getString("nomeprod")%></td>
-                    <td><%=selectProduto.getInt("quantidadeprod")%></td>
-                    <td><%=selectProduto.getString("categoriaprod")%></td>
-                    <td>R$<%=selectProduto.getString("valor")%></td> 
-                    <td><button type="submit" class="button" formaction="consultaProd?idproduto=<%=selectProduto.getString("codigobarrasprod")%>">Alterar</button></td>
+                    <td><%=selectPet.getString("codigobarraspet")%></td>
+                    <td><%=selectPet.getString("nomepet")%></td>
+                    <td><%=selectPet.getInt("quantidadepet")%></td>
+                    <td><%=selectPet.getString("categoriapet")%></td>
+                    <td>R$<%=selectPet.getString("valorpet")%></td> 
+                    <td><button type="submit" class="button" formaction="consultaPet?idpet=<%=selectPet.getString("codigobarraspet")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
                         }                                 %>
@@ -119,11 +119,11 @@
 
         <%
             try {
-                if (listagemProdutos != null) {
-                    listagemProdutos.close();
+                if (listagemPets != null) {
+                    listagemPets.close();
                 }
-                if (selectProduto != null) {
-                    selectProduto.close();
+                if (selectPet != null) {
+                    selectPet.close();
                 }
 
                 if (conexao != null) {

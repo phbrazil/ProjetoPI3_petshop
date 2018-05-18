@@ -99,7 +99,7 @@ public class bancoProd {
                 produtos.setDescricaoprod(result.getString("descricaoprod"));
                 produtos.setCategoriaprod(result.getString("categoriaprod"));
                 produtos.setQtdestoque(result.getInt("quantidadeprod"));
-                produtos.setListaProd(produtos);
+                //produtos.setListaProd(produtos);
 
 
             }
@@ -111,6 +111,7 @@ public class bancoProd {
             System.out.println("erro" + e.getMessage());
 
         }
+        System.out.println("to aqui nos produtinhos"+produtos.getNomeprod());
 
         return produtos;
     }
