@@ -38,7 +38,7 @@ public class cadastrarCliente extends HttpServlet {
         String bairro = request.getParameter("bairro");
         String uf = request.getParameter("uf");
         String estado = request.getParameter("estado");
-        String cep = request.getParameter("cep");
+        String cep = request.getParameter("cep").replace("-", "").replace(".", "");
         String telefone = request.getParameter("telefone");
         String celular = request.getParameter("celular");
         String sexo = request.getParameter("sexo");
@@ -51,8 +51,8 @@ public class cadastrarCliente extends HttpServlet {
 
         if (qtdclicadastrado == 0) {
 
-            Cliente cliente = new Cliente(CPFCliente, nascimento, nomeCliente, logradouro, bairro, cidade, cep, estado, uf, email, sexo, telefone, uf, pais, RGCliente, estadocivil);
-
+            Cliente cliente = new Cliente(CPFCliente, nascimento, nomeCliente, logradouro, bairro, cidade, cep, estado, uf, email, sexo, telefone, celular, pais, RGCliente, estadocivil);
+            
             bancocli.gravarCliente(cliente);
             request.setAttribute("cpfcliente", CPFCliente);
             request.setAttribute("resultado", "Cliente Cadastrado");

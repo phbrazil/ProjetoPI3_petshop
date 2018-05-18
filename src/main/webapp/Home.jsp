@@ -33,8 +33,10 @@
             </h1>
             <img class="mb-4" src="img/LogoPetMaster.png" alt="logo PetMaster" width="200" height="200">
 
+        <p class="mb-1">Sessão ${idsessao}</p>
 
         </div>
+
 
         <footer class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>

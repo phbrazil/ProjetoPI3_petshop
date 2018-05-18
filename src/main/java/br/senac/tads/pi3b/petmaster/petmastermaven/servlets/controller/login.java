@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -45,10 +46,14 @@ public class login extends HttpServlet {
             request.setAttribute("NomeDoUser", logindados.getNomeUser());
             request.setAttribute("userName", logindados.getUserName());
 
+            HttpSession sessao = request.getSession();
+
+            
+            request.setAttribute("idsessao", sessao.getId());
             request.getRequestDispatcher("Home.jsp").forward(request, response);
 
         } else {
-            
+
             request.setAttribute("loginfailed", "Usuário ou senha incorreto!");
 
             request.getRequestDispatcher("index.jsp").forward(request, response);

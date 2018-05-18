@@ -81,7 +81,7 @@
 
                     <div class="col-md-4 mb-3">
                         <label for="valorpet">Valor</label>
-                        <input name="valorpet" type="number" class="form-control" id="valor" pattern = "^\d+\.\d{2}" placeholder="00,00" required>
+                        <input name="valorpet" type="number" class="form-control" id="valor" pattern = "^\d+\.\d{2}" placeholder="R$00,00" required>
                         <div class="invalid-feedback">
                             Favor inserir o Valor.
                         </div>

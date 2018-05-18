@@ -94,10 +94,9 @@
 
                     <div class="mb-3">
                         <label>Código do Produto <span class="text-muted">(Mandatório)</span></label>
-                        <input type="number" name ="codigoprod" id="codigoprod" class="form-control" placeholder="" value ="" required>
+                        <input type="number" name ="codigoprod" id="codigoprod" class="form-control" placeholder="" value ="" >
                         <br>
-                        <input type="button" name="pesquisar" value="Pesquisar" class="button" action="shopServlet" ></td>
-                        <input type="submit" name="adicionar" value="Adicionar no Carrinho" class="button" action="shopServlet" ></td>
+                        <input type="submit" name="acaovenda" value="Adicionar no Carrinho" class="button" action="shopServlet" ></td>
 
                     </div>
 
@@ -175,7 +174,7 @@
                         </select>
                     </div>
                     <hr class="mb-4">
-                    <button class="btn btn-primary btn-lg btn-block" type="submit" formaction="${pageContext.request.contextPath}/finalizarVenda" name = "finalizarvenda">Finalizar Venda</button>
+                        <input type="submit" name="acaovenda" value="Finalizar Venda" class="button" action="shopServlet" ></td>
                 </div>
             </div>
 

@@ -55,7 +55,7 @@
                                 <span class="input-group-text"></span>
                             </div>
 
-                            <input onkeydown="javascript: fMasc(this, mCPF);" type="text" class="form-control" id="cpf" name="cpfcliente" maxlength="14"  required>
+                            <input onkeydown="javascript: fMasc(this, mCPF);" type="text" class="form-control" id="cpf" name="cpfcliente" maxlength="14" placeholder="000.000.000-00" required>
 
                             <div class="invalid-feedback" style="width: 100%;">
                                 CPF obrigatório.
@@ -69,7 +69,7 @@
                                 <span class="input-group-text"></span>
                             </div>
 
-                            <input  type="text" class="form-control" id="rg" name="rgcliente" placeholder="00.000.000-0" value ="" required>
+                            <input  onkeydown="javascript: fMasc(this, mRG);" type="text" class="form-control" id="rg" name="rgcliente" maxlength="12" placeholder="00.000.000-0" value ="" required>
 
                             <div class="invalid-feedback" style="width: 100%;">
                                 RG obrigatório.
@@ -80,7 +80,7 @@
                     <div class="mb-3">
                         <label for="primeironome">Nome</label>
                         <div class="input-group">
-                            <input name="nomecliente" type="text" class="form-control" id="primeironome" placeholder="" value="" name="nomecliente" required>
+                            <input name="nomecliente" type="text" class="form-control" id="nomecliente" placeholder="" value="" name="nomecliente" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
@@ -104,14 +104,14 @@
                     </div>
                     <div class="mb-3">
                         <label for="bairro">Bairro</label>
-                        <input name ="bairro" type="text" class="form-control" id="endereco" placeholder="Bairro" value=""required>
+                        <input name ="bairro" type="text" class="form-control" id="bairro" placeholder="Bairro" value=""required>
                         <div class="invalid-feedback">
                             Favor inserir o Bairro.
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="cidade">Cidade</label>
-                        <input name ="cidade" type="text" class="form-control" id="endereco" placeholder="Cidade" value=""required>
+                        <input name ="cidade" type="text" class="form-control" id="cidade" placeholder="Cidade" value=""required>
                         <div class="invalid-feedback">
                             Favor inserir a Cidade.
                         </div>
@@ -146,7 +146,7 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="cep">CEP</label>
-                            <input name ="cep" type="text" class="form-control" id="cep" placeholder="" value = "" required>
+                            <input name ="cep" type="text" class="form-control" id="cep" onkeydown="javascript: fMasc(this, mCEP);" placeholder="00000-000" maxlength="10" value = "" required>
                             <div class="invalid-feedback">
                                 CEP obrigatório
                             </div>
@@ -163,14 +163,14 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="telefone">Telefone</label>
-                            <input type="text" class="form-control" id="cep" placeholder="" value = "">
+                            <input onkeydown="javascript: fMasc(this, mTel);" name = "telefone" type="text" class="form-control" id="tel" placeholder="(xx)xxxxx-xxxx" maxlength="14" value = "">
                             <div class="invalid-feedback">
                                 Telefone obrigatório
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="celular">Celular</label>
-                            <input name ="celular" type="text" class="form-control" id="cep" placeholder="" value = "" required>
+                            <input onkeydown="javascript: fMasc(this, mTel);" name ="celular" type="text" class="form-control" id="cel" placeholder="(xx)xxxxx-xxxx" maxlength="14" value = "" required>
                             <div class="invalid-feedback">
                                 Celular obrigatório
                             </div>
@@ -200,7 +200,7 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="nascimento">Nascimento</label>
-                            <input name = "nascimento" type="date" class="form-control" id="cep" placeholder="" value = "" required>
+                            <input name = "nascimento" type="date" class="form-control" id="cep" placeholder="dd/mm/aaaa" maxlength="10" value = "" required>
                             <div class="invalid-feedback">
                                 Nascimento obrigatório
                             </div>
@@ -301,6 +301,13 @@
                 cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2")
                 cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2")
                 return cpf
+            }
+            function mRG(rg) {
+                rg = rg.replace(/\D/g, "")
+                rg = rg.replace(/(\d{2})(\d)/, "$1.$2")
+                rg = rg.replace(/(\d{3})(\d)/, "$1.$2")
+                rg = rg.replace(/(\d{3})(\d{1})$/, "$1-$2")
+                return rg
             }
             function mCEP(cep) {
                 cep = cep.replace(/\D/g, "")
