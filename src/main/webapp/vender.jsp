@@ -96,8 +96,8 @@
                         <label>Código do Produto <span class="text-muted">(Mandatório)</span></label>
                         <input type="number" name ="codigoprod" id="codigoprod" class="form-control" placeholder="" value ="" required>
                         <br>
-                        <input type="submit" name="pesquisar" value="Pesquisar" class="button" action="shopServlet" ></td>
-                        <input type="button" name="pesquisar" value="Adicionar no Carrinho" class="button" action="shopServlet" ></td>
+                        <input type="button" name="pesquisar" value="Pesquisar" class="button" action="shopServlet" ></td>
+                        <input type="submit" name="adicionar" value="Adicionar no Carrinho" class="button" action="shopServlet" ></td>
 
                     </div>
 
@@ -148,13 +148,15 @@
                             <td  bgcolor="#33CCCC">Nome do Produto</td>
                         </tr>
                         <c:if test="${not empty sessionScope.produtos}">
-                            <c:forEach items="${sessionScope.produtos}" var="produtos">
+                            <c:forEach items="${sessionScope.produtos}" var="produtos" items="${sessionScope.produtosCodigo}" var="produtosCodigo">
+
                                 <tr>
                                     <td>${produtos}</td>
-                                    <td>${produtos}</td>
+                                    <td>${produtosCodigo}</td>
                                 </tr>
 
                             </c:forEach>
+
                         </c:if>
 
                     </table>

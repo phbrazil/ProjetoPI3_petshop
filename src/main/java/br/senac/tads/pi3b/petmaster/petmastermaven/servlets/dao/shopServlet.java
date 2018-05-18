@@ -29,8 +29,8 @@ import javax.servlet.http.HttpSession;
 
 public class shopServlet extends HttpServlet {
 
-
     List<String> produtosListagem;
+    List<String> produtosListagemCodigo;
 
     Produtos produtos = new Produtos(null, 0, null, null, 0, null);
 
@@ -39,55 +39,49 @@ public class shopServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        produtos = null;
 
-        /* HttpSession sessao = request.getSession();
-
-        String codigoprod = request.getParameter("codigoprod");
-
-        produtos = bancoprod.PesquisarProduto(codigoprod);
-
-        if (produtos.getNomeprod() != null) {
-
-            produtoslistagem.add(produtos);
-            System.out.println(produtoslistagem.size() + " tamanho");
-
-            sessao.setAttribute("produtos", produtoslistagem);
-            sessao.setAttribute("quantidade", produtoslistagem.size());
-            sessao.setAttribute("posicao", produtoslistagem.size() - 1);
-
-            request.getRequestDispatcher("vender.jsp").forward(request, response);
-
-        }
-         */
         // Recupera o nome enviado na requisição
         String codigoprod = request.getParameter("codigoprod");
         produtos = bancoprod.PesquisarProduto(codigoprod);
+        
+        System.out.println(produtos.getNomeprod()+" nome aqui");
 
         // Valida se nome não é nulo
-        if (codigoprod != null) {
+        if (produtos.getNomeprod()!=null) {
 
             // Obtém a sessão do usuário
             HttpSession sessao = request.getSession();
 
             // Se a lista de nomes não estiver na sessão, cria nova
             if (sessao.getAttribute("produtos") == null) {
-                System.out.println("entrei na lista fora da sessao");
                 produtosListagem = new ArrayList<>();
+                produtosListagemCodigo = new ArrayList<>();
+
                 sessao.setAttribute("produtos", produtosListagem);
+                sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
+
             }
 
             // Recupera a lista a partir da sessão do usuário e adiciona nome
             produtosListagem = (List<String>) sessao.getAttribute("produtos");
+            produtosListagemCodigo = (List<String>) sessao.getAttribute("produtosCodigo");
+
             produtosListagem.add(produtos.getNomeprod());
+            produtosListagemCodigo.add(produtos.getCodigoprod());
 
             // Atualiza a lista na sessão
             sessao.setAttribute("produtos", produtosListagem);
-            for (int i = 0; i < produtosListagem.size(); i++) {
-                System.out.println(produtosListagem.get(i)+ " to aqui man");
+            sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
+            request.getRequestDispatcher("vender.jsp").forward(request, response);
 
-            }
+        } else {
+            request.setAttribute("mensagem", "Produto não encontrado");
+
+            request.getRequestDispatcher("vender.jsp").forward(request, response);
+
         }
-        request.getRequestDispatcher("vender.jsp").forward(request, response);
 
     }
 
