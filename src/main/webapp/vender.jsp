@@ -103,7 +103,7 @@
 
                     <div class="mb-3">
                         <label for="descricaoprod">Descrição Produto</label>
-                        <input readonly type="text" class="form-control" id="endereco" placeholder="" value="${produtos.get(0).getDescricaoprod()}">
+                        <input readonly type="text" class="form-control" id="endereco" placeholder="" value="">
 
                     </div>
 
@@ -114,7 +114,7 @@
                     <div class="row">
                         <div class="col-md-3 mb-3">
                             <label for="valor">Valor</label>
-                            <input readonly class="form-control" id="valor" value = "${produtos.get(0).getValorprod()}" type="currency" >
+                            <input readonly class="form-control" id="valor" value = "" type="currency" >
 
                         </div>
 
@@ -149,17 +149,10 @@
                         </tr>
                         <c:if test="${not empty sessionScope.produtos}">
                             <c:forEach items="${sessionScope.produtos}" var="produtos">
-                                <%for (int i = 0; i <100;i++) {
-
-
-                                %>
                                 <tr>
-                                    <td>${produtos.get(0).getCodigoprod()}</td>
-                                    <td>${produtos.get(0).getNomeprod()}</td>
+                                    <td>${produtos}</td>
+                                    <td>${produtos}</td>
                                 </tr>
-                                <%
-                                }
-                                %>
 
                             </c:forEach>
                         </c:if>
