@@ -55,14 +55,14 @@ public class cadastrarCliente extends HttpServlet {
             
             bancocli.gravarCliente(cliente);
             request.setAttribute("cpfcliente", CPFCliente);
-            request.setAttribute("resultado", "Cliente Cadastrado");
+            request.setAttribute("mensagem", "Cliente cadastrado com sucesso!");
 
             request.getRequestDispatcher("cadastrarCliente.jsp").forward(request, response);
 
         } else {
 
             request.setAttribute("cpfcliente", CPFCliente);
-            request.setAttribute("resultado", "CPF já está Cadastrado");
+            request.setAttribute("mensagem", "falha");
 
             request.getRequestDispatcher("cadastrarCliente.jsp").forward(request, response);
 

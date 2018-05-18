@@ -46,7 +46,7 @@
                     <select name ="acaocadastrarCliente" class="custom-select d-block w-100" id="acaoproduto" required>
                         <option value="">Selecionar...</option>
                         <option name ="incluir" >Cadastrar Cliente</option>
-                        <option name ="alterar" >Alterar Cliente</option>
+                        <option name ="consultar" >Consultar Cliente</option>
 
 
                     </select>

@@ -31,8 +31,8 @@ public class acaoCadastrarCliente extends HttpServlet {
 
             request.getRequestDispatcher("cadastrarCliente.jsp").forward(request, response);
 
-        } else if (acaocadastrarCliente.equals("Alterar Cliente")) {
-            request.getRequestDispatcher("alterarCliente.jsp").forward(request, response);
+        } else if (acaocadastrarCliente.equals("Consultar Cliente")) {
+            request.getRequestDispatcher("consultaCli.jsp").forward(request, response);
 
         }
 

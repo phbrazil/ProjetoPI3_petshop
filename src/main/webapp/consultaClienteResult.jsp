@@ -22,7 +22,7 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form name = "cadastrarCliente" action="${pageContext.request.contextPath}/cadastrarCliente" method="POST" >
+    <form name = "consultaCli" action="${pageContext.request.contextPath}/consultaCli" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Vender</title>
@@ -201,14 +201,19 @@
                         <div class="col-md-3 mb-3">
                             <label for="nascimento">Nascimento</label>
                             <input name = "nascimento" type="date" class="form-control" id="cep" placeholder="dd/mm/aaaa" maxlength="10" value = "" required>
+
                             <div class="invalid-feedback">
                                 Nascimento obrigatório
                             </div>
                         </div>
 
-                        <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit" name = "gravarcliente">Gravar</button>
+
                     </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="acaocliente" value = "alterar">Alterar</button>
+                    <br>
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="acaocliente" value ="excluir" >Excluir</button>
+
                 </div>
 
                 <footer class="my-5 pt-5 text-muted text-center text-small">
@@ -320,24 +325,24 @@
                 return num
             }
         </script>
-        
-            <script>
+
+        <script>
 
 
-        var mensagem = "${mensagem}"
+            var mensagem = "${mensagem}"
 
-        var cpfcliente = "${cpfcliente}"
+            var cpfcliente = "${cpfcliente}"
 
 
-        if (mensagem == "falha") {
-            alert("O CPF "+cpfcliente+" já se encontra cadastrado")
+            if (mensagem == "falha") {
+                alert("O CPF " + cpfcliente + " já se encontra cadastrado")
 
-        } else if (mensagem == "Cliente cadastrado com sucesso!") {
-            
-            alert(mensagem)
+            } else if (mensagem == "Cliente cadastrado com sucesso!") {
 
-        }
-    </script>
+                alert(mensagem)
+
+            }
+        </script>
 
     </body>
 </html>
