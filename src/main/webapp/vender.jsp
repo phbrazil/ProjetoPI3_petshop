@@ -144,8 +144,8 @@
                     <table border='1' cellpadding='5' width='800'>
 
                         <tr>
-                            <td  bgcolor="#33CCCC">Código Produto</td>
                             <td  bgcolor="#33CCCC">Nome do Produto</td>
+                            <td  bgcolor="#33CCCC">Código do Produto</td>
                         </tr>
                         <c:if test="${not empty sessionScope.produtos}">
                             <c:forEach items="${sessionScope.produtos}" var="produtos" items="${sessionScope.produtosCodigo}" var="produtosCodigo">

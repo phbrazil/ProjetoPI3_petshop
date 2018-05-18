@@ -48,6 +48,7 @@
                         <option name ="consultaprod" >Consultar Produto</option>
                         <option name ="consultapet" >Consultar Pet</option>
                         <option name ="listarestoqueprod" >Listar Estoque Produtos</option>
+                        <option name ="listarestoquepet" >Listar Estoque Pets</option>
 
 
                     </select>

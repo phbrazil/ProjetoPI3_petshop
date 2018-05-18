@@ -36,8 +36,12 @@ public class acaoConsulta extends HttpServlet {
             request.getRequestDispatcher("consultaPet.jsp").forward(request, response);
 
         } else if (acaoconsulta.equals("Listar Estoque Produtos")) {
-            
+
             request.getRequestDispatcher("EstoqueProd.jsp").forward(request, response);
+
+        } else if (acaoconsulta.equals("Listar Estoque Pets")) {
+
+            request.getRequestDispatcher("EstoquePet.jsp").forward(request, response);
 
         }
 
