@@ -40,7 +40,7 @@ public class bancoCPF {
 
             while (result.next()) {
 
-                cliente.setCPFcliente(result.getString("cpfcliente"));
+                cliente.setCpfCliente(result.getString("cpfcliente"));
                 cliente.setRG(result.getString("rg"));
                 cliente.setNomeCliente(result.getString("nome"));
                 cliente.setLogradouro(result.getString("logradouro"));

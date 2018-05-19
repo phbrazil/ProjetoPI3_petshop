@@ -36,7 +36,7 @@ public class bancoCli {
             st.executeUpdate("INSERT INTO clientes (nome, logradouro,rg,"
                     + "cpfcliente, pais,cidade, bairro, estado, uf, cep, telefone,celular,email,sexo,"
                     + "estadocivil, nascimento,datacadastro, statuscliente) VALUES ('" + cliente.getNomeCliente()+ "','" 
-                    + cliente.getLogradouro()+"','"+cliente.getRG()+"','"+cliente.getCPFCliente()+"','"
+                    + cliente.getLogradouro()+"','"+cliente.getRG()+"','"+cliente.getCpfCliente()+"','"
                     + cliente.getPais()+"','"+cliente.getCidade()+"','"+cliente.getBairro()+"','"
                     +cliente.getEstado()+"','"+cliente.getUF()+"','"+cliente.getCep()+"','"
                     +cliente.getTelefone()+"','"+cliente.getCelular()+"','"+cliente.getEmail()+"','"
@@ -62,10 +62,10 @@ public class bancoCli {
 
             java.sql.Statement st = conexao.createStatement();
             st.executeUpdate("UPDATE clientes set nome = '" + cliente.getNomeCliente()+ "', logradouto = '" + cliente.getLogradouro()+ "',"
-                    + "rg = '" + cliente.getRG()+ "',CPFCliente = '" + cliente.getCPFCliente()+ "',pais = '" + cliente.getPais()+ "',"
+                    + "rg = '" + cliente.getRG()+ "',CPFCliente = '" + cliente.getCpfCliente()+ "',pais = '" + cliente.getPais()+ "',"
                     + "cidade = '" + cliente.getCidade()+ "',bairro ='"+cliente.getBairro()+"',estado = '"+cliente.getEstado()+"',"
                     +"UF = '"+cliente.getUF()+"',cep='"+cliente.getCep()+"',telefone='"+cliente.getTelefone()+"',celular='"+cliente.getCelular()+"',"
-                    +"email='"+cliente.getEmail()+"',sexo='"+cliente.getSexo()+"',estadocivil='"+cliente.getEstadoCivil()+"',nascimento='"+cliente.getNascimento()+"' where cpfcliente = '" + cliente.getCPFCliente()+ "'");
+                    +"email='"+cliente.getEmail()+"',sexo='"+cliente.getSexo()+"',estadocivil='"+cliente.getEstadoCivil()+"',nascimento='"+cliente.getNascimento()+"' where cpfcliente = '" + cliente.getCpfCliente()+ "'");
 
             conexao.close();
 
@@ -96,7 +96,7 @@ public class bancoCli {
 
             while (result.next()) {
 
-                cliente.setNomeCliente(result.getString("nome"));
+                cliente.setCpfCliente(result.getString("cpfcliente"));
                 //produtos.setNomeprod(result.getString("nomeprod"));
                 //produtos.setValorprod(result.getDouble("valor"));
                 //produtos.setDtCadastro(result.getDate("datacadastroprod"));

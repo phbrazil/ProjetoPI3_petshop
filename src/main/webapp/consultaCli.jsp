@@ -20,7 +20,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/topodapagina.css" rel="stylesheet">
-    <form name = "consultacli" action="${pageContext.request.contextPath}/consultaCli" method="POST" >
+    <form name = "consultaCli" action="${pageContext.request.contextPath}/consultaCli" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Consultar Cliente</title>

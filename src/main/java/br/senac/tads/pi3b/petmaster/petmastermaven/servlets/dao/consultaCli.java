@@ -42,22 +42,25 @@ public class consultaCli extends HttpServlet {
 
 
         bancoCli bancocli = new bancoCli();
+        bancoCPF bancocpf = new bancoCPF();
 
         Cliente cliente = new Cliente(null, null, null, null, null, null, null, null, null, null, null, 
                 null, null, null, null, null);
 
-        cliente = bancocli.PesquisarCliente(cpfcliente);
+        cliente = bancocpf.PesquisarCPF(cpfcliente);
         
-        System.out.println(cliente.getNomeCliente()+" hsudhua");
 
         if (cliente.getNomeCliente()!= null) {
-            System.out.println("entrei no if");
+            
+            System.out.println("achei");
             
             request.setAttribute("resultado", cliente);
+            
 
             request.getRequestDispatcher("consultaClienteResult.jsp").forward(request, response);
 
         } else {
+            System.out.println("nao achei");
 
             request.setAttribute("resultado", "Cliente não encontado");
 

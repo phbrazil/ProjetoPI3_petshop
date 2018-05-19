@@ -174,20 +174,12 @@ public class Cliente {
 
     }
 
-    public String getCPFCliente() {
-        return cpfCliente;
-    }
-
-    public void getCPFCliente(String cpfcliente) {
-        this.cpfCliente = cpfcliente;
-    }
-
    
 
     public Cliente obterClienteLista(String cpf) {
         if (!listaCliente.isEmpty()) {
             for (int i = 0; i < listaCliente.size(); i++) {
-                if (listaCliente.get(i) != null && listaCliente.get(i).getCPFCliente().toUpperCase().equals(cpf.toUpperCase())) {
+                if (listaCliente.get(i) != null && listaCliente.get(i).getCpfCliente().toUpperCase().equals(cpf.toUpperCase())) {
                     return listaCliente.get(i);
 
                 }
@@ -196,13 +188,7 @@ public class Cliente {
         return null;
     }
 
-    public String getCpfcliente() {
-        return cpfCliente;
-    }
-
-    public void setCPFcliente(String cpfcliente) {
-        this.cpfCliente = cpfcliente;
-    }
+ 
 
     public String getNascimento() {
         return nascimento;

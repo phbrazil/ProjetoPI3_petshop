@@ -55,7 +55,7 @@
                                 <span class="input-group-text"></span>
                             </div>
 
-                            <input onkeydown="javascript: fMasc(this, mCPF);" type="text" class="form-control" id="cpf" name="cpfcliente" maxlength="14" placeholder="000.000.000-00" required>
+                            <input onkeydown="javascript: fMasc(this, mCPF);" type="text" class="form-control" id="cpf" name="cpfcliente" maxlength="14" value="${resultado.cpfCliente}" required>
 
                             <div class="invalid-feedback" style="width: 100%;">
                                 CPF obrigatório.
