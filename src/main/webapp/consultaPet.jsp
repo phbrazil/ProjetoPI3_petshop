@@ -40,7 +40,7 @@
 
                 <div class="col-md-5 order-md-1">
 
-                    <input class="form-control" type="text" name="consultapet" form-control required/>
+                    <input class="form-control" type="text" name="consultaPet" form-control required/>
                     <div class="invalid-feedback" style="width: 100%;">
                         Valor obrigatório.
                     </div>

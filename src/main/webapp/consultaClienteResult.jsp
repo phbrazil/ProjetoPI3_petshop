@@ -41,7 +41,7 @@
                 <div class="container">
                     <div class="py-5 text-center">
                         <!--img class="d-block mx-auto mb-4" src="img/LogoPetMaster.png" alt="" width="200" height="200"-->
-                        <h2>Cadastrar Cliente</h2>
+                        <h2>Alterar Cliente</h2>
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@
                                 <span class="input-group-text"></span>
                             </div>
 
-                            <input  onkeydown="javascript: fMasc(this, mRG);" type="text" class="form-control" id="rg" name="rgcliente" maxlength="12" placeholder="00.000.000-0" value ="" required>
+                            <input  onkeydown="javascript: fMasc(this, mRG);" type="text" class="form-control" id="rg" name="rgcliente" maxlength="12" placeholder="00.000.000-0" value ="${resultado.RG}" required>
 
                             <div class="invalid-feedback" style="width: 100%;">
                                 RG obrigatório.
@@ -80,7 +80,7 @@
                     <div class="mb-3">
                         <label for="primeironome">Nome</label>
                         <div class="input-group">
-                            <input name="nomecliente" type="text" class="form-control" id="nomecliente" placeholder="" value="" name="nomecliente" required>
+                            <input name="nomecliente" type="text" class="form-control" id="nomecliente" placeholder="" value="${resultado.nomeCliente}" name="nomeCliente" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
@@ -89,7 +89,7 @@
 
                     <div class="mb-3">
                         <label for="email">Email <span class="text-muted">(Opcional)</span></label>
-                        <input name ="email" type="email" class="form-control" id="email" placeholder="voce@exemplo.com" value ="">
+                        <input name ="email" type="email" class="form-control" id="email" placeholder="voce@exemplo.com" value ="${resultado.email}">
                         <div class="invalid-feedback">
                             Favor inserir um email válido para o frete.
                         </div>
@@ -97,21 +97,21 @@
 
                     <div class="mb-3">
                         <label for="endereco">Rua</label>
-                        <input name ="logradouro" type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value=""required>
+                        <input name ="logradouro" type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value="${resultado.logradouro}"required>
                         <div class="invalid-feedback">
                             Favor inserir seu endereço de envio.
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="bairro">Bairro</label>
-                        <input name ="bairro" type="text" class="form-control" id="bairro" placeholder="Bairro" value=""required>
+                        <input name ="bairro" type="text" class="form-control" id="bairro" placeholder="Bairro" value="${resultado.bairro}"required>
                         <div class="invalid-feedback">
                             Favor inserir o Bairro.
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="cidade">Cidade</label>
-                        <input name ="cidade" type="text" class="form-control" id="cidade" placeholder="Cidade" value=""required>
+                        <input name ="cidade" type="text" class="form-control" id="cidade" placeholder="Cidade" value="${resultado.cidade}"required>
                         <div class="invalid-feedback">
                             Favor inserir a Cidade.
                         </div>
@@ -121,7 +121,7 @@
                     <div class="row">
                         <div class="col-md-5 mb-3">
                             <label >País</label>
-                            <select name ="pais" class="custom-select d-block w-100" id="pais" required>
+                            <select name ="pais" class="custom-select d-block w-100" value ="${resultado.pais}" id="pais" required>
                                 <option>Brasil</option>
                             </select>
                             <div class="invalid-feedback">
@@ -130,7 +130,7 @@
                         </div>
                         <div class="col-md-4 mb-3">
                             <label  for="estado">Estado</label>
-                            <select name = "estado" class="custom-select d-block w-100" id="estado" value = "" required>
+                            <select name = "estado" class="custom-select d-block w-100" id="estado" value = "${resultado.estado}" required>
                                 <option>São Paulo</option>
                                 <option>Rio de Janeiro</option>
                                 <option>São Paulo</option>
@@ -146,14 +146,14 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="cep">CEP</label>
-                            <input name ="cep" type="text" class="form-control" id="cep" onkeydown="javascript: fMasc(this, mCEP);" placeholder="00000-000" maxlength="10" value = "" required>
+                            <input name ="cep" type="text" class="form-control" id="cep" onkeydown="javascript: fMasc(this, mCEP);" placeholder="00000-000" maxlength="10" value = "${resultado.cep}" required>
                             <div class="invalid-feedback">
                                 CEP obrigatório
                             </div>
                         </div>
                         <div class="col-md-2 mb-3">
                             <label name ="sexo" >UF</label>
-                            <select name ="uf" class="custom-select d-block w-100" id="sexo" value = "" required>
+                            <select name ="uf" class="custom-select d-block w-100" id="sexo" value = "${resultado.sexo}" required>
                                 <option>SP</option>
                                 <option>RJ</option>
                             </select>
@@ -163,14 +163,14 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="telefone">Telefone</label>
-                            <input onkeydown="javascript: fMasc(this, mTel);" name = "telefone" type="text" class="form-control" id="tel" placeholder="(xx)xxxxx-xxxx" maxlength="14" value = "">
+                            <input onkeydown="javascript: fMasc(this, mTel);" name = "telefone" type="text" class="form-control" id="tel" placeholder="(xx)xxxxx-xxxx" maxlength="14" value = "${resultado.telefone}">
                             <div class="invalid-feedback">
                                 Telefone obrigatório
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="celular">Celular</label>
-                            <input onkeydown="javascript: fMasc(this, mTel);" name ="celular" type="text" class="form-control" id="cel" placeholder="(xx)xxxxx-xxxx" maxlength="14" value = "" required>
+                            <input onkeydown="javascript: fMasc(this, mTel);" name ="celular" type="text" class="form-control" id="cel" placeholder="(xx)xxxxx-xxxx" maxlength="14" value = "${resultado.celular}" required>
                             <div class="invalid-feedback">
                                 Celular obrigatório
                             </div>
@@ -188,8 +188,8 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label  >Estado Civil</label>
-                            <select name ="estadocivil" class="custom-select d-block w-100" id="sexo" value = "" required>
-                                <option selected>Selecionar...</option>
+                            <select name ="estadocivil" class="custom-select d-block w-100" id="estadocivil"  required>
+                                <option>${resultado.estadoCivil}</option>
                                 <option>Solteiro</option>
                                 <option>Casado</option>
                                 <option>Divorciado</option>
@@ -200,7 +200,7 @@
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="nascimento">Nascimento</label>
-                            <input name = "nascimento" type="date" class="form-control" id="cep" placeholder="dd/mm/aaaa" maxlength="10" value = "" required>
+                            <input name = "nascimento" type="date" class="form-control" id="nascimento" placeholder="dd/mm/aaaa" maxlength="10" value = "${resultado.nascimento}" required>
 
                             <div class="invalid-feedback">
                                 Nascimento obrigatório
