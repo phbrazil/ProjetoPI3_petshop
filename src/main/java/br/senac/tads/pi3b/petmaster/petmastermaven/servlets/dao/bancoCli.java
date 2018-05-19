@@ -61,9 +61,11 @@ public class bancoCli {
             Connection conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            //st.executeUpdate("UPDATE clientes set codigobarrasprod = '" + produtos.getCodigoprod() + "', nomeprod = '" + produtos.getNomeprod() + "',"
-           //         + "valor = " + produtos.getValorprod() + ",descricaoprod = '" + produtos.getDescricaoprod() + "',categoriaprod = '" + produtos.getCategoriaprod() + "',"
-           //         + "quantidadeprod = " + produtos.getQtdestoque() + " where codigobarrasprod = '" + produtos.getCodigoprod() + "'");
+            st.executeUpdate("UPDATE clientes set nome = '" + cliente.getNomeCliente()+ "', logradouto = '" + cliente.getLogradouro()+ "',"
+                    + "rg = '" + cliente.getRG()+ "',CPFCliente = '" + cliente.getCPFCliente()+ "',pais = '" + cliente.getPais()+ "',"
+                    + "cidade = '" + cliente.getCidade()+ "',bairro ='"+cliente.getBairro()+"',estado = '"+cliente.getEstado()+"',"
+                    +"UF = '"+cliente.getUF()+"',cep='"+cliente.getCep()+"',telefone='"+cliente.getTelefone()+"',celular='"+cliente.getCelular()+"',"
+                    +"email='"+cliente.getEmail()+"',sexo='"+cliente.getSexo()+"',estadocivil='"+cliente.getEstadoCivil()+"',nascimento='"+cliente.getNascimento()+"' where cpfcliente = '" + cliente.getCPFCliente()+ "'");
 
             conexao.close();
 

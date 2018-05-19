@@ -35,16 +35,24 @@ public class alterarCli extends HttpServlet {
 
         if (acaocliente.equals("alterar")) {
 
-            String nomeprod = request.getParameter("nomeprod");
-            String codigobarrasprod = request.getParameter("codigoprod");
-            String descricaoprod = request.getParameter("descricaoprod");
-            String categoriaprod = request.getParameter("categoriaprod");
-            double valorprod = Double.parseDouble(request.getParameter("valorprod"));
-            int qtdestoque = Integer.valueOf(request.getParameter("qtdestoque"));
-            Cliente clientes = new Cliente(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+            String nomeCliente = request.getParameter("nomecliente");
+            String logradouro = request.getParameter("logradouro");
+            String RGCliente = request.getParameter("rgcliente");
+            String CPFCliente = request.getParameter("cpfcliente");
+            String email = request.getParameter("email");
+            String pais = request.getParameter("pais");
+            String cidade = request.getParameter("cidade");
+            String bairro = request.getParameter("bairro");
+            String uf = request.getParameter("uf");
+            String estado = request.getParameter("estado");
+            String cep = request.getParameter("cep").replace("-", "").replace(".", "");
+            String telefone = request.getParameter("telefone");
+            String celular = request.getParameter("celular");
+            String sexo = request.getParameter("sexo");
+            String estadocivil = request.getParameter("estadocivil");
+            String nascimento = request.getParameter("nascimento");
 
-            //clientes = new Cliente(nomeprod, valorprod, codigobarrasprod, descricaoprod, qtdestoque, categoriaprod);
-
+            Cliente clientes = new Cliente(CPFCliente, nascimento, nomeCliente, logradouro, bairro, cidade, cep, estado, uf, email, sexo, telefone, celular, pais, RGCliente, estadocivil);
             bancocli.atualizarCli(clientes);
 
             request.setAttribute("mensagem", "Cliente Alterado");
