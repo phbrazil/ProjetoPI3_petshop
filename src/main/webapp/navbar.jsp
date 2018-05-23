@@ -51,26 +51,26 @@ Author     : paulo.bezerra
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="atualizarEstoque.jsp">Atualizar Estoque</a>
+                            <a class="nav-link js-scroll-trigger" href="AtualizarEstoque.jsp">Atualizar Estoque</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="atualizarCliente.jsp">Atualizar Cliente</a>
+                            <a class="nav-link js-scroll-trigger" href="AtualizarCliente.jsp">Atualizar Cliente</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="catalogo.jsp">Catálogo de Serviços</a>
+                            <a class="nav-link js-scroll-trigger" href="Catalogo.jsp">Catálogo de Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="pesquisarCPF.jsp">Vender</a>
+                            <a class="nav-link js-scroll-trigger" href="PesquisarCPF.jsp">Vender</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="relatorios.jsp">Relatórios</a>
+                            <a class="nav-link js-scroll-trigger" href="Relatorios.jsp">Relatórios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="sobre.jsp">Sobre o Sistema</a>
+                            <a class="nav-link js-scroll-trigger" href="Sobre.jsp">Sobre o Sistema</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="logout.jsp">Sair</a>
+                            <a class="nav-link js-scroll-trigger" href="Logout.jsp">Sair</a>
 
 
                         </li>

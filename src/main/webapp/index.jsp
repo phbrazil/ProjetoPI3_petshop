@@ -26,7 +26,7 @@
             <label for="inputPassword" class="sr-only">Senha</label>
             <input type="password" id="inputPassword" class="form-control" placeholder="Password" name = "password" required>
             <label>
-                <a href ="reset.jsp">Esqueci a senha</a>
+                <a href ="Reset.jsp">Esqueci a senha</a>
             </label>
             <button class="btn btn-lg btn-secondary btn-block" type="submit">Entrar</button>
             <p class="mt-5 mb-3 text-muted">&copy; Javazeiros - Projeto Semestre 3 </p>

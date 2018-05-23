@@ -73,7 +73,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/topodapagina.css" rel="stylesheet">
-    <form name = "consultaProd" method="POST" >
+    <form name = "ConsultaProd" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Estoque Produtos</title>
@@ -110,7 +110,7 @@
                     <td><%=selectProduto.getInt("quantidadeprod")%></td>
                     <td><%=selectProduto.getString("categoriaprod")%></td>
                     <td>R$<%=selectProduto.getString("valor")%></td> 
-                    <td><button type="submit" class="button" formaction="consultaProd?idproduto=<%=selectProduto.getString("codigobarrasprod")%>">Alterar</button></td>
+                    <td><button type="submit" class="button" formaction="ConsultaProd?idproduto=<%=selectProduto.getString("codigobarrasprod")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
                         }                                 %>

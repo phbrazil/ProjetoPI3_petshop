@@ -6,6 +6,7 @@
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Sessao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -15,34 +16,46 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Sessao;
 
 /**
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "Sessao", urlPatterns = {"/Sessao"})
+@WebServlet(name = "Vender", urlPatterns = {"/Vender"})
 
-public class SessaoServlet extends HttpServlet {
+public class Vender extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        
         boolean sessaovalida = false;
+
+        String cpfcliente = request.getParameter("cpfcliente");
+        String nomecliente = request.getParameter("nomecliente");
 
         HttpSession sessaoatual = null;
 
         Sessao sessao = new Sessao();
-
         sessaoatual = request.getSession();
         sessaovalida = sessao.Sessao(sessaoatual);
 
-        if (sessaovalida == false) {
-            response.sendRedirect("index.html");
+        if (!cpfcliente.equals("")) {
+
+            sessaoatual.setAttribute("nomecliente", nomecliente);
+            sessaoatual.setAttribute("cpfcliente", cpfcliente);
+
+            request.getRequestDispatcher("Vender.jsp").forward(request, response);
+
+        } else {
+
+            sessaoatual.setAttribute("nomecliente", "Pesquise o CPF");
+
+            request.getRequestDispatcher("PesquisarCPF.jsp").forward(request, response);
 
         }
 
+        //sessaoatual.invalidate();
     }
 
 }

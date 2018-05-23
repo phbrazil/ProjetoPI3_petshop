@@ -5,7 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.bancoConexao;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoConexao;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.LoginDados;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.LoginDados;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.LoginDados;
@@ -30,7 +30,7 @@ public class AcessoLogin {
         String select = "";
 
         //long validado = 0;
-        bancoConexao bancoconexao = new bancoConexao();
+        BancoConexao bancoconexao = new BancoConexao();
 
         try {
             Class.forName("com.mysql.jdbc.Driver");

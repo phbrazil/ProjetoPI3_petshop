@@ -22,7 +22,7 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form action="${pageContext.request.contextPath}/AcaoConsulta" method="POST" >
+    <form action="${pageContext.request.contextPath}/AcaoCadastrarCliente" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cadastrar</title>
@@ -40,15 +40,13 @@
             <br>
             <br>
             <br>
-            <form  action="AcaoConsulta"  method="POST">
+            <form  action="AcaoCadastrarCliente"  method="POST">
 
                 <div class="col-md-4 mb-3">
-                    <select name ="AcaoConsulta" class="custom-select d-block w-100" id="acaoproduto" required>
+                    <select name ="AcaoCadastrarCliente" class="custom-select d-block w-100" id="acaoproduto" required>
                         <option value="">Selecionar...</option>
-                        <option name ="consultaprod" >Consultar Produto</option>
-                        <option name ="consultapet" >Consultar Pet</option>
-                        <option name ="listarestoqueprod" >Listar Estoque Produtos</option>
-                        <option name ="listarestoquepet" >Listar Estoque Pets</option>
+                        <option name ="incluir" >Cadastrar Cliente</option>
+                        <option name ="consultar" >Consultar Cliente</option>
 
 
                     </select>
