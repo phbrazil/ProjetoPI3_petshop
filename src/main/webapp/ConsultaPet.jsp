@@ -34,8 +34,8 @@
             <div align ="center">
                 <br>
                 <br>
-                <br>
                 <h1 >Consultar Pet</h1>
+                <br>
                 <h2>Digite o código do Pet</h2>
 
                 <div class="col-md-5 order-md-1">

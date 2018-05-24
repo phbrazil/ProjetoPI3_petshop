@@ -33,9 +33,9 @@
             <div align ="center">
                 <br>
                 <br>
-                <br>
 
                 <h1 >Consultar Produto</h1>
+                <br>
                 <h2>Digite o código do produto</h2>
 
 

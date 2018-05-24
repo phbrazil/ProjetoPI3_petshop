@@ -28,11 +28,32 @@ Author     : paulo.bezerra
         <title>Vender</title>
     </head>
     <body id="page-top">
+        <style>
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #33CCCC;
+                min-width: 190px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                padding: 12px 16px;
+                z-index: 1;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        </style>
         <form>
             <div id="includedContent"></div>
 
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" id="sideNav">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-info" id="sideNav">
 
                 <a class="navbar-brand js-scroll-trigger" href="Home.jsp">
                    <span class="d-block d-lg-block">Bem-Vindo <!--c:out value="${userName}" /--></span>
@@ -44,38 +65,59 @@ Author     : paulo.bezerra
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="Consulta.jsp">Consultas</a>
-                        </li>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link js-scroll-trigger">Consultas</a>
+                            <div class="dropdown-content">
+                                <p><a href="ConsultaProd.jsp" style="text-decoration:none;">Produto</a></p>
+                                <p><a href="ConsultaPet.jsp" style="text-decoration:none;">Pet</a></p>
+                                <p><a href="EstoqueProd.jsp" style="text-decoration:none;">Listar Produtos</a></p>
+                                <p><a href="EstoquePet.jsp" style="text-decoration:none;">Listar Pets</a></p>
+                            </div>
+                        </div>
 
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="AtualizarEstoque.jsp">Atualizar Estoque</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="AtualizarCliente.jsp">Atualizar Cliente</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="Catalogo.jsp">Catálogo de Serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="PesquisarCPF.jsp">Vender</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="Relatorios.jsp">Relatórios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="Sobre.jsp">Sobre o Sistema</a>
-                        </li>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="Logout.jsp">Sair</a>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link js-scroll-trigger">Cadastrar</a>
+                            <div class="dropdown-content">
+                                <p><a href="CadastrarPet.jsp" style="text-decoration:none;">Pet</a></p>
+                                <p><a href="CadastrarProd.jsp" style="text-decoration:none;">Produto</a></p>
+                                <p><a href="CadastrarCliente.jsp" style="text-decoration:none;">Cliente</a></p>
+                                <p><a href="CadastrarFilial.jsp" style="text-decoration:none;">Filial</a></p>
+                                <p><a href="CadastrarUsuario.jsp" style="text-decoration:none;">Usuario</a></p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Catalogo.jsp">Catálogo de Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="PesquisarCPF.jsp">Vender</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link js-scroll-trigger">Relatórios</a>
+                            <div class="dropdown-content">
+                                <p><a href="RelatoriosResult.jsp" style="text-decoration:none;">Todos os Produtos</a></p>
+                                <p><a href="RelatoriosResult.jsp" style="text-decoration:none;">Todos os Pets</a></p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Sobre.jsp">Sobre o Sistema</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Logout.jsp">Sair</a>
 
 
-                        </li>
-                    </ul>
-                </div>
+                    </li>
+                </ul>
             </nav>
 
 
