@@ -38,7 +38,7 @@ Author     : paulo.bezerra
             .dropdown-content {
                 display: none;
                 position: absolute;
-                background-color: #33CCCC;
+                background-color: #f9f9f9;
                 min-width: 190px;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 padding: 12px 16px;
@@ -72,8 +72,11 @@ Author     : paulo.bezerra
                             <div class="dropdown-content">
                                 <p><a href="ConsultaProd.jsp" style="text-decoration:none;">Produto</a></p>
                                 <p><a href="ConsultaPet.jsp" style="text-decoration:none;">Pet</a></p>
+                                <p><a href="ConsultaCli.jsp" style="text-decoration:none;">Cliente</a></p>
                                 <p><a href="EstoqueProd.jsp" style="text-decoration:none;">Listar Produtos</a></p>
                                 <p><a href="EstoquePet.jsp" style="text-decoration:none;">Listar Pets</a></p>
+                                <p><a href="EstoqueClientes.jsp" style="text-decoration:none;">Listar Clientes</a></p>
+
                             </div>
                         </div>
 
@@ -87,7 +90,7 @@ Author     : paulo.bezerra
                                 <p><a href="CadastrarProd.jsp" style="text-decoration:none;">Produto</a></p>
                                 <p><a href="CadastrarCliente.jsp" style="text-decoration:none;">Cliente</a></p>
                                 <p><a href="CadastrarFilial.jsp" style="text-decoration:none;">Filial</a></p>
-                                <p><a href="CadastrarUsuario.jsp" style="text-decoration:none;">Usuario</a></p>
+                                <p><a href="CadastrarUsuario.jsp" style="text-decoration:none;">Usuário</a></p>
                             </div>
                         </div>
 
