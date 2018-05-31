@@ -188,9 +188,9 @@ public class BancoCli {
 
     }
 
-    public List PesquisarClientesGeral(List lista) {
+    public ResultSet PesquisarClientesGeral() {
 
-        String select = "";
+        String selectgeral = "";
 
         BancoConexao bancoconexao = new BancoConexao();
 
@@ -200,22 +200,12 @@ public class BancoCli {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select * from clientes";
-            System.out.println("fiz o select");
-            ResultSet result = st.executeQuery(select);
+            selectgeral = "select * from clientes";
+            ResultSet resultgeral = st.executeQuery(selectgeral);
 
-            while (result.next()) {
-
-                //produtos.setCodigoprod(result.getString("codigobarrasprod"));
-                //produtos.setNomeprod(result.getString("nomeprod"));
-                //produtos.setValorprod(result.getDouble("valor"));
-                //produtos.setDtCadastro(result.getDate("datacadastroprod"));
-                //produtos.setDescricaoprod(result.getString("descricaoprod"));
-                //produtos.setCategoriaprod(result.getString("categoriaprod"));
-                //produtos.setQtdestoque(result.getInt("quantidadeprod"));
-                //produtos.setListaProd(produtos);
-
-
+            if(resultgeral!=null){
+                System.out.println("ta aqui");
+                return resultgeral;
             }
 
             conexao.close();
@@ -225,7 +215,7 @@ public class BancoCli {
             System.out.println("erro" + e.getMessage());
 
         }
-        return lista;
+        return null;
     }
 
 }

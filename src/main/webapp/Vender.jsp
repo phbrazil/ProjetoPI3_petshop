@@ -4,7 +4,12 @@
     Author     : paulo.bezerra
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.ArrayList"%>
+<%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.List"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos"%>
+<html>
+    <head>
 <!DOCTYPE html>
 <html>
     <head>
@@ -93,8 +98,8 @@
                     </div>
 
                     <div class="mb-3">
-                        <label>Código do Produto <span class="text-muted">(Mandatório)</span></label>
-                        <input type="number" name ="codigoprod" id="codigoprod" class="form-control" placeholder="" value ="" >
+                        <label>Código de Barras<span class="text-muted">(Mandatório)</span></label>
+                        <input type="number" name ="codigovenda" id="codigoprod" class="form-control" placeholder="" value ="" >
                         <br>
                         <input type="submit" name="acaovenda" value="Adicionar no Carrinho" class="button" action="shopServlet" ></td>
 
@@ -146,13 +151,19 @@
                             <td  bgcolor="#33CCCC">Nome do Produto</td>
                             <td  bgcolor="#33CCCC">Código do Produto</td>
                         </tr>
+
+                        
+                     
+
                         <c:if test="${not empty sessionScope.produtos}">
+
                             <c:forEach items="${sessionScope.produtos}" var="produtosNome" items="${sessionScope.produtosCodigo}" var="produtosCodigo">
 
                                 <tr>
                                     <td>${produtosNome}</td>
                                     <td>${produtosCodigo}</td>
                                 </tr>
+
 
                             </c:forEach>
 
@@ -174,7 +185,7 @@
                         </select>
                     </div>
                     <hr class="mb-4">
-                        <input type="submit" name="acaovenda" value="Finalizar Venda" class="button" action="FinalizarVenda" ></td>
+                    <input type="submit" name="acaovenda" value="Finalizar Venda" class="button" action="FinalizarVenda" ></td>
                 </div>
             </div>
 

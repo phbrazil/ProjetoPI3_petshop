@@ -5,6 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Sessao;
 import java.io.IOException;
@@ -30,26 +31,38 @@ import javax.servlet.http.HttpSession;
 public class Carrinho extends HttpServlet {
 
     List<String> produtosListagem;
+    List<String> petsListagem;
+
     List<String> produtosListagemCodigo;
+    List<String> petsListagemCodigo;
 
     Produtos produtos = new Produtos(null, 0, null, null, 0, null);
-    String codigoprod;
+    Pets pets = new Pets(null, 0, null, null, 0, null);
+    String codigovenda;
+    String cpfcliente;
+    String nomecliente;
     BancoProd bancoprod = new BancoProd();
+    BancoPet bancopet = new BancoPet();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         String acaovenda = request.getParameter("acaovenda");
+        
+        cpfcliente = request.getParameter("cpfcliente");
+        nomecliente = request.getParameter("nomecliente");
 
         if (acaovenda.equals("Adicionar no Carrinho")) {
 
             produtos = null;
-            codigoprod = null;
+            pets = null;
+            codigovenda = null;
 
             // Recupera o nome enviado na requisição
-            codigoprod = request.getParameter("codigoprod");
-            produtos = bancoprod.PesquisarProduto(codigoprod);
+            codigovenda = request.getParameter("codigovenda");
+            
+            produtos = bancoprod.PesquisarProduto(codigovenda);
 
             // Valida se nome não é nulo
             if (produtos.getNomeprod() != null) {
@@ -75,6 +88,37 @@ public class Carrinho extends HttpServlet {
                 // Atualiza a lista na sessão
                 sessao.setAttribute("produtosNome", produtosListagem);
                 sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
+                sessao.setAttribute("nomecliente", nomecliente);
+                sessao.setAttribute("cpfcliente", cpfcliente);
+
+                request.getRequestDispatcher("Vender.jsp").forward(request, response);
+
+            } else if (produtos.getNomeprod() == null) {
+                
+                bancopet.PesquisarPet(codigovenda);
+
+                // Obtém a sessão do usuário
+                HttpSession sessao = request.getSession();
+
+                // Se a lista de nomes não estiver na sessão, cria nova
+                if (sessao.getAttribute("produtosNome") == null) {
+                    produtosListagem = new ArrayList<>();
+                    produtosListagemCodigo = new ArrayList<>();
+                    sessao.setAttribute("produtosNome", produtosListagem);
+                    sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
+
+                }
+
+                // Recupera a lista a partir da sessão do usuário e adiciona nome
+                produtosListagem = (List<String>) sessao.getAttribute("produtosNome");
+                produtosListagemCodigo = (List<String>) sessao.getAttribute("produtosCodigo");
+                produtosListagem.add(produtos.getNomeprod());
+                produtosListagemCodigo.add(produtos.getCodigoprod());
+
+                // Atualiza a lista na sessão
+                sessao.setAttribute("produtosNome", produtosListagem);
+                sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
+
                 request.getRequestDispatcher("Vender.jsp").forward(request, response);
 
             } else {
