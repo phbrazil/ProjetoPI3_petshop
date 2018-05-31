@@ -1,7 +1,7 @@
 <%-- 
     Document   : Export
     Created on : May 31, 2018, 2:10:32 PM
-    Author     : killuminatti08
+    Author     : paulo.bezerra
 --%>
 
 <%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente"%>
@@ -15,7 +15,6 @@
     </head>
     <body>
         <h1>Report Clientes</h1>
-
 
         <table>
 

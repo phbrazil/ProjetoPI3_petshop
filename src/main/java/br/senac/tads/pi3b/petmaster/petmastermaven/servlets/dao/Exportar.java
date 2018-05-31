@@ -53,16 +53,26 @@ public class Exportar extends HttpServlet {
             }
 
         } else if (exportartipo.equals("ExportarProdutos")) {
-            
+
             BancoProd bancoprod = new BancoProd();
 
             ResultSet exportarprod = bancoprod.PesquisarProdutosGeral();
-            
+
             if (exportarprod != null) {
                 request.setAttribute("exportarprodutos", exportarprod);
                 request.getRequestDispatcher("ExportProdutos.jsp").forward(request, response);
             }
 
+        } else if (exportartipo.equals("ExportarPets")) {
+
+            BancoPet bancopet = new BancoPet();
+
+            ResultSet exportarpet = bancopet.PesquisarPetGeral();
+
+            if (exportarpet != null) {
+                request.setAttribute("exportarpets", exportarpet);
+                request.getRequestDispatcher("ExportPets.jsp").forward(request, response);
+            }
         }
 
     }

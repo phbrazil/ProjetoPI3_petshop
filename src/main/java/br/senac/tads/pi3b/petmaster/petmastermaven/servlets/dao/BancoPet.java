@@ -174,9 +174,9 @@ public class BancoPet {
 
     }
 
-    public List PesquisarPetGeral(List lista) {
+    public ResultSet PesquisarPetGeral() {
 
-        String select = "";
+        String selectgeral = "";
 
         BancoConexao bancoconexao = new BancoConexao();
 
@@ -186,22 +186,11 @@ public class BancoPet {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select * from pets";
-            System.out.println("fiz o select pets");
-            ResultSet result = st.executeQuery(select);
+            selectgeral = "select * from pets";
+            ResultSet resultgeral = st.executeQuery(selectgeral);
 
-            while (result.next()) {
-
-                pets.setCodigopet(result.getString("codigobarraspet"));
-                pets.setNomepet(result.getString("nomepet"));
-                pets.setValorpet(result.getDouble("valorpet"));
-                pets.setDtCadastropet(result.getDate("datacadastropet"));
-                pets.setDescricaopet(result.getString("descricaopet"));
-                pets.setCategoriapet(result.getString("categoriapet"));
-                pets.setQtdestoquepet(result.getInt("quantidadepet"));
-                pets.setListaPet(pets);
-
-
+            if (resultgeral != null) {
+                return resultgeral;
             }
 
             conexao.close();
@@ -211,7 +200,7 @@ public class BancoPet {
             System.out.println("erro" + e.getMessage());
 
         }
-        return lista;
+        return null;
     }
 
 }

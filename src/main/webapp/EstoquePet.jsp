@@ -11,7 +11,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <%      
+    <%
         Connection conexao = null;
 
         Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -90,12 +90,14 @@
             <table border='2' cellpadding='10' width='1100'>
                 <tr>
                     <td  bgcolor="#33CCCC">Linha</td>
-                    <td  bgcolor="#33CCCC">Código Produto</td>
-                    <td  bgcolor="#33CCCC">Nome do Produto</td>
-                    <td  bgcolor="#33CCCC">Quantidade do Produto</td>
-                    <td  bgcolor="#33CCCC">Categoria do Produto</td>
+                    <td  bgcolor="#33CCCC">Código Pet</td>
+                    <td  bgcolor="#33CCCC">Nome do Pet</td>
+                    <td  bgcolor="#33CCCC">Quantidade de Pets</td>
+                    <td  bgcolor="#33CCCC">Categoria do Pet</td>
                     <td  bgcolor="#33CCCC">Valor</td> 
-                    <td  bgcolor="#33CCCC">Alterar Produto</td> 
+                    <td  bgcolor="#33CCCC">Alterar Pet</td> 
+                    <td><button type="submit" class="button" name ="exportar" value="ExportarPets" formaction="Exportar">Exportar</button></td>
+
                 </tr>
                 <%  int linha = 1;
                     String[] listaprodutos = new String[quantidadepets];
