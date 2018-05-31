@@ -112,7 +112,7 @@
                     <td><%=selectPet.getInt("quantidadepet")%></td>
                     <td><%=selectPet.getString("categoriapet")%></td>
                     <td>R$<%=selectPet.getString("valorpet")%></td> 
-                    <td><button type="submit" class="button" formaction="ConsultaPet?idpet=<%=selectPet.getString("codigobarraspet")%>">Alterar</button></td>
+                    <td><button type="submit" class="button" formaction="ConsultaPet?ConsultaPet=<%=selectPet.getString("codigobarraspet")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
                         }                                 %>

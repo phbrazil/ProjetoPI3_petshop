@@ -112,7 +112,7 @@
                     <td><%=selectProduto.getInt("quantidadeprod")%></td>
                     <td><%=selectProduto.getString("categoriaprod")%></td>
                     <td>R$<%=selectProduto.getString("valor")%></td> 
-                    <td><button type="submit" class="button" formaction="ConsultaProd?idproduto=<%=selectProduto.getString("codigobarrasprod")%>">Alterar</button></td>
+                    <td><button type="submit" class="button" formaction="ConsultaProd?ConsultaProd=<%=selectProduto.getString("codigobarrasprod")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
                         }

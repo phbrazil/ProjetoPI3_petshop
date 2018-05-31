@@ -38,22 +38,20 @@ public class ConsultaProd extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        Date today = Calendar.getInstance().getTime();
 
-        String consultaProd = request.getParameter("consultaProd");
-        String codigobarrasprod = request.getParameter("idproduto");
-
+        String consultaProd = request.getParameter("ConsultaProd");
+                
 
         BancoProd selectprod = new BancoProd();
 
         Produtos produtos = new Produtos(null, 0, null, null, 0, null);
 
-        if (consultaProd == null) {
-            produtos = selectprod.PesquisarProduto(codigobarrasprod);
-
-        }else
-        if (codigobarrasprod == null) {
+        
+        if (consultaProd.trim() != null) {
+            
             produtos = selectprod.PesquisarProduto(consultaProd);
+            
+            System.out.println("to aqui");
 
         }
 
