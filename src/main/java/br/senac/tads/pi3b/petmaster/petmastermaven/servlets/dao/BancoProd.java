@@ -38,8 +38,6 @@ public class BancoProd {
                     + "'," + produtos.getValorprod() + ",now(),'"
                     + produtos.getDescricaoprod() + "','" + produtos.getCategoriaprod() + "'," + produtos.getQtdestoque() + ");");
 
-            
-            
             conexao.close();
 
         } catch (Exception e) {
@@ -101,7 +99,6 @@ public class BancoProd {
                 produtos.setQtdestoque(result.getInt("quantidadeprod"));
                 //produtos.setListaProd(produtos);
 
-
             }
 
             conexao.close();
@@ -111,7 +108,7 @@ public class BancoProd {
             System.out.println("erro" + e.getMessage());
 
         }
-        System.out.println("to aqui nos produtinhos"+produtos.getNomeprod());
+        System.out.println("to aqui nos produtinhos" + produtos.getNomeprod());
 
         return produtos;
     }
@@ -176,9 +173,9 @@ public class BancoProd {
 
     }
 
-    public List PesquisarProdutoGeral(List lista) {
+    public ResultSet PesquisarProdutosGeral() {
 
-        String select = "";
+        String selectgeral = "";
 
         BancoConexao bancoconexao = new BancoConexao();
 
@@ -188,22 +185,11 @@ public class BancoProd {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select * from produtos";
-            System.out.println("fiz o select");
-            ResultSet result = st.executeQuery(select);
+            selectgeral = "select * from produtos";
+            ResultSet resultgeral = st.executeQuery(selectgeral);
 
-            while (result.next()) {
-
-                produtos.setCodigoprod(result.getString("codigobarrasprod"));
-                produtos.setNomeprod(result.getString("nomeprod"));
-                produtos.setValorprod(result.getDouble("valor"));
-                produtos.setDtCadastro(result.getDate("datacadastroprod"));
-                produtos.setDescricaoprod(result.getString("descricaoprod"));
-                produtos.setCategoriaprod(result.getString("categoriaprod"));
-                produtos.setQtdestoque(result.getInt("quantidadeprod"));
-                produtos.setListaProd(produtos);
-
-
+            if (resultgeral != null) {
+                return resultgeral;
             }
 
             conexao.close();
@@ -213,7 +199,7 @@ public class BancoProd {
             System.out.println("erro" + e.getMessage());
 
         }
-        return lista;
+        return null;
     }
 
 }

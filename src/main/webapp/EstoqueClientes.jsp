@@ -3,7 +3,6 @@
     Created on : Mar 29, 2018, 12:13:17 PM
     Author     : paulo.bezerra
 --%>
-
 <%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
@@ -74,7 +73,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/topodapagina.css" rel="stylesheet">
-    <form name = "ConsultaProd" method="POST" >
+    <form name = "ConsultaCli" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Lista Clientes</title>
@@ -97,7 +96,7 @@
                     <td  bgcolor="#33CCCC">CPF</td>
                     <td  bgcolor="#33CCCC">Cidade</td> 
                     <td  bgcolor="#33CCCC">Alterar</td> 
-                    <td><button type="submit" class="button" formaction="Exportar">Exportar</button></td>
+                    <td><button type="submit" class="button" name ="exportar" value="ExportarCliente" formaction="Exportar">Exportar</button></td>
                 </tr>
                 <%  int linha = 1;
                     String[] listaClientes = new String[quantidadeClientes];
@@ -118,13 +117,6 @@
                     <% linha++;
 
                         }
-                        ResultSet exportar = (ResultSet) request.getAttribute("exportarcliente");
-                        if (exportar != null) {
-                            response.setContentType("application/vnd.ms-excel");
-                            response.setHeader("Content-Disposition", "inline; filename=" + "Clientereport.xls");
-
-                        }
-
 
                     %>
             </table>

@@ -3,7 +3,7 @@
     Created on : Mar 29, 2018, 12:13:17 PM
     Author     : paulo.bezerra
 --%>
-
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
@@ -11,7 +11,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <%      
+    <%
         Connection conexao = null;
 
         Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -96,6 +96,8 @@
                     <td  bgcolor="#33CCCC">Categoria do Produto</td>
                     <td  bgcolor="#33CCCC">Valor</td> 
                     <td  bgcolor="#33CCCC">Alterar Produto</td> 
+                    <td><button type="submit" class="button" name ="exportar" value="ExportarProdutos" formaction="Exportar">Exportar</button></td>
+
                 </tr>
                 <%  int linha = 1;
                     String[] listaprodutos = new String[quantidadeprodutos];
@@ -113,12 +115,20 @@
                     <td><button type="submit" class="button" formaction="ConsultaProd?idproduto=<%=selectProduto.getString("codigobarrasprod")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
-                        }                                 %>
+                        }
+
+                        ResultSet exportarprod = (ResultSet) request.getAttribute("exportarprodutos");
+                        if (exportarprod != null) {
+                        response.setContentType("application/vnd.ms-excel");
+                        response.setHeader("Content-Disposition", "inline; filename=" + "Produtosreport.xls");
+                        }
+
+
+                    %>
             </table>
         </div>
 
-        <%
-            try {
+        <%            try {
                 if (listagemProdutos != null) {
                     listagemProdutos.close();
                 }

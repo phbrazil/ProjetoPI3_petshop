@@ -38,21 +38,32 @@ public class Exportar extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        System.out.println("cheguei aqui");
+        String exportartipo = request.getParameter("exportar");
 
-        BancoCli exportarcli = new BancoCli();
+        if (exportartipo.equals("ExportarCliente")) {
 
-        ResultSet exportar = exportarcli.PesquisarClientesGeral();
+            BancoCli bancocli = new BancoCli();
 
-        if (exportar != null) {
-            request.setAttribute("exportarcliente", exportar);
-            request.getRequestDispatcher("EstoqueClientes.jsp").forward(request, response);
-            System.out.println("exporteu");
+            ResultSet exportarcli = bancocli.PesquisarClientesGeral();
+
+            if (exportarcli != null) {
+                request.setAttribute("exportarcliente", exportarcli);
+                request.getRequestDispatcher("ExportClientes.jsp").forward(request, response);
+
+            }
+
+        } else if (exportartipo.equals("ExportarProdutos")) {
+            
+            BancoProd bancoprod = new BancoProd();
+
+            ResultSet exportarprod = bancoprod.PesquisarProdutosGeral();
+            
+            if (exportarprod != null) {
+                request.setAttribute("exportarprodutos", exportarprod);
+                request.getRequestDispatcher("ExportProdutos.jsp").forward(request, response);
+            }
 
         }
-
-        response.setContentType("application/vnd.ms-excel");
-        response.setHeader("Content-Disposition", "inline; filename=" + "Clientereport.xls");
 
     }
 
