@@ -66,7 +66,7 @@
                     <div class="row">
                         <div class="col-md-4 mb-3">
                             <label>Código do Pet</label>
-                            <input name="codigopet" type="text" class="form-control" id="primeironome" value="${resultado.codigopet}" required>
+                            <input readonly name="codigopet" type="text" class="form-control" id="primeironome" value="${resultado.codigopet}" required>
                             <div class="invalid-feedback">
                                 Código obrigatório
                             </div>

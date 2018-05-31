@@ -63,6 +63,7 @@ public class BancoProd {
 
             conexao.close();
 
+            System.out.println("aqui no update"+produtos.getCodigoprod());
             System.out.println("fiz o update");
 
         } catch (Exception e) {

@@ -76,7 +76,7 @@
     <form name = "ConsultaProd" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Estoque Produtos</title>
+        <title>Estoque Pets</title>
     </head>
     <body id="page-top">
 
@@ -86,7 +86,7 @@
             <br>
             <br>
             <br>
-            <h2>Estoque de Produtos</h2>
+            <h2>Estoque de Pets</h2>
             <table border='2' cellpadding='10' width='1100'>
                 <tr>
                     <td  bgcolor="#33CCCC">Linha</td>

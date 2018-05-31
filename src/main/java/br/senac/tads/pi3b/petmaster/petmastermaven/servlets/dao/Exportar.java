@@ -47,6 +47,7 @@ public class Exportar extends HttpServlet {
             ResultSet exportarcli = bancocli.PesquisarClientesGeral();
 
             if (exportarcli != null) {
+                
                 request.setAttribute("exportarcliente", exportarcli);
                 request.getRequestDispatcher("ExportClientes.jsp").forward(request, response);
 
@@ -59,6 +60,7 @@ public class Exportar extends HttpServlet {
             ResultSet exportarprod = bancoprod.PesquisarProdutosGeral();
 
             if (exportarprod != null) {
+                
                 request.setAttribute("exportarprodutos", exportarprod);
                 request.getRequestDispatcher("ExportProdutos.jsp").forward(request, response);
             }
@@ -70,6 +72,7 @@ public class Exportar extends HttpServlet {
             ResultSet exportarpet = bancopet.PesquisarPetGeral();
 
             if (exportarpet != null) {
+                
                 request.setAttribute("exportarpets", exportarpet);
                 request.getRequestDispatcher("ExportPets.jsp").forward(request, response);
             }

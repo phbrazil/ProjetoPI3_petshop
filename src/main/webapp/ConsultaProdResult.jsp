@@ -72,7 +72,7 @@
                     <div class="row">
                         <div class="col-md-4 mb-3">
                             <label>Código do Produto</label>
-                            <input name="codigoprod" type="text" class="form-control" id="primeironome" value="${resultado.codigoprod}" required>
+                            <input readonly name="codigoprod" type="text" class="form-control" id="primeironome" value="${resultado.codigoprod}" required>
                             <div class="invalid-feedback">
                                 Código obrigatório
                             </div>
