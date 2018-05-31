@@ -73,9 +73,6 @@ Author     : paulo.bezerra
                                 <p><a href="ConsultaProd.jsp" style="text-decoration:none;">Produto</a></p>
                                 <p><a href="ConsultaPet.jsp" style="text-decoration:none;">Pet</a></p>
                                 <p><a href="ConsultaCli.jsp" style="text-decoration:none;">Cliente</a></p>
-                                <p><a href="EstoqueProd.jsp" style="text-decoration:none;">Listar Produtos</a></p>
-                                <p><a href="EstoquePet.jsp" style="text-decoration:none;">Listar Pets</a></p>
-                                <p><a href="EstoqueClientes.jsp" style="text-decoration:none;">Listar Clientes</a></p>
 
                             </div>
                         </div>
@@ -105,8 +102,10 @@ Author     : paulo.bezerra
                         <div class="dropdown">
                             <a class="nav-link js-scroll-trigger">Relatórios</a>
                             <div class="dropdown-content">
-                                <p><a href="RelatoriosResult.jsp" style="text-decoration:none;">Todos os Produtos</a></p>
-                                <p><a href="RelatoriosResult.jsp" style="text-decoration:none;">Todos os Pets</a></p>
+                                <p><a href="EstoqueProd.jsp" style="text-decoration:none;">Listar Produtos</a></p>
+                                <p><a href="EstoquePet.jsp" style="text-decoration:none;">Listar Pets</a></p>
+                                <p><a href="EstoqueClientes.jsp" style="text-decoration:none;">Listar Clientes</a></p>
+
                             </div>
                         </div>
 
