@@ -18,6 +18,26 @@
 
         <table>
 
+            <tr>
+                <td>CPF do Cliente</td>
+                <td>RG do Cliente</td>
+                <td>Nome do Cliente</td>
+                <td>Logradouro do Cliente</td>
+                <td>Bairro do Cliente</td>
+                <td>Cidade do Cliente</td>
+                <td>Estado do Cliente</td>
+                <td>UF do Cliente</td>
+                <td>País do Cliente</td>
+                <td>CEP do Cliente</td>
+                <td>Telefone do Cliente</td>
+                <td>Celular do Cliente</td>
+                <td>Email do Cliente</td>
+                <td>Sexo do Cliente</td>
+                <td>Estado Civil do Cliente</td>
+                <td>Nascimento do Cliente</td>
+
+            </tr>
+
             <%
 
                 ResultSet exportar = (ResultSet) request.getAttribute("exportarcliente");
@@ -41,7 +61,6 @@
                 <td><%=exportar.getString("celular")%></td> 
                 <td><%=exportar.getString("email")%></td> 
                 <td><%=exportar.getString("sexo")%></td> 
-                <td><%=exportar.getString("estado")%></td> 
                 <td><%=exportar.getString("estadocivil")%></td> 
                 <td><%=exportar.getString("nascimento")%></td> 
             </tr>   

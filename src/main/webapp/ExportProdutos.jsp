@@ -18,6 +18,15 @@
 
 
         <table>
+            <tr>
+                <td>Código do Produto</td>
+                <td>Nome do Produto</td>
+                <td>Valor do Produto</td>
+                <td>data de Cadastro do Produto</td>
+                <td>Descricao do Produto</td>
+                <td>Categoria do Produto</td>
+                <td>Quantidade do Produto</td>
+            </tr>
 
             <%
 
@@ -30,7 +39,7 @@
             <tr>
                 <td><%=exportar.getString("codigobarrasprod")%></td>
                 <td><%=exportar.getString("nomeprod")%></td>
-                <td><%=exportar.getDouble("valor")%></td>
+                <td>R$<%=exportar.getDouble("valor")%></td>
                 <td><%=exportar.getDate("datacadastroprod")%></td>
                 <td><%=exportar.getString("descricaoprod")%></td>
                 <td><%=exportar.getString("categoriaprod")%></td>
