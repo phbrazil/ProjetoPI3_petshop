@@ -8,6 +8,7 @@ package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Sessao;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Vendas;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -36,6 +37,7 @@ public class Carrinho extends HttpServlet {
     List<String> petsListagem;
 
     double total = 0;
+    int quantidadetotal = 0;
     String quantidade = null;
     int quantconvert = 0;
 
@@ -64,8 +66,6 @@ public class Carrinho extends HttpServlet {
             // the String to int conversion happens here
             quantconvert = Integer.parseInt(quantidade.trim());
 
-            // print out the value after the conversion
-            System.out.println("int quantconvert = " + quantconvert);
         } catch (NumberFormatException nfe) {
             System.out.println("NumberFormatException: " + nfe.getMessage());
         }
@@ -83,6 +83,8 @@ public class Carrinho extends HttpServlet {
 
             // Valida se nome não é nulo
             if (produtos.getNomeprod() != null) {
+
+                quantidadetotal = quantidadetotal + quantconvert;
 
                 carrinho.add(produtos);
 
@@ -113,7 +115,8 @@ public class Carrinho extends HttpServlet {
                 sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
                 sessao.setAttribute("nomecliente", nomecliente);
                 sessao.setAttribute("cpfcliente", cpfcliente);
-                sessao.setAttribute("total", total);
+
+                sessao.setAttribute("total", String.format("%.2f", total));
 
                 sessao.setAttribute("carrinho", carrinho);
 
@@ -127,9 +130,19 @@ public class Carrinho extends HttpServlet {
             }
 
         } else if (acaovenda.equals("Finalizar Venda")) {
-
-            HttpSession sessao = request.getSession();
+            
+             HttpSession sessao = request.getSession();
             sessao.invalidate();
+
+            Vendas vendas = new Vendas();
+
+            vendas.setCPFCliente(cpfcliente);
+            vendas.setTotalValor(total);
+            vendas.setQuantidadeItensVenda(quantidadetotal);
+            vendas.setVendedor("Paulo.Bezera");
+            
+            
+
             request.getRequestDispatcher("VendaSuccess.jsp").forward(request, response);
 
         }

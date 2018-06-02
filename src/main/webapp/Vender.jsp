@@ -118,13 +118,13 @@
                     <div class="row">
                         <div class="col-md-3 mb-3">
                             <label for="valor">Valor</label>
-                            <input readonly class="form-control" id="valor" value = "${carrinho.get(0).getValorprod()}" type="currency" >
+                            <input readonly class="form-control" id="valor" pattern = "^\d+\.\d{2}" value = "${carrinho.get(0).getValorprod()}" type="currency" >
 
                         </div>
 
                         <div class="col-md-3 mb-3">
                             <label for="valor">Valor Desconto</label>
-                            <input readonly class="form-control" id="valor" value = "00,00" type="currency" >
+                            <input readonly class="form-control" id="valor" value = "00.00" type="currency" >
 
                         </div>
 
@@ -136,7 +136,7 @@
 
                         <div class="col-md-3 mb-3">
                             <label for="valortotal">Valor Total</label>
-                            <input readonly class="form-control" id="valor" value = "${total}" pattern="(\d{3})([\.])(\d{2})" type="currency" >
+                            <input readonly class="form-control" id="valor" value = "${total}" pattern = "^\d+\.\d{2}" type="currency" >
 
                         </div>
 
