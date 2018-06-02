@@ -37,9 +37,9 @@ public class CadastrarProd extends HttpServlet {
 
         BancoProd bancoprod = new BancoProd();
 
-        int qtdprodcadastrado = bancoprod.validacadastradoprod(codigobarrasprod);
+        boolean repetido = bancoprod.validacadastradoprod(codigobarrasprod);
 
-        if (qtdprodcadastrado == 0) {
+        if (repetido==false) {
             produtos = new Produtos(nomeprod, valorprod, codigobarrasprod, descricaoprod, qtdestoque, categoriaprod);
 
             

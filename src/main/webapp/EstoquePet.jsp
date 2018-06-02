@@ -85,7 +85,6 @@
         <div align ="center">
             <br>
             <br>
-            <br>
             <h2>Estoque de Pets</h2>
             <table border='2' cellpadding='10' width='1100'>
                 <tr>

@@ -107,7 +107,7 @@
 
                     <div class="mb-3">
                         <label for="descricaoprod">Descrição Produto</label>
-                        <input readonly type="text" class="form-control" id="endereco" placeholder="" value="">
+                        <input readonly type="text" class="form-control" id="descricao" placeholder="" value="${carrinho.get(0).getDescricaoprod()}">
 
                     </div>
 
@@ -118,25 +118,25 @@
                     <div class="row">
                         <div class="col-md-3 mb-3">
                             <label for="valor">Valor</label>
-                            <input readonly class="form-control" id="valor" value = "" type="currency" >
+                            <input readonly class="form-control" id="valor" value = "${carrinho.get(0).getValorprod()}" type="currency" >
 
                         </div>
 
                         <div class="col-md-3 mb-3">
                             <label for="valor">Valor Desconto</label>
-                            <input readonly class="form-control" id="valor" value = "" type="currency" >
+                            <input readonly class="form-control" id="valor" value = "00,00" type="currency" >
 
                         </div>
 
                         <div class="col-md-3 mb-3">
                             <label for="quantidade">Quantidade</label>
-                            <input class="form-control" id="valor" value = "" type="number" >
+                            <input class="form-control" id="valor" name = "quantidade" value = "1" type="number" required >
 
                         </div>
 
                         <div class="col-md-3 mb-3">
                             <label for="valortotal">Valor Total</label>
-                            <input readonly class="form-control" id="valor" value = "" type="currency" >
+                            <input readonly class="form-control" id="valor" value = "${total}" pattern="(\d{3})([\.])(\d{2})" type="currency" >
 
                         </div>
 
@@ -175,9 +175,8 @@
 
                     <br>
                     <div class="col-md-4 mb-3">
-                        <label for="pagamento">Pagamento</label>
+                        <label name = "pagamento" for="pagamento">Pagamento</label>
                         <select class="custom-select d-block w-100" id="pagamento" value = "" >
-                            <option value = "">Selecionar...</option>
                             <option>Débito</option>
                             <option>Crédito</option>
                             <option>Cheque</option>

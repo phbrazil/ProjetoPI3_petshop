@@ -63,7 +63,7 @@ public class BancoProd {
 
             conexao.close();
 
-            System.out.println("aqui no update"+produtos.getCodigoprod());
+            System.out.println("aqui no update" + produtos.getCodigoprod());
             System.out.println("fiz o update");
 
         } catch (Exception e) {
@@ -114,11 +114,15 @@ public class BancoProd {
         return produtos;
     }
 
-    public int validacadastradoprod(String buscaprod) {
+    public boolean validacadastradoprod(String buscaprod) {
 
-        String select = "";
+        boolean repetido = false;
+
+        String selectprod = "";
+        String selectpet = "";
 
         int qtdprodcadastrado = 0;
+        int qtdpetcadastrado = 0;
 
         BancoConexao bancoconexao = new BancoConexao();
 
@@ -127,13 +131,27 @@ public class BancoProd {
 
             conexao = bancoconexao.getConnection();
 
-            java.sql.Statement st = conexao.createStatement();
-            select = "select count(*) quantidade from produtos where codigobarrasprod = '" + buscaprod + "'";
-            ResultSet result = st.executeQuery(select);
+            java.sql.Statement stprod = conexao.createStatement();
 
-            while (result.next()) {
+            selectprod = "select count(*) quantidadeprod from produtos where codigobarrasprod = '" + buscaprod + "'";
+            ResultSet resultprod = stprod.executeQuery(selectprod);
+            
+            while (resultprod.next()) {
 
-                qtdprodcadastrado = result.getInt("quantidade");
+                qtdprodcadastrado = resultprod.getInt("quantidadeprod");
+                System.out.println(qtdpetcadastrado);
+
+            }
+            
+            java.sql.Statement stpet = conexao.createStatement();
+
+            selectpet = "select count(*) quantidadepet from pets where codigobarraspet = '" + buscaprod + "'";
+            ResultSet resultpet = stpet.executeQuery(selectpet);
+
+            while (resultpet.next()) {
+
+                qtdpetcadastrado = resultpet.getInt("quantidadepet");
+                System.out.println(qtdpetcadastrado);
 
             }
 
@@ -144,8 +162,11 @@ public class BancoProd {
             System.out.println("erro" + e.getMessage());
 
         }
+        if (qtdpetcadastrado > 0 || qtdprodcadastrado > 0) {
+            repetido = true;
+        }
 
-        return qtdprodcadastrado;
+        return repetido;
     }
 
     public boolean deletaprod(String codigobarrasprod) {

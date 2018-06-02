@@ -30,8 +30,14 @@ import javax.servlet.http.HttpSession;
 
 public class Carrinho extends HttpServlet {
 
+    List<Produtos> carrinho = new ArrayList<>();
+
     List<String> produtosListagem;
     List<String> petsListagem;
+
+    double total = 0;
+    String quantidade = null;
+    int quantconvert = 0;
 
     List<String> produtosListagemCodigo;
     List<String> petsListagemCodigo;
@@ -49,9 +55,20 @@ public class Carrinho extends HttpServlet {
             throws ServletException, IOException {
 
         String acaovenda = request.getParameter("acaovenda");
-        
+
         cpfcliente = request.getParameter("cpfcliente");
         nomecliente = request.getParameter("nomecliente");
+        quantidade = request.getParameter("quantidade");
+
+        try {
+            // the String to int conversion happens here
+            quantconvert = Integer.parseInt(quantidade.trim());
+
+            // print out the value after the conversion
+            System.out.println("int quantconvert = " + quantconvert);
+        } catch (NumberFormatException nfe) {
+            System.out.println("NumberFormatException: " + nfe.getMessage());
+        }
 
         if (acaovenda.equals("Adicionar no Carrinho")) {
 
@@ -61,11 +78,17 @@ public class Carrinho extends HttpServlet {
 
             // Recupera o nome enviado na requisição
             codigovenda = request.getParameter("codigovenda");
-            
+
             produtos = bancoprod.PesquisarProduto(codigovenda);
 
             // Valida se nome não é nulo
             if (produtos.getNomeprod() != null) {
+
+                carrinho.add(produtos);
+
+                carrinho.get(0).getValorprod();
+
+                total = total + (produtos.getValorprod() * quantconvert);
 
                 // Obtém a sessão do usuário
                 HttpSession sessao = request.getSession();
@@ -90,39 +113,13 @@ public class Carrinho extends HttpServlet {
                 sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
                 sessao.setAttribute("nomecliente", nomecliente);
                 sessao.setAttribute("cpfcliente", cpfcliente);
+                sessao.setAttribute("total", total);
 
-                request.getRequestDispatcher("Vender.jsp").forward(request, response);
-
-            } else if (produtos.getNomeprod() == null) {
-                
-                bancopet.PesquisarPet(codigovenda);
-
-                // Obtém a sessão do usuário
-                HttpSession sessao = request.getSession();
-
-                // Se a lista de nomes não estiver na sessão, cria nova
-                if (sessao.getAttribute("produtosNome") == null) {
-                    produtosListagem = new ArrayList<>();
-                    produtosListagemCodigo = new ArrayList<>();
-                    sessao.setAttribute("produtosNome", produtosListagem);
-                    sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
-
-                }
-
-                // Recupera a lista a partir da sessão do usuário e adiciona nome
-                produtosListagem = (List<String>) sessao.getAttribute("produtosNome");
-                produtosListagemCodigo = (List<String>) sessao.getAttribute("produtosCodigo");
-                produtosListagem.add(produtos.getNomeprod());
-                produtosListagemCodigo.add(produtos.getCodigoprod());
-
-                // Atualiza a lista na sessão
-                sessao.setAttribute("produtosNome", produtosListagem);
-                sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
+                sessao.setAttribute("carrinho", carrinho);
 
                 request.getRequestDispatcher("Vender.jsp").forward(request, response);
 
             } else {
-
                 request.setAttribute("mensagem", "Produto não encontrado");
 
                 request.getRequestDispatcher("Vender.jsp").forward(request, response);

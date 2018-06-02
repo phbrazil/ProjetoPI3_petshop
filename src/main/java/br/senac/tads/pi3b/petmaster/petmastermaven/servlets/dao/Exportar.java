@@ -49,7 +49,7 @@ public class Exportar extends HttpServlet {
             if (exportarcli != null) {
                 
                 request.setAttribute("exportarcliente", exportarcli);
-                request.getRequestDispatcher("ExportClientes.jsp").forward(request, response);
+                request.getRequestDispatcher("Exportar/ExportClientes.jsp").forward(request, response);
 
             }
 
@@ -62,7 +62,7 @@ public class Exportar extends HttpServlet {
             if (exportarprod != null) {
                 
                 request.setAttribute("exportarprodutos", exportarprod);
-                request.getRequestDispatcher("ExportProdutos.jsp").forward(request, response);
+                request.getRequestDispatcher("Exportar/ExportProdutos.jsp").forward(request, response);
             }
 
         } else if (exportartipo.equals("ExportarPets")) {
@@ -74,7 +74,7 @@ public class Exportar extends HttpServlet {
             if (exportarpet != null) {
                 
                 request.setAttribute("exportarpets", exportarpet);
-                request.getRequestDispatcher("ExportPets.jsp").forward(request, response);
+                request.getRequestDispatcher("Exportar/ExportPets.jsp").forward(request, response);
             }
         }
 

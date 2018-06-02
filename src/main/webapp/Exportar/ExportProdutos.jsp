@@ -48,7 +48,7 @@
             <%
                 }
                 response.setContentType("application/vnd.ms-excel");
-                response.setHeader("Content-Disposition", "inline; filename=" + "Produtosreport.xls");
+                response.setHeader("Content-Disposition", "inline; filename=" + "Produtosreport.csv");
             %>
         </table>
     </body>
