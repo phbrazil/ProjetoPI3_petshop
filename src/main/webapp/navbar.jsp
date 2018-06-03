@@ -113,6 +113,10 @@ Author     : paulo.bezerra
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="Sobre.jsp">Sobre o Sistema</a>
                     </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Sobre.jsp">Gerenciamento</a>
+                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="Logout.jsp">Sair</a>
