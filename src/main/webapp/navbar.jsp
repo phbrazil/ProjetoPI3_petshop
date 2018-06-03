@@ -86,8 +86,6 @@ Author     : paulo.bezerra
                                 <p><a href="CadastrarPet.jsp" style="text-decoration:none;">Pet</a></p>
                                 <p><a href="CadastrarProd.jsp" style="text-decoration:none;">Produto</a></p>
                                 <p><a href="CadastrarCliente.jsp" style="text-decoration:none;">Cliente</a></p>
-                                <p><a href="CadastrarFilial.jsp" style="text-decoration:none;">Filial</a></p>
-                                <p><a href="CadastrarUsuario.jsp" style="text-decoration:none;">Usuário</a></p>
                             </div>
                         </div>
 
@@ -114,8 +112,17 @@ Author     : paulo.bezerra
                         <a class="nav-link js-scroll-trigger" href="Sobre.jsp">Sobre o Sistema</a>
                     </li>
                     
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="Sobre.jsp">Gerenciamento</a>
+                     <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link js-scroll-trigger">Gerenciamento</a>
+                            <div class="dropdown-content">
+                                <p><a href="CadastrarLoja.jsp" style="text-decoration:none;">Lojas</a></p>
+                                <p><a href="EstoquePet.jsp" style="text-decoration:none;">Grupos</a></p>
+                                <p><a href="EstoqueClientes.jsp" style="text-decoration:none;">Usuários</a></p>
+
+                            </div>
+                        </div>
+
                     </li>
 
                     <li class="nav-item">

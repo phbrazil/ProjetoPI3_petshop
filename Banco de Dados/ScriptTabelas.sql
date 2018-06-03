@@ -1,20 +1,6 @@
-drop database petmaster;
+﻿DROP DATABASE petmaster;
 CREATE DATABASE petmaster;
 USE petmaster;
-
-CREATE TABLE usuarios(
-  codigouser INT NOT NULL AUTO_INCREMENT,
-  nomeuser Varchar (30) NOT NULL,
-  username VARCHAR(50) NOT NULL,
-  password VARCHAR(20), 
-  PRIMARY KEY (codigouser));
-
-
-INSERT INTO usuarios(nomeuser, username,password) VALUES ("Paulo Henrique Bezerra","paulo.bezerra@senac.com","123");
-INSERT INTO usuarios(nomeuser, username,password) VALUES ("Lucas Medeiros","lucas.medeiros@senac.com","123");
-INSERT INTO usuarios(nomeuser, username,password) VALUES ("Andre Pereira","andre.pereira@senac.com","123");
-INSERT INTO usuarios(nomeuser, username,password) VALUES ("Pedro Paulo Olivira","pedro.oliveira@senac.com","123");
-INSERT INTO usuarios(nomeuser, username,password) VALUES ("Aluno do terceiro semestre","visitante@senac.com","123");
 
 
 CREATE TABLE produtos(
@@ -89,6 +75,51 @@ quantidadeitens INT NOT NULL,
   FOREIGN KEY (idvenda) REFERENCES vendas (idvenda),
   FOREIGN KEY (idpet) REFERENCES pets (idpet),
   FOREIGN KEY (idprod) REFERENCES produtos (idprod));
+  
+-- Gerenciamento de filiais (
+
+CREATE TABLE lojas (
+idloja INT NOT NULL auto_increment,
+nomefilial VARCHAR (50),
+cidade VARCHAR(50) NOT NULL,
+bairro VARCHAR(50) NOT NULL,
+uf VARCHAR(2) NOT NULL,
+cep VARCHAR(9) NOT NULL,
+telefone VARCHAR(15),
+PRIMARY KEY (idloja)
+);
+
+INSERT INTO lojas(nomefilial,cidade,bairro,uf,cep,telefone) VALUES ("MATRIZ", "São Paulo", "Morumbi", "SP", "05818-300", null);
+
+CREATE TABLE grupos (
+idgrupo INT NOT NULL auto_increment,
+nomegrupo VARCHAR (50),
+idloja INT NOT NULL,
+FOREIGN KEY (idloja) REFERENCES lojas (idloja),
+PRIMARY KEY (idgrupo)
+);
+
+INSERT INTO grupos(nomegrupo,idloja) VALUES ("Administradores", 1);
+
+CREATE TABLE usuarios(
+  codigouser INT NOT NULL AUTO_INCREMENT,
+  nomeuser Varchar (30) NOT NULL,
+  username VARCHAR(50) NOT NULL,
+  password VARCHAR(20),
+  idgrupo INT NOT NULL,
+  PRIMARY KEY (codigouser),
+  FOREIGN KEY (idgrupo) REFERENCES grupos (idgrupo)
+);
+
+-- Gerenciamento de filiais )
+
+INSERT INTO usuarios(nomeuser, username,password, idgrupo) VALUES ("Paulo Henrique Bezerra","paulo.bezerra@senac.com","123", 1);
+INSERT INTO usuarios(nomeuser, username,password, idgrupo) VALUES ("Lucas Medeiros","lucas.medeiros@senac.com","123", 1);
+INSERT INTO usuarios(nomeuser, username,password, idgrupo) VALUES ("Andre Pereira","andre.pereira@senac.com","123", 1);
+INSERT INTO usuarios(nomeuser, username,password, idgrupo) VALUES ("Pedro Paulo Olivira","pedro.oliveira@senac.com","123", 1);
+INSERT INTO usuarios(nomeuser, username,password, idgrupo) VALUES ("Aluno do terceiro semestre","visitante@senac.com","123", 1);
+
+
 
 INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, DescricaoProd, CategoriaProd, QuantidadeProd) VALUES ('5','Kit Shampoo, Colônia e Condicionador Sanol Dog',24.9,now(),'Kit Shampoo, Colônia e Condicionador Sanol Dog','Cachorro',40);
 INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, DescricaoProd, CategoriaProd, QuantidadeProd) VALUES ('6','Sabonete Sarnicida Matacura 80g',7.5,now(),'Sabonete Sarnicida Matacura 80g','Cachorro',30);
