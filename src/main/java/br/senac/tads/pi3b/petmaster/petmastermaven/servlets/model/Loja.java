@@ -5,84 +5,142 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  *
- * @author Lucas
+ * @author paulo.bezerra
  */
-@WebServlet(name = "Loja", urlPatterns = {"/Loja"})
-public class Loja extends HttpServlet {
+public class Loja {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet Loja</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet Loja at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+    private int lojaid;
+    private String nomeLoja;
+    private String logradouro;
+    private String cidade;
+    private String bairro;
+    private String UF;
+    private String pais;
+    private String cep;
+    private String telefone;
+
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    
+    
+    public int getlojaid() {
+        return lojaid;
+    }
+
+    public void setClienteid(int lojaid) {
+        this.lojaid = lojaid;
+    }
+
+    public String getNomeLoja() {
+        return nomeLoja;
+    }
+
+    public void setNomeLoja(String nomeLoja) {
+        this.nomeLoja = nomeLoja;
+    }
+
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+
+    public String getUF() {
+        return UF;
+    }
+
+    public void setUF(String UF) {
+        this.UF = UF;
+    }
+
+    private java.util.List<Loja> listaLoja = new ArrayList<Loja>();
+
+    public List<Loja> getListaLoja() {
+        return listaLoja;
+    }
+
+    public void setListaLoja(Loja lojas) {
+        listaLoja.add(lojas);
+    }
+
+    public Loja(String nomeLoja, String logradouro, 
+            String bairro, String cidade, String cep, String UF, String telefone, String pais) {
+        this.nomeLoja = nomeLoja;
+        this.logradouro = logradouro;
+        this.cep = cep;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.UF = UF;
+        this.telefone = telefone;
+        this.pais = pais;
+
+    }
+
+   
+    public Loja obterClienteLista(String id) {
+        if (!listaLoja.isEmpty()) {
+            for (int i = 0; i < listaLoja.size(); i++) {
+                if (listaLoja.get(i) != null) {
+                    return listaLoja.get(i);
+
+                }
+            }
         }
+        return null;
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
+    public String getLogradouro() {
+        return logradouro;
     }
 
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
     }
 
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+
+    public void setListaLoja(List<Loja> listaLoja) {
+        this.listaLoja = listaLoja;
+    }
 
 }

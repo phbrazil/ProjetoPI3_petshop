@@ -80,7 +80,8 @@ quantidadeitens INT NOT NULL,
 
 CREATE TABLE lojas (
 idloja INT NOT NULL auto_increment,
-nomefilial VARCHAR (50),
+nomeloja VARCHAR (50),
+logradouro VARCHAR(50) NOT NULL,
 cidade VARCHAR(50) NOT NULL,
 bairro VARCHAR(50) NOT NULL,
 uf VARCHAR(2) NOT NULL,
@@ -89,7 +90,7 @@ telefone VARCHAR(15),
 PRIMARY KEY (idloja)
 );
 
-INSERT INTO lojas(nomefilial,cidade,bairro,uf,cep,telefone) VALUES ("MATRIZ", "São Paulo", "Morumbi", "SP", "05818-300", null);
+INSERT INTO lojas(nomeloja,logradouro,cidade,bairro,uf,cep,telefone) VALUES ("MATRIZ", "Avenida Roque Petroni Jr 1200", "São Paulo", "Morumbi", "SP", "05818-300", null);
 
 CREATE TABLE grupos (
 idgrupo INT NOT NULL auto_increment,
