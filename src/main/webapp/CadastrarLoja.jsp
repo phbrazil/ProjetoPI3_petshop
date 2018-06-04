@@ -22,7 +22,7 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form name = "CadastrarCliente" action="${pageContext.request.contextPath}/CadastrarCliente" method="POST" >
+    <form name = "CadastrarLoja" action="${pageContext.request.contextPath}/CadastrarLoja" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cadastrar Loja</title>
@@ -269,7 +269,7 @@
             if (mensagem == "falha") {
                 alert("O CPF " + cpfcliente + " já se encontra cadastrado")
 
-            } else if (mensagem == "Cliente cadastrado com sucesso!") {
+            } else if (mensagem == "Loja cadastrada com sucesso!") {
 
                 alert(mensagem)
 

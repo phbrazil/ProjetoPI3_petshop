@@ -16,7 +16,7 @@ public class BancoLoja {
 
     private Connection conexao = null;
 
-    Loja loja = new Loja(null,null,null, null, null, null, null, null);
+    Loja loja = new Loja(null,null, null, null, null, null, null);
 
     private java.util.List<Loja> listaLoja = new ArrayList<Loja>();
 
@@ -133,7 +133,7 @@ public class BancoLoja {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select count(*) idloja from lojas where cpfcliente = '" + idloja + "'";
+            select = "select count(*) idloja from lojas where idloja = '" + idloja + "'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {

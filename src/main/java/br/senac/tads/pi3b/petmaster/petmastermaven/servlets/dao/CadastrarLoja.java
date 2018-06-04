@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "CadastrarCliente", urlPatterns = {"/CadastrarCliente"})
+@WebServlet(name = "CadastrarLoja", urlPatterns = {"/CadastrarLoja"})
 
 public class CadastrarLoja extends HttpServlet {
 
@@ -32,7 +32,6 @@ public class CadastrarLoja extends HttpServlet {
         String idloja = request.getParameter("idloja");
         String nomeLoja = request.getParameter("nomeloja");
         String logradouro = request.getParameter("logradouro");
-        String pais = request.getParameter("pais");
         String cidade = request.getParameter("cidade");
         String bairro = request.getParameter("bairro");
         String uf = request.getParameter("uf");
@@ -44,14 +43,14 @@ public class CadastrarLoja extends HttpServlet {
         int qtdclicadastrado = bancoLoja.ValidaCadastradoLoja(idloja);
 
         if (qtdclicadastrado == 0) {
-
-            Loja loja = new Loja(idloja, nomeLoja, logradouro, cidade, bairro, cep, uf, pais);
+            
+            Loja loja = new Loja(nomeLoja, logradouro, bairro, cidade, cep, uf, telefone);
             
             bancoLoja.gravarLoja(loja);
             request.setAttribute("nomeloja", nomeLoja);
             request.setAttribute("mensagem", "Loja cadastrada com sucesso!");
 
-            request.getRequestDispatcher("CadastrarCliente.jsp").forward(request, response);
+            request.getRequestDispatcher("CadastrarLoja.jsp").forward(request, response);
 
         } else {
 

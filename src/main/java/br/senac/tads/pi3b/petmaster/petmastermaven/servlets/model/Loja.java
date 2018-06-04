@@ -81,7 +81,7 @@ public class Loja {
     }
 
     public Loja(String nomeLoja, String logradouro, 
-            String bairro, String cidade, String cep, String UF, String telefone, String pais) {
+            String bairro, String cidade, String cep, String UF, String telefone) {
         this.nomeLoja = nomeLoja;
         this.logradouro = logradouro;
         this.cep = cep;
@@ -89,7 +89,7 @@ public class Loja {
         this.cidade = cidade;
         this.UF = UF;
         this.telefone = telefone;
-        this.pais = pais;
+
 
     }
 
