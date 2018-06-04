@@ -25,7 +25,8 @@
     <form name = "CadastrarCliente" action="${pageContext.request.contextPath}/CadastrarCliente" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Vender</title>
+        <title>Cadastrar Loja</title>
+        
 
     </head>
     <body id="page-top">

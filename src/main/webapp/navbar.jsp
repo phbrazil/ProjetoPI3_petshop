@@ -107,12 +107,8 @@ Author     : paulo.bezerra
                             </div>
                         </div>
 
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="Sobre.jsp">Sobre o Sistema</a>
-                    </li>
-                    
-                     <li class="nav-item">
+                        
+                        <li class="nav-item">
                         <div class="dropdown">
                             <a class="nav-link js-scroll-trigger">Gerenciamento</a>
                             <div class="dropdown-content">
@@ -124,6 +120,13 @@ Author     : paulo.bezerra
                         </div>
 
                     </li>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Sobre.jsp">Sobre o Sistema</a>
+                    </li>
+                    
+                     
 
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="Logout.jsp">Sair</a>

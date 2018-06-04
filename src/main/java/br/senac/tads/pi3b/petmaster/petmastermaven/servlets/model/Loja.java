@@ -94,7 +94,7 @@ public class Loja {
     }
 
    
-    public Loja obterClienteLista(String id) {
+    public Loja obterLojaLista(String id) {
         if (!listaLoja.isEmpty()) {
             for (int i = 0; i < listaLoja.size(); i++) {
                 if (listaLoja.get(i) != null) {
