@@ -40,7 +40,7 @@ public class CadastrarLoja extends HttpServlet {
 
         BancoLoja bancoLoja = new BancoLoja();
 
-        int qtdclicadastrado = bancoLoja.ValidaCadastradoLoja(idloja);
+        int qtdclicadastrado = bancoLoja.ValidaCadastradoLoja(nomeLoja);
 
         if (qtdclicadastrado == 0) {
             

@@ -119,7 +119,7 @@ public class BancoLoja {
         return cliente;
     }*/
 
-    public int ValidaCadastradoLoja (String idloja) {
+    public int ValidaCadastradoLoja (String nomeLoja) {
 
         String select = "";
 
@@ -133,7 +133,7 @@ public class BancoLoja {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select count(*) idloja from lojas where idloja = '" + idloja + "'";
+            select = "select count(*), idloja from lojas where nomeloja like '%" + nomeLoja + "%'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
