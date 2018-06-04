@@ -26,7 +26,7 @@
         String sqlSelectRecord = null;
         String sqlSelectqtd = null;
         int quantidadeprodutos = 0;
-        sqlSelectRecord = "SELECT * FROM produtos";
+        sqlSelectRecord = "SELECT * FROM usuarios u join grupos g on g.idgrupo = u.idgrupo";
         sqlSelectqtd = "SELECT COUNT(*) as quantidadeprod FROM produtos";
 
         listagemProdutos = conexao.prepareStatement(sqlSelectRecord);
@@ -85,33 +85,38 @@
         <div align ="center">
             <br>
             <br>
-            <h2>Estoque de Produtos</h2>
+
+            <h2>Usuários</h2>
+
+            <br>
+            <br>
+
+            <a class="button" href="CadastrarLoja.jsp">Cadastrar um novo usuário</a>
+
+            <br>
+            <br>
             <table border='2' cellpadding='10' width='1100'>
                 <tr>
                     <td  bgcolor="#33CCCC">Linha</td>
-                    <td  bgcolor="#33CCCC">Código Produto</td>
-                    <td  bgcolor="#33CCCC">Nome do Produto</td>
-                    <td  bgcolor="#33CCCC">Quantidade do Produto</td>
-                    <td  bgcolor="#33CCCC">Categoria do Produto</td>
-                    <td  bgcolor="#33CCCC">Valor</td> 
-                    <td  bgcolor="#33CCCC">Alterar Produto</td> 
-                    <td><button type="submit" class="button" name ="exportar" value="ExportarProdutos" formaction="Exportar">Exportar</button></td>
+                    <td  bgcolor="#33CCCC">Código usuário</td>
+                    <td  bgcolor="#33CCCC">Nome do usuário</td>
+                    <td  bgcolor="#33CCCC">Grupo</td>
+                    <td  bgcolor="#33CCCC">Alterar usuário</td> 
+
 
                 </tr>
                 <%  int linha = 1;
                     String[] listaprodutos = new String[quantidadeprodutos];
                     while (selectProduto.next()) {
-                        listaprodutos[linha - 1] = selectProduto.getString("codigobarrasprod");
+                        listaprodutos[linha - 1] = selectProduto.getString("codigouser");
 
                 %>
                 <tr>
                     <td bgcolor="#FF9900"><%=linha%></td>
-                    <td><%=selectProduto.getString("codigobarrasprod")%></td>
-                    <td><%=selectProduto.getString("nomeprod")%></td>
-                    <td><%=selectProduto.getInt("quantidadeprod")%></td>
-                    <td><%=selectProduto.getString("categoriaprod")%></td>
-                    <td>R$<%=selectProduto.getString("valor")%></td> 
-                    <td><button type="submit" class="button" formaction="ConsultaProd?ConsultaProd=<%=selectProduto.getString("codigobarrasprod")%>">Alterar</button></td>
+                    <td><%=selectProduto.getString("u.codigouser")%></td>
+                    <td><%=selectProduto.getString("u.nomeuser")%></td>
+                    <td><%=selectProduto.getString("g.nomegrupo")%></td>
+                    <td><button type="submit" class="button" formaction="ConsultaProd?ConsultaProd=<%=selectProduto.getString("codigouser")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
                         }

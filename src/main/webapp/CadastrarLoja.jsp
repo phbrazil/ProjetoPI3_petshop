@@ -26,7 +26,7 @@
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cadastrar Loja</title>
-        
+
 
     </head>
     <body id="page-top">
@@ -52,7 +52,7 @@
                     <div class="mb-3">
                         <label for="primeironome">Nome</label>
                         <div class="input-group">
-                            <input name="nomecliente" type="text" class="form-control" id="nomecliente" placeholder="" value="" name="nomecliente" required>
+                            <input name="nomeloja" type="text" class="form-control" id="nomecliente" placeholder="" value="" name="nomecliente" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
@@ -92,7 +92,7 @@
                                 Favor selecionar o país.
                             </div>
                         </div>
-                       
+
                         <div class="col-md-3 mb-3">
                             <label for="cep">CEP</label>
                             <input name ="cep" type="text" class="form-control" id="cep" onkeydown="javascript: fMasc(this, mCEP);" placeholder="00000-000" maxlength="10" value = "" required>
@@ -101,10 +101,35 @@
                             </div>
                         </div>
                         <div class="col-md-2 mb-3">
-                            <label name ="sexo" >UF</label>
+                            <label name ="uf" >UF</label>
                             <select name ="uf" class="custom-select d-block w-100" id="sexo" value = "" required>
-                                <option>SP</option>
+                                <option>AC</option>
+                                <option>AL</option>
+                                <option>AP</option>
+                                <option>AM</option>
+                                <option>BA</option>
+                                <option>CE</option>
+                                <option>DF</option>
+                                <option>ES</option>
+                                <option>GO</option>
+                                <option>MA</option>
+                                <option>MT</option>
+                                <option>MS</option>
+                                <option>MG</option>
+                                <option>PA</option>
+                                <option>PB</option>
+                                <option>PR</option>
+                                <option>PE</option>
+                                <option>PI</option>
                                 <option>RJ</option>
+                                <option>RN</option>
+                                <option>RS</option>
+                                <option>RO</option>
+                                <option>RR</option>
+                                <option>SC</option>
+                                <option>SP</option>
+                                <option>SE</option>
+                                <option>TO</option>
                             </select>
                             <div class="invalid-feedback">
                                 Favor selecionar a UF
@@ -117,9 +142,9 @@
                                 Telefone
                             </div>
                         </div>
-                      
+
                         <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit" name = "gravarcliente">Gravar</button>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit" name = "gravarLoja">Gravar</button>
                     </div>
                 </div>
 
@@ -232,24 +257,24 @@
                 return num
             }
         </script>
-        
-            <script>
+
+        <script>
 
 
-        var mensagem = "${mensagem}"
+            var mensagem = "${mensagem}"
 
-        var cpfcliente = "${cpfcliente}"
+            var cpfcliente = "${cpfcliente}"
 
 
-        if (mensagem == "falha") {
-            alert("O CPF "+cpfcliente+" já se encontra cadastrado")
+            if (mensagem == "falha") {
+                alert("O CPF " + cpfcliente + " já se encontra cadastrado")
 
-        } else if (mensagem == "Cliente cadastrado com sucesso!") {
-            
-            alert(mensagem)
+            } else if (mensagem == "Cliente cadastrado com sucesso!") {
 
-        }
-    </script>
+                alert(mensagem)
+
+            }
+        </script>
 
     </body>
 </html>

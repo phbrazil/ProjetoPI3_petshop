@@ -85,13 +85,14 @@
         <div align ="center">
             <br>
             <br>
+
             <h2>Lojas</h2>
-            
+
             <br>
             <br>
 
             <a class="button" href="CadastrarLoja.jsp">Cadastrar uma nova loja</a>
-            
+
             <br>
             <br>
 

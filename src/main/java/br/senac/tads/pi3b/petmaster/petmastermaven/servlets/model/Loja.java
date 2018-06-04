@@ -142,5 +142,5 @@ public class Loja {
     public void setListaLoja(List<Loja> listaLoja) {
         this.listaLoja = listaLoja;
     }
-
+    
 }

@@ -5,39 +5,33 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Loja;
 import java.awt.List;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
 
-public class BancoCli {
+public class BancoLoja {
 
     private Connection conexao = null;
 
-    Cliente cliente = new Cliente(null,null,null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    Loja loja = new Loja(null,null,null, null, null, null, null, null);
 
-    private java.util.List<Cliente> listaCli = new ArrayList<Cliente>();
+    private java.util.List<Loja> listaLoja = new ArrayList<Loja>();
 
-    public void gravarCliente(Cliente cliente) {
+    public void gravarLoja(Loja loja) {
 
         BancoConexao bancoconexao = new BancoConexao();
 
         try {
 
             Connection conexao = bancoconexao.getConnection();
-
+            
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("INSERT INTO clientes (nome, logradouro,rg,"
-                    + "cpfcliente, pais,cidade, bairro, estado, uf, cep, telefone,celular,email,sexo,"
-                    + "estadocivil, nascimento,datacadastro, statuscliente) VALUES ('" + cliente.getNomeCliente()+ "','" 
-                    + cliente.getLogradouro()+"','"+cliente.getRG()+"','"+cliente.getCpfCliente()+"','"
-                    + cliente.getPais()+"','"+cliente.getCidade()+"','"+cliente.getBairro()+"','"
-                    +cliente.getEstado()+"','"+cliente.getUF()+"','"+cliente.getCep()+"','"
-                    +cliente.getTelefone()+"','"+cliente.getCelular()+"','"+cliente.getEmail()+"','"
-                    +cliente.getSexo()+"','"+cliente.getEstadoCivil()+"','"+cliente.getNascimento()+"',"
+            st.executeUpdate("INSERT INTO lojas (nomeloja, logradouro,cidade,"
+                    + "bairro, uf,cep, telefone) VALUES ('" + loja.getNomeLoja()+ "','" 
+                    + loja.getLogradouro()+"','"+loja.getCidade()+"','"+loja.getBairro()+"','"+loja.getUF()+"','"+loja.getCep()+"','" +loja.getTelefone()+"',"
                     +"now(), true);");        
             conexao.close();
 
@@ -49,7 +43,7 @@ public class BancoCli {
 
     }
 
-    public void atualizarCli(Cliente cliente) {
+   /* public void atualizarCli(Cliente cliente) {
 
         BancoConexao bancoconexao = new BancoConexao();
 
@@ -123,13 +117,13 @@ public class BancoCli {
         }
 
         return cliente;
-    }
+    }*/
 
-    public int ValidaCadastradoCliente(String cpfcliente) {
+    public int ValidaCadastradoLoja (String idloja) {
 
         String select = "";
 
-        int qtdclicadastrado = 0;
+        int qtdlojacadastrado = 0;
 
         BancoConexao bancoconexao = new BancoConexao();
 
@@ -139,12 +133,12 @@ public class BancoCli {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select count(*) quantidade from clientes where cpfcliente = '" + cpfcliente + "'";
+            select = "select count(*) idloja from lojas where cpfcliente = '" + idloja + "'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
 
-                qtdclicadastrado = result.getInt("quantidade");
+                qtdlojacadastrado = result.getInt("idloja");
 
             }
 
@@ -156,10 +150,11 @@ public class BancoCli {
 
         }
 
-        return qtdclicadastrado;
+        return qtdlojacadastrado;
     }
-    
-    public boolean deletaCliente(String cpfcliente) {
+      
+
+  /*  public boolean deletaCliente(String cpfcliente) {
 
         boolean deletado = false;
 
@@ -214,5 +209,6 @@ public class BancoCli {
         }
         return null;
     }
+*/
 
 }
