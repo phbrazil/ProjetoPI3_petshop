@@ -112,9 +112,9 @@ Author     : paulo.bezerra
                         <div class="dropdown">
                             <a class="nav-link js-scroll-trigger">Gerenciamento</a>
                             <div class="dropdown-content">
-                                <p><a href="CadastrarLoja.jsp" style="text-decoration:none;">Lojas</a></p>
-                                <p><a href="EstoquePet.jsp" style="text-decoration:none;">Grupos</a></p>
-                                <p><a href="EstoqueClientes.jsp" style="text-decoration:none;">Usuários</a></p>
+                                <p><a href="GerenciamentoLoja.jsp" style="text-decoration:none;">Lojas</a></p>
+                                <p><a href="GerenciamentoGrupo.jsp" style="text-decoration:none;">Grupos</a></p>
+                                <p><a href="GerenciamentoUsuario.jsp" style="text-decoration:none;">Usuários</a></p>
 
                             </div>
                         </div>
