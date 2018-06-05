@@ -39,7 +39,7 @@ public class AlterarLoja extends HttpServlet {
             String logradouro = request.getParameter("logradouro");
             String cidade = request.getParameter("cidade");
             String bairro = request.getParameter("bairro");
-            String uf = request.getParameter("uf");
+            String uf = request.getParameter("UF");
             String cep = request.getParameter("cep").replace("-", "").replace(".", "");
             String telefone = request.getParameter("telefone");
 

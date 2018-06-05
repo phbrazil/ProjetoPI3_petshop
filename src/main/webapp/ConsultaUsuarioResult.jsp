@@ -3,8 +3,13 @@
     Created on : Mar 29, 2018, 12:13:17 PM
     Author     : paulo.bezerra
 --%>
-
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Usuario"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -59,26 +64,20 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="username">Rua</label>
-                        <input name ="username" type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value="${resultado.username}"required>
+                        <label for="username">Username</label>
+                        <input name ="username" type="text" class="form-control" id="username" placeholder="Rua hum 1234" value="${resultado.username}"required>
                         <div class="invalid-feedback">
                             Favor inserir o username.
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="Password">Bairro</label>
-                        <input name ="password" type="text" class="form-control" id="bairro" placeholder="Password" value="${resultado.password}"required>
+                        <label for="password">Password</label>
+                        <input name ="password" type="password" class="form-control" id="password" placeholder="Password" value="${resultado.password}"required>
                         <div class="invalid-feedback">
                             Favor inserir o password.
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="cidade">idgrupo</label>
-                        <input name ="idgrupo" type="text" class="form-control" id="cidade" placeholder="Idgurpo" value="${resultado.idgrupo}"required>
-                        <div class="invalid-feedback">
-                            Favor inserir o grupo
-                        </div>
-                    </div>
+                   
 
                     </div>
                     <hr class="mb-4">

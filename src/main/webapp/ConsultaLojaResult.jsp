@@ -51,7 +51,7 @@
                     <div class="mb-3">
                         <label for="primeironome">Nome</label>
                         <div class="input-group">
-                            <input name="nomecliente" type="text" class="form-control" id="nomecliente" placeholder="" value="${resultado.nomeLoja}" name="nomeCliente" required>
+                            <input name="nomeloja" type="text" class="form-control" id="nomeloja" placeholder="" value="${resultado.nomeLoja}" name="nomeLoja" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
@@ -80,42 +80,78 @@
                         </div>
                     </div>
 
-
-                   
-                        <div class="col-md-3 mb-3">
-                            <label for="cep">CEP</label>
-                            <input name ="cep" type="text" class="form-control" id="cep" onkeydown="javascript: fMasc(this, mCEP);" placeholder="00000-000" maxlength="10" value = "${resultado.cep}" required>
-                            <div class="invalid-feedback">
-                                CEP obrigatório
-                            </div>
+                    <div class="col-md-2 mb-3">
+                        <label name ="UF" >UF</label>
+                        <select name ="UF" class="custom-select d-block w-100" id="UF" value = "${resultado.UF}" required>
+                                <option>AC</option>
+                                <option>AL</option>
+                                <option>AP</option>
+                                <option>AM</option>
+                                <option>BA</option>
+                                <option>CE</option>
+                                <option>DF</option>
+                                <option>ES</option>
+                                <option>GO</option>
+                                <option>MA</option>
+                                <option>MT</option>
+                                <option>MS</option>
+                                <option>MG</option>
+                                <option>PA</option>
+                                <option>PB</option>
+                                <option>PR</option>
+                                <option>PE</option>
+                                <option>PI</option>
+                                <option>RJ</option>
+                                <option>RN</option>
+                                <option>RS</option>
+                                <option>RO</option>
+                                <option>RR</option>
+                                <option>SC</option>
+                                <option>SP</option>
+                                <option>SE</option>
+                                <option>TO</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Favor selecionar a UF
                         </div>
-                        
-                        <div class="col-md-3 mb-3">
-                            <label for="telefone">Telefone</label>
-                            <input onkeydown="javascript: fMasc(this, mTel);" name = "telefone" type="text" class="form-control" id="tel" placeholder="(xx)xxxxx-xxxx" maxlength="14" value = "${resultado.telefone}">
-                            <div class="invalid-feedback">
-                                Telefone obrigatório
-                            </div>
-                        </div>
-                     
-
-
                     </div>
-                    <hr class="mb-4">
-                    <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="AcaoCliente" value = "alterar">Alterar</button>
-                    <br>
-                    <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="AcaoCliente" value ="excluir" >Excluir</button>
+
+                    <div class="col-md-3 mb-3">
+                        <label for="cep">CEP</label>
+                        <input name ="cep" type="text" class="form-control" id="cep" onkeydown="javascript: fMasc(this, mCEP);" placeholder="00000-000" maxlength="10" value = "${resultado.cep}" required>
+                        <div class="invalid-feedback">
+                            CEP obrigatório
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-3 mb-3">
+                        <label for="telefone">Telefone</label>
+                        <input onkeydown="javascript: fMasc(this, mTel);" name = "telefone" type="text" class="form-control" id="tel" placeholder="(xx)xxxxx-xxxx" maxlength="14" value = "${resultado.telefone}">
+                        <div class="invalid-feedback">
+                            Telefone obrigatório
+                        </div>
+                    </div>
+
+
 
                 </div>
+                <hr class="mb-4">
+                <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="AcaoCliente" value = "alterar">Alterar</button>
+                <br>
+                <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="AcaoCliente" value ="excluir" >Excluir</button>
 
-                <footer class="my-5 pt-5 text-muted text-center text-small">
-                    <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">Privacidade</a></li>
-                        <li class="list-inline-item"><a href="#">Termos</a></li>
-                        <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
-                    </ul>
-                </footer>
+            </div>
+
+            <footer class="my-5 pt-5 text-muted text-center text-small">
+                <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Privacidade</a></li>
+                    <li class="list-inline-item"><a href="#">Termos</a></li>
+                    <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
+                </ul>
+            </footer>
             </div>
 
         </form>
@@ -133,27 +169,27 @@
         <script src="../../../../assets/js/vendor/holder.min.js"></script>
 
         <script>
-                                // Example starter JavaScript for disabling form submissions if there are invalid fields
-                                (function () {
-                                    'use strict';
+                            // Example starter JavaScript for disabling form submissions if there are invalid fields
+                            (function () {
+                                'use strict';
 
-                                    window.addEventListener('load', function () {
-                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                        var forms = document.getElementsByClassName('needs-validation');
+                                window.addEventListener('load', function () {
+                                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                    var forms = document.getElementsByClassName('needs-validation');
 
-                                        // Loop over them and prevent submission
-                                        var validation = Array.prototype.filter.call(forms, function (form) {
-                                            form.addEventListener('submit', function (event) {
-                                                if (form.checkValidity() === false) {
-                                                    event.preventDefault();
-                                                    event.stopPropagation();
-                                                }
-                                                form.classList.add('was-validated');
-                                            }, false);
-                                        });
-                                    }, false);
-                                }
-                                )();
+                                    // Loop over them and prevent submission
+                                    var validation = Array.prototype.filter.call(forms, function (form) {
+                                        form.addEventListener('submit', function (event) {
+                                            if (form.checkValidity() === false) {
+                                                event.preventDefault();
+                                                event.stopPropagation();
+                                            }
+                                            form.classList.add('was-validated');
+                                        }, false);
+                                    });
+                                }, false);
+                            }
+                            )();
 
 
         </script>

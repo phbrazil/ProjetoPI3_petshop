@@ -15,7 +15,7 @@
         Connection conexao = null;
 
         Class.forName("com.mysql.jdbc.Driver").newInstance();
-        conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/PetMaster", "root", "admin");
+        conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/PetMaster", "root", "");
 
         PreparedStatement listagemProdutos = null;
         PreparedStatement Produtosqtd = null;
@@ -116,7 +116,7 @@
                     <td><%=selectUsuario.getString("u.codigouser")%></td>
                     <td><%=selectUsuario.getString("u.nomeuser")%></td>
                     <td><%=selectUsuario.getString("g.nomegrupo")%></td>
-                    <td><button type="submit" class="button" formaction="ConsultaUsuario?ConsultaUsuario=<%=selectUsuario.getString("u.codigouser")%>">Alterar</button></td>
+                    <td><button type="submit" class="button" formaction="ConsultaUsuario?ConsultaUsuario=<%=selectUsuario.getString("u.nomeuser")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
                         }

@@ -67,17 +67,12 @@ public class Usuario {
         listaUsuario.add(Usuarios);
     }
 
-    public Usuario(String nomeUsuario) {
-        this.nomeUsuario = nomeUsuario;
 
-    }
-    
-    
-    public Usuario(String nomeUsuario, String userName, String password, String idGrupo) {
+    public Usuario(String nomeUsuario, String userName, String password, String idgrupo) {
         this.nomeUsuario = nomeUsuario;
         this.username = userName;
         this.password = password;
-        this.idgrupo = idGrupo;
+        this.idgrupo = idgrupo;
        
      }
    

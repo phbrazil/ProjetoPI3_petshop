@@ -62,7 +62,7 @@ public class ConsultaUsuario extends HttpServlet {
 
             request.setAttribute("resultado", "Usuario não encontado");
 
-            request.getRequestDispatcher("ConsultaUsuario.jsp").forward(request, response);
+            request.getRequestDispatcher("ConsultaUsuarioResult.jsp").forward(request, response);
 
         }
 
