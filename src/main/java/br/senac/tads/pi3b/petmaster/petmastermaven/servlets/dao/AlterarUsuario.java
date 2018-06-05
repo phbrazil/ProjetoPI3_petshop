@@ -41,6 +41,7 @@ public class AlterarUsuario extends HttpServlet {
 
             Usuario usuarios = new Usuario(nomeUsuario, username, password, idgrupo);
             bancousuario.atualizarUsuario(usuarios);
+            
 
             request.setAttribute("mensagem", "Usuario Alterado");
 
