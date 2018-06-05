@@ -80,8 +80,9 @@ public class Loja {
         listaLoja.add(lojas);
     }
 
+    
     public Loja(String nomeLoja, String logradouro, 
-            String bairro, String cidade, String cep, String UF, String telefone) {
+            String cidade, String bairro, String UF, String cep, String telefone) {
         this.nomeLoja = nomeLoja;
         this.logradouro = logradouro;
         this.cep = cep;
@@ -90,9 +91,7 @@ public class Loja {
         this.UF = UF;
         this.telefone = telefone;
 
-
     }
-
    
     public Loja obterLojaLista(String id) {
         if (!listaLoja.isEmpty()) {

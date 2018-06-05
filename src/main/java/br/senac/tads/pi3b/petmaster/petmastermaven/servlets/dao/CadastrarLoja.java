@@ -44,8 +44,8 @@ public class CadastrarLoja extends HttpServlet {
 
         if (qtdclicadastrado == 0) {
             
-            Loja loja = new Loja(nomeLoja, logradouro, bairro, cidade, cep, uf, telefone);
-            
+            Loja loja = new Loja(nomeLoja, logradouro, cidade, bairro, uf, cep, telefone);
+            //nomeloja, logradouro,cidade,bairro, uf,cep, telefone
             bancoLoja.gravarLoja(loja);
             request.setAttribute("nomeloja", nomeLoja);
             request.setAttribute("mensagem", "Loja cadastrada com sucesso!");
@@ -57,7 +57,7 @@ public class CadastrarLoja extends HttpServlet {
             request.setAttribute("nomeloja", nomeLoja);
             request.setAttribute("mensagem", "falha");
 
-            request.getRequestDispatcher("CadastrarCliente.jsp").forward(request, response);
+            request.getRequestDispatcher("CadastrarLoja.jsp").forward(request, response);
 
         }
 

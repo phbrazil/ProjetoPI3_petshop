@@ -11,30 +11,31 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-
 public class BancoLoja {
 
     private Connection conexao = null;
 
-    Loja loja = new Loja(null,null, null, null, null, null, null);
+    Loja loja = new Loja(null, null, null, null, null, null, null);
 
     private java.util.List<Loja> listaLoja = new ArrayList<Loja>();
 
     public void gravarLoja(Loja loja) {
 
         BancoConexao bancoconexao = new BancoConexao();
+        
+
 
         try {
 
             Connection conexao = bancoconexao.getConnection();
-            
+
             java.sql.Statement st = conexao.createStatement();
             st.executeUpdate("INSERT INTO lojas (nomeloja, logradouro,cidade,"
-                    + "bairro, uf,cep, telefone) VALUES ('" + loja.getNomeLoja()+ "','" 
-                    + loja.getLogradouro()+"','"+loja.getCidade()+"','"+loja.getBairro()+"','"+loja.getUF()+"','"+loja.getCep()+"','" +loja.getTelefone()+"',"
-                    +"now(), true);");        
+                    + "bairro, uf,cep, telefone) VALUES ('" + loja.getNomeLoja() + "','"
+                    + loja.getLogradouro() + "','" + loja.getCidade() + "','" + loja.getBairro() + "','" + loja.getUF() + "','" + loja.getCep() + "','" + loja.getTelefone() + "');");
             conexao.close();
-
+            
+         
         } catch (Exception e) {
 
             System.out.println("erro" + e.getMessage());
@@ -43,7 +44,7 @@ public class BancoLoja {
 
     }
 
-   /* public void atualizarCli(Cliente cliente) {
+    /* public void atualizarCli(Cliente cliente) {
 
         BancoConexao bancoconexao = new BancoConexao();
 
@@ -118,8 +119,7 @@ public class BancoLoja {
 
         return cliente;
     }*/
-
-    public int ValidaCadastradoLoja (String nomeLoja) {
+    public int ValidaCadastradoLoja(String nomeLoja) {
 
         String select = "";
 
@@ -152,9 +152,9 @@ public class BancoLoja {
 
         return qtdlojacadastrado;
     }
-      
 
-  /*  public boolean deletaCliente(String cpfcliente) {
+
+    /*  public boolean deletaCliente(String cpfcliente) {
 
         boolean deletado = false;
 
@@ -209,6 +209,5 @@ public class BancoLoja {
         }
         return null;
     }
-*/
-
+     */
 }

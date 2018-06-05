@@ -263,11 +263,11 @@
 
             var mensagem = "${mensagem}"
 
-            var cpfcliente = "${cpfcliente}"
+            var nomeloja = "${nomeloja}"
 
 
             if (mensagem == "falha") {
-                alert("O CPF " + cpfcliente + " já se encontra cadastrado")
+                alert("A loja " + nomeloja + " já se encontra cadastrada")
 
             } else if (mensagem == "Loja cadastrada com sucesso!") {
 
