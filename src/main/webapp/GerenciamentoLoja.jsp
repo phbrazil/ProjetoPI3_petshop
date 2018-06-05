@@ -3,7 +3,8 @@
     Created on : Mar 29, 2018, 12:13:17 PM
     Author     : paulo.bezerra
 --%>
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos"%>
+<%//@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Loja"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
@@ -17,26 +18,26 @@
         Class.forName("com.mysql.jdbc.Driver").newInstance();
         conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/PetMaster", "root", "");
 
-        PreparedStatement listagemProdutos = null;
-        PreparedStatement Produtosqtd = null;
+        PreparedStatement listagemLojas = null;
+        PreparedStatement Lojasqtd = null;
 
-        ResultSet selectProduto = null;
-        ResultSet selectcountProduto = null;
+        ResultSet selectLoja = null;
+        ResultSet selectcountLoja = null;
 
         String sqlSelectRecord = null;
         String sqlSelectqtd = null;
-        int quantidadeprodutos = 0;
+        int quantidadelojas = 0;
         sqlSelectRecord = "SELECT * FROM lojas";
         sqlSelectqtd = "SELECT COUNT(*) as quantidadeprod FROM produtos";
 
-        listagemProdutos = conexao.prepareStatement(sqlSelectRecord);
-        Produtosqtd = conexao.prepareStatement(sqlSelectqtd);
-        selectProduto = listagemProdutos.executeQuery();
-        selectcountProduto = Produtosqtd.executeQuery();
+        listagemLojas = conexao.prepareStatement(sqlSelectRecord);
+        Lojasqtd = conexao.prepareStatement(sqlSelectqtd);
+        selectLoja = listagemLojas.executeQuery();
+        selectcountLoja = Lojasqtd.executeQuery();
 
-        while (selectcountProduto.next()) {
+        while (selectcountLoja.next()) {
 
-            quantidadeprodutos = selectcountProduto.getInt("quantidadeprod");
+            quantidadelojas = selectcountLoja.getInt("quantidadeprod");
 
         }
     %>
@@ -109,19 +110,19 @@
 
                 </tr>
                 <%  int linha = 1;
-                    String[] listaprodutos = new String[quantidadeprodutos];
-                    while (selectProduto.next()) {
-                        listaprodutos[linha - 1] = selectProduto.getString("nomeloja");
+                    String[] listalojas = new String[quantidadelojas];
+                    while (selectLoja.next()) {
+                        listalojas[linha - 1] = selectLoja.getString("idloja");
 
                 %>
                 <tr>
                     <td bgcolor="#FF9900"><%=linha%></td>
-                    <td><%=selectProduto.getString("nomeloja")%></td>
-                    <td><%=selectProduto.getString("logradouro")%></td>
-                    <td><%=selectProduto.getString("cidade")%></td>
-                    <td><%=selectProduto.getString("bairro")%></td>
-                    <td><%=selectProduto.getString("uf")%></td> 
-                    <td><button type="submit" class="button" formaction="ConsultaProd?ConsultaProd=<%=selectProduto.getString("nomeloja")%>">Alterar</button></td>
+                    <td><%=selectLoja.getString("nomeloja")%></td>
+                    <td><%=selectLoja.getString("logradouro")%></td>
+                    <td><%=selectLoja.getString("cidade")%></td>
+                    <td><%=selectLoja.getString("bairro")%></td>
+                    <td><%=selectLoja.getString("uf")%></td> 
+                    <td><button type="submit" class="button" formaction="ConsultaLoja?ConsultaLoja=<%=selectLoja.getString("idloja")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
                         }
@@ -138,11 +139,11 @@
         </div>
 
         <%            try {
-                if (listagemProdutos != null) {
-                    listagemProdutos.close();
+                if (listagemLojas != null) {
+                    listagemLojas.close();
                 }
-                if (selectProduto != null) {
-                    selectProduto.close();
+                if (selectLoja != null) {
+                    selectLoja.close();
                 }
 
                 if (conexao != null) {

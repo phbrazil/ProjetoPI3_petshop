@@ -11,7 +11,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    
+
     <head>
 
         <style>
@@ -45,7 +45,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/topodapagina.css" rel="stylesheet">
-    <form name = "ConsultaProd" method="POST" >
+    <form name = "RelatoriosServlet" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Report Vendas</title>
@@ -56,8 +56,12 @@
 
         <div align ="center">
             <br>
+            <h1>Data do Report</h1>
+            <input readonly name ="inicio" value = "${inicio}"</label>
+            <input readonly name ="fim" value = "${fim}"</label>
             <br>
-            <h2>Report de Vendas</h2>
+            <br>
+
             <table border='2' cellpadding='10' width='1100'>
                 <tr>
                     <td  bgcolor="#33CCCC">CPF do Cliente</td>
@@ -71,7 +75,7 @@
                 </tr>
 
 
-                <%  
+                <%
                     ResultSet vendas = (ResultSet) request.getAttribute("vendas");
 
                     while (vendas.next()) {
@@ -85,15 +89,17 @@
                     <td><%=vendas.getString("totalvalor")%></td>
 
                 <tr>
-                    <% 
+                    <%
                         }
 
 
                     %>
             </table>
         </div>
+            
+</form>
 
-        
+
 
 
         <footer class="my-5 pt-5 text-muted text-center text-small">

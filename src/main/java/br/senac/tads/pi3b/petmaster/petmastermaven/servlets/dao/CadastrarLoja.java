@@ -6,8 +6,6 @@
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Loja;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -44,8 +42,8 @@ public class CadastrarLoja extends HttpServlet {
 
         if (qtdclicadastrado == 0) {
             
-            Loja loja = new Loja(nomeLoja, logradouro, bairro, cidade, cep, uf, telefone);
-            
+            Loja loja = new Loja(nomeLoja, logradouro, cidade, bairro, uf, cep, telefone);
+                               //nomeloja, logradouro, cidade, bairro, uf, cep, telefone
             bancoLoja.gravarLoja(loja);
             request.setAttribute("nomeloja", nomeLoja);
             request.setAttribute("mensagem", "Loja cadastrada com sucesso!");
@@ -57,7 +55,7 @@ public class CadastrarLoja extends HttpServlet {
             request.setAttribute("nomeloja", nomeLoja);
             request.setAttribute("mensagem", "falha");
 
-            request.getRequestDispatcher("CadastrarCliente.jsp").forward(request, response);
+            request.getRequestDispatcher("CadastrarLoja.jsp").forward(request, response);
 
         }
 

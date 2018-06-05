@@ -48,28 +48,30 @@ public class RelatoriosServlet extends HttpServlet {
         String inicio = request.getParameter("inicio");
         String fim = request.getParameter("fim");
 
-        request.setAttribute("fim", fim);
-        request.setAttribute("inicio", inicio);
-
         Relatorios relatorios = new Relatorios();
+        ResultSet vendas;
+        ResultSet exportar;
 
         if (acaoreport.equals("Gerar")) {
 
-            ResultSet vendas = relatorios.Vendas(inicio, fim);
+            sessao.setAttribute("inicio", inicio);
+            sessao.setAttribute("fim", fim);
+
+            vendas = relatorios.Vendas(inicio, fim);
 
             request.setAttribute("vendas", vendas);
 
-            request.getRequestDispatcher("VendasResult.jsp").forward(request, response);
+            request.getRequestDispatcher("ReportVendasResult.jsp").forward(request, response);
 
         } else if (acaoreport.equals("ExportarVendas")) {
-            
-            inicio = request.getParameter("inicio");
-            fim = request.getParameter("fim");
 
-            System.out.println(fim);
-            System.out.println(inicio);
+             inicio = request.getParameter("inicio");
+             fim = request.getParameter("fim");
 
-            //ResultSet exportar = relatorios.Vendas(inicio, fim);
+            exportar = relatorios.Vendas(inicio, fim);
+
+            request.setAttribute("exportar", exportar);
+
             request.getRequestDispatcher("/Exportar/ExportVendas.jsp").forward(request, response);
         }
 

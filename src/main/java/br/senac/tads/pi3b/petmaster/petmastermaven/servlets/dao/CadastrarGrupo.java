@@ -5,9 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Loja;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Grupo;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -21,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "CadastrarLoja", urlPatterns = {"/CadastrarLoja"})
+@WebServlet(name = "CadastrarGrupo", urlPatterns = {"/CadastrarGrupo"})
 
 public class CadastrarGrupo extends HttpServlet {
 
@@ -29,35 +27,30 @@ public class CadastrarGrupo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        String idgrupo = request.getParameter("idgrupo");
+        String nomeGrupo = request.getParameter("nomegrupo");
         String idloja = request.getParameter("idloja");
-        String nomeLoja = request.getParameter("nomeloja");
-        String logradouro = request.getParameter("logradouro");
-        String cidade = request.getParameter("cidade");
-        String bairro = request.getParameter("bairro");
-        String uf = request.getParameter("uf");
-        String cep = request.getParameter("cep").replace("-", "").replace(".", "");
-        String telefone = request.getParameter("telefone");
+        
+        BancoGrupo bancoGrupo = new BancoGrupo();
 
-        BancoLoja bancoLoja = new BancoLoja();
-
-        int qtdclicadastrado = bancoLoja.ValidaCadastradoLoja(nomeLoja);
+        int qtdclicadastrado = bancoGrupo.ValidaCadastradoGrupo(nomeGrupo);
 
         if (qtdclicadastrado == 0) {
             
-            Loja loja = new Loja(nomeLoja, logradouro, bairro, cidade, cep, uf, telefone);
+            Grupo grupo = new Grupo(nomeGrupo, idloja);
             
-            bancoLoja.gravarLoja(loja);
-            request.setAttribute("nomeloja", nomeLoja);
-            request.setAttribute("mensagem", "Loja cadastrada com sucesso!");
+            bancoGrupo.gravarGrupo(grupo);
+            request.setAttribute("nomeGrupo", nomeGrupo);
+            request.setAttribute("mensagem", "Grupo cadastrado com sucesso!");
 
-            request.getRequestDispatcher("CadastrarLoja.jsp").forward(request, response);
+            request.getRequestDispatcher("CadastrarGrupo.jsp").forward(request, response);
 
         } else {
 
-            request.setAttribute("nomeloja", nomeLoja);
+            request.setAttribute("nomeGrupo", nomeGrupo);
             request.setAttribute("mensagem", "falha");
 
-            request.getRequestDispatcher("CadastrarCliente.jsp").forward(request, response);
+            request.getRequestDispatcher("CadastrarGrupo.jsp").forward(request, response);
 
         }
 

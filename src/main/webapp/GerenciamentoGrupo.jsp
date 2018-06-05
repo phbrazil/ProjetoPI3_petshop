@@ -15,28 +15,28 @@
         Connection conexao = null;
 
         Class.forName("com.mysql.jdbc.Driver").newInstance();
-        conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/PetMaster", "root", "admin");
+        conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/PetMaster", "root", "");
 
-        PreparedStatement listagemProdutos = null;
-        PreparedStatement Produtosqtd = null;
+        PreparedStatement listagemGrupos = null;
+        PreparedStatement Gruposqtd = null;
 
-        ResultSet selectProduto = null;
-        ResultSet selectcountProduto = null;
+        ResultSet selectGrupo = null;
+        ResultSet selectcountGrupo = null;
 
         String sqlSelectRecord = null;
         String sqlSelectqtd = null;
-        int quantidadeprodutos = 0;
+        int quantidadegrupos = 0;
         sqlSelectRecord = "SELECT * FROM grupos g join lojas l on l.idloja = g.idloja ";
         sqlSelectqtd = "SELECT COUNT(*) as quantidadeprod FROM produtos";
 
-        listagemProdutos = conexao.prepareStatement(sqlSelectRecord);
-        Produtosqtd = conexao.prepareStatement(sqlSelectqtd);
-        selectProduto = listagemProdutos.executeQuery();
-        selectcountProduto = Produtosqtd.executeQuery();
+        listagemGrupos = conexao.prepareStatement(sqlSelectRecord);
+        Gruposqtd = conexao.prepareStatement(sqlSelectqtd);
+        selectGrupo = listagemGrupos.executeQuery();
+        selectcountGrupo = Gruposqtd.executeQuery();
 
-        while (selectcountProduto.next()) {
+        while (selectcountGrupo.next()) {
 
-            quantidadeprodutos = selectcountProduto.getInt("quantidadeprod");
+            quantidadegrupos = selectcountGrupo.getInt("quantidadeprod");
 
         }
     %>
@@ -91,7 +91,7 @@
             <br>
             <br>
 
-            <a class="button" href="CadastrarLoja.jsp">Cadastrar um novo grupo</a>
+            <a class="button" href="CadastrarGrupo.jsp">Cadastrar um novo grupo</a>
 
             <br>
             <br>
@@ -104,16 +104,16 @@
 
                 </tr>
                 <%  int linha = 1;
-                    String[] listaprodutos = new String[quantidadeprodutos];
-                    while (selectProduto.next()) {
-                        listaprodutos[linha - 1] = selectProduto.getString("nomegrupo");
+                    String[] listaprodutos = new String[quantidadegrupos];
+                    while (selectGrupo.next()) {
+                        listaprodutos[linha - 1] = selectGrupo.getString("g.idgrupo");
 
                 %>
                 <tr>
                     <td bgcolor="#FF9900"><%=linha%></td>
-                    <td><%=selectProduto.getString("l.nomeloja")%></td>
-                    <td><%=selectProduto.getString("g.nomegrupo")%></td>
-                    <td><button type="submit" class="button" formaction="ConsultaProd?ConsultaProd=<%=selectProduto.getString("nomegrupo")%>">Alterar</button></td>
+                    <td><%=selectGrupo.getString("l.nomeloja")%></td>
+                    <td><%=selectGrupo.getString("g.nomegrupo")%></td>
+                    <td><button type="submit" class="button" formaction="ConsultaGrupo?ConsultaGrupo=<%=selectGrupo.getString("g.idgrupo")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
                         }
@@ -130,11 +130,11 @@
         </div>
 
         <%            try {
-                if (listagemProdutos != null) {
-                    listagemProdutos.close();
+                if (listagemGrupos != null) {
+                    listagemGrupos.close();
                 }
-                if (selectProduto != null) {
-                    selectProduto.close();
+                if (selectGrupo != null) {
+                    selectGrupo.close();
                 }
 
                 if (conexao != null) {

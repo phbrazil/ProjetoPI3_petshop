@@ -21,17 +21,16 @@
         <table>
             <tr>
                 <td>CPF do Cliente</td>
+                <td>Data da Venda</td>
+                <td>Quantidade de itens</td>
+                <td>Vendedor</td>
+                <td>Total Valor</td>
 
             </tr>
 
             <%
-                Relatorios vendas = new Relatorios();
 
-                String inicio = (String) request.getAttribute("inicio");
-                String fim = (String) request.getAttribute("fim");
-
-                ResultSet exportar = vendas.Vendas(inicio, fim);
-
+                ResultSet exportar = (ResultSet) request.getAttribute("exportar");
 
                 while (exportar.next()) {
 
@@ -39,7 +38,10 @@
             %>
             <tr>
                 <td><%=exportar.getString("cpfcliente")%></td>
-
+                <td><%=exportar.getString("datavenda")%></td>
+                <td><%=exportar.getString("quantidadeitens")%></td>
+                <td><%=exportar.getString("vendedor")%></td>
+                <td>R$<%=exportar.getString("totalvalor")%></td>
             </tr>   
             <%
                 }
