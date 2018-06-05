@@ -5,7 +5,9 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoSessao;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.LoginDados;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Sessao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,6 +36,8 @@ public class Login extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
+        String vendedor=null;
+
         logindados.setUsername(username);
         logindados.setPassword(password);
 
@@ -43,14 +47,22 @@ public class Login extends HttpServlet {
 
         if (acessopermitido == true) {
 
-            request.setAttribute("NomeDoUser", logindados.getNomeUser());
-            request.setAttribute("userName", logindados.getUserName());
-
             HttpSession sessao = request.getSession();
+            
+            Sessao sessaodados = new Sessao();
 
+            request.setAttribute("NomeDoUser", logindados.getNomeUser());
+            request.setAttribute("vendedor", logindados.getUserName());
+            
+            sessaodados.setIdsessao(sessao.getId());
+            sessaodados.setVendedor(logindados.getUserName());
+            
+            BancoSessao insertsessao = new BancoSessao();
+
+            insertsessao.InsertSessao(sessaodados);
             
             request.setAttribute("idsessao", sessao.getId());
-            request.getRequestDispatcher("Home.jsp").forward(request, response);
+            request.getRequestDispatcher("SessaoServlet").forward(request, response);
 
         } else {
 

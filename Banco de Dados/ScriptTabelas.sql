@@ -1,4 +1,4 @@
-﻿DROP DATABASE petmaster;
+DROP DATABASE petmaster;
 CREATE DATABASE petmaster;
 USE petmaster;
 
@@ -57,6 +57,13 @@ VALUES ("CLIENTE NAO QUER EFETUAR O CADASTRO", "RUA GENERICA", "00000000", "000.
 "email@generico","Masculino", "Solteiro",'1990-01-29',NOW(),true);
 
 
+CREATE TABLE sessao(
+id INT NOT NULL AUTO_INCREMENT,
+idsessao VARCHAR(30) NOT NULL,
+vendedor VARCHAR(30) NOT NULL,
+PRIMARY KEY (id));
+
+
 CREATE TABLE vendas(
 idvenda INT NOT NULL AUTO_INCREMENT,
 cpfcliente VARCHAR(14) NOT NULL,
@@ -69,11 +76,9 @@ PRIMARY KEY (idvenda, cpfcliente));
 
 CREATE TABLE itemvenda(
 idvenda INT,
-idpet INT NOT NULL,
 idprod INT NOT NULL,
 quantidadeitens INT NOT NULL,
   FOREIGN KEY (idvenda) REFERENCES vendas (idvenda),
-  FOREIGN KEY (idpet) REFERENCES pets (idpet),
   FOREIGN KEY (idprod) REFERENCES produtos (idprod));
   
 -- Gerenciamento de filiais (

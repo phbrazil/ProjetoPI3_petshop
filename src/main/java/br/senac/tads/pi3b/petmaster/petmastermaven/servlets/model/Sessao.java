@@ -5,29 +5,30 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model;
 
-import com.sun.corba.se.spi.presentation.rmi.StubAdapter;
-import javax.servlet.http.HttpSession;
-
 /**
  *
  * @author killuminatti08
  */
 public class Sessao {
+    
+    private String idsessao = null;
+    private String vendedor = null;
 
-    public boolean Sessao(HttpSession sessao) {
-
-        System.out.println((sessao.getLastAccessedTime()/60000) + " tempo acessado aqui");
-
-        boolean sessaovalida = false;
-        if ((sessao.getLastAccessedTime() / 60000) < 1800) {
-            sessaovalida = true;
-        } else {
-            sessaovalida = false;
-
-            //sessao.invalidate();
-        }
-        return sessaovalida;
-
+    public String getIdsessao() {
+        return idsessao;
     }
 
+    public void setIdsessao(String idsessao) {
+        this.idsessao = idsessao;
+    }
+
+    public String getVendedor() {
+        return vendedor;
+    }
+
+    public void setVendedor(String vendedor) {
+        this.vendedor = vendedor;
+    }
+    
+    
 }

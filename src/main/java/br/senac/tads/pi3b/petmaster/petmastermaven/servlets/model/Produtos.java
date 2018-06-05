@@ -29,7 +29,11 @@ public class Produtos {
     private String descricaoprod;
 
     private int qtdestoque;
+    
+    private int itensvenda;
 
+    
+    
     private String categoriaprod;
 
     private java.util.List<Produtos> listaProd = new ArrayList<Produtos>();
@@ -43,6 +47,14 @@ public class Produtos {
     public void setListaProd(Produtos produtos) {
         listaProd.add(produtos);
     }
+    public int getItensvenda() {
+        return itensvenda;
+    }
+
+    public void setItensvenda(int itensvenda) {
+        this.itensvenda = itensvenda;
+    }
+
 
     public Produtos(String nomeprod, double valorprod, String codigobarrasprod, String descricaoprod, int qtdestoque, String categoriaprod) {
         this.codigobarrasprod = codigobarrasprod;

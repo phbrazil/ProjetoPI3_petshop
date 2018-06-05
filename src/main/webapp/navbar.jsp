@@ -103,6 +103,7 @@ Author     : paulo.bezerra
                                 <p><a href="EstoqueProd.jsp" style="text-decoration:none;">Listar Produtos</a></p>
                                 <p><a href="EstoquePet.jsp" style="text-decoration:none;">Listar Pets</a></p>
                                 <p><a href="EstoqueClientes.jsp" style="text-decoration:none;">Listar Clientes</a></p>
+                                <p><a href="RelatoriosVendas.jsp" style="text-decoration:none;">Listar Vendas</a></p>
 
                             </div>
                         </div>
@@ -130,8 +131,10 @@ Author     : paulo.bezerra
 
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="Logout.jsp">Sair</a>
-
-
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">${vendedor}</a>
                     </li>
                 </ul>
             </nav>

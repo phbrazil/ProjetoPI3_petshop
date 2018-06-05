@@ -109,7 +109,6 @@ public class BancoProd {
             System.out.println("erro" + e.getMessage());
 
         }
-        System.out.println("to aqui nos produtinhos" + produtos.getNomeprod());
 
         return produtos;
     }

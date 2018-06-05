@@ -3,11 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
+package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoItemVenda;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoNovaVenda;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoPet;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoProd;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoSessao;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Sessao;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Vendas;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -55,15 +59,23 @@ public class Carrinho extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        HttpSession sessao = request.getSession();
 
+        BancoSessao bancosessao = new BancoSessao();
+
+        String vendedor = bancosessao.selectSessao(sessao.getId()); 
+        
+        // Obtém a sessão do usuário
         String acaovenda = request.getParameter("acaovenda");
 
         cpfcliente = request.getParameter("cpfcliente");
         nomecliente = request.getParameter("nomecliente");
         quantidade = request.getParameter("quantidade");
 
+
         try {
-            // the String to int conversion happens here
+
             quantconvert = Integer.parseInt(quantidade.trim());
 
         } catch (NumberFormatException nfe) {
@@ -86,14 +98,11 @@ public class Carrinho extends HttpServlet {
 
                 quantidadetotal = quantidadetotal + quantconvert;
 
+                produtos.setItensvenda(Integer.valueOf(quantidade));
+
                 carrinho.add(produtos);
 
-                carrinho.get(0).getValorprod();
-
                 total = total + (produtos.getValorprod() * quantconvert);
-
-                // Obtém a sessão do usuário
-                HttpSession sessao = request.getSession();
 
                 // Se a lista de nomes não estiver na sessão, cria nova
                 if (sessao.getAttribute("produtosNome") == null) {
@@ -111,6 +120,7 @@ public class Carrinho extends HttpServlet {
                 produtosListagemCodigo.add(produtos.getCodigoprod());
 
                 // Atualiza a lista na sessão
+                //sessao.setAttribute("vendedor", vendedor);
                 sessao.setAttribute("produtosNome", produtosListagem);
                 sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
                 sessao.setAttribute("nomecliente", nomecliente);
@@ -119,6 +129,8 @@ public class Carrinho extends HttpServlet {
                 sessao.setAttribute("total", String.format("%.2f", total));
 
                 sessao.setAttribute("carrinho", carrinho);
+
+                produtos = null;
 
                 request.getRequestDispatcher("Vender.jsp").forward(request, response);
 
@@ -130,18 +142,22 @@ public class Carrinho extends HttpServlet {
             }
 
         } else if (acaovenda.equals("Finalizar Venda")) {
-            
-             HttpSession sessao = request.getSession();
-            sessao.invalidate();
 
             Vendas vendas = new Vendas();
+
+            BancoNovaVenda novavenda = new BancoNovaVenda();
+            BancoItemVenda itemvenda = new BancoItemVenda();
 
             vendas.setCPFCliente(cpfcliente);
             vendas.setTotalValor(total);
             vendas.setQuantidadeItensVenda(quantidadetotal);
-            vendas.setVendedor("Paulo.Bezera");
-            
-            
+            vendas.setVendedor(vendedor);
+
+            novavenda.InsertNovaVenda(vendas);
+
+            itemvenda.InsertItemTemp(carrinho, vendas);
+
+            sessao.invalidate();
 
             request.getRequestDispatcher("VendaSuccess.jsp").forward(request, response);
 

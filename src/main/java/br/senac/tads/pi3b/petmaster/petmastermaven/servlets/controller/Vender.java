@@ -3,10 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
+package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Sessao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -28,22 +27,19 @@ public class Vender extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        boolean sessaovalida = false;
 
         String cpfcliente = request.getParameter("cpfcliente");
         String nomecliente = request.getParameter("nomecliente");
+        String vendedor = request.getParameter("vendedor");
 
-        HttpSession sessaoatual = null;
+        HttpSession sessaoatual = request.getSession();
 
-        Sessao sessao = new Sessao();
-        sessaoatual = request.getSession();
-        sessaovalida = sessao.Sessao(sessaoatual);
 
         if (!cpfcliente.equals("")) {
 
             sessaoatual.setAttribute("nomecliente", nomecliente);
             sessaoatual.setAttribute("cpfcliente", cpfcliente);
+            sessaoatual.setAttribute("vendedor", vendedor);
 
             request.getRequestDispatcher("Vender.jsp").forward(request, response);
 

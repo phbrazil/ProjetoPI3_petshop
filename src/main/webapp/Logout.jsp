@@ -64,7 +64,7 @@
                 <div class="col-md-5 order-md-1">
 
 
-                    <input type="submit" name="logout" class="button" value ="Ficar" >
+                    <input type="submit" name="logout" class="button" value ="Continuar" >
                     <input type="submit" name="logout" class="button" value ="Sair" >
 
                 </div>

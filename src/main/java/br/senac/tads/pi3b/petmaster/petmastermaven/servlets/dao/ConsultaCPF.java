@@ -19,6 +19,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -37,9 +38,15 @@ public class ConsultaCPF extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        HttpSession sessao = request.getSession();
+
         String cpfcliente = request.getParameter("cpfcliente");
 
-        Cliente cliente = new Cliente(null,null,null,null, null, null, null, null, null, null, null, null, null, null, null, null);
+        String vendedor = (String) request.getAttribute("userName");
+
+        System.out.println("aqui no consultacpf" + vendedor);
+
+        Cliente cliente = new Cliente(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
 
         BancoCli selectcpf = new BancoCli();
 

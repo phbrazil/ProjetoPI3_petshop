@@ -6,6 +6,7 @@
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Vendas;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -15,13 +16,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Sessao;
 
 /**
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "Sessao", urlPatterns = {"/Sessao"})
+@WebServlet(name = "SessaoServlet", urlPatterns = {"/SessaoServlet"})
 
 public class SessaoServlet extends HttpServlet {
 
@@ -29,19 +29,19 @@ public class SessaoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        boolean sessaovalida = false;
+        HttpSession sessao = request.getSession();
 
-        HttpSession sessaoatual = null;
+        String vendedor = (String) request.getAttribute("vendedor");
 
-        Sessao sessao = new Sessao();
+        sessao.setAttribute("vendedor", vendedor);
+        
+        
+        Vendas vendas = new Vendas();
+        
+        vendas.setVendedor(vendedor);
+        
 
-        sessaoatual = request.getSession();
-        sessaovalida = sessao.Sessao(sessaoatual);
-
-        if (sessaovalida == false) {
-            response.sendRedirect("index.html");
-
-        }
+        request.getRequestDispatcher("Home.jsp").forward(request, response);
 
     }
 

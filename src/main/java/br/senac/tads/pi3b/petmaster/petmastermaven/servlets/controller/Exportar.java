@@ -3,8 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
+package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoCli;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoPet;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoProd;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente;
 import java.awt.List;
 import java.io.IOException;
