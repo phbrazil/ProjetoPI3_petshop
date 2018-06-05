@@ -22,11 +22,10 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form name = "CadastrarUsuario" action="${pageContext.request.contextPath}/CadastrarUsuario" method="POST" >
+    <form name = "AlterarUsuario" action="${pageContext.request.contextPath}/AlterarUsuario" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cadastrar Loja</title>
-
+        <title>Vender</title>
 
     </head>
     <body id="page-top">
@@ -42,49 +41,53 @@
                 <div class="container">
                     <div class="py-5 text-center">
                         <!--img class="d-block mx-auto mb-4" src="img/LogoPetMaster.png" alt="" width="200" height="200"-->
-                        <h2>Cadastrar usuário</h2>
+                        <h2>Alterar usuário</h2>
                     </div>
                 </div>
+
 
                 <div class="col-md-8 order-md-1">
 
                     <div class="mb-3">
-                        <label for="primeironome">Nome do usuario</label>
+                        <label for="primeironome">Nome do usuário</label>
                         <div class="input-group">
-                            <input name="nomeusuario" type="text" class="form-control" id="nomeusuario" placeholder="" value="" name="nomeusuario" required>
+                            <input name="nomeusuario" type="text" class="form-control" id="nomeusuario" placeholder="" value="${resultado.nomeUsuario}" name="nomeusuario" required>
                             <div class="invalid-feedback">
-                             Primeiro nome necessário
+                                Primeiro nome necessário
                             </div>
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="Username">Username</label>
-                        <input name ="username" type="text" class="form-control" id="username" placeholder="exemplo.exemplo@exemplo.cpom" value=""required>
+                        <label for="username">Rua</label>
+                        <input name ="username" type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value="${resultado.username}"required>
                         <div class="invalid-feedback">
-                             Favor inserir o username.
+                            Favor inserir o username.
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="password">Password</label>
-                        <input name ="password" type="text" class="form-control" id="password" placeholder="Password" value=""required>
+                        <label for="Password">Bairro</label>
+                        <input name ="password" type="text" class="form-control" id="bairro" placeholder="Password" value="${resultado.password}"required>
                         <div class="invalid-feedback">
                             Favor inserir o password.
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="idgrupo">Grupo</label>
-                        <input name ="idgrupo" type="text" class="form-control" id="idgrupo" placeholder="idgrupo" value=""required>
+                        <label for="cidade">idgrupo</label>
+                        <input name ="idgrupo" type="text" class="form-control" id="cidade" placeholder="Idgurpo" value="${resultado.idgrupo}"required>
                         <div class="invalid-feedback">
-                            Favor inserir o grupo.
+                            Favor inserir o grupo
                         </div>
                     </div>
-                    
-                     <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit" name = "gravarUsuario">Gravar</button>
+
                     </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="AcaoCliente" value = "alterar">Alterar</button>
+                    <br>
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="AcaoCliente" value ="excluir" >Excluir</button>
+
                 </div>
-                    
+
                 <footer class="my-5 pt-5 text-muted text-center text-small">
                     <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
                     <ul class="list-inline">
@@ -94,8 +97,6 @@
                     </ul>
                 </footer>
             </div>
-        
-        
 
         </form>
 
@@ -208,7 +209,7 @@
             if (mensagem == "falha") {
                 alert("O CPF " + cpfcliente + " já se encontra cadastrado")
 
-            } else if (mensagem == "Loja cadastrada com sucesso!") {
+            } else if (mensagem == "Cliente cadastrado com sucesso!") {
 
                 alert(mensagem)
 

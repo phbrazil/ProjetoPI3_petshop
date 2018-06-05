@@ -20,23 +20,23 @@
         PreparedStatement listagemProdutos = null;
         PreparedStatement Produtosqtd = null;
 
-        ResultSet selectProduto = null;
-        ResultSet selectcountProduto = null;
+        ResultSet selectUsuario = null;
+        ResultSet selectcountUsuario = null;
 
         String sqlSelectRecord = null;
         String sqlSelectqtd = null;
-        int quantidadeprodutos = 0;
+        int quantidadeusuarios = 0;
         sqlSelectRecord = "SELECT * FROM usuarios u join grupos g on g.idgrupo = u.idgrupo";
         sqlSelectqtd = "SELECT COUNT(*) as quantidadeprod FROM produtos";
 
         listagemProdutos = conexao.prepareStatement(sqlSelectRecord);
         Produtosqtd = conexao.prepareStatement(sqlSelectqtd);
-        selectProduto = listagemProdutos.executeQuery();
-        selectcountProduto = Produtosqtd.executeQuery();
+        selectUsuario = listagemProdutos.executeQuery();
+        selectcountUsuario = Produtosqtd.executeQuery();
 
-        while (selectcountProduto.next()) {
+        while (selectcountUsuario.next()) {
 
-            quantidadeprodutos = selectcountProduto.getInt("quantidadeprod");
+            quantidadeusuarios = selectcountUsuario.getInt("quantidadeprod");
 
         }
     %>
@@ -91,7 +91,7 @@
             <br>
             <br>
 
-            <a class="button" href="CadastrarLoja.jsp">Cadastrar um novo usuário</a>
+            <a class="button" href="CadastrarUsuario.jsp">Cadastrar um novo usuário</a>
 
             <br>
             <br>
@@ -106,17 +106,17 @@
 
                 </tr>
                 <%  int linha = 1;
-                    String[] listaprodutos = new String[quantidadeprodutos];
-                    while (selectProduto.next()) {
-                        listaprodutos[linha - 1] = selectProduto.getString("codigouser");
+                    String[] listaprodutos = new String[quantidadeusuarios];
+                    while (selectUsuario.next()) {
+                        listaprodutos[linha - 1] = selectUsuario.getString("u.codigouser");
 
                 %>
                 <tr>
                     <td bgcolor="#FF9900"><%=linha%></td>
-                    <td><%=selectProduto.getString("u.codigouser")%></td>
-                    <td><%=selectProduto.getString("u.nomeuser")%></td>
-                    <td><%=selectProduto.getString("g.nomegrupo")%></td>
-                    <td><button type="submit" class="button" formaction="ConsultaProd?ConsultaProd=<%=selectProduto.getString("codigouser")%>">Alterar</button></td>
+                    <td><%=selectUsuario.getString("u.codigouser")%></td>
+                    <td><%=selectUsuario.getString("u.nomeuser")%></td>
+                    <td><%=selectUsuario.getString("g.nomegrupo")%></td>
+                    <td><button type="submit" class="button" formaction="ConsultaUsuario?ConsultaUsuario=<%=selectUsuario.getString("u.codigouser")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
                         }
@@ -136,8 +136,8 @@
                 if (listagemProdutos != null) {
                     listagemProdutos.close();
                 }
-                if (selectProduto != null) {
-                    selectProduto.close();
+                if (selectUsuario != null) {
+                    selectUsuario.close();
                 }
 
                 if (conexao != null) {

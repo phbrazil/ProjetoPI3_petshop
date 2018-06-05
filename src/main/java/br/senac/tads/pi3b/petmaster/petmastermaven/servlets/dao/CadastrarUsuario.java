@@ -5,8 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Usuario;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -20,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "CadastrarCliente", urlPatterns = {"/CadastrarCliente"})
+@WebServlet(name = "CadastrarUsuario", urlPatterns = {"/CadastrarUsuario"})
 
 public class CadastrarUsuario extends HttpServlet {
 
@@ -28,43 +27,32 @@ public class CadastrarUsuario extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String nomeCliente = request.getParameter("nomecliente");
-        String logradouro = request.getParameter("logradouro");
-        String RGCliente = request.getParameter("rgcliente");
-        String CPFCliente = request.getParameter("cpfcliente");
-        String email = request.getParameter("email");
-        String pais = request.getParameter("pais");
-        String cidade = request.getParameter("cidade");
-        String bairro = request.getParameter("bairro");
-        String uf = request.getParameter("uf");
-        String estado = request.getParameter("estado");
-        String cep = request.getParameter("cep").replace("-", "").replace(".", "");
-        String telefone = request.getParameter("telefone");
-        String celular = request.getParameter("celular");
-        String sexo = request.getParameter("sexo");
-        String estadocivil = request.getParameter("estadocivil");
-        String nascimento = request.getParameter("nascimento");
+        String nomeUsuario = request.getParameter("nomeusuario");
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        String idgrupo = request.getParameter("idgrupo");
 
-        BancoCli bancocli = new BancoCli();
 
-        int qtdclicadastrado = bancocli.ValidaCadastradoCliente(CPFCliente);
+        BancoUsuario bancousuario = new BancoUsuario();
 
-        if (qtdclicadastrado == 0) {
+        int qtdusuariocadastrado = bancousuario.ValidaCadastradoUsuario(nomeUsuario);
 
-            Cliente cliente = new Cliente(CPFCliente, nascimento, nomeCliente, logradouro, bairro, cidade, cep, estado, uf, email, sexo, telefone, celular, pais, RGCliente, estadocivil);
+        if (qtdusuariocadastrado == 0) {
+
+            Usuario usuario = new Usuario(nomeUsuario, username, password, idgrupo);
             
-            bancocli.gravarCliente(cliente);
-            request.setAttribute("cpfcliente", CPFCliente);
-            request.setAttribute("mensagem", "Cliente cadastrado com sucesso!");
+            bancousuario.gravarUsuario(usuario);
+            request.setAttribute("nomeUsuario", nomeUsuario);
+            request.setAttribute("mensagem", "Usuario cadastrado com sucesso!");
 
-            request.getRequestDispatcher("CadastrarCliente.jsp").forward(request, response);
+            request.getRequestDispatcher("CadastrarUsuario.jsp").forward(request, response);
 
         } else {
 
-            request.setAttribute("cpfcliente", CPFCliente);
+            request.setAttribute("nomeUsuario", nomeUsuario);
             request.setAttribute("mensagem", "falha");
 
-            request.getRequestDispatcher("CadastrarCliente.jsp").forward(request, response);
+            request.getRequestDispatcher("CadastrarUsuario.jsp").forward(request, response);
 
         }
 

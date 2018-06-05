@@ -19,7 +19,7 @@ public class Usuario {
     private String nomeUsuario;
     private String username;
     private String password;
-    private int grupoid;
+    private String idgrupo;
     
     public int getUsuarioId() {
         return usuarioid;
@@ -49,6 +49,14 @@ public class Usuario {
         this.password = password;
     }
     
+     public String getIdGrupo() {
+        return idgrupo;
+    }
+
+    public void setIdGrupo(String idgrupo) {
+        this.idgrupo = idgrupo;
+    }
+    
     private java.util.List<Usuario> listaUsuario = new ArrayList<Usuario>();
 
     public List<Usuario> getListaUsuario() {
@@ -63,7 +71,15 @@ public class Usuario {
         this.nomeUsuario = nomeUsuario;
 
     }
-
+    
+    
+    public Usuario(String nomeUsuario, String userName, String password, String idGrupo) {
+        this.nomeUsuario = nomeUsuario;
+        this.username = userName;
+        this.password = password;
+        this.idgrupo = idGrupo;
+       
+     }
    
     public Usuario obterUsuarioLista(String id) {
         if (!listaUsuario.isEmpty()) {
