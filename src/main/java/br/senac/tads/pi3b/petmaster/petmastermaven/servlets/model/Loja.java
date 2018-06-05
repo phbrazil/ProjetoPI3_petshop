@@ -85,11 +85,13 @@ public class Loja {
             String cidade, String bairro, String UF, String cep, String telefone) {
         this.nomeLoja = nomeLoja;
         this.logradouro = logradouro;
-        this.cep = cep;
-        this.bairro = bairro;
         this.cidade = cidade;
+        this.bairro = bairro;
         this.UF = UF;
+        this.cep = cep;
         this.telefone = telefone;
+        
+        //nomeloja, logradouro, cidade, bairro, uf, cep, telefone
 
     }
    

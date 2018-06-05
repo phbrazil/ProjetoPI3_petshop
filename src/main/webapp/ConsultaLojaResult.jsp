@@ -22,11 +22,10 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form name = "CadastrarGrupo" action="${pageContext.request.contextPath}/CadastrarGrupo" method="POST" >
+    <form name = "AlterarLoja" action="${pageContext.request.contextPath}/AlterarLoja" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cadastrar Loja</title>
-
+        <title>Vender</title>
 
     </head>
     <body id="page-top">
@@ -42,7 +41,7 @@
                 <div class="container">
                     <div class="py-5 text-center">
                         <!--img class="d-block mx-auto mb-4" src="img/LogoPetMaster.png" alt="" width="200" height="200"-->
-                        <h2>Cadastrar loja</h2>
+                        <h2>Alterar loja</h2>
                     </div>
                 </div>
 
@@ -50,28 +49,63 @@
                 <div class="col-md-8 order-md-1">
 
                     <div class="mb-3">
-                        <label for="primeironome">Nome do grupo</label>
+                        <label for="primeironome">Nome</label>
                         <div class="input-group">
-                            <input name="nomeloja" type="text" class="form-control" id="nomecliente" placeholder="" value="" name="nomecliente" required>
+                            <input name="nomecliente" type="text" class="form-control" id="nomecliente" placeholder="" value="${resultado.nomeLoja}" name="nomeCliente" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="mb-3">
-                        <label for="primeironome">Loja</label>
-                        <div class="input-group">
-                            <input name="idloja" type="number" class="form-control" id="idloja" placeholder="" value="" name="idloja" required>
-                            <div class="invalid-feedback">
-                                Loja é necessária
-                            </div>
+                        <label for="endereco">Rua</label>
+                        <input name ="logradouro" type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value="${resultado.logradouro}"required>
+                        <div class="invalid-feedback">
+                            Favor inserir seu endereço de envio.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bairro">Bairro</label>
+                        <input name ="bairro" type="text" class="form-control" id="bairro" placeholder="Bairro" value="${resultado.bairro}"required>
+                        <div class="invalid-feedback">
+                            Favor inserir o Bairro.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cidade">Cidade</label>
+                        <input name ="cidade" type="text" class="form-control" id="cidade" placeholder="Cidade" value="${resultado.cidade}"required>
+                        <div class="invalid-feedback">
+                            Favor inserir a Cidade.
                         </div>
                     </div>
 
-                        <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit" name = "gravarLoja">Gravar</button>
+
+                   
+                        <div class="col-md-3 mb-3">
+                            <label for="cep">CEP</label>
+                            <input name ="cep" type="text" class="form-control" id="cep" onkeydown="javascript: fMasc(this, mCEP);" placeholder="00000-000" maxlength="10" value = "${resultado.cep}" required>
+                            <div class="invalid-feedback">
+                                CEP obrigatório
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 mb-3">
+                            <label for="telefone">Telefone</label>
+                            <input onkeydown="javascript: fMasc(this, mTel);" name = "telefone" type="text" class="form-control" id="tel" placeholder="(xx)xxxxx-xxxx" maxlength="14" value = "${resultado.telefone}">
+                            <div class="invalid-feedback">
+                                Telefone obrigatório
+                            </div>
+                        </div>
+                     
+
+
                     </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="AcaoCliente" value = "alterar">Alterar</button>
+                    <br>
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="AcaoCliente" value ="excluir" >Excluir</button>
+
                 </div>
 
                 <footer class="my-5 pt-5 text-muted text-center text-small">
@@ -195,7 +229,7 @@
             if (mensagem == "falha") {
                 alert("O CPF " + cpfcliente + " já se encontra cadastrado")
 
-            } else if (mensagem == "Loja cadastrada com sucesso!") {
+            } else if (mensagem == "Cliente cadastrado com sucesso!") {
 
                 alert(mensagem)
 

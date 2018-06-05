@@ -17,7 +17,7 @@ public class Grupo {
 
     private int grupoid;
     private String nomeGrupo;
-    private int lojaid;
+    private String idloja;
     
     public int getGrupoid() {
         return grupoid;
@@ -27,8 +27,16 @@ public class Grupo {
         return nomeGrupo;
     }
 
-    public void setNomeLoja(String nomeGrupo) {
+    public void getNomeGrupo(String nomeGrupo) {
         this.nomeGrupo = nomeGrupo;
+    }
+    
+    public String getIdLoja() {
+        return idloja;
+    }
+    
+    public void setIdLoja(String idloja) {
+        this.idloja = idloja;
     }
 
     private java.util.List<Grupo> listaGrupo = new ArrayList<Grupo>();
@@ -45,7 +53,12 @@ public class Grupo {
         this.nomeGrupo = nomeGrupo;
 
     }
-
+    
+     public Grupo(String nomeGrupo, String idloja) {
+        this.nomeGrupo = nomeGrupo;
+        this.idloja = idloja;
+       
+     }
    
     public Grupo obterGrupoLista(String id) {
         if (!listaGrupo.isEmpty()) {

@@ -5,35 +5,32 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Grupo;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Loja;
 import java.awt.List;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-public class BancoLoja {
+public class BancoGrupo {
 
     private Connection conexao = null;
 
-    Loja loja = new Loja(null, null, null, null, null, null, null);
+    Grupo grupo = new Grupo(null, null);
 
     private java.util.List<Loja> listaLoja = new ArrayList<Loja>();
 
-    public void gravarLoja(Loja loja) {
+    public void gravarGrupo(Grupo grupo) {
 
         BancoConexao bancoconexao = new BancoConexao();
-
-        System.out.println(loja.getUF());
-        System.out.println(loja.getCep());
 
         try {
 
             Connection conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("INSERT INTO lojas (nomeloja, logradouro,cidade,"
-                    + "bairro, uf,cep, telefone) VALUES ('" + loja.getNomeLoja() + "','"
-                    + loja.getLogradouro() + "','" + loja.getCidade() + "','" + loja.getBairro() + "','" + loja.getUF() + "','" + loja.getCep() + "','" + loja.getTelefone() + "');");
+            st.executeUpdate("INSERT INTO grupos (nomegrupo, idloja) VALUES ('" + grupo.getNomeGrupo() + "','"
+                    + grupo.getIdLoja() + "');");
             conexao.close();
 
         } catch (Exception e) {
@@ -44,7 +41,7 @@ public class BancoLoja {
 
     }
 
-    public void atualizarLoja(Loja loja) {
+  /*  public void atualizarLoja(Loja loja) {
 
         BancoConexao bancoconexao = new BancoConexao();
 
@@ -107,7 +104,7 @@ public class BancoLoja {
 
         return loja;
     }
-
+*/
     public int ValidaCadastradoLoja(String nomeLoja) {
 
         String select = "";
@@ -141,7 +138,7 @@ public class BancoLoja {
 
         return qtdlojacadastrado;
     }
-
+/*
     public boolean deletaLoja(String nomeloja) {
 
         boolean deletado = false;
@@ -167,7 +164,7 @@ public class BancoLoja {
         return deletado;
 
     }
-    /*
+    
     public ResultSet PesquisarClientesGeral() {
 
         String selectgeral = "";

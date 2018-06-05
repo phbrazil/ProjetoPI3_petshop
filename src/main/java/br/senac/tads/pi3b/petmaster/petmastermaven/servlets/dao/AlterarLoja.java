@@ -5,9 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Loja;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -49,22 +47,22 @@ public class AlterarLoja extends HttpServlet {
             Loja loja = new Loja(nomeLoja, logradouro, cidade, bairro, uf, cep, telefone);
             bancoLoja.atualizarLoja(loja);
 
-            request.setAttribute("mensagem", "Cliente Alterado");
+            request.setAttribute("mensagem", "Loja alterada");
 
-            request.getRequestDispatcher("ConsultaCli.jsp").forward(request, response);
+            request.getRequestDispatcher("GerenciamentoLoja.jsp").forward(request, response);
 
         } else if (acaocliente.equals("excluir")) {
 
-            deletado = bancoLoja.deletaCliente(String.valueOf(request.getParameter("cpfcliente")));
+            deletado = bancoLoja.deletaLoja(String.valueOf(request.getParameter("nomeloja")));
 
             if (deletado == true) {
-                request.setAttribute("mensagem", "Cliente Deletado");
+                request.setAttribute("mensagem", "Loja deletada");
 
-                request.getRequestDispatcher("ConsultaCli.jsp").forward(request, response);
+                request.getRequestDispatcher("GerenciamentoLoja.jsp").forward(request, response);
 
             } else {
 
-                System.out.println("falhou na hora de deletar");
+                System.out.println("Houve uma falha");
             }
 
         }
