@@ -41,6 +41,8 @@ public class BancoUsuario {
     }
 
   public void atualizarUsuario(Usuario usuario) {
+      
+      System.out.println("entrei "+usuario.getNomeUsuario());
 
         BancoConexao bancoconexao = new BancoConexao();
 
@@ -49,12 +51,12 @@ public class BancoUsuario {
             Connection conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("UPDATE usuarios set nomeuser = '" + usuario.getNomeUsuario() + "', username = '" + usuario.getUsername() + "',"
-                    + "password = '" + usuario.getPassword() + "',idgrupo = 1 where nomeuser like '%" + usuario.getNomeUsuario() + "%'");
-
+            st.executeUpdate("UPDATE usuarios set nomeuser = '" + usuario.getNomeUsuario() + "',"
+                    + "password = '" + usuario.getPassword() + "',idgrupo = 1 where username = '" + usuario.getUsername().trim()+ "'");
+            
             conexao.close();
 
-            System.out.println("fiz o update");
+            System.out.println("fiz o update"+usuario.getNomeUsuario());
 
         } catch (Exception e) {
 

@@ -27,7 +27,7 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form name = "ConsultaUsuarioResult" action="${pageContext.request.contextPath}/ConsultaUsuarioResult" method="POST" >
+    <form name = "ConsultaUsuarioResult" action="${pageContext.request.contextPath}/AlterarUsuario" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Vender</title>
@@ -56,7 +56,7 @@
                     <div class="mb-3">
                         <label for="primeironome">Nome do usuário</label>
                         <div class="input-group">
-                            <input name="username" type="text" class="form-control" id="nomeusuario" placeholder="" value="${resultado.username}" name="nomeusuario" required>
+                            <input name="nomeusuario" type="text" class="form-control" id="nomeusuario" placeholder="" value="${resultado.nomeUsuario}" name="nomeusuario" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
@@ -64,10 +64,9 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="username">Nome</label>
-                        <input name ="Nome" type="text" class="form-control" id="Nome"  value="${resultado.nomeUsuario}"required>
+
                         <label for="username">Username</label>
-                        <input name ="username" type="text" class="form-control" id="username" placeholder="Rua hum 1234" value="${resultado.username}"required>
+                        <input readonly name ="username" type="text" class="form-control" id="username"  value="${resultado.username}"required>
                         <div class="invalid-feedback">
                             Favor inserir o username.
                         </div>
