@@ -6,6 +6,7 @@
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Loja;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -20,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "AlterarCli", urlPatterns = {"/AlterarCli"})
+@WebServlet(name = "AlterarLoja", urlPatterns = {"/AlterarLoja"})
 
 public class AlterarLoja extends HttpServlet {
 
@@ -29,31 +30,24 @@ public class AlterarLoja extends HttpServlet {
             throws ServletException, IOException {
 
         boolean deletado = false;
-        BancoCli bancocli = new BancoCli();
+        BancoLoja bancoLoja = new BancoLoja();
 
         String acaocliente = String.valueOf(request.getParameter("AcaoCliente"));
 
         if (acaocliente.equals("alterar")) {
 
-            String nomeCliente = request.getParameter("nomecliente");
+            String idloja = request.getParameter("idloja");
+            String nomeLoja = request.getParameter("nomeloja");
             String logradouro = request.getParameter("logradouro");
-            String RGCliente = request.getParameter("rgcliente");
-            String CPFCliente = request.getParameter("cpfcliente");
-            String email = request.getParameter("email");
-            String pais = request.getParameter("pais");
             String cidade = request.getParameter("cidade");
             String bairro = request.getParameter("bairro");
             String uf = request.getParameter("uf");
-            String estado = request.getParameter("estado");
             String cep = request.getParameter("cep").replace("-", "").replace(".", "");
             String telefone = request.getParameter("telefone");
-            String celular = request.getParameter("celular");
-            String sexo = request.getParameter("sexo");
-            String estadocivil = request.getParameter("estadocivil");
-            String nascimento = request.getParameter("nascimento");
 
-            Cliente clientes = new Cliente(CPFCliente, nascimento, nomeCliente, logradouro, bairro, cidade, cep, estado, uf, email, sexo, telefone, celular, pais, RGCliente, estadocivil);
-            bancocli.atualizarCli(clientes);
+            //Cliente clientes = new Cliente(CPFCliente, nascimento, nomeCliente, logradouro, bairro, cidade, cep, estado, uf, email, sexo, telefone, celular, pais, RGCliente, estadocivil);
+            Loja loja = new Loja(nomeLoja, logradouro, cidade, bairro, uf, cep, telefone);
+            bancoLoja.atualizarLoja(loja);
 
             request.setAttribute("mensagem", "Cliente Alterado");
 
@@ -61,7 +55,7 @@ public class AlterarLoja extends HttpServlet {
 
         } else if (acaocliente.equals("excluir")) {
 
-            deletado = bancocli.deletaCliente(String.valueOf(request.getParameter("cpfcliente")));
+            deletado = bancoLoja.deletaCliente(String.valueOf(request.getParameter("cpfcliente")));
 
             if (deletado == true) {
                 request.setAttribute("mensagem", "Cliente Deletado");

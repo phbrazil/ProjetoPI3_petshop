@@ -22,8 +22,6 @@ public class BancoLoja {
     public void gravarLoja(Loja loja) {
 
         BancoConexao bancoconexao = new BancoConexao();
-        
-
 
         try {
 
@@ -44,7 +42,7 @@ public class BancoLoja {
 
     }
 
-    /* public void atualizarCli(Cliente cliente) {
+    public void atualizarLoja(Loja loja) {
 
         BancoConexao bancoconexao = new BancoConexao();
 
@@ -53,11 +51,8 @@ public class BancoLoja {
             Connection conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("UPDATE clientes set nome = '" + cliente.getNomeCliente()+ "', logradouro = '" + cliente.getLogradouro()+ "',"
-                    + "rg = '" + cliente.getRG()+ "',CPFCliente = '" + cliente.getCpfCliente()+ "',pais = '" + cliente.getPais()+ "',"
-                    + "cidade = '" + cliente.getCidade()+ "',bairro ='"+cliente.getBairro()+"',estado = '"+cliente.getEstado()+"',"
-                    +"UF = '"+cliente.getUF()+"',cep='"+cliente.getCep()+"',telefone='"+cliente.getTelefone()+"',celular='"+cliente.getCelular()+"',"
-                    +"email='"+cliente.getEmail()+"',sexo='"+cliente.getSexo()+"',estadocivil='"+cliente.getEstadoCivil()+"',nascimento='"+cliente.getNascimento()+"' where cpfcliente = '" + cliente.getCpfCliente()+ "'");
+            st.executeUpdate("UPDATE loja set nomeloja = '" + loja.getNomeLoja()+ "', logradouro = '" + loja.getLogradouro()+ "',"
+                    + "cidade = '" + loja.getCidade()+ "',bairro ='"+loja.getBairro()+"UF = '"+loja.getUF()+"',cep='"+loja.getCep()+"',telefone='"+loja.getTelefone()+"' where nomeloja like '%" + loja.getNomeLoja()+ "%'");
 
             conexao.close();
 
@@ -70,6 +65,7 @@ public class BancoLoja {
         }
 
     }
+    /*
 
     public Cliente PesquisarCliente(String CPF) {
 
@@ -154,7 +150,7 @@ public class BancoLoja {
     }
 
 
-    /*  public boolean deletaCliente(String cpfcliente) {
+    public boolean deletaCliente(String cpfcliente) {
 
         boolean deletado = false;
 
@@ -179,7 +175,7 @@ public class BancoLoja {
         return deletado;
 
     }
-
+/*
     public ResultSet PesquisarClientesGeral() {
 
         String selectgeral = "";
