@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -34,8 +35,6 @@ import javax.servlet.http.HttpSession;
 @WebServlet(name = "Carrinho", urlPatterns = {"/Carrinho"})
 
 public class Carrinho extends HttpServlet {
-
-    List<Produtos> carrinho = new ArrayList<>();
 
     List<String> produtosListagem;
     List<String> petsListagem;
@@ -55,6 +54,7 @@ public class Carrinho extends HttpServlet {
     String nomecliente;
     BancoProd bancoprod = new BancoProd();
     BancoPet bancopet = new BancoPet();
+    List<Produtos> carrinho = new ArrayList<>();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -116,6 +116,7 @@ public class Carrinho extends HttpServlet {
 
                 produtosListagem.add(produtos.getNomeprod());
                 produtosListagemCodigo.add(produtos.getCodigoprod());
+
                 carrinho.add(produtos);
 
                 // Atualiza a lista na sessão
@@ -134,7 +135,7 @@ public class Carrinho extends HttpServlet {
                 request.getRequestDispatcher("Vender.jsp").forward(request, response);
 
             } else {
-                
+
                 request.setAttribute("mensagem", "Produto não encontrado");
 
                 request.getRequestDispatcher("Vender.jsp").forward(request, response);
@@ -157,7 +158,10 @@ public class Carrinho extends HttpServlet {
 
             itemvenda.InsertItemTemp(carrinho, vendas);
 
-            carrinho = null;
+            produtos = null;
+            pets = null;
+            codigovenda = null;
+            carrinho = new ArrayList<>();
 
             request.getRequestDispatcher("VendaSuccess.jsp").forward(request, response);
 

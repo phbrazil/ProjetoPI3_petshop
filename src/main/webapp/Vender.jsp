@@ -220,7 +220,7 @@
                             </select>
                         </div>
                         <hr class="mb-4">
-                        <input type="submit" name="acaovenda" value="Finalizar Venda" class="button" formaction="FinalizarVenda" ></td>
+                        <input type="submit" name="acaovenda" value="Finalizar Venda" class="button" formaction="Carrinho" ></td>
                     </div>
                 </div>
 
