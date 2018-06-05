@@ -146,7 +146,7 @@
                         <div class="mb-3">
                             <label for="carrinho">Carrinho</label>
                         </div>
-                        <!--table border='1' cellpadding='5' width='800'>
+                        <table border='1' cellpadding='5' width='800'>
 
                             <tr>
                                 <td  bgcolor="#33CCCC">Nome do Produto</td>
@@ -170,7 +170,7 @@
 
                             </c:if>
 
-                        </table-->
+                        </table>
 
                         <table border='1' cellpadding='5' width='800'>
                             <tr>
@@ -180,33 +180,7 @@
 
                             </tr>   
 
-                            <%
 
-                                List<Produtos> carrinho = (List<Produtos>) request.getAttribute("carrinho");
-
-                                if (carrinho != null) {
-
-                                    int tamanho = carrinho.size();
-                                    int linha = 0;
-
-                                    while (linha < tamanho) {
-
-                            %>
-
-
-                            <tr>
-                                <td><%=carrinho.get(linha).getNomeprod()%></td>
-                                <td><%=carrinho.get(linha).getCodigoprod()%></td>
-                                <td>R$<%=carrinho.get(linha).getValorprod()%></td>
-
-                            </tr>
-                            <%                                  linha++;
-                                    }
-
-                                }
-                            %>
-
-                        </table>   
 
 
                         <br>
