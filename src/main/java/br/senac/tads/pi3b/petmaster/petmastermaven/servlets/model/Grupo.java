@@ -27,7 +27,7 @@ public class Grupo {
         return nomeGrupo;
     }
 
-    public void getNomeGrupo(String nomeGrupo) {
+    public void setNomeGrupo(String nomeGrupo) {
         this.nomeGrupo = nomeGrupo;
     }
     

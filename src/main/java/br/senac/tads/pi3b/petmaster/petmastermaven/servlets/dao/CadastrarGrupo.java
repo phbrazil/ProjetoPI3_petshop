@@ -33,24 +33,24 @@ public class CadastrarGrupo extends HttpServlet {
         
         BancoGrupo bancoGrupo = new BancoGrupo();
 
-        int qtdclicadastrado = bancoGrupo.ValidaCadastradoLoja(nomeGrupo);
+        int qtdclicadastrado = bancoGrupo.ValidaCadastradoGrupo(nomeGrupo);
 
         if (qtdclicadastrado == 0) {
             
             Grupo grupo = new Grupo(nomeGrupo, idloja);
             
             bancoGrupo.gravarGrupo(grupo);
-            request.setAttribute("nomeloja", nomeGrupo);
-            request.setAttribute("mensagem", "Loja cadastrada com sucesso!");
+            request.setAttribute("nomeGrupo", nomeGrupo);
+            request.setAttribute("mensagem", "Grupo cadastrado com sucesso!");
 
-            request.getRequestDispatcher("CadastrarLoja.jsp").forward(request, response);
+            request.getRequestDispatcher("CadastrarGrupo.jsp").forward(request, response);
 
         } else {
 
             request.setAttribute("nomeGrupo", nomeGrupo);
             request.setAttribute("mensagem", "falha");
 
-            request.getRequestDispatcher("CadastrarCliente.jsp").forward(request, response);
+            request.getRequestDispatcher("CadastrarGrupo.jsp").forward(request, response);
 
         }
 

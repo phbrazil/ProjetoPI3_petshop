@@ -22,11 +22,10 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form name = "CadastrarGrupo" action="${pageContext.request.contextPath}/CadastrarGrupo" method="POST" >
+    <form name = "AlterarLoja" action="${pageContext.request.contextPath}/AlterarLoja" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cadastrar Loja</title>
-
+        <title>Vender</title>
 
     </head>
     <body id="page-top">
@@ -42,7 +41,7 @@
                 <div class="container">
                     <div class="py-5 text-center">
                         <!--img class="d-block mx-auto mb-4" src="img/LogoPetMaster.png" alt="" width="200" height="200"-->
-                        <h2>Cadastrar grupo</h2>
+                        <h2>Alterar loja</h2>
                     </div>
                 </div>
 
@@ -52,26 +51,30 @@
                     <div class="mb-3">
                         <label for="primeironome">Nome do grupo</label>
                         <div class="input-group">
-                            <input name="nomegrupo" type="text" class="form-control" id="nomecliente" placeholder="" value="" name="nomegrupo" required>
+                            <input name="nomecgrupo" type="text" class="form-control" id="nomegrupo" placeholder="" value="${resultado.nomeGrupo}" name="nomeGrupo" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="mb-3">
-                        <label for="primeironome">Loja</label>
-                        <div class="input-group">
-                            <input name="idloja" type="number" class="form-control" id="idloja" placeholder="" value="" name="idloja" required>
-                            <div class="invalid-feedback">
-                                Loja é necessária
-                            </div>
+                        <label for="endereco">Loja</label>
+                        <input name ="logradouro" type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value="${resultado.idLoja}"required>
+                        <div class="invalid-feedback">
+                            Favor inserir seu endereço de envio.
                         </div>
                     </div>
+                    
+                     
 
-                        <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit" name = "gravarLoja">Gravar</button>
+
                     </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="AcaoCliente" value = "alterar">Alterar</button>
+                    <br>
+                    <button class="btn btn-secondary btn-lg btn-block" type="submit" name ="AcaoCliente" value ="excluir" >Excluir</button>
+
                 </div>
 
                 <footer class="my-5 pt-5 text-muted text-center text-small">
@@ -84,7 +87,7 @@
                 </footer>
             </div>
 
-        </form>S
+        </form>
 
 
 
@@ -195,7 +198,7 @@
             if (mensagem == "falha") {
                 alert("O CPF " + cpfcliente + " já se encontra cadastrado")
 
-            } else if (mensagem == "Loja cadastrada com sucesso!") {
+            } else if (mensagem == "Cliente cadastrado com sucesso!") {
 
                 alert(mensagem)
 

@@ -6,7 +6,6 @@
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Grupo;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Loja;
 import java.awt.List;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -18,7 +17,7 @@ public class BancoGrupo {
 
     Grupo grupo = new Grupo(null, null);
 
-    private java.util.List<Loja> listaLoja = new ArrayList<Loja>();
+    private java.util.List<Grupo> listaGrupo = new ArrayList<Grupo>();
 
     public void gravarGrupo(Grupo grupo) {
 
@@ -63,9 +62,9 @@ public class BancoGrupo {
 
         }
 
-    }
+    }*/
 
-    public Loja PesquisarLoja(String idloja) {
+    public Grupo PesquisarGrupo(String idgrupo) {
 
         String select = "";
 
@@ -77,20 +76,14 @@ public class BancoGrupo {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select * from lojas where idloja = '" + idloja + "'";
+            select = "select * from grupos where idgrupo = '" + idgrupo + "'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
                 
-                loja.setNomeLoja(result.getString("nomeloja"));
-                System.out.println("Result nome " + result.getString("nomeloja"));
-                loja.setLogradouro(result.getString("logradouro"));
-                loja.setBairro(result.getString("bairro"));
-                loja.setCidade(result.getString("cidade"));
-                loja.setUF(result.getString("uf"));
-                loja.setCep(result.getString("cep"));
-                loja.setTelefone(result.getString("telefone"));      
-
+                grupo.setNomeGrupo(result.getString("nomegrupo"));
+                grupo.setIdLoja(result.getString("idloja"));
+               
             }
 
             conexao.close();
@@ -100,16 +93,16 @@ public class BancoGrupo {
             System.out.println("erro" + e.getMessage());
 
         }
-        System.out.println("to aqui nos produtinhos" + loja.getNomeLoja());
+        System.out.println("to aqui nos produtinhos" + grupo.getNomeGrupo());
 
-        return loja;
+        return grupo;
     }
-*/
-    public int ValidaCadastradoLoja(String nomeLoja) {
+
+    public int ValidaCadastradoGrupo(String nomeGrupo) {
 
         String select = "";
 
-        int qtdlojacadastrado = 0;
+        int qtdgrupocadastrado = 0;
 
         BancoConexao bancoconexao = new BancoConexao();
 
@@ -119,12 +112,12 @@ public class BancoGrupo {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select count(*), idloja from lojas where nomeloja like '%" + nomeLoja + "%'";
+            select = "select count(*), idgrupo from grupos where nomeGrupo like '%" + nomeGrupo + "%'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
 
-                qtdlojacadastrado = result.getInt("idloja");
+                qtdgrupocadastrado = result.getInt("idgrupo");
 
             }
 
@@ -136,7 +129,7 @@ public class BancoGrupo {
 
         }
 
-        return qtdlojacadastrado;
+        return qtdgrupocadastrado;
     }
 /*
     public boolean deletaLoja(String nomeloja) {
