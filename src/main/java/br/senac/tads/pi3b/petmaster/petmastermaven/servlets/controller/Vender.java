@@ -9,6 +9,7 @@ import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -31,9 +32,10 @@ public class Vender extends HttpServlet {
         String cpfcliente = request.getParameter("cpfcliente");
         String nomecliente = request.getParameter("nomecliente");
         String vendedor = request.getParameter("vendedor");
+        
+
 
         HttpSession sessaoatual = request.getSession();
-
 
         if (!cpfcliente.equals("")) {
 

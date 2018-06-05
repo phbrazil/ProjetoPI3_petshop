@@ -36,8 +36,6 @@
 
 
             <div align ="center">
-                <br>
-
                 <div class="container">
                     <div class="py-5 text-center">
                         <img class="d-block mx-auto mb-4" src="img/LogoPetMaster.png" alt="" width="200" height="200">

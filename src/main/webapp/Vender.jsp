@@ -4,6 +4,7 @@
     Author     : paulo.bezerra
 --%>
 
+<%@page import="java.sql.ResultSet"%>
 <%@page import="java.util.ArrayList"%>
 <%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.List"%>
@@ -145,7 +146,7 @@
                         <div class="mb-3">
                             <label for="carrinho">Carrinho</label>
                         </div>
-                        <table border='1' cellpadding='5' width='800'>
+                        <!--table border='1' cellpadding='5' width='800'>
 
                             <tr>
                                 <td  bgcolor="#33CCCC">Nome do Produto</td>
@@ -169,25 +170,43 @@
 
                             </c:if>
 
-                            <!--c:if test="${not empty sessionScope.carrinho}">
+                        </table-->
 
-                                <c:forEach begin = "0" end = "${sessionScope.carrinho.size()}" >
+                        <table border='1' cellpadding='5' width='800'>
+                            <tr>
+                                <td  bgcolor="#33CCCC">Nome do Produto</td>
+                                <td  bgcolor="#33CCCC">Código do Produto</td>
+                                <td  bgcolor="#33CCCC">Valor do Produto</td>
 
-                                    <tr>
-                                        <td>${carrinho.get(begin).getNomeprod()}</td>
-                                        <td>${carrinho.get(begin).getValorprod()}</td>
-                                    </tr>
+                            </tr>   
+
+                            <%
+
+                                List<Produtos> carrinho = (List<Produtos>) request.getAttribute("carrinho");
+
+                                if (carrinho != null) {
+
+                                    int tamanho = carrinho.size();
+                                    int linha = 0;
+
+                                    while (linha < tamanho) {
+
+                            %>
 
 
-                                </c:forEach>
+                            <tr>
+                                <td><%=carrinho.get(linha).getNomeprod()%></td>
+                                <td><%=carrinho.get(linha).getCodigoprod()%></td>
+                                <td>R$<%=carrinho.get(linha).getValorprod()%></td>
 
-                            </c:if-->
+                            </tr>
+                            <%                                  linha++;
+                                    }
 
+                                }
+                            %>
 
-
-
-                        </table>
-
+                        </table>   
 
 
                         <br>
@@ -201,7 +220,7 @@
                             </select>
                         </div>
                         <hr class="mb-4">
-                        <input type="submit" name="acaovenda" value="Finalizar Venda" class="button" action="FinalizarVenda" ></td>
+                        <input type="submit" name="acaovenda" value="Finalizar Venda" class="button" formaction="FinalizarVenda" ></td>
                     </div>
                 </div>
 
@@ -253,6 +272,8 @@
 
 
             </script>
+
+
 
 
             <script>

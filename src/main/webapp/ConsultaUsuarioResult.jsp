@@ -22,7 +22,7 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form name = "AlterarUsuario" action="${pageContext.request.contextPath}/AlterarUsuario" method="POST" >
+    <form name = "ConsultaUsuarioResult" action="${pageContext.request.contextPath}/ConsultaUsuarioResult" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Vender</title>
@@ -51,7 +51,7 @@
                     <div class="mb-3">
                         <label for="primeironome">Nome do usuário</label>
                         <div class="input-group">
-                            <input name="nomeusuario" type="text" class="form-control" id="nomeusuario" placeholder="" value="${resultado.nomeUsuario}" name="nomeusuario" required>
+                            <input name="username" type="text" class="form-control" id="nomeusuario" placeholder="" value="${resultado.username}" name="nomeusuario" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
@@ -59,22 +59,22 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="username">Rua</label>
-                        <input name ="username" type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value="${resultado.username}"required>
+                        <label for="username">Nome</label>
+                        <input name ="Nome" type="text" class="form-control" id="Nome"  value="${resultado.nomeUsuario}"required>
                         <div class="invalid-feedback">
                             Favor inserir o username.
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="Password">Bairro</label>
-                        <input name ="password" type="text" class="form-control" id="bairro" placeholder="Password" value="${resultado.password}"required>
+                        <label for="Password">Password</label>
+                        <input name ="password" type="password" class="form-control" id="bairro" placeholder="****" value="${resultado.password}"required>
                         <div class="invalid-feedback">
                             Favor inserir o password.
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="cidade">idgrupo</label>
-                        <input name ="idgrupo" type="text" class="form-control" id="cidade" placeholder="Idgurpo" value="${resultado.idgrupo}"required>
+                        <input name ="idgrupo" type="text" class="form-control" id="idgrupo" value="${resultado.idgrupo}"required>
                         <div class="invalid-feedback">
                             Favor inserir o grupo
                         </div>

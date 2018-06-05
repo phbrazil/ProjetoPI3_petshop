@@ -116,16 +116,13 @@
                     <td><%=selectUsuario.getString("u.codigouser")%></td>
                     <td><%=selectUsuario.getString("u.nomeuser")%></td>
                     <td><%=selectUsuario.getString("g.nomegrupo")%></td>
-                    <td><button type="submit" class="button" formaction="ConsultaUsuario?ConsultaUsuario=<%=selectUsuario.getString("u.codigouser")%>">Alterar</button></td>
+                    <td><button type="submit" class="button" formaction="ConsultaUsuario?ConsultaUsuario=<%=selectUsuario.getString("u.username")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
                         }
 
                         ResultSet exportarprod = (ResultSet) request.getAttribute("exportarprodutos");
-                        if (exportarprod != null) {
-                        response.setContentType("application/vnd.ms-excel");
-                        response.setHeader("Content-Disposition", "inline; filename=" + "Produtosreport.xls");
-                        }
+
 
 
                     %>

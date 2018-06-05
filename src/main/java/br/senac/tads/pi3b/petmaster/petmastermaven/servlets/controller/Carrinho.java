@@ -59,20 +59,19 @@ public class Carrinho extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         HttpSession sessao = request.getSession();
 
         BancoSessao bancosessao = new BancoSessao();
 
-        String vendedor = bancosessao.selectSessao(sessao.getId()); 
-        
+        String vendedor = bancosessao.selectSessao(sessao.getId());
+
         // Obtém a sessão do usuário
         String acaovenda = request.getParameter("acaovenda");
 
         cpfcliente = request.getParameter("cpfcliente");
         nomecliente = request.getParameter("nomecliente");
         quantidade = request.getParameter("quantidade");
-
 
         try {
 
@@ -100,8 +99,6 @@ public class Carrinho extends HttpServlet {
 
                 produtos.setItensvenda(Integer.valueOf(quantidade));
 
-                carrinho.add(produtos);
-
                 total = total + (produtos.getValorprod() * quantconvert);
 
                 // Se a lista de nomes não estiver na sessão, cria nova
@@ -116,8 +113,10 @@ public class Carrinho extends HttpServlet {
                 // Recupera a lista a partir da sessão do usuário e adiciona nome
                 produtosListagem = (List<String>) sessao.getAttribute("produtosNome");
                 produtosListagemCodigo = (List<String>) sessao.getAttribute("produtosCodigo");
+
                 produtosListagem.add(produtos.getNomeprod());
                 produtosListagemCodigo.add(produtos.getCodigoprod());
+                carrinho.add(produtos);
 
                 // Atualiza a lista na sessão
                 //sessao.setAttribute("vendedor", vendedor);
@@ -128,13 +127,14 @@ public class Carrinho extends HttpServlet {
 
                 sessao.setAttribute("total", String.format("%.2f", total));
 
-                sessao.setAttribute("carrinho", carrinho);
+                request.setAttribute("carrinho", carrinho);
 
                 produtos = null;
 
                 request.getRequestDispatcher("Vender.jsp").forward(request, response);
 
             } else {
+                
                 request.setAttribute("mensagem", "Produto não encontrado");
 
                 request.getRequestDispatcher("Vender.jsp").forward(request, response);
@@ -157,7 +157,7 @@ public class Carrinho extends HttpServlet {
 
             itemvenda.InsertItemTemp(carrinho, vendas);
 
-            sessao.invalidate();
+            carrinho = null;
 
             request.getRequestDispatcher("VendaSuccess.jsp").forward(request, response);
 

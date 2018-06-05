@@ -64,7 +64,7 @@ public class BancoUsuario {
 
     }*/
 
-    public Usuario PesquisarUsuario(String codigouser) {
+    public Usuario PesquisarUsuario(String username) {
 
         String select = "";
 
@@ -76,7 +76,7 @@ public class BancoUsuario {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select * from usuarios where codigouser = '" + codigouser + "'";
+            select = "select * from usuarios where username = '" + username + "'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
@@ -95,7 +95,6 @@ public class BancoUsuario {
             System.out.println("erro" + e.getMessage());
 
         }
-        System.out.println("to aqui nos produtinhos" + usuario.getNomeUsuario());
 
         return usuario;
     }
