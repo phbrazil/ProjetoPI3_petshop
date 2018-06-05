@@ -3,8 +3,13 @@
     Created on : Mar 29, 2018, 12:13:17 PM
     Author     : paulo.bezerra
 --%>
-
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Usuario"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -61,6 +66,8 @@
                     <div class="mb-3">
                         <label for="username">Nome</label>
                         <input name ="Nome" type="text" class="form-control" id="Nome"  value="${resultado.nomeUsuario}"required>
+                        <label for="username">Username</label>
+                        <input name ="username" type="text" class="form-control" id="username" placeholder="Rua hum 1234" value="${resultado.username}"required>
                         <div class="invalid-feedback">
                             Favor inserir o username.
                         </div>
@@ -72,13 +79,8 @@
                             Favor inserir o password.
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="cidade">idgrupo</label>
-                        <input name ="idgrupo" type="text" class="form-control" id="idgrupo" value="${resultado.idgrupo}"required>
-                        <div class="invalid-feedback">
-                            Favor inserir o grupo
-                        </div>
-                    </div>
+
+                   
 
                     </div>
                     <hr class="mb-4">

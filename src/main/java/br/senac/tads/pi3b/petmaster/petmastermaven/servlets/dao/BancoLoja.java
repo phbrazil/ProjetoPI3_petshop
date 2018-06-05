@@ -45,16 +45,16 @@ public class BancoLoja {
     }
 
     public void atualizarLoja(Loja loja) {
-
+        
         BancoConexao bancoconexao = new BancoConexao();
-
+        
         try {
 
             Connection conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("UPDATE loja set nomeloja = '" + loja.getNomeLoja() + "', logradouro = '" + loja.getLogradouro() + "',"
-                    + "cidade = '" + loja.getCidade() + "',bairro ='" + loja.getBairro() + "UF = '" + loja.getUF() + "',cep='" + loja.getCep() + "',telefone='" + loja.getTelefone() + "' where nomeloja like '%" + loja.getNomeLoja() + "%'");
+            st.executeUpdate("UPDATE lojas set nomeloja = '" + loja.getNomeLoja() + "', logradouro = '" + loja.getLogradouro() + "',"
+                    + "cidade = '" + loja.getCidade() + "',bairro = '" + loja.getBairro() + "', UF = '" + loja.getUF() + "',cep = '" + loja.getCep() + "',telefone = '" + loja.getTelefone() + "' where nomeloja like '%" + loja.getNomeLoja() + "%';");
 
             conexao.close();
 
@@ -158,6 +158,7 @@ public class BancoLoja {
 
             conexao.close();
             deletado = true;
+            
 
         } catch (Exception e) {
 
@@ -167,35 +168,5 @@ public class BancoLoja {
         return deletado;
 
     }
-    /*
-    public ResultSet PesquisarClientesGeral() {
-
-        String selectgeral = "";
-
-        BancoConexao bancoconexao = new BancoConexao();
-
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-
-            conexao = bancoconexao.getConnection();
-
-            java.sql.Statement st = conexao.createStatement();
-            selectgeral = "select * from clientes";
-            ResultSet resultgeral = st.executeQuery(selectgeral);
-
-            if(resultgeral!=null){
-                System.out.println("ta aqui");
-                return resultgeral;
-            }
-
-            conexao.close();
-
-        } catch (Exception e) {
-
-            System.out.println("erro" + e.getMessage());
-
-        }
-        return null;
-    }
-     */
+    
 }

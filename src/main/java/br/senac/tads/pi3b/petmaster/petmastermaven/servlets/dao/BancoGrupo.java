@@ -40,7 +40,7 @@ public class BancoGrupo {
 
     }
 
-  /*  public void atualizarLoja(Loja loja) {
+ public void atualizarGrupo(Grupo grupo) {
 
         BancoConexao bancoconexao = new BancoConexao();
 
@@ -49,8 +49,8 @@ public class BancoGrupo {
             Connection conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("UPDATE loja set nomeloja = '" + loja.getNomeLoja() + "', logradouro = '" + loja.getLogradouro() + "',"
-                    + "cidade = '" + loja.getCidade() + "',bairro ='" + loja.getBairro() + "UF = '" + loja.getUF() + "',cep='" + loja.getCep() + "',telefone='" + loja.getTelefone() + "' where nomeloja like '%" + loja.getNomeLoja() + "%'");
+            st.executeUpdate("UPDATE grupos set nomegrupo = '" + grupo.getNomeGrupo() + "', idloja = '" + grupo.getIdLoja()
+             + "' where nomegrupo like '%" + grupo.getNomeGrupo() + "%';");
 
             conexao.close();
 
@@ -62,7 +62,7 @@ public class BancoGrupo {
 
         }
 
-    }*/
+    }
 
     public Grupo PesquisarGrupo(String idgrupo) {
 
@@ -131,8 +131,8 @@ public class BancoGrupo {
 
         return qtdgrupocadastrado;
     }
-/*
-    public boolean deletaLoja(String nomeloja) {
+
+    public boolean deletaGrupo(String nomegrupo) {
 
         boolean deletado = false;
 
@@ -144,7 +144,7 @@ public class BancoGrupo {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("delete from lojas where nomeLoja like '%" + nomeloja + "%'");
+            st.executeUpdate("delete from grupos where nomegrupo like '%" + nomegrupo + "%'");
 
             conexao.close();
             deletado = true;
@@ -158,34 +158,5 @@ public class BancoGrupo {
 
     }
     
-    public ResultSet PesquisarClientesGeral() {
-
-        String selectgeral = "";
-
-        BancoConexao bancoconexao = new BancoConexao();
-
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-
-            conexao = bancoconexao.getConnection();
-
-            java.sql.Statement st = conexao.createStatement();
-            selectgeral = "select * from clientes";
-            ResultSet resultgeral = st.executeQuery(selectgeral);
-
-            if(resultgeral!=null){
-                System.out.println("ta aqui");
-                return resultgeral;
-            }
-
-            conexao.close();
-
-        } catch (Exception e) {
-
-            System.out.println("erro" + e.getMessage());
-
-        }
-        return null;
-    }
-     */
+   
 }

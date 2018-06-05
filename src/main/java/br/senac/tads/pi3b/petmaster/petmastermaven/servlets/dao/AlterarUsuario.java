@@ -5,8 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Usuario;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -20,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "AlterarCli", urlPatterns = {"/AlterarCli"})
+@WebServlet(name = "AlterarUsuario", urlPatterns = {"/AlterarUsuario"})
 
 public class AlterarUsuario extends HttpServlet {
 
@@ -29,44 +28,32 @@ public class AlterarUsuario extends HttpServlet {
             throws ServletException, IOException {
 
         boolean deletado = false;
-        BancoCli bancocli = new BancoCli();
+        BancoUsuario bancousuario = new BancoUsuario();
 
         String acaocliente = String.valueOf(request.getParameter("AcaoCliente"));
 
         if (acaocliente.equals("alterar")) {
 
-            String nomeCliente = request.getParameter("nomecliente");
-            String logradouro = request.getParameter("logradouro");
-            String RGCliente = request.getParameter("rgcliente");
-            String CPFCliente = request.getParameter("cpfcliente");
-            String email = request.getParameter("email");
-            String pais = request.getParameter("pais");
-            String cidade = request.getParameter("cidade");
-            String bairro = request.getParameter("bairro");
-            String uf = request.getParameter("uf");
-            String estado = request.getParameter("estado");
-            String cep = request.getParameter("cep").replace("-", "").replace(".", "");
-            String telefone = request.getParameter("telefone");
-            String celular = request.getParameter("celular");
-            String sexo = request.getParameter("sexo");
-            String estadocivil = request.getParameter("estadocivil");
-            String nascimento = request.getParameter("nascimento");
+            String nomeUsuario = request.getParameter("nomeusuario");
+            String username = request.getParameter("username");
+            String password = request.getParameter("password");
+            String idgrupo = request.getParameter("idgrupo");
 
-            Cliente clientes = new Cliente(CPFCliente, nascimento, nomeCliente, logradouro, bairro, cidade, cep, estado, uf, email, sexo, telefone, celular, pais, RGCliente, estadocivil);
-            bancocli.atualizarCli(clientes);
+            Usuario usuarios = new Usuario(nomeUsuario, username, password, idgrupo);
+            bancousuario.atualizarUsuario(usuarios);
 
-            request.setAttribute("mensagem", "Cliente Alterado");
+            request.setAttribute("mensagem", "Usuario Alterado");
 
-            request.getRequestDispatcher("ConsultaCli.jsp").forward(request, response);
+            request.getRequestDispatcher("GerenciamentoUsuario.jsp").forward(request, response);
 
         } else if (acaocliente.equals("excluir")) {
 
-            deletado = bancocli.deletaCliente(String.valueOf(request.getParameter("cpfcliente")));
+            deletado = bancousuario.deletaUsuario(String.valueOf(request.getParameter("nomeuser")));
 
             if (deletado == true) {
-                request.setAttribute("mensagem", "Cliente Deletado");
+                request.setAttribute("mensagem", "Usuario Deletado");
 
-                request.getRequestDispatcher("ConsultaCli.jsp").forward(request, response);
+                request.getRequestDispatcher("GerenciamentoUsuario.jsp").forward(request, response);
 
             } else {
 

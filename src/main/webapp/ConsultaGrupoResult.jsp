@@ -22,7 +22,7 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form name = "AlterarLoja" action="${pageContext.request.contextPath}/AlterarLoja" method="POST" >
+    <form name = "AlterarGrupo" action="${pageContext.request.contextPath}/AlterarGrupo" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Vender</title>
@@ -41,7 +41,7 @@
                 <div class="container">
                     <div class="py-5 text-center">
                         <!--img class="d-block mx-auto mb-4" src="img/LogoPetMaster.png" alt="" width="200" height="200"-->
-                        <h2>Alterar loja</h2>
+                        <h2>Alterar grupo</h2>
                     </div>
                 </div>
 
@@ -51,18 +51,18 @@
                     <div class="mb-3">
                         <label for="primeironome">Nome do grupo</label>
                         <div class="input-group">
-                            <input name="nomecgrupo" type="text" class="form-control" id="nomegrupo" placeholder="" value="${resultado.nomeGrupo}" name="nomeGrupo" required>
+                            <input name="nomegrupo" type="text" class="form-control" id="nomegrupo" placeholder="" value="${resultado.nomegrupo}" name="nomegrupo" required>
                             <div class="invalid-feedback">
-                                Primeiro nome necessário
+                                Primeiro nome necessário.
                             </div>
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="endereco">Loja</label>
-                        <input name ="logradouro" type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value="${resultado.idLoja}"required>
+                        <label for="loja">Loja</label>
+                        <input name ="loja" type="text" class="form-control" id="loja"  value="${resultado.idLoja}"required>
                         <div class="invalid-feedback">
-                            Favor inserir seu endereço de envio.
+                            Favor inserir a loja.
                         </div>
                     </div>
                     

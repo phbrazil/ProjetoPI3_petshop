@@ -40,7 +40,7 @@ public class BancoUsuario {
 
     }
 
-  /*  public void atualizarLoja(Loja loja) {
+  public void atualizarUsuario(Usuario usuario) {
 
         BancoConexao bancoconexao = new BancoConexao();
 
@@ -49,8 +49,8 @@ public class BancoUsuario {
             Connection conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("UPDATE loja set nomeloja = '" + loja.getNomeLoja() + "', logradouro = '" + loja.getLogradouro() + "',"
-                    + "cidade = '" + loja.getCidade() + "',bairro ='" + loja.getBairro() + "UF = '" + loja.getUF() + "',cep='" + loja.getCep() + "',telefone='" + loja.getTelefone() + "' where nomeloja like '%" + loja.getNomeLoja() + "%'");
+            st.executeUpdate("UPDATE usuarios set nomeuser = '" + usuario.getNomeUsuario() + "', username = '" + usuario.getUsername() + "',"
+                    + "password = '" + usuario.getPassword() + "',idgrupo = 1 where nomeuser like '%" + usuario.getNomeUsuario() + "%'");
 
             conexao.close();
 
@@ -62,9 +62,10 @@ public class BancoUsuario {
 
         }
 
-    }*/
+    }
 
     public Usuario PesquisarUsuario(String username) {
+
 
         String select = "";
 
@@ -76,7 +77,7 @@ public class BancoUsuario {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select * from usuarios where username = '" + username + "'";
+            select = "select * from usuarios where username = '" + username.trim() + "'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
@@ -132,8 +133,8 @@ public class BancoUsuario {
 
         return qtdusuariocadastrado;
     }
-/*
-    public boolean deletaLoja(String nomeloja) {
+
+    public boolean deletaUsuario(String nomeusuario) {
 
         boolean deletado = false;
 
@@ -145,7 +146,7 @@ public class BancoUsuario {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("delete from lojas where nomeLoja like '%" + nomeloja + "%'");
+            st.executeUpdate("delete from usuarios where nomeuser like '%" + nomeusuario + "%'");
 
             conexao.close();
             deletado = true;
@@ -159,34 +160,5 @@ public class BancoUsuario {
 
     }
     
-    public ResultSet PesquisarClientesGeral() {
-
-        String selectgeral = "";
-
-        BancoConexao bancoconexao = new BancoConexao();
-
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-
-            conexao = bancoconexao.getConnection();
-
-            java.sql.Statement st = conexao.createStatement();
-            selectgeral = "select * from clientes";
-            ResultSet resultgeral = st.executeQuery(selectgeral);
-
-            if(resultgeral!=null){
-                System.out.println("ta aqui");
-                return resultgeral;
-            }
-
-            conexao.close();
-
-        } catch (Exception e) {
-
-            System.out.println("erro" + e.getMessage());
-
-        }
-        return null;
-    }
-     */
+    
 }
