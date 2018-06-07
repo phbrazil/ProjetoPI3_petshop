@@ -35,7 +35,7 @@ public class CadastrarUsuario extends HttpServlet {
 
         BancoUsuario bancousuario = new BancoUsuario();
 
-        int qtdusuariocadastrado = bancousuario.ValidaCadastradoUsuario(nomeUsuario);
+        int qtdusuariocadastrado = bancousuario.ValidaCadastradoUsuario(username.trim());
 
         if (qtdusuariocadastrado == 0) {
 
@@ -50,7 +50,7 @@ public class CadastrarUsuario extends HttpServlet {
         } else {
 
             request.setAttribute("nomeUsuario", nomeUsuario);
-            request.setAttribute("mensagem", "falha");
+            request.setAttribute("mensagem", "Usuário já se encontra cadastrado");
 
             request.getRequestDispatcher("CadastrarUsuario.jsp").forward(request, response);
 

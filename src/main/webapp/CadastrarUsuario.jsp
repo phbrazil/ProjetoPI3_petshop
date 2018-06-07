@@ -53,21 +53,21 @@
                         <div class="input-group">
                             <input name="nomeusuario" type="text" class="form-control" id="nomeusuario" placeholder="" value="" name="nomeusuario" required>
                             <div class="invalid-feedback">
-                             Primeiro nome necessário
+                                Primeiro nome necessário
                             </div>
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="Username">Username</label>
-                        <input name ="username" type="text" class="form-control" id="username" placeholder="exemplo.exemplo@exemplo.cpom" value=""required>
+                        <label for="email">Username <span class="text-muted">(Mandatorio)</span></label>
+                        <input name ="username" type="email" class="form-control" id="email" placeholder="voce@exemplo.com" value ="">
                         <div class="invalid-feedback">
-                             Favor inserir o username.
+                            Favor inserir um username válido para o frete.
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="password">Password</label>
-                        <input name ="password" type="text" class="form-control" id="password" placeholder="Password" value=""required>
+                        <input name ="password" type="password" class="form-control" id="password" placeholder="Password" value=""required>
                         <div class="invalid-feedback">
                             Favor inserir o password.
                         </div>
@@ -79,23 +79,39 @@
                             Favor inserir o grupo.
                         </div>
                     </div>
-                    
-                     <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit" name = "gravarUsuario">Gravar</button>
+                    <div class="col-md-4 mb-3">
+                        <label  for="estado">Filial</label>
+                        <select name = "filial" class="custom-select d-block w-100" id="filial" value = "" required>
+                            <option>São Paulo</option>
+                            <option>Rio de Janeiro</option>
+                            <option>São Paulo</option>
+                            <option>São Paulo</option>
+                            <option>São Paulo</option>
+                            <option>São Paulo</option>
+
+                        </select>
+
+                        <div class="invalid-feedback">
+                            Favor selecionar uma Filial..
+                        </div>
                     </div>
+
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit" name = "gravarUsuario">Gravar</button>
                 </div>
-                    
-                <footer class="my-5 pt-5 text-muted text-center text-small">
-                    <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">Privacidade</a></li>
-                        <li class="list-inline-item"><a href="#">Termos</a></li>
-                        <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
-                    </ul>
-                </footer>
             </div>
-        
-        
+
+            <footer class="my-5 pt-5 text-muted text-center text-small">
+                <p class="mb-1">&copy; Javazeiros - Projeto Semestre 3</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Privacidade</a></li>
+                    <li class="list-inline-item"><a href="#">Termos</a></li>
+                    <li class="list-inline-item"><a href="https://www.google.com">Suporte</a></li>
+                </ul>
+            </footer>
+            </div>
+
+
 
         </form>
 
@@ -112,106 +128,46 @@
         <script src="../../../../assets/js/vendor/holder.min.js"></script>
 
         <script>
-                                // Example starter JavaScript for disabling form submissions if there are invalid fields
-                                (function () {
-                                    'use strict';
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
 
-                                    window.addEventListener('load', function () {
-                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                        var forms = document.getElementsByClassName('needs-validation');
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
 
-                                        // Loop over them and prevent submission
-                                        var validation = Array.prototype.filter.call(forms, function (form) {
-                                            form.addEventListener('submit', function (event) {
-                                                if (form.checkValidity() === false) {
-                                                    event.preventDefault();
-                                                    event.stopPropagation();
-                                                }
-                                                form.classList.add('was-validated');
-                                            }, false);
-                                        });
-                                    }, false);
-                                }
-                                )();
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            }
+            )();
 
 
         </script>
 
-        <script type="text/javascript">
-            function fMasc(objeto, mascara) {
-                obj = objeto
-                masc = mascara
-                setTimeout("fMascEx()", 1)
-            }
-            function fMascEx() {
-                obj.value = masc(obj.value)
-            }
-            function mTel(tel) {
-                tel = tel.replace(/\D/g, "")
-                tel = tel.replace(/^(\d)/, "($1")
-                tel = tel.replace(/(.{3})(\d)/, "$1)$2")
-                if (tel.length == 9) {
-                    tel = tel.replace(/(.{1})$/, "-$1")
-                } else if (tel.length == 10) {
-                    tel = tel.replace(/(.{2})$/, "-$1")
-                } else if (tel.length == 11) {
-                    tel = tel.replace(/(.{3})$/, "-$1")
-                } else if (tel.length == 12) {
-                    tel = tel.replace(/(.{4})$/, "-$1")
-                } else if (tel.length > 12) {
-                    tel = tel.replace(/(.{4})$/, "-$1")
-                }
-                return tel;
-            }
-            function mCNPJ(cnpj) {
-                cnpj = cnpj.replace(/\D/g, "")
-                cnpj = cnpj.replace(/^(\d{2})(\d)/, "$1.$2")
-                cnpj = cnpj.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3")
-                cnpj = cnpj.replace(/\.(\d{3})(\d)/, ".$1/$2")
-                cnpj = cnpj.replace(/(\d{4})(\d)/, "$1-$2")
-                return cnpj
-            }
-            function mCPF(cpf) {
-                cpf = cpf.replace(/\D/g, "")
-                cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2")
-                cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2")
-                cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2")
-                return cpf
-            }
-            function mRG(rg) {
-                rg = rg.replace(/\D/g, "")
-                rg = rg.replace(/(\d{2})(\d)/, "$1.$2")
-                rg = rg.replace(/(\d{3})(\d)/, "$1.$2")
-                rg = rg.replace(/(\d{3})(\d{1})$/, "$1-$2")
-                return rg
-            }
-            function mCEP(cep) {
-                cep = cep.replace(/\D/g, "")
-                cep = cep.replace(/^(\d{2})(\d)/, "$1.$2")
-                cep = cep.replace(/\.(\d{3})(\d)/, ".$1-$2")
-                return cep
-            }
-            function mNum(num) {
-                num = num.replace(/\D/g, "")
-                return num
-            }
-        </script>
+
 
         <script>
 
 
             var mensagem = "${mensagem}"
 
-            var cpfcliente = "${cpfcliente}"
 
 
-            if (mensagem == "falha") {
-                alert("O CPF " + cpfcliente + " já se encontra cadastrado")
-
-            } else if (mensagem == "Loja cadastrada com sucesso!") {
-
+            if (mensagem == "Usuario cadastrado com sucesso!") {
                 alert(mensagem)
 
+            } else if (mensagem == "Usuário já se encontra cadastrado") {
+
+                alert(mensagem)
             }
         </script>
 

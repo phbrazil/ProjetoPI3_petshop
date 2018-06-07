@@ -15,7 +15,7 @@
         Connection conexao = null;
 
         Class.forName("com.mysql.jdbc.Driver").newInstance();
-        conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/petmaster", "root", "");
+        conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/petmaster", "root", "admin");
 
         PreparedStatement listagemClientes = null;
         PreparedStatement Clientesqtd = null;

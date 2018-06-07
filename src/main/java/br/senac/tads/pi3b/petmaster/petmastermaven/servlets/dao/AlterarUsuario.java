@@ -41,7 +41,6 @@ public class AlterarUsuario extends HttpServlet {
 
             Usuario usuarios = new Usuario(nomeUsuario, username, password, idgrupo);
             bancousuario.atualizarUsuario(usuarios);
-            
 
             request.setAttribute("mensagem", "Usuario Alterado");
 
@@ -49,7 +48,7 @@ public class AlterarUsuario extends HttpServlet {
 
         } else if (acaocliente.equals("excluir")) {
 
-            deletado = bancousuario.deletaUsuario(String.valueOf(request.getParameter("nomeuser")));
+            deletado = bancousuario.deletaUsuario(String.valueOf(request.getParameter("username")));
 
             if (deletado == true) {
                 request.setAttribute("mensagem", "Usuario Deletado");
@@ -57,6 +56,9 @@ public class AlterarUsuario extends HttpServlet {
                 request.getRequestDispatcher("GerenciamentoUsuario.jsp").forward(request, response);
 
             } else {
+                request.getRequestDispatcher("GerenciamentoUsuario.jsp").forward(request, response);
+
+                request.setAttribute("mensagem", "Falhou na hora de Deletar");
 
                 System.out.println("falhou na hora de deletar");
             }

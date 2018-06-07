@@ -19,7 +19,7 @@ public class BancoConexao {
     private String url = "jdbc:mysql://localhost:3306/petmaster";
     private String driver = "com.mysql.jdbc.Driver";
     private String userName = "root";
-    private String password = "";
+    private String password = "admin";
     private Connection conexao = null;
 
     public  Connection getConnection() throws SQLException {

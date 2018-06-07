@@ -102,7 +102,7 @@ public class BancoUsuario {
         return usuario;
     }
 
-    public int ValidaCadastradoUsuario(String nomeUsuario) {
+    public int ValidaCadastradoUsuario(String username) {
 
         String select = "";
 
@@ -116,12 +116,12 @@ public class BancoUsuario {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            select = "select count(*), codigouser from grupos where nomeGrupo like '%" + nomeUsuario + "%'";
+            select = "select count(*) as quantidade from usuarios where username = '" + username + "'";
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
 
-                qtdusuariocadastrado = result.getInt("codigouser");
+                qtdusuariocadastrado = result.getInt("quantidade");
 
             }
 
@@ -136,7 +136,7 @@ public class BancoUsuario {
         return qtdusuariocadastrado;
     }
 
-    public boolean deletaUsuario(String nomeusuario) {
+    public boolean deletaUsuario(String username) {
 
         boolean deletado = false;
 
@@ -148,7 +148,7 @@ public class BancoUsuario {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("delete from usuarios where nomeuser like '%" + nomeusuario + "%'");
+            st.executeUpdate("delete from usuarios where username = '" + username.trim() + "'");
 
             conexao.close();
             deletado = true;

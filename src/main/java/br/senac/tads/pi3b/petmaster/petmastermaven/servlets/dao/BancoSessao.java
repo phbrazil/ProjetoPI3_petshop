@@ -45,7 +45,7 @@ public class BancoSessao {
         }
     }
 
-    public String selectSessao(String idsessao) {
+    public String Vendedor(String idsessao) {
 
         BancoConexao bancoconexao = new BancoConexao();
 

@@ -17,18 +17,18 @@
         <h1>Report Produtos</h1>
 
 
-        <table>
+        <table border='1' cellpadding='5' width='800'>
+
             <tr>
                 <td>Código do Produto</td>
                 <td>Nome do Produto</td>
                 <td>Valor do Produto</td>
-                <td>data de Cadastro do Produto</td>
-                <td>Descricao do Produto</td>
-                <td>Categoria do Produto</td>
+                <td>Vendedor do Produto</td>
                 <td>Quantidade do Produto</td>
             </tr>
 
             <%
+                request.setAttribute("carrinho",null);
 
                 ResultSet exportar = (ResultSet) request.getAttribute("carrinho");
 
@@ -39,13 +39,15 @@
             <tr>
                 <td><%=exportar.getString("codigobarrasprod")%></td>
                 <td><%=exportar.getString("nomeprod")%></td>
-                <td>R$<%=exportar.getDouble("valor")%></td>
+                <td>R$<%=exportar.getDouble("valorprod")%></td>
+                <td><%=exportar.getString("vendedor")%></td>
                 <td><%=exportar.getInt("quantidadeitens")%></td>
             </tr>   
             <%
+                    // }
                 }
-                response.setContentType("application/vnd.ms-excel");
-                response.setHeader("Content-Disposition", "inline; filename=" + "Produtosreport.xls");
+                //response.setContentType("application/vnd.ms-excel");
+                //response.setHeader("Content-Disposition", "inline; filename=" + "Produtosreport.xls");
             %>
         </table>
     </body>

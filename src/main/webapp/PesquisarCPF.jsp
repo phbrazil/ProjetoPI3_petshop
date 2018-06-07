@@ -95,82 +95,103 @@
                 <script src="../../../../dist/js/bootstrap.min.js"></script>
                 <script src="../../../../assets/js/vendor/holder.min.js"></script>
                 <script>
-                                        // Example starter JavaScript for disabling form submissions if there are invalid fields
-                                        (function () {
-                                            'use strict';
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function () {
+                        'use strict';
 
-                                            window.addEventListener('load', function () {
-                                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                                var forms = document.getElementsByClassName('needs-validation');
+                        window.addEventListener('load', function () {
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            var forms = document.getElementsByClassName('needs-validation');
 
-                                                // Loop over them and prevent submission
-                                                var validation = Array.prototype.filter.call(forms, function (form) {
-                                                    form.addEventListener('submit', function (event) {
-                                                        if (form.checkValidity() === false) {
-                                                            event.preventDefault();
-                                                            event.stopPropagation();
-                                                        }
-                                                        form.classList.add('was-validated');
-                                                    }, false);
-                                                });
-                                            }, false);
-                                        })();
+                            // Loop over them and prevent submission
+                            var validation = Array.prototype.filter.call(forms, function (form) {
+                                form.addEventListener('submit', function (event) {
+                                    if (form.checkValidity() === false) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                    }
+                                    form.classList.add('was-validated');
+                                }, false);
+                            });
+                        }, false);
+                    })();
 
 
                 </script>
-                
-                        <script type="text/javascript">
-            function fMasc(objeto, mascara) {
-                obj = objeto
-                masc = mascara
-                setTimeout("fMascEx()", 1)
-            }
-            function fMascEx() {
-                obj.value = masc(obj.value)
-            }
-            function mTel(tel) {
-                tel = tel.replace(/\D/g, "")
-                tel = tel.replace(/^(\d)/, "($1")
-                tel = tel.replace(/(.{3})(\d)/, "$1)$2")
-                if (tel.length == 9) {
-                    tel = tel.replace(/(.{1})$/, "-$1")
-                } else if (tel.length == 10) {
-                    tel = tel.replace(/(.{2})$/, "-$1")
-                } else if (tel.length == 11) {
-                    tel = tel.replace(/(.{3})$/, "-$1")
-                } else if (tel.length == 12) {
-                    tel = tel.replace(/(.{4})$/, "-$1")
-                } else if (tel.length > 12) {
-                    tel = tel.replace(/(.{4})$/, "-$1")
-                }
-                return tel;
-            }
-            function mCNPJ(cnpj) {
-                cnpj = cnpj.replace(/\D/g, "")
-                cnpj = cnpj.replace(/^(\d{2})(\d)/, "$1.$2")
-                cnpj = cnpj.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3")
-                cnpj = cnpj.replace(/\.(\d{3})(\d)/, ".$1/$2")
-                cnpj = cnpj.replace(/(\d{4})(\d)/, "$1-$2")
-                return cnpj
-            }
-            function mCPF(cpf) {
-                cpf = cpf.replace(/\D/g, "")
-                cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2")
-                cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2")
-                cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2")
-                return cpf
-            }
-            function mCEP(cep) {
-                cep = cep.replace(/\D/g, "")
-                cep = cep.replace(/^(\d{2})(\d)/, "$1.$2")
-                cep = cep.replace(/\.(\d{3})(\d)/, ".$1-$2")
-                return cep
-            }
-            function mNum(num) {
-                num = num.replace(/\D/g, "")
-                return num
-            }
-        </script>
+
+                <script type="text/javascript">
+                    function fMasc(objeto, mascara) {
+                        obj = objeto
+                        masc = mascara
+                        setTimeout("fMascEx()", 1)
+                    }
+                    function fMascEx() {
+                        obj.value = masc(obj.value)
+                    }
+                    function mTel(tel) {
+                        tel = tel.replace(/\D/g, "")
+                        tel = tel.replace(/^(\d)/, "($1")
+                        tel = tel.replace(/(.{3})(\d)/, "$1)$2")
+                        if (tel.length == 9) {
+                            tel = tel.replace(/(.{1})$/, "-$1")
+                        } else if (tel.length == 10) {
+                            tel = tel.replace(/(.{2})$/, "-$1")
+                        } else if (tel.length == 11) {
+                            tel = tel.replace(/(.{3})$/, "-$1")
+                        } else if (tel.length == 12) {
+                            tel = tel.replace(/(.{4})$/, "-$1")
+                        } else if (tel.length > 12) {
+                            tel = tel.replace(/(.{4})$/, "-$1")
+                        }
+                        return tel;
+                    }
+                    function mCNPJ(cnpj) {
+                        cnpj = cnpj.replace(/\D/g, "")
+                        cnpj = cnpj.replace(/^(\d{2})(\d)/, "$1.$2")
+                        cnpj = cnpj.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3")
+                        cnpj = cnpj.replace(/\.(\d{3})(\d)/, ".$1/$2")
+                        cnpj = cnpj.replace(/(\d{4})(\d)/, "$1-$2")
+                        return cnpj
+                    }
+                    function mCPF(cpf) {
+                        cpf = cpf.replace(/\D/g, "")
+                        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2")
+                        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2")
+                        cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2")
+                        return cpf
+                    }
+                    function mCEP(cep) {
+                        cep = cep.replace(/\D/g, "")
+                        cep = cep.replace(/^(\d{2})(\d)/, "$1.$2")
+                        cep = cep.replace(/\.(\d{3})(\d)/, ".$1-$2")
+                        return cep
+                    }
+                    function mNum(num) {
+                        num = num.replace(/\D/g, "")
+                        return num
+                    }
+                </script>
+
+                <script>
+
+
+                    var mensagem = "${mensagem}"
+
+
+
+                    if (mensagem == "Venda Efetuada com Sucesso") {
+                        alert(mensagem)
+
+                    } else if (mensagem == "Venda Cancelada") {
+
+                        alert(mensagem)
+
+                    }
+
+
+
+                </script>
+
 
                 <script>
                     function pesquisarCPF() {

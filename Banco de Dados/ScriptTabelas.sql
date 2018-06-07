@@ -13,6 +13,7 @@ CREATE TABLE produtos(
   categoriaprod Varchar (30) NOT NULL,
   quantidadeprod INT NOT NULL,
   PRIMARY KEY (Idprod));
+  
 
 CREATE TABLE pets(
   idpet INT NOT NULL AUTO_INCREMENT,
@@ -55,13 +56,6 @@ VALUES ("Paulo Henrique Bezerra", "Rua Paulo Egidio Carvalho 109", "466825523", 
 INSERT INTO clientes (nome,logradouro,rg,cpfcliente,pais,cidade,bairro,estado,uf,cep,telefone,celular,email,sexo,estadocivil,nascimento, datacadastro, statuscliente) 
 VALUES ("CLIENTE NAO QUER EFETUAR O CADASTRO", "RUA GENERICA", "00000000", "000.000.000-00","Brasil","São Paulo","generico", "São Paulo","SP","00000000","00000000000","00000000",
 "email@generico","Masculino", "Solteiro",'1990-01-29',NOW(),true);
-
-
-CREATE TABLE sessao(
-id INT NOT NULL AUTO_INCREMENT,
-idsessao VARCHAR(30) NOT NULL,
-vendedor VARCHAR(30) NOT NULL,
-PRIMARY KEY (id));
 
 
 CREATE TABLE vendas(
@@ -117,6 +111,23 @@ CREATE TABLE usuarios(
   FOREIGN KEY (idgrupo) REFERENCES grupos (idgrupo)
 );
 
+CREATE TABLE sessao(
+id INT NOT NULL AUTO_INCREMENT,
+idsessao VARCHAR(30) NOT NULL,
+vendedor VARCHAR(30) NOT NULL,
+PRIMARY KEY (id));
+
+  CREATE TABLE carrinho(
+  idcarrinho INT NOT NULL AUTO_INCREMENT,
+  idsessao VARCHAR(30) NOT NULL,
+  nomeprod Varchar (80) NOT NULL,
+  codigobarrasprod Varchar (30) NOT NULL,
+  vendedor VARCHAR(30) NOT NULL,
+  valorprod FLOAT (10,2),
+  quantidadeitens INT NOT NULL,
+  PRIMARY KEY (idcarrinho));
+  
+  
 -- Gerenciamento de filiais )
 
 INSERT INTO usuarios(nomeuser, username,password, idgrupo) VALUES ("Paulo Henrique Bezerra","paulo.bezerra@senac.com","123", 1);

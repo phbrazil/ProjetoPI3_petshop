@@ -49,12 +49,11 @@ public class Exportar extends HttpServlet {
 
             ResultSet exportarcli = bancocli.PesquisarClientesGeral();
 
-            if (exportarcli != null) {
                 
                 request.setAttribute("exportarcliente", exportarcli);
                 request.getRequestDispatcher("Exportar/ExportClientes.jsp").forward(request, response);
 
-            }
+            
 
         } else if (exportartipo.equals("ExportarProdutos")) {
 

@@ -4,6 +4,9 @@
     Author     : paulo.bezerra
 --%>
 
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoCarrinho"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoCli"%>
+<%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.util.ArrayList"%>
 <%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
@@ -44,6 +47,26 @@
 
                 .button:hover {opacity: 2}
             </style>
+
+            <style>
+                .buttonCancel {
+                    background-color: #4E2F2F;
+                    border: none;
+                    color: white;
+                    padding: 8px 16px;
+                    text-align: center;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    opacity: 0.6;
+                    transition: 0.3s;
+                    display: inline-block;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+                .button:hover {opacity: 2}
+            </style>
+
 
 
         <form name = "Carrinho" action="${pageContext.request.contextPath}/Carrinho" method="POST" >
@@ -146,7 +169,7 @@
                         <div class="mb-3">
                             <label for="carrinho">Carrinho</label>
                         </div>
-                        <table border='1' cellpadding='5' width='800'>
+                        <!--table border='1' cellpadding='5' width='800'>
 
                             <tr>
                                 <td  bgcolor="#33CCCC">Nome do Produto</td>
@@ -156,7 +179,6 @@
 
 
 
-                            <c:if test="${not empty sessionScope.produtos}">
 
                                 <c:forEach items="${sessionScope.produtos}" var="produtosNome" items="${sessionScope.produtosCodigo}" var="produtosCodigo">
 
@@ -168,19 +190,46 @@
 
                                 </c:forEach>
 
-                            </c:if>
 
-                        </table>
+                        </table-->
+
+
 
                         <table border='1' cellpadding='5' width='800'>
+
                             <tr>
-                                <td  bgcolor="#33CCCC">Nome do Produto</td>
-                                <td  bgcolor="#33CCCC">Código do Produto</td>
-                                <td  bgcolor="#33CCCC">Valor do Produto</td>
+                                <td>Código do Produto</td>
+                                <td>Nome do Produto</td>
+                                <td>Valor do Produto</td>
+                                <td>Vendedor do Produto</td>
+                                <td>Quantidade do Produto</td>
+                            </tr>
 
+                            <%
+
+                                String sessaoid = (String) request.getAttribute("sessaoid");
+                                
+                                System.out.println(sessaoid);
+
+                                BancoCarrinho bancocarrinho = new BancoCarrinho();
+
+                                ResultSet carrinhoresult = bancocarrinho.ListarCarrinho(sessaoid);
+                                
+
+                                while (carrinhoresult.next()) {
+
+                            %>
+                            <tr>
+                                <td><%=carrinhoresult.getString("codigobarrasprod")%></td>
+                                <td><%=carrinhoresult.getString("nomeprod")%></td>
+                                <td>R$<%=carrinhoresult.getDouble("valorprod")%></td>
+                                <td><%=carrinhoresult.getString("vendedor")%></td>
+                                <td><%=carrinhoresult.getInt("quantidadeitens")%></td>
                             </tr>   
-
-
+                            <%
+                                }
+                            %>
+                        </table>
 
 
                         <br>
@@ -197,6 +246,14 @@
                         <input type="submit" name="acaovenda" value="Finalizar Venda" class="button" formaction="Carrinho" ></td>
                     </div>
                 </div>
+
+                <div class="col-md-10 mb-5" align ="right">
+
+                    <input type="submit" name="acaovenda" value="Cancelar Venda" class="buttonCancel" formaction="Carrinho" ></td>
+
+
+
+                </div>                                   
 
 
 

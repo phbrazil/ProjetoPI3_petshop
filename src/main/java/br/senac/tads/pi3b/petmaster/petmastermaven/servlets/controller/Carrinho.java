@@ -5,6 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoCarrinho;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoItemVenda;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoNovaVenda;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoPet;
@@ -13,14 +14,19 @@ import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoSessao;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
 import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Vendas;
+import com.sun.javafx.scene.control.skin.VirtualFlow;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -56,6 +62,8 @@ public class Carrinho extends HttpServlet {
     BancoPet bancopet = new BancoPet();
     List<Produtos> carrinho = new ArrayList<>();
 
+    int linha = -1;
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -64,7 +72,13 @@ public class Carrinho extends HttpServlet {
 
         BancoSessao bancosessao = new BancoSessao();
 
-        String vendedor = bancosessao.selectSessao(sessao.getId());
+        BancoCarrinho bancocarrinho = new BancoCarrinho();
+
+        String sessaoid = sessao.getId();
+
+        String vendedor = bancosessao.Vendedor(sessaoid);
+
+        ResultSet carrinhoresult;
 
         // Obtém a sessão do usuário
         String acaovenda = request.getParameter("acaovenda");
@@ -102,39 +116,44 @@ public class Carrinho extends HttpServlet {
                 total = total + (produtos.getValorprod() * quantconvert);
 
                 // Se a lista de nomes não estiver na sessão, cria nova
-                if (sessao.getAttribute("produtosNome") == null) {
-                    produtosListagem = new ArrayList<>();
-                    produtosListagemCodigo = new ArrayList<>();
-                    sessao.setAttribute("produtosNome", produtosListagem);
-                    sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
+                if (sessao.getAttribute("carrinho") == null) {
+                    carrinho = new ArrayList<>();
+                    //rodutosListagemCodigo = new ArrayList<>();
+                    //sessao.setAttribute("produtosNome", produtosListagem);
+                    //sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
 
                 }
 
                 // Recupera a lista a partir da sessão do usuário e adiciona nome
-                produtosListagem = (List<String>) sessao.getAttribute("produtosNome");
-                produtosListagemCodigo = (List<String>) sessao.getAttribute("produtosCodigo");
-
-                produtosListagem.add(produtos.getNomeprod());
-                produtosListagemCodigo.add(produtos.getCodigoprod());
-
+                // produtosListagem = (List<String>) sessao.getAttribute("produtosNome");
+                //produtosListagemCodigo = (List<String>) sessao.getAttribute("produtosCodigo");
+                //produtosListagem.add(produtos.getNomeprod());
+                //produtosListagemCodigo.add(produtos.getCodigoprod());
                 carrinho.add(produtos);
+
+                bancocarrinho.GravarCarrinho(produtos, sessaoid, vendedor);
 
                 // Atualiza a lista na sessão
                 //sessao.setAttribute("vendedor", vendedor);
-                sessao.setAttribute("produtosNome", produtosListagem);
-                sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
-                sessao.setAttribute("nomecliente", nomecliente);
-                sessao.setAttribute("cpfcliente", cpfcliente);
-
+                //sessao.setAttribute("produtosNome", produtosListagem);
+                //sessao.setAttribute("produtosCodigo", produtosListagemCodigo);
+                //sessao.setAttribute("nomecliente", nomecliente);
+                //sessao.setAttribute("cpfcliente", cpfcliente);
                 sessao.setAttribute("total", String.format("%.2f", total));
 
-                request.setAttribute("carrinho", carrinho);
+                produtos = null;
+                codigovenda = null;
+
+                request.setAttribute("sessaoid", sessaoid);
+                carrinhoresult = null;
+                request.getRequestDispatcher("Vender.jsp").forward(request, response);
+
+                //request.getRequestDispatcher("Exportar/ExportCarrinho.jsp").forward(request, response);
+            } else {
 
                 produtos = null;
 
-                request.getRequestDispatcher("Vender.jsp").forward(request, response);
-
-            } else {
+                carrinhoresult = null;
 
                 request.setAttribute("mensagem", "Produto não encontrado");
 
@@ -163,7 +182,19 @@ public class Carrinho extends HttpServlet {
             codigovenda = null;
             carrinho = new ArrayList<>();
 
-            request.getRequestDispatcher("VendaSuccess.jsp").forward(request, response);
+            request.setAttribute("mensagem", "Venda Efetuada com Sucesso");
+
+            request.getRequestDispatcher("PesquisarCPF.jsp").forward(request, response);
+
+        } else if (acaovenda.equals("Cancelar Venda")) {
+
+            produtos = null;
+            pets = null;
+            codigovenda = null;
+            carrinho = new ArrayList<>();
+            request.setAttribute("mensagem", "Venda Cancelada");
+
+            request.getRequestDispatcher("PesquisarCPF.jsp").forward(request, response);
 
         }
     }
