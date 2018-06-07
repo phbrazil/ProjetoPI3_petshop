@@ -129,11 +129,11 @@
 
                         </div>
 
-                        <div class="mb-3">
+                        <!--div class="mb-3">
                             <label for="descricaoprod">Descrição Produto</label>
                             <input readonly type="text" class="form-control" id="descricao" placeholder="" value="${carrinho.get(0).getDescricaoprod()}">
 
-                        </div>
+                        </div-->
 
 
                         <br>
@@ -198,23 +198,24 @@
                         <table border='1' cellpadding='5' width='800'>
 
                             <tr>
-                                <td>Código do Produto</td>
-                                <td>Nome do Produto</td>
-                                <td>Valor do Produto</td>
-                                <td>Vendedor do Produto</td>
-                                <td>Quantidade do Produto</td>
+                                <td bgcolor="#33CCCC">Código do Produto</td>
+                                <td bgcolor="#33CCCC">Nome do Produto</td>
+                                <td bgcolor="#33CCCC">Valor do Produto</td>
+                                <td bgcolor="#33CCCC">Vendedor do Produto</td>
+                                <td bgcolor="#33CCCC">Quantidade do Produto</td>
+                                <td bgcolor="#33CCCC">Remover</td>
+
                             </tr>
 
                             <%
 
                                 String sessaoid = (String) request.getAttribute("sessaoid");
-                                
+
                                 System.out.println(sessaoid);
 
                                 BancoCarrinho bancocarrinho = new BancoCarrinho();
 
                                 ResultSet carrinhoresult = bancocarrinho.ListarCarrinho(sessaoid);
-                                
 
                                 while (carrinhoresult.next()) {
 
@@ -225,6 +226,8 @@
                                 <td>R$<%=carrinhoresult.getDouble("valorprod")%></td>
                                 <td><%=carrinhoresult.getString("vendedor")%></td>
                                 <td><%=carrinhoresult.getInt("quantidadeitens")%></td>
+                                <td><button type="submit" class="buttonCancel" name ="exportar" value="ExportarProdutos" formaction="Exportar">Remover</button></td>
+
                             </tr>   
                             <%
                                 }
