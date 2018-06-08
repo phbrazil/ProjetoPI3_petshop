@@ -26,12 +26,14 @@ public class BancoItemVenda {
             Class.forName("com.mysql.jdbc.Driver");
 
             conexao = bancoconexao.getConnection();
+            
+            System.out.println("tamanho do carrinho = "+carrinho.size());
 
             for (int i = 0; i < carrinho.size(); i++) {
 
                 java.sql.Statement st = conexao.createStatement();
                 st.executeUpdate("INSERT INTO itemvenda (idvenda, idprod,quantidadeitens) VALUES (" + vendas.getVendaID() + ",'" + carrinho.get(i).getCodigoprod()+ "'," + carrinho.get(i).getItensvenda()+ ");");
-
+                System.out.println("i aqui"+i);
             }
             conexao.close();
         } catch (Exception e) {

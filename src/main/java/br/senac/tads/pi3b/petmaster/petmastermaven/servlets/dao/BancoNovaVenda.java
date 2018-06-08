@@ -42,8 +42,7 @@ public class BancoNovaVenda {
 
                 int resultadovendaid = result.getInt("idvenda");
                 vendas.setVendaID(resultadovendaid);
-
-                System.out.println(resultadovendaid + " heuahueahehau");
+    
 
             }
 
