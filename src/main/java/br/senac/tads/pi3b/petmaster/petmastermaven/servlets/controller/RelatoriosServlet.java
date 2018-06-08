@@ -5,9 +5,10 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.Relatorios;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.BancoSessao;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Relatorios;
+import br.senac.tads.pi3b.petmaster.petmastermaven.model.Pets;
+import br.senac.tads.pi3b.petmaster.petmastermaven.model.Produtos;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -50,14 +51,20 @@ public class RelatoriosServlet extends HttpServlet {
 
         Relatorios relatorios = new Relatorios();
         ResultSet vendas;
-        ResultSet exportar;
+        ResultSet exportarVendas;
+        
+        BancoSessao bancosessao = new BancoSessao();
+        
+        String sessaoid = sessao.getId();
+        
+        int idloja = bancosessao.idLoja(sessaoid);
 
         if (acaoreport.equals("Gerar")) {
 
             sessao.setAttribute("inicio", inicio);
             sessao.setAttribute("fim", fim);
 
-            vendas = relatorios.Vendas(inicio, fim);
+            vendas = relatorios.Vendas(inicio, fim,idloja);
 
             request.setAttribute("vendas", vendas);
 
@@ -65,12 +72,12 @@ public class RelatoriosServlet extends HttpServlet {
 
         } else if (acaoreport.equals("ExportarVendas")) {
 
-             inicio = request.getParameter("inicio");
-             fim = request.getParameter("fim");
+            inicio = request.getParameter("inicio");
+            fim = request.getParameter("fim");
 
-            exportar = relatorios.Vendas(inicio, fim);
+            exportarVendas = relatorios.Vendas(inicio, fim, idloja);
 
-            request.setAttribute("exportar", exportar);
+            request.setAttribute("exportar", exportarVendas);
 
             request.getRequestDispatcher("/Exportar/ExportVendas.jsp").forward(request, response);
         }

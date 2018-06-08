@@ -5,9 +5,10 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoSessao;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.LoginDados;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Sessao;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.AcessoLogin;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.BancoSessao;
+import br.senac.tads.pi3b.petmaster.petmastermaven.model.LoginDados;
+import br.senac.tads.pi3b.petmaster.petmastermaven.model.Sessao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -56,6 +57,7 @@ public class Login extends HttpServlet {
             
             sessaodados.setIdsessao(sessao.getId());
             sessaodados.setVendedor(logindados.getUserName());
+            sessaodados.setIdloja(logindados.getIdloja());
             
             BancoSessao insertsessao = new BancoSessao();
 

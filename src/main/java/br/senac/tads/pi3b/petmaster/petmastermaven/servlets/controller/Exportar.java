@@ -5,10 +5,10 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoCli;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoPet;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoProd;
-import br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Clientes;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Pet;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.ProdutosDAO;
+import br.senac.tads.pi3b.petmaster.petmastermaven.model.Cliente;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -45,7 +45,7 @@ public class Exportar extends HttpServlet {
 
         if (exportartipo.equals("ExportarCliente")) {
 
-            BancoCli bancocli = new BancoCli();
+            Clientes bancocli = new Clientes();
 
             ResultSet exportarcli = bancocli.PesquisarClientesGeral();
 
@@ -57,7 +57,7 @@ public class Exportar extends HttpServlet {
 
         } else if (exportartipo.equals("ExportarProdutos")) {
 
-            BancoProd bancoprod = new BancoProd();
+            ProdutosDAO bancoprod = new ProdutosDAO();
 
             ResultSet exportarprod = bancoprod.PesquisarProdutosGeral();
 
@@ -69,7 +69,7 @@ public class Exportar extends HttpServlet {
 
         } else if (exportartipo.equals("ExportarPets")) {
 
-            BancoPet bancopet = new BancoPet();
+            Pet bancopet = new Pet();
 
             ResultSet exportarpet = bancopet.PesquisarPetGeral();
 

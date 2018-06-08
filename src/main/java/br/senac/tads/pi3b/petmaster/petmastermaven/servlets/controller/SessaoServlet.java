@@ -5,9 +5,11 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.model.LoginDados;
+import br.senac.tads.pi3b.petmaster.petmastermaven.model.Produtos;
+import br.senac.tads.pi3b.petmaster.petmastermaven.model.Vendas;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,29 +21,27 @@ import javax.servlet.http.HttpSession;
  *
  * @author Paulo.Bezerra
  */
-@WebServlet(name = "Logout", urlPatterns = {"/Logout"})
+@WebServlet(name = "SessaoServlet", urlPatterns = {"/SessaoServlet"})
 
-public class Logout extends HttpServlet {
+public class SessaoServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String logout = request.getParameter("logout");
+        HttpSession sessao = request.getSession();
 
-        if (logout.equals("Sair")) {
+        String vendedor = (String) request.getAttribute("vendedor");
 
-            HttpSession sessao = request.getSession();
+        sessao.setAttribute("vendedor", vendedor);
+        
+        
+        Vendas vendas = new Vendas();
+        
+        vendas.setVendedor(vendedor);
+        
 
-            sessao.invalidate();
-
-            request.getRequestDispatcher("index.jsp").forward(request, response);
-
-        } else {
-
-            request.getRequestDispatcher("Home.jsp").forward(request, response);
-
-        }
+        request.getRequestDispatcher("Home.jsp").forward(request, response);
 
     }
 
