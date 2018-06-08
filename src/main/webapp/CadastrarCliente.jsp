@@ -8,6 +8,77 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <script type="text/javascript" >
+
+            function limpa_formulário_cep() {
+                //Limpa valores do formulário de cep.
+                document.getElementById('rua').value = ("");
+                document.getElementById('bairro').value = ("");
+                document.getElementById('cidade').value = ("");
+                document.getElementById('uf').value = ("");
+            }
+
+            function meu_callback(conteudo) {
+                if (!("erro" in conteudo)) {
+                    //Atualiza os campos com os valores.
+                    document.getElementById('rua').value = (conteudo.logradouro);
+                    document.getElementById('bairro').value = (conteudo.bairro);
+                    document.getElementById('cidade').value = (conteudo.localidade);
+                    document.getElementById('uf').value = (conteudo.uf);
+                } //end if.
+                else {
+                    //CEP não Encontrado.
+                    limpa_formulário_cep();
+                    alert("CEP não encontrado.");
+                }
+            }
+
+            function pesquisacep(valor) {
+
+                //Nova variável "cep" somente com dígitos.
+                var cep = valor.replace(/\D/g, '');
+
+                //Verifica se campo cep possui valor informado.
+                if (cep != "") {
+
+                    //Expressão regular para validar o CEP.
+                    var validacep = /^[0-9]{8}$/;
+
+                    //Valida o formato do CEP.
+                    if (validacep.test(cep)) {
+
+                        //Preenche os campos com "..." enquanto consulta webservice.
+                        document.getElementById('rua').value = "...";
+                        document.getElementById('bairro').value = "...";
+                        document.getElementById('cidade').value = "...";
+                        document.getElementById('uf').value = "...";
+
+                        //Cria um elemento javascript.
+                        var script = document.createElement('script');
+
+                        //Sincroniza com o callback.
+                        script.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meu_callback';
+
+                        //Insere script no documento e carrega o conteúdo.
+                        document.body.appendChild(script);
+
+                    } //end if.
+                    else {
+                        //cep é inválido.
+                        limpa_formulário_cep();
+                        alert("Formato de CEP inválido.");
+                    }
+                } //end if.
+                else {
+                    //cep sem valor, limpa formulário.
+                    limpa_formulário_cep();
+                }
+            }
+            ;
+
+        </script>
+
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,14 +93,20 @@
         <link href="topodapagina.css" rel="stylesheet">
 
 
-    <form name = "CadastrarCliente" action="${pageContext.request.contextPath}/CadastrarCliente" method="POST" >
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Vender</title>
 
     </head>
+
+
+
     <body id="page-top">
-        <form>
+
+
+
+        <form name = "CadastrarCliente" action="${pageContext.request.contextPath}/CadastrarCliente" method="POST">
+
             <div id="includedContent"></div>
 
             <%@include  file="navbar.jsp" %>
@@ -88,30 +165,41 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="email">Email <span class="text-muted">(Opcional)</span></label>
+                        <label for="email">Email<span class="text-muted"> (Opcional)</span></label>
                         <input name ="email" type="email" class="form-control" id="email" placeholder="voce@exemplo.com" value ="">
                         <div class="invalid-feedback">
                             Favor inserir um email válido para o frete.
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
 
-                    <div class="mb-3">
-                        <label for="endereco">Rua</label>
-                        <input name ="logradouro" type="text" class="form-control" id="endereco" placeholder="Rua hum 1234" value=""required>
-                        <div class="invalid-feedback">
-                            Favor inserir seu endereço de envio.
+                            <label>CEP</label>
+                            <input name ="cep" type="text" class="form-control" id="cep"   placeholder="00000000" size="10" maxlength="9" required onblur="pesquisacep(this.value);">
+                            <div class="invalid-feedback">
+                                CEP obrigatório
+                            </div>
+                        </div>
+
+                        <div class="col-md-8 mb-3">
+                            <label>Rua</label>
+                            <input name ="rua" type="text" class="form-control" id="rua" placeholder="Rua hum 1234"  size="60" required>
+
+                            <div class="invalid-feedback">
+                                Favor inserir a Rua
+                            </div>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="bairro">Bairro</label>
-                        <input name ="bairro" type="text" class="form-control" id="bairro" placeholder="Bairro" value=""required>
+                        <label>Bairro</label>
+                        <input name ="bairro" type="text" class="form-control" id="bairro" placeholder="Bairro" size="40" required>
                         <div class="invalid-feedback">
                             Favor inserir o Bairro.
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="cidade">Cidade</label>
-                        <input name ="cidade" type="text" class="form-control" id="cidade" placeholder="Cidade" value=""required>
+                        <label>Cidade</label>
+                        <input name ="cidade" type="text" class="form-control" id="cidade" placeholder="Cidade" size = "40" required>
                         <div class="invalid-feedback">
                             Favor inserir a Cidade.
                         </div>
@@ -120,7 +208,7 @@
 
                     <div class="row">
                         <div class="col-md-5 mb-3">
-                            <label >País</label>
+                            <label>País</label>
                             <select name ="pais" class="custom-select d-block w-100" id="pais" required>
                                 <option>Brasil</option>
                             </select>
@@ -129,8 +217,8 @@
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label  for="estado">Estado</label>
-                            <select name = "estado" class="custom-select d-block w-100" id="estado" value = "" required>
+                            <label>Estado</label>
+                            <select name = "estado" class="custom-select d-block w-100" id="estado"  required>
                                 <option>São Paulo</option>
                                 <option>Rio de Janeiro</option>
                                 <option>São Paulo</option>
@@ -144,21 +232,17 @@
                                 Favor selecionar um Estado..
                             </div>
                         </div>
+
                         <div class="col-md-3 mb-3">
-                            <label for="cep">CEP</label>
-                            <input name ="cep" type="text" class="form-control" id="cep" onkeydown="javascript: fMasc(this, mCEP);" placeholder="00000-000" maxlength="10" value = "" required>
-                            <div class="invalid-feedback">
-                                CEP obrigatório
-                            </div>
-                        </div>
-                        <div class="col-md-2 mb-3">
-                            <label name ="sexo" >UF</label>
-                            <select name ="uf" class="custom-select d-block w-100" id="sexo" value = "" required>
+                            <label  for="uf">UF</label>
+                            <select name = "uf" class="custom-select d-block w-100" id="uf"  required>
                                 <option>SP</option>
                                 <option>RJ</option>
+                                <option>MG</option>
                             </select>
+
                             <div class="invalid-feedback">
-                                Favor selecionar a UF
+                                Favor selecionar uma UF..
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
@@ -311,8 +395,8 @@
             }
             function mCEP(cep) {
                 cep = cep.replace(/\D/g, "")
-                cep = cep.replace(/^(\d{2})(\d)/, "$1.$2")
-                cep = cep.replace(/\.(\d{3})(\d)/, ".$1-$2")
+                cep = cep.replace(/^(\d{2})(\d)/, "$1$2")
+                cep = cep.replace(/\.(\d{3})(\d)/, ".$1$2")
                 return cep
             }
             function mNum(num) {
@@ -320,24 +404,25 @@
                 return num
             }
         </script>
-        
-            <script>
+
+        <script>
 
 
-        var mensagem = "${mensagem}"
+            var mensagem = "${mensagem}"
 
-        var cpfcliente = "${cpfcliente}"
+            var cpfcliente = "${cpfcliente}"
 
 
-        if (mensagem == "falha") {
-            alert("O CPF "+cpfcliente+" já se encontra cadastrado")
+            if (mensagem == "falha") {
+                alert("O CPF " + cpfcliente + " já se encontra cadastrado")
 
-        } else if (mensagem == "Cliente cadastrado com sucesso!") {
-            
-            alert(mensagem)
+            } else if (mensagem == "Cliente cadastrado com sucesso!") {
 
-        }
-    </script>
+                alert(mensagem)
+
+            }
+        </script>
+
 
     </body>
 </html>

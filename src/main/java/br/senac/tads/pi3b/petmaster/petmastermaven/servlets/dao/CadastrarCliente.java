@@ -29,7 +29,7 @@ public class CadastrarCliente extends HttpServlet {
             throws ServletException, IOException {
 
         String nomeCliente = request.getParameter("nomecliente");
-        String logradouro = request.getParameter("logradouro");
+        String logradouro = request.getParameter("rua");
         String RGCliente = request.getParameter("rgcliente");
         String CPFCliente = request.getParameter("cpfcliente");
         String email = request.getParameter("email");
