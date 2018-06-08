@@ -72,13 +72,6 @@
                             Favor inserir o password.
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="idgrupo">Grupo</label>
-                        <input name ="idgrupo" type="text" class="form-control" id="idgrupo" placeholder="idgrupo" value=""required>
-                        <div class="invalid-feedback">
-                            Favor inserir o grupo.
-                        </div>
-                    </div>
                     <div class="col-md-4 mb-3">
                         <label  for="estado">Filial</label>
                         <select name = "filial" class="custom-select d-block w-100" id="filial" value = "" required>
@@ -93,6 +86,19 @@
 
                         <div class="invalid-feedback">
                             Favor selecionar uma Filial..
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label  for="grupo">Grupo</label>
+                        <select name = "grupo" class="custom-select d-block w-100" id="grupo" value = "" required>
+                            <option>Vendedor</option>
+                            <option>Gerência</option>
+
+
+                        </select>
+
+                        <div class="invalid-feedback">
+                            Favor selecionar uma Grupo..
                         </div>
                     </div>
 

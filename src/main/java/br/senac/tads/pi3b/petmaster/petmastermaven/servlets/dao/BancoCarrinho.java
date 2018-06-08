@@ -47,70 +47,9 @@ public class BancoCarrinho {
 
     }
 
-    public void AtualizarCarrinho(Produtos produtos, String idsessao) {
 
-        BancoConexao bancoconexao = new BancoConexao();
 
-        try {
-
-            Connection conexao = bancoconexao.getConnection();
-
-            java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("UPDATE PRODUTOS set codigobarrasprod = '" + produtos.getCodigoprod() + "', nomeprod = '" + produtos.getNomeprod() + "',"
-                    + "valor = " + produtos.getValorprod() + ",descricaoprod = '" + produtos.getDescricaoprod() + "',categoriaprod = '" + produtos.getCategoriaprod() + "',"
-                    + "quantidadeprod = " + produtos.getQtdestoque() + " where codigobarrasprod = '" + produtos.getCodigoprod() + "'");
-
-            conexao.close();
-
-            System.out.println("aqui no update" + produtos.getCodigoprod());
-            System.out.println("fiz o update");
-
-        } catch (Exception e) {
-
-            System.out.println("erro" + e.getMessage());
-
-        }
-
-    }
-
-    public Produtos PesquisarProduto(String codigobarrasprod) {
-
-        String select = "";
-
-        BancoConexao bancoconexao = new BancoConexao();
-
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-
-            conexao = bancoconexao.getConnection();
-
-            java.sql.Statement st = conexao.createStatement();
-            select = "select * from produtos where codigobarrasprod = '" + codigobarrasprod.trim() + "'";
-            ResultSet result = st.executeQuery(select);
-
-            while (result.next()) {
-
-                produtos.setCodigoprod(result.getString("codigobarrasprod"));
-                produtos.setNomeprod(result.getString("nomeprod"));
-                produtos.setValorprod(result.getDouble("valor"));
-                produtos.setDtCadastro(result.getDate("datacadastroprod"));
-                produtos.setDescricaoprod(result.getString("descricaoprod"));
-                produtos.setCategoriaprod(result.getString("categoriaprod"));
-                produtos.setQtdestoque(result.getInt("quantidadeprod"));
-                //produtos.setListaProd(produtos);
-
-            }
-
-            conexao.close();
-
-        } catch (Exception e) {
-
-            System.out.println("erro" + e.getMessage());
-
-        }
-
-        return produtos;
-    }
+    
 
     public boolean DeletaProdCarrinho(String sessaoid,String codigobarrasprod ) {
 
@@ -125,6 +64,32 @@ public class BancoCarrinho {
 
             java.sql.Statement st = conexao.createStatement();
             st.executeUpdate("delete from carrinho where idsessao = '" + sessaoid + "' and codigobarrasprod = '"+codigobarrasprod+"';");
+
+            conexao.close();
+            deletado = true;
+
+        } catch (Exception e) {
+
+            System.out.println("erro" + e.getMessage());
+
+        }
+        return deletado;
+
+    }
+    
+        public boolean LimpaCarrinho(String sessaoid) {
+
+        boolean deletado = false;
+
+        BancoConexao bancoconexao = new BancoConexao();
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            conexao = bancoconexao.getConnection();
+
+            java.sql.Statement st = conexao.createStatement();
+            st.executeUpdate("delete from carrinho where idsessao = '" + sessaoid + "';");
 
             conexao.close();
             deletado = true;

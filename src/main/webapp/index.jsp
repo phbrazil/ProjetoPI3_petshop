@@ -34,6 +34,12 @@
     </body>
     
         <script>
+            
+            var mensagem = "${mensagem}"
+            
+            if(mensagem =="Sessão Expirada"){
+                alert(mensagem)
+            }
 
 
         var loginfailed = "${loginfailed}"

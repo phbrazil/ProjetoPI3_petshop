@@ -211,7 +211,6 @@
 
                                 String sessaoid = (String) request.getAttribute("sessaoid");
 
-                                System.out.println(sessaoid);
 
                                 BancoCarrinho bancocarrinho = new BancoCarrinho();
 
