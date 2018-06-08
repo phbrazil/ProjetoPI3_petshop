@@ -226,8 +226,7 @@
                                 <td>R$<%=carrinhoresult.getDouble("valorprod")%></td>
                                 <td><%=carrinhoresult.getString("vendedor")%></td>
                                 <td><%=carrinhoresult.getInt("quantidadeitens")%></td>
-                                <td><button type="submit" class="buttonCancel" name ="exportar" value="ExportarProdutos" formaction="Exportar">Remover</button></td>
-
+                                <td><button type="submit" class="buttonCancel" name ="acaovenda" value="DeletarCarrinho" formaction="Carrinho?codigobarrasprod=<%=carrinhoresult.getString("codigobarrasprod")%>">Remover</button></td>
                             </tr>   
                             <%
                                 }

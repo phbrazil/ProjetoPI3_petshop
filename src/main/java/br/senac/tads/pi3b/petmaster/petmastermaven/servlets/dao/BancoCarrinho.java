@@ -112,7 +112,7 @@ public class BancoCarrinho {
         return produtos;
     }
 
-    public boolean deletaprod(String codigobarrasprod) {
+    public boolean DeletaProdCarrinho(String sessaoid,String codigobarrasprod ) {
 
         boolean deletado = false;
 
@@ -124,7 +124,7 @@ public class BancoCarrinho {
             conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("delete from carrinho where codigobarrasprod = '" + codigobarrasprod + "'");
+            st.executeUpdate("delete from carrinho where idsessao = '" + sessaoid + "' and codigobarrasprod = '"+codigobarrasprod+"';");
 
             conexao.close();
             deletado = true;

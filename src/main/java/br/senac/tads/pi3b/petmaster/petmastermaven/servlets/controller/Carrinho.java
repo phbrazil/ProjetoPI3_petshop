@@ -161,6 +161,18 @@ public class Carrinho extends HttpServlet {
 
             }
 
+        } else if (acaovenda.equals("DeletarCarrinho")) {
+
+            String deletaprod = request.getParameter("codigobarrasprod");
+
+            bancocarrinho = new BancoCarrinho();
+
+            bancocarrinho.DeletaProdCarrinho(sessaoid, deletaprod);
+
+            request.setAttribute("sessaoid", sessaoid);
+
+            request.getRequestDispatcher("Vender.jsp").forward(request, response);
+
         } else if (acaovenda.equals("Finalizar Venda")) {
 
             Vendas vendas = new Vendas();
