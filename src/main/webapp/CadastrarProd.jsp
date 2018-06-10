@@ -43,21 +43,21 @@
                 <div class="row">
                     <div class="col-md-4 mb-3">
                         <label>Código do Produto</label>
-                        <input name="codigoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                        <input name="codigoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" maxlength ="30" required>
                         <div class="invalid-feedback">
                             Código obrigatório
                         </div>
                     </div>
                     <div class="col-md-8 mb-3">
                         <label>Nome do Produto</label>
-                        <input name="nomeprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                        <input name="nomeprod" type="text" class="form-control" id="primeironome" placeholder="" value="" maxlength ="80" required>
                         <div class="invalid-feedback">
                             Nome obrigatório
                         </div>
                     </div>
                     <div class="col-md-12 mb-3">
                         <label>Descrição do Produto</label>
-                        <input name="descricaoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" required>
+                        <input name="descricaoprod" type="text" class="form-control" id="primeironome" placeholder="" value="" maxlength ="80" required>
                         <div class="invalid-feedback">
                             Descrição necessária
                         </div>

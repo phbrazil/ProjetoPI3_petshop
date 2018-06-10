@@ -3,18 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.senac.tads.pi3b.petmaster.petmastermaven.dao;
+package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Pet;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Pets;
-import br.senac.tads.pi3b.petmaster.petmastermaven.model.Loja;
+import br.senac.tads.pi3b.petmaster.petmastermaven.model.Produtos;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -25,8 +23,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author paulo.bezerra
  */
-@WebServlet(name = "ConsultaLoja", urlPatterns = {"/ConsultaLoja"})
-public class ConsultaLoja extends HttpServlet {
+@WebServlet(name = "ConsultaPet", urlPatterns = {"/ConsultaPet"})
+public class ConsultaPet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -38,32 +36,28 @@ public class ConsultaLoja extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        String consultaPet = request.getParameter("ConsultaPet");
 
-        String consultaLoja = request.getParameter("ConsultaLoja");
-                
+        Pet selectpet = new Pet();
 
-        Lojas selectloja = new Lojas();
+        Pets pets = new Pets(null, 0, null, null, 0, null);
+        
+        if (consultaPet.trim() != null) {
+            pets = selectpet.PesquisarPet(consultaPet);
 
-        Loja lojas = new Loja(null, null, null, null, null, null, null);
-     
-        if (consultaLoja.trim() != null) {
-
-            lojas = selectloja.PesquisarLoja(consultaLoja);
-            
-            
         }
 
-        if (lojas.getNomeLoja() != null) {
+        if (pets.getNomepet() != null) {
 
-            request.setAttribute("resultado", lojas);
+            request.setAttribute("resultado", pets);
 
-            request.getRequestDispatcher("ConsultaLojaResult.jsp").forward(request, response);
+            request.getRequestDispatcher("ConsultaPetResult.jsp").forward(request, response);
 
         } else {
 
-            request.setAttribute("resultado", "Loja não encontada");
+            request.setAttribute("resultado", "Pet não encontrado");
 
-            request.getRequestDispatcher("ConsultaLoja.jsp").forward(request, response);
+            request.getRequestDispatcher("ConsultaPet.jsp").forward(request, response);
 
         }
 

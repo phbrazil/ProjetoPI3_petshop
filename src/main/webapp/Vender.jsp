@@ -4,14 +4,14 @@
     Author     : paulo.bezerra
 --%>
 
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoCarrinho"%>
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.dao.BancoCli"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.dao.InserirCarrinho"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.dao.Clientes"%>
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.util.ArrayList"%>
 <%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.List"%>
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.model.Produtos"%>
 <html>
     <head>
         <!DOCTYPE html>
@@ -189,7 +189,7 @@
                                 String sessaoid = (String) request.getAttribute("sessaoid");
 
 
-                                BancoCarrinho bancocarrinho = new BancoCarrinho();
+                                InserirCarrinho bancocarrinho = new InserirCarrinho();
 
                                 ResultSet carrinhoresult = bancocarrinho.ListarCarrinho(sessaoid);
 

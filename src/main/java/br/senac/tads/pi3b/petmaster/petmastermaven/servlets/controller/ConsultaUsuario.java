@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.senac.tads.pi3b.petmaster.petmastermaven.dao;
+package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.model.Cliente;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.BancoUsuario;
+import br.senac.tads.pi3b.petmaster.petmastermaven.model.Usuario;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -19,14 +20,13 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author paulo.bezerra
  */
-@WebServlet(name = "ConsultaCPF", urlPatterns = {"/ConsultaCPF"})
-public class ConsultaCPF extends HttpServlet {
+@WebServlet(name = "ConsultaUsuario", urlPatterns = {"/ConsultaUsuario"})
+public class ConsultaUsuario extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -38,31 +38,32 @@ public class ConsultaCPF extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        HttpSession sessao = request.getSession();
 
-        String cpfcliente = request.getParameter("cpfcliente");
+        String consultaUsuario = request.getParameter("ConsultaUsuario");
+                
 
-        String vendedor = (String) request.getAttribute("userName");
+        BancoUsuario selectusuario = new BancoUsuario();
 
-        System.out.println("aqui no consultacpf" + vendedor);
+        Usuario usuarios = new Usuario(null, null, null, null);
+     
+        if (consultaUsuario.trim() != null) {
 
-        Cliente cliente = new Cliente(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+            usuarios = selectusuario.PesquisarUsuario(consultaUsuario);
+            
+            
+        }
 
-        Clientes selectcpf = new Clientes();
+        if (usuarios.getNomeUsuario() != null) {
 
-        cliente = selectcpf.PesquisarCliente(cpfcliente);
+            request.setAttribute("resultado", usuarios);
 
-        if (cliente.getNomeCliente() != null) {
-
-            request.setAttribute("resultado", cliente);
-
-            request.getRequestDispatcher("DadosCliente.jsp").forward(request, response);
+            request.getRequestDispatcher("ConsultaUsuarioResult.jsp").forward(request, response);
 
         } else {
 
-            request.setAttribute("resultado", "CPF não encontrado");
+            request.setAttribute("resultado", "Usuario não encontado");
 
-            request.getRequestDispatcher("PesquisarCPF.jsp").forward(request, response);
+            request.getRequestDispatcher("ConsultaUsuarioResult.jsp").forward(request, response);
 
         }
 

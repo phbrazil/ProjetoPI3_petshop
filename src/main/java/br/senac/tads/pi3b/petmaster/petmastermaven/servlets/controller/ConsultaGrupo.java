@@ -3,15 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.senac.tads.pi3b.petmaster.petmastermaven.dao;
+package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Grupos;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Pets;
-import br.senac.tads.pi3b.petmaster.petmastermaven.model.Produtos;
+import br.senac.tads.pi3b.petmaster.petmastermaven.model.Grupo;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,8 +26,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author paulo.bezerra
  */
-@WebServlet(name = "ConsultaPet", urlPatterns = {"/ConsultaPet"})
-public class ConsultaPet extends HttpServlet {
+@WebServlet(name = "ConsultaGrupo", urlPatterns = {"/ConsultaGrupo"})
+public class ConsultaGrupo extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -35,28 +39,32 @@ public class ConsultaPet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String consultaPet = request.getParameter("ConsultaPet");
 
-        Pet selectpet = new Pet();
+        String consultaGrupo = request.getParameter("ConsultaGrupo");
+                
 
-        Pets pets = new Pets(null, 0, null, null, 0, null);
-        
-        if (consultaPet.trim() != null) {
-            pets = selectpet.PesquisarPet(consultaPet);
+        Grupos selectGrupo = new Grupos();
 
+        Grupo grupos = new Grupo(null, null);
+     
+        if (consultaGrupo.trim() != null) {
+
+            grupos = selectGrupo.PesquisarGrupo(consultaGrupo);
+            
+            
         }
 
-        if (pets.getNomepet() != null) {
+        if (grupos.getNomeGrupo() != null) {
 
-            request.setAttribute("resultado", pets);
+            request.setAttribute("resultado", grupos);
 
-            request.getRequestDispatcher("ConsultaPetResult.jsp").forward(request, response);
+            request.getRequestDispatcher("ConsultaGrupoResult.jsp").forward(request, response);
 
         } else {
 
-            request.setAttribute("resultado", "Pet não encontrado");
+            request.setAttribute("resultado", "Grupo não encontado");
 
-            request.getRequestDispatcher("ConsultaPet.jsp").forward(request, response);
+            request.getRequestDispatcher("ConsultaGrupo.jsp").forward(request, response);
 
         }
 

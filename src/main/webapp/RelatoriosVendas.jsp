@@ -1,11 +1,11 @@
 
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.model.Produtos"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Pets"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.model.Pets"%>
 
 
 

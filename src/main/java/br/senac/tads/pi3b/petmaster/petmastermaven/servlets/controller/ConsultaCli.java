@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.senac.tads.pi3b.petmaster.petmastermaven.dao;
+package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.model.Usuario;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Clientes;
+import br.senac.tads.pi3b.petmaster.petmastermaven.model.Cliente;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -24,8 +25,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author paulo.bezerra
  */
-@WebServlet(name = "ConsultaUsuario", urlPatterns = {"/ConsultaUsuario"})
-public class ConsultaUsuario extends HttpServlet {
+@WebServlet(name = "ConsultaCli", urlPatterns = {"/ConsultaCli"})
+public class ConsultaCli extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -38,31 +39,30 @@ public class ConsultaUsuario extends HttpServlet {
             throws ServletException, IOException {
 
 
-        String consultaUsuario = request.getParameter("ConsultaUsuario");
-                
+        String cpfcliente = request.getParameter("cpfcliente");
 
-        BancoUsuario selectusuario = new BancoUsuario();
 
-        Usuario usuarios = new Usuario(null, null, null, null);
-     
-        if (consultaUsuario.trim() != null) {
+        Clientes bancocpf = new Clientes();
 
-            usuarios = selectusuario.PesquisarUsuario(consultaUsuario);
+        Cliente cliente = new Cliente(null, null, null, null, null, null, null, null, null, null, null, 
+                null, null, null, null, null);
+
+        cliente = bancocpf.PesquisarCliente(cpfcliente);
+        
+
+        if (cliente.getNomeCliente()!= null) {
             
             
-        }
+            request.setAttribute("resultado", cliente);
+            
 
-        if (usuarios.getNomeUsuario() != null) {
-
-            request.setAttribute("resultado", usuarios);
-
-            request.getRequestDispatcher("ConsultaUsuarioResult.jsp").forward(request, response);
+            request.getRequestDispatcher("ConsultaClienteResult.jsp").forward(request, response);
 
         } else {
 
-            request.setAttribute("resultado", "Usuario não encontado");
+            request.setAttribute("resultado", "Cliente não encontado");
 
-            request.getRequestDispatcher("ConsultaUsuarioResult.jsp").forward(request, response);
+            request.getRequestDispatcher("ConsultaCli.jsp").forward(request, response);
 
         }
 

@@ -3,10 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.senac.tads.pi3b.petmaster.petmastermaven.dao;
+package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Lojas;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Pets;
-import br.senac.tads.pi3b.petmaster.petmastermaven.model.Grupo;
+import br.senac.tads.pi3b.petmaster.petmastermaven.model.Loja;
 import java.awt.List;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -25,8 +26,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author paulo.bezerra
  */
-@WebServlet(name = "ConsultaGrupo", urlPatterns = {"/ConsultaGrupo"})
-public class ConsultaGrupo extends HttpServlet {
+@WebServlet(name = "ConsultaLoja", urlPatterns = {"/ConsultaLoja"})
+public class ConsultaLoja extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -39,31 +40,31 @@ public class ConsultaGrupo extends HttpServlet {
             throws ServletException, IOException {
 
 
-        String consultaGrupo = request.getParameter("ConsultaGrupo");
+        String consultaLoja = request.getParameter("ConsultaLoja");
                 
 
-        Grupos selectGrupo = new Grupos();
+        Lojas selectloja = new Lojas();
 
-        Grupo grupos = new Grupo(null, null);
+        Loja lojas = new Loja(null, null, null, null, null, null, null);
      
-        if (consultaGrupo.trim() != null) {
+        if (consultaLoja.trim() != null) {
 
-            grupos = selectGrupo.PesquisarGrupo(consultaGrupo);
+            lojas = selectloja.PesquisarLoja(consultaLoja);
             
             
         }
 
-        if (grupos.getNomeGrupo() != null) {
+        if (lojas.getNomeLoja() != null) {
 
-            request.setAttribute("resultado", grupos);
+            request.setAttribute("resultado", lojas);
 
-            request.getRequestDispatcher("ConsultaGrupoResult.jsp").forward(request, response);
+            request.getRequestDispatcher("ConsultaLojaResult.jsp").forward(request, response);
 
         } else {
 
-            request.setAttribute("resultado", "Grupo não encontado");
+            request.setAttribute("resultado", "Loja não encontada");
 
-            request.getRequestDispatcher("ConsultaGrupo.jsp").forward(request, response);
+            request.getRequestDispatcher("ConsultaLoja.jsp").forward(request, response);
 
         }
 

@@ -157,7 +157,7 @@
                     <div class="mb-3">
                         <label for="primeironome">Nome</label>
                         <div class="input-group">
-                            <input name="nomecliente" type="text" class="form-control" id="nomecliente" placeholder="" value="" name="nomecliente" required>
+                            <input name="nomecliente" type="text" class="form-control" id="nomecliente" placeholder="" value="" name="nomecliente" maxlength ="60" required>
                             <div class="invalid-feedback">
                                 Primeiro nome necessário
                             </div>
@@ -166,7 +166,7 @@
 
                     <div class="mb-3">
                         <label for="email">Email<span class="text-muted"> (Opcional)</span></label>
-                        <input name ="email" type="email" class="form-control" id="email" placeholder="voce@exemplo.com" value ="">
+                        <input name ="email" type="email" class="form-control" id="email" placeholder="voce@exemplo.com" maxlength ="30" value ="">
                         <div class="invalid-feedback">
                             Favor inserir um email válido para o frete.
                         </div>
@@ -175,7 +175,7 @@
                         <div class="col-md-3 mb-3">
 
                             <label>CEP</label>
-                            <input name ="cep" type="text" class="form-control" id="cep"   placeholder="00000000" size="10" maxlength="9" required onblur="pesquisacep(this.value);">
+                            <input name ="cep" type="text" class="form-control" id="cep"   placeholder="00000000" size="10" maxlength="8" required onblur="pesquisacep(this.value);">
                             <div class="invalid-feedback">
                                 CEP obrigatório
                             </div>
@@ -183,7 +183,7 @@
 
                         <div class="col-md-8 mb-3">
                             <label>Rua</label>
-                            <input name ="rua" type="text" class="form-control" id="rua" placeholder="Rua hum 1234"  size="60" required>
+                            <input name ="rua" type="text" class="form-control" id="rua" placeholder="Rua hum 1234"  size="60" maxlength ="50" required>
 
                             <div class="invalid-feedback">
                                 Favor inserir a Rua
@@ -192,14 +192,14 @@
                     </div>
                     <div class="mb-3">
                         <label>Bairro</label>
-                        <input name ="bairro" type="text" class="form-control" id="bairro" placeholder="Bairro" size="40" required>
+                        <input name ="bairro" type="text" class="form-control" id="bairro" placeholder="Bairro" size="40" maxlength ="50" required>
                         <div class="invalid-feedback">
                             Favor inserir o Bairro.
                         </div>
                     </div>
                     <div class="mb-3">
                         <label>Cidade</label>
-                        <input name ="cidade" type="text" class="form-control" id="cidade" placeholder="Cidade" size = "40" required>
+                        <input name ="cidade" type="text" class="form-control" id="cidade" placeholder="Cidade" size = "40" maxlength ="50" required>
                         <div class="invalid-feedback">
                             Favor inserir a Cidade.
                         </div>

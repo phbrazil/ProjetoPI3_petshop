@@ -3,7 +3,7 @@
     Created on : Mar 29, 2018, 12:13:17 PM
     Author     : paulo.bezerra
 --%>
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Usuario"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.model.Usuario"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
@@ -45,7 +45,6 @@
 
                 <div class="container">
                     <div class="py-5 text-center">
-                        <!--img class="d-block mx-auto mb-4" src="img/LogoPetMaster.png" alt="" width="200" height="200"-->
                         <h2>Alterar usuário</h2>
                     </div>
                 </div>

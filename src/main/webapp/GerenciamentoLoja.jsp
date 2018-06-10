@@ -4,7 +4,7 @@
     Author     : paulo.bezerra
 --%>
 <%//@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Produtos"%>
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Loja"%>
+<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.model.Loja"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
