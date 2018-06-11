@@ -201,7 +201,6 @@ public class Clientes {
             ResultSet resultgeral = st.executeQuery(selectgeral);
 
             if(resultgeral!=null){
-                System.out.println("ta aqui");
                 return resultgeral;
             }
 

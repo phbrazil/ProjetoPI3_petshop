@@ -74,7 +74,7 @@
                     <div class="invalid-feedback">
                         Inicio obrigatório
                     </div>
-                    <input type="submit" name="acaoreport" value="Gerar" class="button" action="RelatoriosServlet" >
+                    <input type="submit" name="acaoreport" value="Gerar Venda" class="button" action="RelatoriosServlet" >
 
                 </div>
 

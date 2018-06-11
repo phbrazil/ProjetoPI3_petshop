@@ -3,7 +3,6 @@
     Created on : Mar 29, 2018, 12:13:17 PM
     Author     : paulo.bezerra
 --%>
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.model.Produtos"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
@@ -11,35 +10,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <%
-        Connection conexao = null;
-
-        Class.forName("com.mysql.jdbc.Driver").newInstance();
-        conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/petmaster", "root", "admin");
-
-        PreparedStatement listagemProdutos = null;
-        PreparedStatement Produtosqtd = null;
-
-        ResultSet selectProduto = null;
-        ResultSet selectcountProduto = null;
-
-        String sqlSelectRecord = null;
-        String sqlSelectqtd = null;
-        int quantidadeprodutos = 0;
-        sqlSelectRecord = "SELECT * FROM produtos";
-        sqlSelectqtd = "SELECT COUNT(*) as quantidadeprod FROM produtos";
-
-        listagemProdutos = conexao.prepareStatement(sqlSelectRecord);
-        Produtosqtd = conexao.prepareStatement(sqlSelectqtd);
-        selectProduto = listagemProdutos.executeQuery();
-        selectcountProduto = Produtosqtd.executeQuery();
-
-        while (selectcountProduto.next()) {
-
-            quantidadeprodutos = selectcountProduto.getInt("quantidadeprod");
-
-        }
-    %>
     <head>
 
         <style>
@@ -98,50 +68,28 @@
                     <td><button type="submit" class="button" name ="exportar" value="ExportarProdutos" formaction="Exportar">Exportar</button></td>
 
                 </tr>
+                
                 <%  int linha = 1;
-                    String[] listaprodutos = new String[quantidadeprodutos];
-                    while (selectProduto.next()) {
-                        listaprodutos[linha - 1] = selectProduto.getString("codigobarrasprod");
+                    ResultSet produtos = (ResultSet) request.getAttribute("produtos");
+                    while (produtos.next()) {
 
                 %>
                 <tr>
                     <td bgcolor="#FF9900"><%=linha%></td>
-                    <td><%=selectProduto.getString("codigobarrasprod")%></td>
-                    <td><%=selectProduto.getString("nomeprod")%></td>
-                    <td><%=selectProduto.getInt("quantidadeprod")%></td>
-                    <td><%=selectProduto.getString("categoriaprod")%></td>
-                    <td>R$<%=selectProduto.getString("valor")%></td> 
-                    <td><button type="submit" class="button" formaction="ConsultaProd?ConsultaProd=<%=selectProduto.getString("codigobarrasprod")%>">Alterar</button></td>
+                    <td><%=produtos.getString("codigobarrasprod")%></td>
+                    <td><%=produtos.getString("nomeprod")%></td>
+                    <td><%=produtos.getInt("quantidadeprod")%></td>
+                    <td><%=produtos.getString("categoriaprod")%></td>
+                    <td>R$<%=produtos.getString("valor")%></td> 
+                    <td><button type="submit" class="button" formaction="ConsultaProd?ConsultaProd=<%=produtos.getString("codigobarrasprod")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
                         }
-
-                        ResultSet exportarprod = (ResultSet) request.getAttribute("exportarprodutos");
-                        if (exportarprod != null) {
-                        response.setContentType("application/vnd.ms-excel");
-                        response.setHeader("Content-Disposition", "inline; filename=" + "Produtosreport.xls");
-                        }
-
 
                     %>
             </table>
         </div>
 
-        <%            try {
-                if (listagemProdutos != null) {
-                    listagemProdutos.close();
-                }
-                if (selectProduto != null) {
-                    selectProduto.close();
-                }
-
-                if (conexao != null) {
-                    conexao.close();
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        %>
 
 
         <footer class="my-5 pt-5 text-muted text-center text-small">

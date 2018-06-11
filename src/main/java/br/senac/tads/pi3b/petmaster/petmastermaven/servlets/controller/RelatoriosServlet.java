@@ -6,6 +6,9 @@
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
 import br.senac.tads.pi3b.petmaster.petmastermaven.dao.BancoSessao;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Clientes;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.InserirCarrinho;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.ProdutosDAO;
 import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Relatorios;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Pets;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Produtos;
@@ -36,6 +39,50 @@ public class RelatoriosServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        String acaoreport = request.getParameter("acaoreport");
+
+        HttpSession sessao = request.getSession();
+
+        BancoSessao bancosessao = new BancoSessao();
+
+        String sessaoid = sessao.getId();
+
+        String vendedor = bancosessao.Vendedor(sessaoid);
+
+        if (vendedor != null) {
+
+            if (acaoreport.equals("ListarClientes")) {
+
+                ResultSet exportarclientes = null;
+
+                Clientes bancoclientes = new Clientes();
+
+                exportarclientes = bancoclientes.PesquisarClientesGeral();
+
+                request.setAttribute("clientes", exportarclientes);
+
+                request.getRequestDispatcher("EstoqueClientes.jsp").forward(request, response);
+
+            } else if (acaoreport.equals("ListarProdutos")) {
+
+                ResultSet exportarprodutos = null;
+
+                ProdutosDAO bancoprodutos = new ProdutosDAO();
+
+                exportarprodutos = bancoprodutos.PesquisarProdutosGeral();
+
+                request.setAttribute("produtos", exportarprodutos);
+
+                request.getRequestDispatcher("EstoqueProd.jsp").forward(request, response);
+
+            }
+
+        } else {
+
+            request.setAttribute("mensagem", "Sessão Expirada");
+
+            request.getRequestDispatcher("index.jsp").forward(request, response);
+        }
     }
 
     @Override
@@ -52,19 +99,19 @@ public class RelatoriosServlet extends HttpServlet {
         Relatorios relatorios = new Relatorios();
         ResultSet vendas;
         ResultSet exportarVendas;
-        
+
         BancoSessao bancosessao = new BancoSessao();
-        
+
         String sessaoid = sessao.getId();
-        
+
         int idloja = bancosessao.idLoja(sessaoid);
 
-        if (acaoreport.equals("Gerar")) {
+        if (acaoreport.equals("Gerar Venda")) {
 
             sessao.setAttribute("inicio", inicio);
             sessao.setAttribute("fim", fim);
 
-            vendas = relatorios.Vendas(inicio, fim,idloja);
+            vendas = relatorios.Vendas(inicio, fim, idloja);
 
             request.setAttribute("vendas", vendas);
 
@@ -80,6 +127,7 @@ public class RelatoriosServlet extends HttpServlet {
             request.setAttribute("exportar", exportarVendas);
 
             request.getRequestDispatcher("/Exportar/ExportVendas.jsp").forward(request, response);
+
         }
 
     }

@@ -11,35 +11,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <%
-        Connection conexao = null;
 
-        Class.forName("com.mysql.jdbc.Driver").newInstance();
-        conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/petmaster", "root", "admin");
-
-        PreparedStatement listagemClientes = null;
-        PreparedStatement Clientesqtd = null;
-
-        ResultSet selectCliente = null;
-        ResultSet selectcountCliente = null;
-
-        String sqlSelectRecord = null;
-        String sqlSelectqtd = null;
-        int quantidadeClientes = 0;
-        sqlSelectRecord = "SELECT * FROM clientes";
-        sqlSelectqtd = "SELECT COUNT(*) as quantidadecli FROM clientes";
-
-        listagemClientes = conexao.prepareStatement(sqlSelectRecord);
-        Clientesqtd = conexao.prepareStatement(sqlSelectqtd);
-        selectCliente = listagemClientes.executeQuery();
-        selectcountCliente = Clientesqtd.executeQuery();
-
-        while (selectcountCliente.next()) {
-
-            quantidadeClientes = selectcountCliente.getInt("quantidadecli");
-
-        }
-    %>
     <head>
 
         <style>
@@ -97,21 +69,21 @@
                     <td  bgcolor="#33CCCC">Alterar</td> 
                     <td><button type="submit" class="button" name ="exportar" value="ExportarCliente" formaction="Exportar">Exportar</button></td>
                 </tr>
-                <%  int linha = 1;
-                    String[] listaClientes = new String[quantidadeClientes];
-                    while (selectCliente.next()) {
-                        listaClientes[linha - 1] = selectCliente.getString("cpfcliente");
+                <%
+                    ResultSet clientes = (ResultSet) request.getAttribute("clientes");
+                    int linha = 1;
+                    while (clientes.next()) {
 
 
                 %>
                 <tr>
                     <td bgcolor="#FF9900"><%=linha%></td>
-                    <td><%=selectCliente.getString("clienteid")%></td>
-                    <td><%=selectCliente.getString("nome")%></td>
-                    <td><%=selectCliente.getInt("rg")%></td>
-                    <td><%=selectCliente.getString("cpfcliente")%></td>
-                    <td><%=selectCliente.getString("cidade")%></td> 
-                    <td><button type="submit" class="button" formaction="ConsultaCli?cpfcliente=<%=selectCliente.getString("cpfcliente")%>">Alterar</button></td>
+                    <td><%=clientes.getString("clienteid")%></td>
+                    <td><%=clientes.getString("nome")%></td>
+                    <td><%=clientes.getString("rg")%></td>
+                    <td><%=clientes.getString("cpfcliente")%></td>
+                    <td><%=clientes.getString("cidade")%></td> 
+                    <td><button type="submit" class="button" formaction="ConsultaCli?cpfcliente=<%=clientes.getString("cpfcliente")%>">Alterar</button></td>
                 <tr>
                     <% linha++;
 
@@ -121,21 +93,6 @@
             </table>
         </div>
 
-        <%            try {
-                if (listagemClientes != null) {
-                    listagemClientes.close();
-                }
-                if (selectCliente != null) {
-                    selectCliente.close();
-                }
-
-                if (conexao != null) {
-                    conexao.close();
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        %>
 
 
         <footer class="my-5 pt-5 text-muted text-center text-small">

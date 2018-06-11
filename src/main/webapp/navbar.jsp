@@ -21,9 +21,6 @@ Author     : paulo.bezerra
         <!-- Custom styles for this template -->
         <link href="topodapagina.css" rel="stylesheet">
 
-
-    <form action="Vender" method="POST" >
-
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Vender</title>
     </head>
@@ -32,7 +29,7 @@ Author     : paulo.bezerra
             .dropdown {
                 position: relative;
                 display: inline-block;
-                
+
             }
 
             .dropdown-content {
@@ -49,130 +46,106 @@ Author     : paulo.bezerra
                 display: block;
             }
         </style>
-        <form>
-            <div id="includedContent"></div>
+        <div id="includedContent"></div>
 
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-info" id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info" id="sideNav">
 
-                <a class="navbar-brand js-scroll-trigger" href="Home.jsp">
-                   <span class="d-block d-lg-block">Bem-Vindo <!--c:out value="${userName}" /--></span>
-                    <span class="d-none d-lg-block">
+            <a class="navbar-brand js-scroll-trigger" href="Home.jsp">
+               <span class="d-block d-lg-block">Bem-Vindo <!--c:out value="${userName}" /--></span>
+                <span class="d-none d-lg-block">
 
-                    </span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <a class="nav-link js-scroll-trigger">Consultas</a>
-                            <div class="dropdown-content">
-                                <p><a href="ConsultaProd.jsp" style="text-decoration:none;">Produto</a></p>
-                                <p><a href="ConsultaPet.jsp" style="text-decoration:none;">Pet</a></p>
-                                <p><a href="ConsultaCli.jsp" style="text-decoration:none;">Cliente</a></p>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link js-scroll-trigger">Consultas</a>
+                        <div class="dropdown-content">
+                            <p><a href="ConsultaProd.jsp" style="text-decoration:none;">Produto</a></p>
+                            <p><a href="ConsultaPet.jsp" style="text-decoration:none;">Pet</a></p>
+                            <p><a href="ConsultaCli.jsp" style="text-decoration:none;">Cliente</a></p>
 
-                            </div>
                         </div>
+                    </div>
 
-                    </li>
+                </li>
 
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <a class="nav-link js-scroll-trigger">Cadastrar</a>
-                            <div class="dropdown-content">
-                                <p><a href="CadastrarPet.jsp" style="text-decoration:none;">Pet</a></p>
-                                <p><a href="CadastrarProd.jsp" style="text-decoration:none;">Produto</a></p>
-                                <p><a href="CadastrarCliente.jsp" style="text-decoration:none;">Cliente</a></p>
-                            </div>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link js-scroll-trigger">Cadastrar</a>
+                        <div class="dropdown-content">
+                            <p><a href="CadastrarPet.jsp" style="text-decoration:none;">Pet</a></p>
+                            <p><a href="CadastrarProd.jsp" style="text-decoration:none;">Produto</a></p>
+                            <p><a href="CadastrarCliente.jsp" style="text-decoration:none;">Cliente</a></p>
                         </div>
+                    </div>
 
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="Catalogo.jsp">Catálogo de Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="PesquisarCPF.jsp">Vender</a>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <a class="nav-link js-scroll-trigger">Relatórios</a>
-                            <div class="dropdown-content">
-                                <p><a href="EstoqueProd.jsp" style="text-decoration:none;">Listar Produtos</a></p>
-                                <p><a href="EstoquePet.jsp" style="text-decoration:none;">Listar Pets</a></p>
-                                <p><a href="EstoqueClientes.jsp" style="text-decoration:none;">Listar Clientes</a></p>
-                                <p><a href="RelatoriosVendas.jsp" style="text-decoration:none;">Listar Vendas</a></p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="Catalogo.jsp">Catálogo de Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="PesquisarCPF.jsp">Vender</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link js-scroll-trigger">Relatórios</a>
+                        <div class="dropdown-content">
+                            <p><a href="RelatoriosServlet?acaoreport=ListarProdutos" style="text-decoration:none;">Listar Produtos</a></p>
+                            <p><a href="EstoquePet.jsp" style="text-decoration:none;">Listar Pets</a></p>
+                            <p><a href="RelatoriosServlet?acaoreport=ListarClientes" style="text-decoration:none;">Listar Clientes</a></p>
+                            <p><a href="RelatoriosVendas.jsp" style="text-decoration:none;">Listar Vendas</a></p>
 
-                            </div>
                         </div>
+                    </div>
 
-                        
-                        <li class="nav-item">
-                        <div class="dropdown">
-                            <a class="nav-link js-scroll-trigger">Gerenciamento</a>
-                            <div class="dropdown-content">
-                                <p><a href="GerenciamentoLoja.jsp" style="text-decoration:none;">Lojas</a></p>
-                                <p><a href="GerenciamentoGrupo.jsp" style="text-decoration:none;">Grupos</a></p>
-                                <p><a href="GerenciamentoUsuario.jsp" style="text-decoration:none;">Usuários</a></p>
 
-                            </div>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link js-scroll-trigger">Gerenciamento</a>
+                        <div class="dropdown-content">
+                            <p><a href="GerenciamentoLoja.jsp" style="text-decoration:none;">Lojas</a></p>
+                            <p><a href="GerenciamentoGrupo.jsp" style="text-decoration:none;">Grupos</a></p>
+                            <p><a href="GerenciamentoUsuario.jsp" style="text-decoration:none;">Usuários</a></p>
+
                         </div>
+                    </div>
 
-                    </li>
-                        
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="Sobre.jsp">Sobre o Sistema</a>
-                    </li>
-                    
-                     
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="Logout.jsp">Sair</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger">${vendedor}</a>
-                    </li>
-                </ul>
-            </nav>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="Sobre.jsp">Sobre o Sistema</a>
+                </li>
 
 
 
-            <!-- Bootstrap core JavaScript
-            ================================================== -->
-            <!-- Placed at the end of the document so the pages load faster -->
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-            <script src="../../../../assets/js/vendor/popper.min.js"></script>
-            <script src="../../../../dist/js/bootstrap.min.js"></script>
-            <script src="../../../../assets/js/vendor/holder.min.js"></script>
-            <script>
-                // Example starter JavaScript for disabling form submissions if there are invalid fields
-                (function () {
-                    'use strict';
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="Logout.jsp">Sair</a>
+                </li>
 
-                    window.addEventListener('load', function () {
-                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                        var forms = document.getElementsByClassName('needs-validation');
-
-                        // Loop over them and prevent submission
-                        var validation = Array.prototype.filter.call(forms, function (form) {
-                            form.addEventListener('submit', function (event) {
-                                if (form.checkValidity() === false) {
-                                    event.preventDefault();
-                                    event.stopPropagation();
-                                }
-                                form.classList.add('was-validated');
-                            }, false);
-                        });
-                    }, false);
-                })();
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger">${vendedor}</a>
+                </li>
+            </ul>
+        </nav>
 
 
-            </script>
-            </div>        
-    </body>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="../../../../assets/js/vendor/popper.min.js"></script>
+        <script src="../../../../dist/js/bootstrap.min.js"></script>
+        <script src="../../../../assets/js/vendor/holder.min.js"></script>
+
+    </div>        
+</body>
 </html>
