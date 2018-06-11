@@ -5,6 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.BancoSessao;
 import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Clientes;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Cliente;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Produtos;
@@ -16,6 +17,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -30,7 +32,13 @@ public class AlterarCli extends HttpServlet {
             throws ServletException, IOException {
 
         boolean deletado = false;
+        
         Clientes bancocli = new Clientes();
+        HttpSession sessao = request.getSession();
+
+        BancoSessao bancosessao = new BancoSessao();
+        String sessaoid = sessao.getId();
+        int idloja = bancosessao.idLoja(sessaoid);
 
         String acaocliente = String.valueOf(request.getParameter("AcaoCliente"));
 
@@ -53,7 +61,7 @@ public class AlterarCli extends HttpServlet {
             String estadocivil = request.getParameter("estadocivil");
             String nascimento = request.getParameter("nascimento");
 
-            Cliente clientes = new Cliente(CPFCliente, nascimento, nomeCliente, logradouro, bairro, cidade, cep, estado, uf, email, sexo, telefone, celular, pais, RGCliente, estadocivil);
+            Cliente clientes = new Cliente(CPFCliente, nascimento, nomeCliente, logradouro, bairro, cidade, cep, estado, uf, email, sexo, telefone, celular, pais, RGCliente, estadocivil, 0);
             bancocli.atualizarCli(clientes);
 
             request.setAttribute("mensagem", "Cliente Alterado");

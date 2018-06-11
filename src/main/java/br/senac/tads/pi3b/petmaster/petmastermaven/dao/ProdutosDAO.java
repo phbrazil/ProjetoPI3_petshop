@@ -19,7 +19,7 @@ public class ProdutosDAO {
 
     private Connection conexao = null;
 
-    Produtos produtos = new Produtos(null, 0, null, null, 0, null);
+    Produtos produtos = new Produtos(null, 0, null, null, 0, null,0);
 
     private java.util.List<Produtos> listaProd = new ArrayList<Produtos>();
 
@@ -33,10 +33,10 @@ public class ProdutosDAO {
 
             java.sql.Statement st = conexao.createStatement();
             st.executeUpdate("INSERT INTO produtos (codigobarrasprod, nomeprod,valor,"
-                    + "datacadastroprod, descricaoprod,categoriaprod, quantidadeprod)"
+                    + "datacadastroprod, descricaoprod,categoriaprod, quantidadeprod, idloja)"
                     + " VALUES ('" + produtos.getCodigoprod() + "','" + produtos.getNomeprod()
                     + "'," + produtos.getValorprod() + ",now(),'"
-                    + produtos.getDescricaoprod() + "','" + produtos.getCategoriaprod() + "'," + produtos.getQtdestoque() + ");");
+                    + produtos.getDescricaoprod() + "','" + produtos.getCategoriaprod() + "'," + produtos.getQtdestoque() +","+produtos.getIdloja()+ ");");
 
             conexao.close();
 
@@ -98,6 +98,8 @@ public class ProdutosDAO {
                 produtos.setDescricaoprod(result.getString("descricaoprod"));
                 produtos.setCategoriaprod(result.getString("categoriaprod"));
                 produtos.setQtdestoque(result.getInt("quantidadeprod"));
+                produtos.setQtdestoque(result.getInt("idloja"));
+
                 //produtos.setListaProd(produtos);
 
             }

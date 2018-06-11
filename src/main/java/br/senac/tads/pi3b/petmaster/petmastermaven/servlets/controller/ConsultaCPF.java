@@ -47,7 +47,7 @@ public class ConsultaCPF extends HttpServlet {
 
         System.out.println("aqui no consultacpf" + vendedor);
 
-        Cliente cliente = new Cliente(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+        Cliente cliente = new Cliente(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null,0);
 
         Clientes selectcpf = new Clientes();
 

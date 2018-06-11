@@ -27,6 +27,8 @@ public class CadastrarUsuario extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        
 
         String nomeUsuario = request.getParameter("nomeusuario");
         String username = request.getParameter("username");

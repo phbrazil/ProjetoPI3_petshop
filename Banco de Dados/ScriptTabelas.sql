@@ -28,7 +28,6 @@ CREATE TABLE produtos(
   categoriaprod Varchar (30) NOT NULL,
   quantidadeprod INT NOT NULL,
   idloja INT NOT NULL,
-  FOREIGN KEY (idloja) REFERENCES lojas (idloja),
   PRIMARY KEY (Idprod));
   
 
@@ -203,11 +202,3 @@ INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, Descri
 INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, DescricaoProd, CategoriaProd, QuantidadeProd, idloja) VALUES ('41','Antipulgas Revolution 12% 60mg Cães 5,1 a 10kg',55.8,now(),'Antipulgas Revolution 12% 60mg Cães 5,1 a 10kg','Farmácia',16,1);
 INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, DescricaoProd, CategoriaProd, QuantidadeProd, idloja) VALUES ('42','Antipulgas Bravecto 250mg Cães 4,5 a 10kg',189.9,now(),'Antipulgas Bravecto 250mg Cães 4,5 a 10kg','Farmácia',93,1);
 INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, DescricaoProd, CategoriaProd, QuantidadeProd, idloja) VALUES ('43','Butox 20 ml Pulverização Intervet',5.9,now(),'Butox 20 ml Pulverização Intervet','Farmácia',63,1);
-INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, DescricaoProd, CategoriaProd, QuantidadeProd, idloja) VALUES ('44','Combo Advocate Gatos +4kg',149.9,now(),'Combo Advocate Gatos +4kg','Farmácia',41,1);
-INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, DescricaoProd, CategoriaProd, QuantidadeProd, idloja) VALUES ('45','Graminha Gatos Erva Finas Petpira - 50g',18.9,now(),'Graminha Gatos Erva Finas Petpira - 50g','Farmácia',60,1);
-INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, DescricaoProd, CategoriaProd, QuantidadeProd, idloja) VALUES ('46','Floral Gotas Traumas e Medo Animal Flower',21.9,now(),'Floral Gotas Traumas e Medo Animal Flower','Farmácia',10,1);
-INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, DescricaoProd, CategoriaProd, QuantidadeProd, idloja) VALUES ('47','Antipulgas Comfortis 560mg Cães e Gatos Elanco',52.9,now(),'Antipulgas Comfortis 560mg Cães e Gatos Elanco','Farmácia',40,1);
-INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, DescricaoProd, CategoriaProd, QuantidadeProd, idloja) VALUES ('48','Suplemento Glicopan Pet',21.5,now(),'Suplemento Glicopan Pet','Farmácia',55,1);
-INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, DescricaoProd, CategoriaProd, QuantidadeProd, idloja) VALUES ('49','Mebendazole Cães e Gatos Vetnil',4.5,now(),'Mebendazole Cães e Gatos Vetnil','Farmácia',8,1);
-INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, DescricaoProd, CategoriaProd, QuantidadeProd, idloja) VALUES ('50','Frontline Spray 250ml Antipulgas',189.5,now(),'Frontline Spray 250ml Antipulgas','Farmácia',26,1);
-INSERT INTO produtos (codigobarrasprod, Nomeprod, Valor,DataCadastroProd, DescricaoProd, CategoriaProd, QuantidadeProd, idloja) VALUES ('51','Frontline Spray 250ml Antipulgas',200,now(),'Frontline Spray 250ml Antipulgas','Farmácia',93,1);

@@ -5,6 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.BancoSessao;
 import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Clientes;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Cliente;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Produtos;
@@ -16,6 +17,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -28,6 +30,12 @@ public class CadastrarCliente extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
+        HttpSession sessao = request.getSession();
+
+        BancoSessao bancosessao = new BancoSessao();
+        String sessaoid = sessao.getId();
+        int idloja = bancosessao.idLoja(sessaoid);
 
         String nomeCliente = request.getParameter("nomecliente");
         String logradouro = request.getParameter("rua");
@@ -52,8 +60,8 @@ public class CadastrarCliente extends HttpServlet {
 
         if (qtdclicadastrado == 0) {
 
-            Cliente cliente = new Cliente(CPFCliente, nascimento, nomeCliente, logradouro, bairro, cidade, cep, estado, uf, email, sexo, telefone, celular, pais, RGCliente, estadocivil);
-            
+            Cliente cliente = new Cliente(CPFCliente, nascimento, nomeCliente, logradouro, bairro, cidade, cep, estado, uf, email, sexo, telefone, celular, pais, RGCliente, estadocivil, idloja);
+
             bancocli.gravarCliente(cliente);
             request.setAttribute("cpfcliente", CPFCliente);
             request.setAttribute("mensagem", "Cliente cadastrado com sucesso!");

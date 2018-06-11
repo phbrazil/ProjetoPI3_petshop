@@ -42,15 +42,12 @@ import javax.servlet.http.HttpSession;
 
 public class Carrinho extends HttpServlet {
 
-    List<String> produtosListagem;
-    List<String> petsListagem;
-
     double total = 0;
     int quantidadetotal = 0;
     String quantidade = null;
     int quantconvert = 0;
 
-    Produtos produtos = new Produtos(null, 0, null, null, 0, null);
+    Produtos produtos = new Produtos(null, 0, null, null, 0, null, 0);
     String codigovenda;
     String cpfcliente;
     String nomecliente;

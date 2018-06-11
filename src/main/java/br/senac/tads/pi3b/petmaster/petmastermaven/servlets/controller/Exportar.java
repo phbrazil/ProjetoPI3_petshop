@@ -56,6 +56,8 @@ public class Exportar extends HttpServlet {
             
 
         } else if (exportartipo.equals("ExportarProdutos")) {
+            
+            System.out.println("entrei aqui");
 
             ProdutosDAO bancoprod = new ProdutosDAO();
 

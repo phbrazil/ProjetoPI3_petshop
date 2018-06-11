@@ -4,6 +4,9 @@
     Author     : paulo.bezerra
 --%>
 
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.awt.List"%>
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -72,17 +75,28 @@
                             Favor inserir o password.
                         </div>
                     </div>
+
+
                     <div class="col-md-4 mb-3">
                         <label  for="estado">Filial</label>
                         <select name = "filial" class="custom-select d-block w-100" id="filial" value = "" required>
-                            <option>São Paulo</option>
-                            <option>Rio de Janeiro</option>
-                            <option>São Paulo</option>
-                            <option>São Paulo</option>
-                            <option>São Paulo</option>
-                            <option>São Paulo</option>
+                            <c:forEach items="${filiais}" var="filiais">
+                                <%
+                                    ResultSet listafiliais = (ResultSet) request.getAttribute("listafiliais");
 
+                                    while (listafiliais.next()) {
+
+                                %>
+                                <option><%=listafiliais.getString("nomeloja")%></option>
+
+
+                                <%}
+
+                                %>
+
+                            </c:forEach>
                         </select>
+
 
                         <div class="invalid-feedback">
                             Favor selecionar uma Filial..

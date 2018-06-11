@@ -17,7 +17,7 @@ public class Clientes {
 
     private Connection conexao = null;
 
-    Cliente cliente = new Cliente(null,null,null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    Cliente cliente = new Cliente(null,null,null, null, null, null, null, null, null, null, null, null, null, null, null, null,0);
 
     private java.util.List<Cliente> listaCli = new ArrayList<Cliente>();
 
@@ -32,13 +32,13 @@ public class Clientes {
             java.sql.Statement st = conexao.createStatement();
             st.executeUpdate("INSERT INTO clientes (nome, logradouro,rg,"
                     + "cpfcliente, pais,cidade, bairro, estado, uf, cep, telefone,celular,email,sexo,"
-                    + "estadocivil, nascimento,datacadastro, statuscliente) VALUES ('" + cliente.getNomeCliente()+ "','" 
+                    + "estadocivil, nascimento,datacadastro, statuscliente, idloja) VALUES ('" + cliente.getNomeCliente()+ "','" 
                     + cliente.getLogradouro()+"','"+cliente.getRG()+"','"+cliente.getCpfCliente()+"','"
                     + cliente.getPais()+"','"+cliente.getCidade()+"','"+cliente.getBairro()+"','"
                     +cliente.getEstado()+"','"+cliente.getUF()+"','"+cliente.getCep()+"','"
                     +cliente.getTelefone()+"','"+cliente.getCelular()+"','"+cliente.getEmail()+"','"
                     +cliente.getSexo()+"','"+cliente.getEstadoCivil()+"','"+cliente.getNascimento()+"',"
-                    +"now(), true);");        
+                    +"now(), true,"+cliente.getIdloja()+");");        
             conexao.close();
 
         } catch (Exception e) {

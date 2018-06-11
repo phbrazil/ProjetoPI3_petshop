@@ -29,11 +29,19 @@ public class Produtos {
     private String descricaoprod;
 
     private int qtdestoque;
-    
+
     private int itensvenda;
 
+    public int getIdloja() {
+        return idloja;
+    }
+
+    public void setIdloja(int idloja) {
+        this.idloja = idloja;
+    }
     
-    
+    private int idloja;
+
     private String categoriaprod;
 
     private java.util.List<Produtos> listaProd = new ArrayList<Produtos>();
@@ -41,12 +49,11 @@ public class Produtos {
     public List<Produtos> getListaProd() {
         return listaProd;
     }
-    
-    
 
     public void setListaProd(Produtos produtos) {
         listaProd.add(produtos);
     }
+
     public int getItensvenda() {
         return itensvenda;
     }
@@ -55,14 +62,14 @@ public class Produtos {
         this.itensvenda = itensvenda;
     }
 
-
-    public Produtos(String nomeprod, double valorprod, String codigobarrasprod, String descricaoprod, int qtdestoque, String categoriaprod) {
+    public Produtos(String nomeprod, double valorprod, String codigobarrasprod, String descricaoprod, int qtdestoque, String categoriaprod, int idloja) {
         this.codigobarrasprod = codigobarrasprod;
         this.nomeprod = nomeprod;
         this.valorprod = valorprod;
         this.descricaoprod = descricaoprod;
         this.qtdestoque = qtdestoque;
         this.categoriaprod = categoriaprod;
+        this.idloja = idloja;
 
     }
 

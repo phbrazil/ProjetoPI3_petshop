@@ -45,7 +45,7 @@ public class ConsultaProd extends HttpServlet {
 
         ProdutosDAO selectprod = new ProdutosDAO();
 
-        Produtos produtos = new Produtos(null, 0, null, null, 0, null);
+        Produtos produtos = new Produtos(null, 0, null, null, 0, null,0);
 
         
         if (consultaProd.trim() != null) {

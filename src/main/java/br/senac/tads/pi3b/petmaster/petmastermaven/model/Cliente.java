@@ -34,6 +34,15 @@ public class Cliente {
     private String estadoCivil;
     private String nascimento;
     private boolean statusCliente;
+    private int idloja;
+
+    public int getIdloja() {
+        return idloja;
+    }
+
+    public void setIdloja(int idloja) {
+        this.idloja = idloja;
+    }
 
     public String getPais() {
         return pais;
@@ -154,7 +163,7 @@ public class Cliente {
 
     public Cliente(String cpfCliente, String nascimento, String nomeCliente, String logradouro, 
             String bairro, String cidade, String cep, String estado, String UF, String email,
-            String sexo, String telefone,String celular, String RG, String pais, String estadoCivil) {
+            String sexo, String telefone,String celular, String RG, String pais, String estadoCivil, int idloja) {
         this.cpfCliente = cpfCliente;
         this.nascimento = nascimento;
         this.nomeCliente = nomeCliente;
@@ -171,6 +180,7 @@ public class Cliente {
         this.pais = pais;
         this.celular = celular;
         this.estadoCivil = estadoCivil;
+        this.idloja = idloja;
 
     }
 

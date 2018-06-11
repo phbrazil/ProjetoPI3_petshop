@@ -260,8 +260,8 @@
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label name ="sexo" >Sexo</label>
-                            <select class="custom-select d-block w-100" id="sexo" value = "" required>
+                            <label>Sexo</label>
+                            <select name = "sexo" class="custom-select d-block w-100" id="sexo" value = "" required>
                                 <option selected>Selecionar...</option>
                                 <option>Masculino</option>
                                 <option>Feminino</option>

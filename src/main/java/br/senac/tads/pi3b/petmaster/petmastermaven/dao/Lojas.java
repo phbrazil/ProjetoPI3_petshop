@@ -23,9 +23,6 @@ public class Lojas {
 
         Conexao bancoconexao = new Conexao();
 
-        System.out.println(loja.getUF());
-        System.out.println(loja.getCep());
-
         try {
 
             Connection conexao = bancoconexao.getConnection();
@@ -45,9 +42,9 @@ public class Lojas {
     }
 
     public void atualizarLoja(Loja loja) {
-        
+
         Conexao bancoconexao = new Conexao();
-        
+
         try {
 
             Connection conexao = bancoconexao.getConnection();
@@ -84,7 +81,7 @@ public class Lojas {
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
-                
+
                 loja.setNomeLoja(result.getString("nomeloja"));
                 System.out.println("Result nome " + result.getString("nomeloja"));
                 loja.setLogradouro(result.getString("logradouro"));
@@ -92,7 +89,7 @@ public class Lojas {
                 loja.setCidade(result.getString("cidade"));
                 loja.setUF(result.getString("uf"));
                 loja.setCep(result.getString("cep"));
-                loja.setTelefone(result.getString("telefone"));      
+                loja.setTelefone(result.getString("telefone"));
 
             }
 
@@ -158,7 +155,6 @@ public class Lojas {
 
             conexao.close();
             deletado = true;
-            
 
         } catch (Exception e) {
 
@@ -168,5 +164,35 @@ public class Lojas {
         return deletado;
 
     }
-    
+
+    public ResultSet NomeLoja() {
+
+        String select = "";
+
+        Conexao bancoconexao = new Conexao();
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            conexao = bancoconexao.getConnection();
+
+            java.sql.Statement st = conexao.createStatement();
+            select = "select * from lojas";
+            ResultSet resultloja = st.executeQuery(select);
+            
+            if(resultloja!=null){
+                return resultloja;
+            }
+
+            conexao.close();
+
+        } catch (Exception e) {
+
+            System.out.println("erro" + e.getMessage());
+
+        }
+
+        return null;
+    }
+
 }

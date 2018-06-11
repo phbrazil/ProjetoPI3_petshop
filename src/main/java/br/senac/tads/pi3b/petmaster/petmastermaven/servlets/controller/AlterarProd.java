@@ -5,6 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.BancoSessao;
 import br.senac.tads.pi3b.petmaster.petmastermaven.dao.ProdutosDAO;
 import br.senac.tads.pi3b.petmaster.petmastermaven.dao.ProdutosDAO;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Produtos;
@@ -16,6 +17,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -35,6 +37,9 @@ public class AlterarProd extends HttpServlet {
         String alterar = String.valueOf(request.getParameter("alterar"));
         String excluir = String.valueOf(request.getParameter("excluir"));
 
+        
+        
+
         if (alterar.equals("alterar")) {
 
             String nomeprod = request.getParameter("nomeprod");
@@ -43,9 +48,10 @@ public class AlterarProd extends HttpServlet {
             String categoriaprod = request.getParameter("categoriaprod");
             double valorprod = Double.parseDouble(request.getParameter("valorprod"));
             int qtdestoque = Integer.valueOf(request.getParameter("qtdestoque"));
-            Produtos produtos = new Produtos(null, 0, null, null, 0, null);
+            int idloja = 0;
+            Produtos produtos = new Produtos(null, 0, null, null, 0, null, 0);
 
-            produtos = new Produtos(nomeprod, valorprod, codigobarrasprod, descricaoprod, qtdestoque, categoriaprod);
+            produtos = new Produtos(nomeprod, valorprod, codigobarrasprod, descricaoprod, qtdestoque, categoriaprod, idloja);
 
             bancoprod.atualizarprod(produtos);
 

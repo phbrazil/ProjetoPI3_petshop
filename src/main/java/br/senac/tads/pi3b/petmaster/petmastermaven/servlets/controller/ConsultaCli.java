@@ -45,7 +45,7 @@ public class ConsultaCli extends HttpServlet {
         Clientes bancocpf = new Clientes();
 
         Cliente cliente = new Cliente(null, null, null, null, null, null, null, null, null, null, null, 
-                null, null, null, null, null);
+                null, null, null, null, null,0);
 
         cliente = bancocpf.PesquisarCliente(cpfcliente);
         

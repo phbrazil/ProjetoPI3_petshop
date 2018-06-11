@@ -19,7 +19,7 @@ public class Relatorios {
 
     private Connection conexao = null;
 
-    Produtos produtos = new Produtos(null, 0, null, null, 0, null);
+    Produtos produtos = new Produtos(null, 0, null, null, 0, null,0);
 
     private java.util.List<Produtos> listaProd = new ArrayList<Produtos>();
 

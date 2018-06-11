@@ -91,7 +91,7 @@
             <br>
             <br>
 
-            <a class="button" href="CadastrarUsuario.jsp">Cadastrar um novo usuário</a>
+            <input type = "submit" class="button" formaction="ListaFiliais" value = "Cadastrar um novo usuário">
 
             <br>
             <br>

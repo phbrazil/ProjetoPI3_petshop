@@ -4,7 +4,6 @@
     Author     : paulo.bezerra
 --%>
 
-<%@page import="br.senac.tads.pi3b.petmaster.petmastermaven.servlets.model.Cliente"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -26,11 +25,13 @@
                 <td>Descricao do Produto</td>
                 <td>Categoria do Produto</td>
                 <td>Quantidade do Produto</td>
+                <td>ID Loja</td>
+
             </tr>
 
             <%
 
-                ResultSet exportar = (ResultSet) request.getAttribute("carrinho");
+                ResultSet exportar = (ResultSet) request.getAttribute("exportarprodutos");
 
                 while (exportar.next()) {
 
@@ -40,7 +41,12 @@
                 <td><%=exportar.getString("codigobarrasprod")%></td>
                 <td><%=exportar.getString("nomeprod")%></td>
                 <td>R$<%=exportar.getDouble("valor")%></td>
-                <td><%=exportar.getInt("quantidadeitens")%></td>
+                <td><%=exportar.getString("datacadastroprod")%></td>
+                <td><%=exportar.getString("descricaoprod")%></td>
+                <td><%=exportar.getString("categoriaprod")%></td>
+                <td><%=exportar.getInt("quantidadeprod")%></td>
+                <td><%=exportar.getInt("idloja")%></td>
+
             </tr>   
             <%
                 }
