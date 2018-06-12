@@ -6,7 +6,7 @@
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
 import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Clientes;
-import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Pet;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.PetDAO;
 import br.senac.tads.pi3b.petmaster.petmastermaven.dao.ProdutosDAO;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Cliente;
 import java.awt.List;
@@ -71,7 +71,7 @@ public class Exportar extends HttpServlet {
 
         } else if (exportartipo.equals("ExportarPets")) {
 
-            Pet bancopet = new Pet();
+            PetDAO bancopet = new PetDAO();
 
             ResultSet exportarpet = bancopet.PesquisarPetGeral();
 

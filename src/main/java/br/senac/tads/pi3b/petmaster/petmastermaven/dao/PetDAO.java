@@ -16,11 +16,11 @@ import java.util.ArrayList;
  *
  * @author killuminatti08
  */
-public class Pet {
+public class PetDAO {
 
     private Connection conexao = null;
 
-    Pets pets = new Pets(null, 0, null, null, 0, null);
+    Pets pets = new Pets(null, 0, null, null, 0, null, 0);
 
     private java.util.List<Pets> listaPet = new ArrayList<Pets>();
 
@@ -34,10 +34,10 @@ public class Pet {
 
             java.sql.Statement st = conexao.createStatement();
             st.executeUpdate("INSERT INTO pets (codigobarraspet, nomepet,valorpet,"
-                    + "datacadastropet, descricaopet,categoriapet, quantidadepet)"
+                    + "datacadastropet, descricaopet,categoriapet, quantidadepet, idloja)"
                     + " VALUES ('" + pets.getCodigopet()+ "','" + pets.getNomepet()
                     + "'," + pets.getValorpet()+ ",now(),'"
-                    + pets.getDescricaopet() + "','" + pets.getCategoriapet() + "'," + pets.getQtdestoquepet() + ");");
+                    + pets.getDescricaopet() + "','" + pets.getCategoriapet() + "'," + pets.getQtdestoquepet() + ","+pets.getIdloja()+");");
 
             conexao.close();
 
@@ -98,7 +98,6 @@ public class Pet {
                 pets.setDescricaopet(result.getString("descricaopet"));
                 pets.setCategoriapet(result.getString("categoriapet"));
                 pets.setQtdestoquepet(result.getInt("quantidadepet"));
-                pets.setListaPet(pets);
 
 
             }

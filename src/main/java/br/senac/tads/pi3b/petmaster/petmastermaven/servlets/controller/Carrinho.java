@@ -8,7 +8,7 @@ package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 import br.senac.tads.pi3b.petmaster.petmastermaven.dao.InserirCarrinho;
 import br.senac.tads.pi3b.petmaster.petmastermaven.dao.ItemVenda;
 import br.senac.tads.pi3b.petmaster.petmastermaven.dao.NovaVenda;
-import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Pet;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.PetDAO;
 import br.senac.tads.pi3b.petmaster.petmastermaven.dao.ProdutosDAO;
 import br.senac.tads.pi3b.petmaster.petmastermaven.dao.BancoSessao;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Pets;

@@ -41,7 +41,6 @@ CREATE TABLE pets(
   categoriapet Varchar (30) NOT NULL,
   quantidadepet INT NOT NULL,
   idloja INT NOT NULL,
-  FOREIGN KEY (idloja) REFERENCES lojas (idloja),
   PRIMARY KEY (Idpet));
 
 CREATE TABLE clientes(

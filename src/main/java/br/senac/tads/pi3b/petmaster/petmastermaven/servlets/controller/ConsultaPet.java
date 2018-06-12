@@ -5,7 +5,7 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Pet;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.PetDAO;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Pets;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Produtos;
 import java.awt.List;
@@ -38,9 +38,9 @@ public class ConsultaPet extends HttpServlet {
 
         String consultaPet = request.getParameter("ConsultaPet");
 
-        Pet selectpet = new Pet();
+        PetDAO selectpet = new PetDAO();
 
-        Pets pets = new Pets(null, 0, null, null, 0, null);
+        Pets pets = new Pets(null, 0, null, null, 0, null,0);
         
         if (consultaPet.trim() != null) {
             pets = selectpet.PesquisarPet(consultaPet);

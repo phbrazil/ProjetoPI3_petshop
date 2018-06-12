@@ -5,8 +5,8 @@
  */
 package br.senac.tads.pi3b.petmaster.petmastermaven.servlets.controller;
 
-import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Pet;
-import br.senac.tads.pi3b.petmaster.petmastermaven.dao.Pet;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.PetDAO;
+import br.senac.tads.pi3b.petmaster.petmastermaven.dao.PetDAO;
 import br.senac.tads.pi3b.petmaster.petmastermaven.model.Pets;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -30,7 +30,7 @@ public class AlterarPet extends HttpServlet {
             throws ServletException, IOException {
 
         boolean deletado = false;
-        Pet bancopet = new Pet();
+        PetDAO bancopet = new PetDAO();
 
         String alterar = String.valueOf(request.getParameter("alterar"));
         String excluir = String.valueOf(request.getParameter("excluir"));
@@ -43,9 +43,10 @@ public class AlterarPet extends HttpServlet {
             String categoriapet = request.getParameter("categoriapet");
             double valorpet = Double.parseDouble(request.getParameter("valorpet"));
             int qtdestoquepet = Integer.valueOf(request.getParameter("qtdestoquepet"));
-            Pets pets = new Pets(null, 0, null, null, 0, null);
+            int idloja = 0;
+            Pets pets = new Pets(null, 0, null, null, 0, null,0);
 
-            pets = new Pets(nomepet, valorpet, codigobarraspet, descricaopet, qtdestoquepet, categoriapet);
+            pets = new Pets(nomepet, valorpet, codigobarraspet, descricaopet, qtdestoquepet, categoriapet, idloja);
 
             bancopet.atualizarpet(pets);
 

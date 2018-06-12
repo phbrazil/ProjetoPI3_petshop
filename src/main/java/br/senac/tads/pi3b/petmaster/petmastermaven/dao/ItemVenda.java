@@ -25,13 +25,16 @@ public class ItemVenda {
             Class.forName("com.mysql.jdbc.Driver");
 
             conexao = bancoconexao.getConnection();
-            
 
             for (int i = 0; i < carrinho.size(); i++) {
 
                 java.sql.Statement st = conexao.createStatement();
-                st.executeUpdate("INSERT INTO itemvenda (idvenda, idprod,quantidadeitens, idloja) VALUES (" + vendas.getVendaID() + ",'" + carrinho.get(i).getCodigoprod()+ "'," 
-                        + carrinho.get(i).getItensvenda()+ ","+vendas.getIdloja()+ ");");
+                st.executeUpdate("INSERT INTO itemvenda (idvenda, idprod,quantidadeitens, idloja) VALUES (" + vendas.getVendaID() + ",'" + carrinho.get(i).getCodigoprod() + "',"
+                        + carrinho.get(i).getItensvenda() + "," + vendas.getIdloja() + ");");
+
+                java.sql.Statement up = conexao.createStatement();
+                up.executeUpdate("update produtos set quantidadeprod = quantidadeprod -"+ carrinho.get(i).getItensvenda()+" where codigobarrasprod = '"+ carrinho.get(i).getCodigoprod()+ "';");
+
             }
             conexao.close();
         } catch (Exception e) {

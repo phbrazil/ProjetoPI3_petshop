@@ -18,8 +18,6 @@ import java.util.Date;
  */
 public class Pets {
 
-    private java.util.List<Pets> listaPets = new ArrayList<Pets>();
-
     private String codigobarraspet;
 
     private double valorpet;
@@ -36,22 +34,24 @@ public class Pets {
 
     private int qtdestoquepet;
 
-    public java.util.List<Pets> getListaPets() {
-        return listaPets;
+    private int idloja;
+
+    public int getIdloja() {
+        return idloja;
     }
 
-    public void inserirPets(Pets pets) {
-        this.listaPets.add(pets);
-
+    public void setIdloja(int idloja) {
+        this.idloja = idloja;
     }
 
-    public Pets(String nomepet, double valorpet, String codigobarraspet, String descricaopet, int qtdestoquepet, String categoriapet) {
+    public Pets(String nomepet, double valorpet, String codigobarraspet, String descricaopet, int qtdestoquepet, String categoriapet, int idloja) {
         this.codigobarraspet = codigobarraspet;
         this.nomepet = nomepet;
-        this.valorpet= valorpet;
+        this.valorpet = valorpet;
         this.descricaopet = descricaopet;
         this.qtdestoquepet = qtdestoquepet;
         this.categoriapet = categoriapet;
+        this.idloja = idloja;
 
     }
 
@@ -119,19 +119,4 @@ public class Pets {
         this.qtdestoquepet = qtdestoquepet;
     }
 
-    public Pets obterPetsLista(String nome) {
-        if (!listaPets.isEmpty()) {
-            for (int i = 0; i < listaPets.size(); i++) {
-                if (listaPets.get(i) != null && listaPets.get(i).nomepet.toUpperCase().contains(nome.toUpperCase())) {
-                    return listaPets.get(i);
-
-                }
-            }
-        }
-        return null;
-    }
-    
-    public void setListaPet(Pets pets) {
-        listaPets.add(pets);
-    }
 }
