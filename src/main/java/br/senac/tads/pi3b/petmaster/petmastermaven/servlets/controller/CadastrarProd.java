@@ -53,13 +53,18 @@ public class CadastrarProd extends HttpServlet {
             produtos = new Produtos(nomeprod, valorprod, codigobarrasprod, descricaoprod, qtdestoque, categoriaprod, idloja);
 
             bancoprod.gravarproduto(produtos);
-            request.getRequestDispatcher("CadastradoSuccess.jsp").forward(request, response);
+
+            request.setAttribute("mensagem", "Produto Cadastrado com sucesso!");
+
+            request.getRequestDispatcher("CadastrarProd.jsp").forward(request, response);
 
         } else {
 
             request.setAttribute("codigobarras", codigobarrasprod);
+            
+            request.setAttribute("mensagem", "Já Cadastrado");
 
-            request.getRequestDispatcher("jaCadastrado.jsp").forward(request, response);
+            request.getRequestDispatcher("CadastrarProd.jsp").forward(request, response);
 
         }
 

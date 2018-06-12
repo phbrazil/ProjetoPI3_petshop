@@ -29,7 +29,7 @@ public class CadastrarPet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         HttpSession sessao = request.getSession();
 
         BancoSessao bancosessao = new BancoSessao();
@@ -42,28 +42,28 @@ public class CadastrarPet extends HttpServlet {
         int qtdestoquepet = Integer.valueOf(request.getParameter("qtdestoquepet"));
         int idloja = bancosessao.idLoja(sessaoid);
 
-        Pets pets = new Pets(null, 0, null, null, 0, null,0);
+        Pets pets = new Pets(null, 0, null, null, 0, null, 0);
 
         PetDAO bancopet = new PetDAO();
 
         int qtdpetcadastrado = bancopet.validacadastradopet(codigobarraspet);
-        
-        System.out.println("to aqui ainda");
 
         if (qtdpetcadastrado == 0) {
-            
-            System.out.println("entrei aqui");
-            
+
             pets = new Pets(nomepet, valorpet, codigobarraspet, descricaopet, qtdestoquepet, categoriapet, idloja);
 
             bancopet.gravarpet(pets);
-            request.getRequestDispatcher("CadastradoSuccess.jsp").forward(request, response);
+
+            request.setAttribute("mensagem", "Pet Cadastrado com sucesso!");
+
+            request.getRequestDispatcher("CadastrarPet.jsp").forward(request, response);
 
         } else {
 
             request.setAttribute("codigobarras", codigobarraspet);
+            request.setAttribute("mensagem", "Já Cadastrado");
 
-            request.getRequestDispatcher("jaCadastrado.jsp").forward(request, response);
+            request.getRequestDispatcher("CadastrarPet.jsp").forward(request, response);
 
         }
 
