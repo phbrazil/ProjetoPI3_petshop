@@ -79,7 +79,7 @@
 
                     <div class="col-md-4 mb-3">
                         <label  for="estado">Filial</label>
-                        <select name = "filial" class="custom-select d-block w-100" id="filial" value = "" required>
+                        <select name = "idfilial" class="custom-select d-block w-100" id="filial" value = "" required>
                             <c:forEach items="${filiais}" var="filiais">
                                 <%
                                     ResultSet listafiliais = (ResultSet) request.getAttribute("listafiliais");
@@ -96,17 +96,15 @@
 
                             </c:forEach>
                         </select>
-
-
                         <div class="invalid-feedback">
                             Favor selecionar uma Filial..
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label  for="grupo">Grupo</label>
-                        <select name = "grupo" class="custom-select d-block w-100" id="grupo" value = "" required>
-                            <option>Vendedor</option>
-                            <option>Gerência</option>
+                        <select name = "idgrupo" class="custom-select d-block w-100" id="grupo" value = "" required>
+                            <option>Vendedores</option>
+                            <option>Administradores</option>
 
 
                         </select>

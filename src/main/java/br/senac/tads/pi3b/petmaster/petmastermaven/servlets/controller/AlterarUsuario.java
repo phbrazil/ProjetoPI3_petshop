@@ -39,9 +39,10 @@ public class AlterarUsuario extends HttpServlet {
             String nomeUsuario = request.getParameter("nomeusuario");
             String username = request.getParameter("username");
             String password = request.getParameter("password");
-            String idgrupo = request.getParameter("idgrupo");
+            //String idgrupo = request.getParameter("idgrupo");
+            //String idfilial = request.getParameter("idfilial");
 
-            Usuario usuarios = new Usuario(nomeUsuario, username, password, idgrupo);
+            Usuario usuarios = new Usuario(nomeUsuario, username, password, 0,0);
             bancousuario.atualizarUsuario(usuarios);
 
             request.setAttribute("mensagem", "Usuario Alterado");

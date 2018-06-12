@@ -19,7 +19,24 @@ public class Usuario {
     private String nomeUsuario;
     private String username;
     private String password;
-    private String idgrupo;
+    private int idgrupo;
+    private int idfilial;
+
+    public int getIdgrupo() {
+        return idgrupo;
+    }
+
+    public void setIdgrupo(int idgrupo) {
+        this.idgrupo = idgrupo;
+    }
+
+    public int getIdfilial() {
+        return idfilial;
+    }
+
+    public void setIdfilial(int idfilial) {
+        this.idfilial = idfilial;
+    }
     
     public int getUsuarioId() {
         return usuarioid;
@@ -49,14 +66,7 @@ public class Usuario {
         this.password = password;
     }
     
-     public String getIdGrupo() {
-        return idgrupo;
-    }
 
-    public void setIdGrupo(String idgrupo) {
-        this.idgrupo = idgrupo;
-    }
-    
     private java.util.List<Usuario> listaUsuario = new ArrayList<Usuario>();
 
     public List<Usuario> getListaUsuario() {
@@ -68,11 +78,12 @@ public class Usuario {
     }
 
 
-    public Usuario(String nomeUsuario, String userName, String password, String idgrupo) {
+    public Usuario(String nomeUsuario, String userName, String password, int idgrupo, int idfilial) {
         this.nomeUsuario = nomeUsuario;
         this.username = userName;
         this.password = password;
         this.idgrupo = idgrupo;
+        this.idfilial = idfilial;
        
      }
    

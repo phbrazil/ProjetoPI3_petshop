@@ -15,7 +15,7 @@ public class BancoUsuario {
 
     private Connection conexao = null;
 
-    Usuario usuario = new Usuario(null, null, null, null);
+    Usuario usuario = new Usuario(null, null, null, 0, 0);
 
     private java.util.List<Usuario> listaUsuario = new ArrayList<Usuario>();
 
@@ -28,8 +28,8 @@ public class BancoUsuario {
             Connection conexao = bancoconexao.getConnection();
 
             java.sql.Statement st = conexao.createStatement();
-            st.executeUpdate("INSERT INTO usuarios (nomeuser, username, password, idgrupo) VALUES ('" + usuario.getNomeUsuario() + "','"
-                    + usuario.getUsername() + "','" + usuario.getPassword() + "','" + usuario.getIdGrupo()+ "');");
+            st.executeUpdate("INSERT INTO usuarios (nomeuser, username, password, idgrupo, idloja) VALUES ('" + usuario.getNomeUsuario() + "','"
+                    + usuario.getUsername() + "','" + usuario.getPassword() + "'," + usuario.getIdgrupo() + "," + usuario.getIdfilial() + ");");
             conexao.close();
 
         } catch (Exception e) {
@@ -40,9 +40,7 @@ public class BancoUsuario {
 
     }
 
-  public void atualizarUsuario(Usuario usuario) {
-      
-      System.out.println("entrei "+usuario.getNomeUsuario());
+    public void atualizarUsuario(Usuario usuario) {
 
         Conexao bancoconexao = new Conexao();
 
@@ -52,11 +50,11 @@ public class BancoUsuario {
 
             java.sql.Statement st = conexao.createStatement();
             st.executeUpdate("UPDATE usuarios set nomeuser = '" + usuario.getNomeUsuario() + "',"
-                    + "password = '" + usuario.getPassword() + "',idgrupo = 1 where username = '" + usuario.getUsername().trim()+ "'");
-            
+                    + "password = '" + usuario.getPassword() +"' where username = '" + usuario.getUsername().trim() + "'");
+
             conexao.close();
 
-            System.out.println("fiz o update"+usuario.getNomeUsuario());
+            System.out.println("fiz o update" + usuario.getNomeUsuario());
 
         } catch (Exception e) {
 
@@ -67,7 +65,6 @@ public class BancoUsuario {
     }
 
     public Usuario PesquisarUsuario(String username) {
-
 
         String select = "";
 
@@ -83,12 +80,13 @@ public class BancoUsuario {
             ResultSet result = st.executeQuery(select);
 
             while (result.next()) {
-                
+
                 usuario.setNomeUsuario(result.getString("nomeuser"));
                 usuario.setUsername(result.getString("username"));
                 usuario.setPassword(result.getString("password"));
-                usuario.setIdGrupo(result.getString("idgrupo"));
-               
+                usuario.setIdgrupo(result.getInt("idgrupo"));
+                usuario.setIdfilial(result.getInt("idfilial"));
+
             }
 
             conexao.close();
@@ -100,6 +98,72 @@ public class BancoUsuario {
         }
 
         return usuario;
+    }
+
+    public int idFilial(String filialnome) {
+
+        String select = "";
+        int idfilial = 0;
+
+        Conexao bancoconexao = new Conexao();
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            conexao = bancoconexao.getConnection();
+
+            java.sql.Statement st = conexao.createStatement();
+            select = "select idloja from lojas where nomeloja = '" + filialnome.trim() + "'";
+            ResultSet result = st.executeQuery(select);
+
+            while (result.next()) {
+
+                idfilial = result.getInt("idloja");
+
+            }
+
+            conexao.close();
+
+        } catch (Exception e) {
+
+            System.out.println("erro" + e.getMessage());
+
+        }
+
+        return idfilial;
+    }
+
+    public int idGrupo(String nomegrupo) {
+
+        String select = "";
+        int idgrupo = 0;
+
+        Conexao bancoconexao = new Conexao();
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            conexao = bancoconexao.getConnection();
+
+            java.sql.Statement st = conexao.createStatement();
+            select = "select idgrupo from grupos where nomegrupo = '" + nomegrupo.trim() + "'";
+            ResultSet result = st.executeQuery(select);
+
+            while (result.next()) {
+
+                idgrupo = result.getInt("idgrupo");
+
+            }
+
+            conexao.close();
+
+        } catch (Exception e) {
+
+            System.out.println("erro" + e.getMessage());
+
+        }
+
+        return idgrupo;
     }
 
     public int ValidaCadastradoUsuario(String username) {
@@ -161,6 +225,5 @@ public class BancoUsuario {
         return deletado;
 
     }
-    
-    
+
 }

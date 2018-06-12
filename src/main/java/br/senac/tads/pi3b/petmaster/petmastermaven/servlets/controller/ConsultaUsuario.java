@@ -44,7 +44,7 @@ public class ConsultaUsuario extends HttpServlet {
 
         BancoUsuario selectusuario = new BancoUsuario();
 
-        Usuario usuarios = new Usuario(null, null, null, null);
+        Usuario usuarios = new Usuario(null, null, null, 0,0);
      
         if (consultaUsuario.trim() != null) {
 

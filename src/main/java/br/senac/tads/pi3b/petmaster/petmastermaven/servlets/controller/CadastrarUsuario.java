@@ -33,29 +33,37 @@ public class CadastrarUsuario extends HttpServlet {
         String nomeUsuario = request.getParameter("nomeusuario");
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        String idgrupo = request.getParameter("idgrupo");
-
+        String idgruponome = request.getParameter("idgrupo");
+        String idfilialnome = request.getParameter("idfilial");
+        
+        System.out.println("grupo"+idgruponome);
+        System.out.println("filial"+idfilialnome);
 
         BancoUsuario bancousuario = new BancoUsuario();
+        
+        int idfilial = bancousuario.idFilial(idfilialnome);
+        int idgrupo = bancousuario.idGrupo(idgruponome);
 
         int qtdusuariocadastrado = bancousuario.ValidaCadastradoUsuario(username.trim());
 
         if (qtdusuariocadastrado == 0) {
+            
+            System.out.println("entrei aqui");
 
-            Usuario usuario = new Usuario(nomeUsuario, username, password, idgrupo);
+            Usuario usuario = new Usuario(nomeUsuario, username, password, idgrupo,idfilial);
             
             bancousuario.gravarUsuario(usuario);
-            request.setAttribute("nomeUsuario", nomeUsuario);
+            
             request.setAttribute("mensagem", "Usuario cadastrado com sucesso!");
 
-            request.getRequestDispatcher("CadastrarUsuario.jsp").forward(request, response);
+            request.getRequestDispatcher("GerenciamentoUsuario.jsp").forward(request, response);
 
         } else {
 
             request.setAttribute("nomeUsuario", nomeUsuario);
             request.setAttribute("mensagem", "Usuário já se encontra cadastrado");
 
-            request.getRequestDispatcher("CadastrarUsuario.jsp").forward(request, response);
+            request.getRequestDispatcher("GerenciamentoUsuario.jsp").forward(request, response);
 
         }
 

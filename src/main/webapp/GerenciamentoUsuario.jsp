@@ -167,5 +167,21 @@
 <script src="../../../../dist/js/bootstrap.min.js"></script>
 <script src="../../../../assets/js/vendor/holder.min.js"></script>
 
+        <script>
+
+
+            var mensagem = "${mensagem}"
+
+
+
+            if (mensagem == "Usuario cadastrado com sucesso!") {
+                alert(mensagem)
+
+            } else if (mensagem == "Usuário já se encontra cadastrado") {
+
+                alert(mensagem)
+            }
+        </script>
+
 
 </html>
