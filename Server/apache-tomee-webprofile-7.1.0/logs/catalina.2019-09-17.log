@@ -1,0 +1,246 @@
+17-Sep-2019 14:16:21.387 INFO [140] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+17-Sep-2019 14:20:04.829 INFO [Timer-5] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+17-Sep-2019 14:20:29.117 INFO [Timer-8] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+17-Sep-2019 14:21:04.257 INFO [Timer-13] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+17-Sep-2019 14:21:08.393 INFO [Timer-17] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+17-Sep-2019 15:02:19.452 INFO [http-nio-8080-exec-38] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml]
+17-Sep-2019 15:02:19.483 INFO [http-nio-8080-exec-38] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /Opportunity
+17-Sep-2019 15:02:24.826 INFO [http-nio-8080-exec-38] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+17-Sep-2019 15:02:25.200 INFO [http-nio-8080-exec-38] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+17-Sep-2019 15:02:25.200 INFO [http-nio-8080-exec-38] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+17-Sep-2019 15:02:25.200 INFO [http-nio-8080-exec-38] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+17-Sep-2019 15:02:25.200 INFO [http-nio-8080-exec-38] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=com.mcibrasil_Opportunity_war_1.0PU)
+17-Sep-2019 15:02:25.216 INFO [http-nio-8080-exec-38] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit com.mcibrasil_Opportunity_war_1.0PU <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+17-Sep-2019 15:02:25.216 INFO [http-nio-8080-exec-38] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit com.mcibrasil_Opportunity_war_1.0PU <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+17-Sep-2019 15:02:25.232 INFO [http-nio-8080-exec-38] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+17-Sep-2019 15:02:25.232 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+17-Sep-2019 15:02:25.388 INFO [http-nio-8080-exec-38] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+17-Sep-2019 15:02:25.404 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=com.mcibrasil_Opportunity_war_1.0PU, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 138ms
+17-Sep-2019 15:02:25.450 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+17-Sep-2019 15:02:25.450 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+17-Sep-2019 15:02:25.450 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+17-Sep-2019 15:02:25.450 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+17-Sep-2019 15:02:25.450 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+17-Sep-2019 15:02:25.450 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+17-Sep-2019 15:02:25.450 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+17-Sep-2019 15:02:25.450 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+17-Sep-2019 15:02:25.450 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+17-Sep-2019 15:02:25.466 INFO [http-nio-8080-exec-38] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@4c15e7fd
+17-Sep-2019 15:02:25.497 INFO [http-nio-8080-exec-38] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+17-Sep-2019 15:02:25.513 INFO [http-nio-8080-exec-38] org.apache.webbeans.plugins.PluginLoader.startUp Adding OpenWebBeansPlugin : [CdiPlugin]
+17-Sep-2019 15:02:25.513 INFO [http-nio-8080-exec-38] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+17-Sep-2019 15:02:25.622 INFO [http-nio-8080-exec-38] org.apache.webbeans.config.BeansDeployer.validateInjectionPoints All injection points were validated successfully.
+17-Sep-2019 15:02:25.622 INFO [http-nio-8080-exec-38] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 125 ms.
+17-Sep-2019 15:02:25.622 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+17-Sep-2019 15:02:25.622 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+17-Sep-2019 15:02:25.622 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+17-Sep-2019 15:02:25.638 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+17-Sep-2019 15:02:25.638 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+17-Sep-2019 15:02:25.638 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+17-Sep-2019 15:02:25.638 INFO [http-nio-8080-exec-38] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+17-Sep-2019 15:02:25.653 INFO [http-nio-8080-exec-38] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+17-Sep-2019 15:02:26.138 INFO [http-nio-8080-exec-38] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Sep-2019 15:02:26.216 INFO [http-nio-8080-exec-38] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml] has finished in [6,764] ms
+17-Sep-2019 15:02:26.231 INFO [http-nio-8080-exec-29] sun.reflect.DelegatingMethodAccessorImpl.invoke The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Opportunity]] after start() had already been called. The second call will be ignored.
+17-Sep-2019 15:03:08.668 INFO [Timer-36] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+17-Sep-2019 15:03:08.691 INFO [Timer-36] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.1.Final}
+17-Sep-2019 15:03:08.698 INFO [Timer-36] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+17-Sep-2019 15:03:08.703 INFO [Timer-36] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+17-Sep-2019 15:03:08.782 INFO [Timer-36] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+17-Sep-2019 15:03:08.782 INFO [Timer-36] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+17-Sep-2019 15:03:08.841 WARN [Timer-36] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+17-Sep-2019 15:03:08.931 INFO [Timer-36] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+17-Sep-2019 15:03:09.199 WARN [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+17-Sep-2019 15:03:09.201 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+17-Sep-2019 15:03:09.201 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+17-Sep-2019 15:03:09.201 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+17-Sep-2019 15:03:09.203 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+17-Sep-2019 15:03:09.311 INFO [Timer-36] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+17-Sep-2019 15:03:09.620 INFO [Timer-36] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+17-Sep-2019 15:03:09.637 INFO [Timer-36] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+17-Sep-2019 15:03:10.534 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+17-Sep-2019 15:03:10.536 INFO [Timer-36] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+17-Sep-2019 15:03:10.536 INFO [Timer-36] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+17-Sep-2019 15:03:10.537 WARN [Timer-36] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+17-Sep-2019 15:03:10.537 INFO [Timer-36] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+17-Sep-2019 15:03:10.539 WARN [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+17-Sep-2019 15:03:10.539 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+17-Sep-2019 15:03:10.539 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+17-Sep-2019 15:03:10.539 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+17-Sep-2019 15:03:10.539 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+17-Sep-2019 15:03:10.549 INFO [Timer-36] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+17-Sep-2019 15:03:10.560 INFO [Timer-36] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+17-Sep-2019 15:03:10.561 INFO [Timer-36] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+17-Sep-2019 15:03:10.673 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+17-Sep-2019 15:03:13.515 INFO [Timer-36] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+17-Sep-2019 15:03:13.515 INFO [Timer-36] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+17-Sep-2019 15:03:13.516 WARN [Timer-36] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+17-Sep-2019 15:03:13.516 INFO [Timer-36] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+17-Sep-2019 15:03:13.518 WARN [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+17-Sep-2019 15:03:13.518 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+17-Sep-2019 15:03:13.518 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+17-Sep-2019 15:03:13.518 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+17-Sep-2019 15:03:13.518 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+17-Sep-2019 15:03:13.526 INFO [Timer-36] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+17-Sep-2019 15:03:13.532 INFO [Timer-36] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+17-Sep-2019 15:03:13.532 INFO [Timer-36] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+17-Sep-2019 15:03:13.555 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+17-Sep-2019 15:03:13.556 INFO [Timer-36] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+17-Sep-2019 15:03:13.556 INFO [Timer-36] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+17-Sep-2019 15:03:13.557 WARN [Timer-36] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+17-Sep-2019 15:03:13.557 INFO [Timer-36] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+17-Sep-2019 15:03:13.559 WARN [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+17-Sep-2019 15:03:13.560 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+17-Sep-2019 15:03:13.560 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+17-Sep-2019 15:03:13.560 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+17-Sep-2019 15:03:13.560 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+17-Sep-2019 15:03:13.635 INFO [Timer-36] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+17-Sep-2019 15:03:13.649 INFO [Timer-36] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+17-Sep-2019 15:03:13.650 INFO [Timer-36] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+17-Sep-2019 15:03:13.729 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+17-Sep-2019 15:03:16.548 INFO [Timer-36] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+17-Sep-2019 15:03:16.549 INFO [Timer-36] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+17-Sep-2019 15:03:16.551 WARN [Timer-36] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+17-Sep-2019 15:03:16.553 INFO [Timer-36] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+17-Sep-2019 15:03:16.559 WARN [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+17-Sep-2019 15:03:16.559 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+17-Sep-2019 15:03:16.559 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+17-Sep-2019 15:03:16.559 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+17-Sep-2019 15:03:16.559 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+17-Sep-2019 15:03:16.564 INFO [Timer-36] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+17-Sep-2019 15:03:16.587 INFO [Timer-36] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+17-Sep-2019 15:03:16.587 INFO [Timer-36] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+17-Sep-2019 15:03:16.622 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+17-Sep-2019 15:03:16.623 INFO [Timer-36] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+17-Sep-2019 15:03:16.623 INFO [Timer-36] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+17-Sep-2019 15:03:16.625 WARN [Timer-36] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+17-Sep-2019 15:03:16.626 INFO [Timer-36] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+17-Sep-2019 15:03:16.630 WARN [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+17-Sep-2019 15:03:16.630 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+17-Sep-2019 15:03:16.630 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+17-Sep-2019 15:03:16.630 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+17-Sep-2019 15:03:16.630 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+17-Sep-2019 15:03:16.635 INFO [Timer-36] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+17-Sep-2019 15:03:16.649 INFO [Timer-36] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+17-Sep-2019 15:03:16.649 INFO [Timer-36] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+17-Sep-2019 15:03:16.695 INFO [Timer-36] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+17-Sep-2019 15:04:33.762 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+17-Sep-2019 15:04:34.275 WARNING [http-nio-8080-exec-29] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Opportunity] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+17-Sep-2019 15:04:34.275 WARNING [http-nio-8080-exec-29] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Opportunity] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+17-Sep-2019 15:04:34.276 WARNING [http-nio-8080-exec-29] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-35] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+17-Sep-2019 15:04:34.276 WARNING [http-nio-8080-exec-29] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-37] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+ java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+ java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+ java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+ java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+ java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+ java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+ java.net.Socket.connect(Socket.java:589)
+ com.microsoft.sqlserver.jdbc.SocketFinder.getConnectedSocket(IOBuffer.java:2622)
+ com.microsoft.sqlserver.jdbc.SocketFinder.getDefaultSocket(IOBuffer.java:2608)
+ com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2335)
+ com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:656)
+ com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:2440)
+ com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:2103)
+ com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:1950)
+ com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1162)
+ com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:735)
+ java.sql.DriverManager.getConnection(DriverManager.java:664)
+ java.sql.DriverManager.getConnection(DriverManager.java:270)
+ com.mcibrasil.opportunity.dao.Conexao.ConexaoSAP.getConnection(ConexaoSAP.java:41)
+ com.mcibrasil.opportunity.dao.SAP.SAPDAOGetSAPCode.SAPCode(SAPDAOGetSAPCode.java:31)
+ com.mcibrasil.opportunity.dao.SAP.SAPDAOUpdateSAPCode.SAPUpdateCode(SAPDAOUpdateSAPCode.java:85)
+ com.mcibrasil.opportunity.controller.Scheduler.SAPCodeRoutine$RemindTask.run(SAPCodeRoutine.java:64)
+ java.util.TimerThread.mainLoop(Timer.java:555)
+ java.util.TimerThread.run(Timer.java:505)
+17-Sep-2019 15:04:34.276 WARNING [http-nio-8080-exec-29] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-38] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+17-Sep-2019 15:04:34.277 WARNING [http-nio-8080-exec-29] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:70)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+17-Sep-2019 15:04:34.277 WARNING [http-nio-8080-exec-29] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-39] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+17-Sep-2019 15:04:34.781 INFO [http-nio-8080-exec-29] sun.reflect.DelegatingMethodAccessorImpl.invoke Undeploying context [/Opportunity]
+17-Sep-2019 15:04:39.277 INFO [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1004)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+17-Sep-2019 19:08:38.627 INFO [331] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+

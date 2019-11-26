@@ -1,0 +1,959 @@
+03-Nov-2019 22:08:11.301 WARNING [main] sun.reflect.NativeMethodAccessorImpl.invoke [SetAllPropertiesRule]{Server/Service/Connector/SSLHostConfig/Certificate} Setting property 'KeystoreFile' to 'C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\src\main\webapp\SSL\localhost.jks' did not find a matching property.
+03-Nov-2019 22:08:11.301 WARNING [main] sun.reflect.NativeMethodAccessorImpl.invoke [SetAllPropertiesRule]{Server/Service/Connector/SSLHostConfig/Certificate} Setting property 'KeystorePass' to 'mortadela1' did not find a matching property.
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server version:        Apache Tomcat (TomEE)/8.5.32 (7.1.0)
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server built:          Jun 20 2018 19:50:35 UTC
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server number:         8.5.32.0
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Name:               Windows 10
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Version:            10.0
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Architecture:          amd64
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Java Home:             C:\Program Files\Java\jdk1.8.0_171\jre
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Version:           1.8.0_171-b11
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Vendor:            Oracle Corporation
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_BASE:         C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_HOME:         C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.config.file=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\logging.properties
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -javaagent:C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\lib\openejb-javaagent.jar
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dignore.endorsed.dirs=
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.base=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.home=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.io.tmpdir=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\temp
+03-Nov-2019 22:08:11.426 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\nodejs\;C:\Users\paulo.bezerra\AppData\Local\Microsoft\WindowsApps;;C:\Users\paulo.bezerra\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\paulo.bezerra\AppData\Roaming\npm;.]
+03-Nov-2019 22:08:16.003 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["http-nio-8080"]
+03-Nov-2019 22:08:16.612 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+03-Nov-2019 22:08:16.628 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["https-jsse-nio-8443"]
+03-Nov-2019 22:08:17.284 SEVERE [main] sun.reflect.NativeMethodAccessorImpl.invoke Failed to initialize connector [Connector[HTTP/1.1-8443]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8443]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:112)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:632)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:309)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:995)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.lang.IllegalArgumentException: SSLHostConfig attribute certificateFile must be defined when using an SSL connector
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:116)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:87)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:225)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1086)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:268)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:68)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:993)
+	... 13 more
+Caused by: java.io.IOException: SSLHostConfig attribute certificateFile must be defined when using an SSL connector
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:203)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:114)
+	... 20 more
+
+03-Nov-2019 22:08:17.284 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["ajp-nio-8009"]
+03-Nov-2019 22:08:17.300 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+03-Nov-2019 22:08:18.034 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+03-Nov-2019 22:08:18.237 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+03-Nov-2019 22:08:18.237 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> OpenEJB http://tomee.apache.org/
+03-Nov-2019 22:08:18.237 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Startup: Sun Nov 03 22:08:18 BRST 2019
+03-Nov-2019 22:08:18.237 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Copyright 1999-2018 (C) Apache OpenEJB Project, All Rights Reserved.
+03-Nov-2019 22:08:18.237 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Version: 7.1.0
+03-Nov-2019 22:08:18.237 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build date: 20180902
+03-Nov-2019 22:08:18.237 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build time: 09:50
+03-Nov-2019 22:08:18.237 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+03-Nov-2019 22:08:18.237 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.home = C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+03-Nov-2019 22:08:18.237 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.base = C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+03-Nov-2019 22:08:18.253 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@48f2bd5b
+03-Nov-2019 22:08:18.253 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Succeeded in installing singleton service
+03-Nov-2019 22:08:18.409 INFO [main] org.apache.openejb.config.ConfigurationFactory.init TomEE configuration file is 'C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\tomee.xml'
+03-Nov-2019 22:08:18.487 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+03-Nov-2019 22:08:18.487 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+03-Nov-2019 22:08:18.487 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.deployments.classpath=false'
+03-Nov-2019 22:08:18.503 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating TransactionManager(id=Default Transaction Manager)
+03-Nov-2019 22:08:18.659 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating SecurityService(id=Tomcat Security Service)
+03-Nov-2019 22:08:18.799 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf-rs)
+03-Nov-2019 22:08:19.268 INFO [main] org.apache.openejb.server.SimpleServiceManager.start   ** Bound Services **
+03-Nov-2019 22:08:19.268 INFO [main] org.apache.openejb.server.SimpleServiceManager.printRow   NAME                 IP              PORT  
+03-Nov-2019 22:08:19.284 INFO [main] org.apache.openejb.server.SimpleServiceManager.start -------
+03-Nov-2019 22:08:19.284 INFO [main] org.apache.openejb.server.SimpleServiceManager.start Ready!
+03-Nov-2019 22:08:19.284 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initialization processed in 8950 ms
+03-Nov-2019 22:08:19.346 INFO [main] org.apache.tomee.catalina.OpenEJBNamingContextListener.bindResource Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+03-Nov-2019 22:08:19.346 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=UserDatabase)
+03-Nov-2019 22:08:19.362 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting service [Catalina]
+03-Nov-2019 22:08:19.362 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting Servlet Engine: Apache Tomcat (TomEE)/8.5.32 (7.1.0)
+03-Nov-2019 22:08:19.393 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs]
+03-Nov-2019 22:08:19.409 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /docs
+03-Nov-2019 22:08:19.815 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs
+03-Nov-2019 22:08:19.925 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs" loaded.
+03-Nov-2019 22:08:19.940 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs
+03-Nov-2019 22:08:20.253 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs)
+03-Nov-2019 22:08:20.831 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:08:20.956 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs] has finished in [1,563] ms
+03-Nov-2019 22:08:20.956 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager]
+03-Nov-2019 22:08:20.987 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /host-manager
+03-Nov-2019 22:08:21.112 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager
+03-Nov-2019 22:08:21.128 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager" loaded.
+03-Nov-2019 22:08:21.128 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager
+03-Nov-2019 22:08:21.143 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager\META-INF\context.xml
+03-Nov-2019 22:08:21.143 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager)
+03-Nov-2019 22:08:21.237 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:08:21.299 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager] has finished in [343] ms
+03-Nov-2019 22:08:21.299 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager]
+03-Nov-2019 22:08:21.315 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /manager
+03-Nov-2019 22:08:21.409 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager
+03-Nov-2019 22:08:21.409 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager" loaded.
+03-Nov-2019 22:08:21.409 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager
+03-Nov-2019 22:08:21.424 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager\META-INF\context.xml
+03-Nov-2019 22:08:21.424 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager)
+03-Nov-2019 22:08:21.471 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:08:21.502 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager] has finished in [203] ms
+03-Nov-2019 22:08:21.502 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["http-nio-8080"]
+03-Nov-2019 22:08:21.518 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["ajp-nio-8009"]
+03-Nov-2019 22:08:21.518 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Server startup in 2244 ms
+03-Nov-2019 22:08:22.268 INFO [http-nio-8080-exec-10] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml]
+03-Nov-2019 22:08:22.268 INFO [http-nio-8080-exec-10] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /Opportunity
+03-Nov-2019 22:08:31.520 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\BlackJack.jar
+03-Nov-2019 22:08:31.562 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.config.ReportValidationResults.logResults WARN ... client:	Missing Main-Class: InterfaceGrafica.TelaInicial
+03-Nov-2019 22:08:31.562 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.config.ReportValidationResults.logResults 1 warning for ClientModule(path=BlackJack)
+03-Nov-2019 22:08:31.562 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\BlackJack.jar" loaded.
+03-Nov-2019 22:08:31.597 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.assembler.classic.Assembler.createAppClassLoader Creating dedicated application classloader for BlackJack
+03-Nov-2019 22:08:31.598 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\BlackJack.jar
+03-Nov-2019 22:08:31.651 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\BlackJack.jar)
+03-Nov-2019 22:08:32.617 INFO [http-nio-8080-exec-10] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:08:34.364 INFO [http-nio-8080-exec-10] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:08:34.365 INFO [http-nio-8080-exec-10] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+03-Nov-2019 22:08:34.365 INFO [http-nio-8080-exec-10] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:08:34.367 INFO [http-nio-8080-exec-10] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Stateless Container, type=Container, provider-id=Default Stateless Container)
+03-Nov-2019 22:08:34.368 INFO [http-nio-8080-exec-10] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean EmailSessionPasswordReset: Container(type=STATELESS, id=Default Stateless Container)
+03-Nov-2019 22:08:34.368 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Stateless Container)
+03-Nov-2019 22:08:34.412 INFO [http-nio-8080-exec-10] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+03-Nov-2019 22:08:34.413 INFO [http-nio-8080-exec-10] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean Opportunity.Comp2021868823: Container(type=MANAGED, id=Default Managed Container)
+03-Nov-2019 22:08:34.413 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Managed Container)
+03-Nov-2019 22:08:34.461 INFO [http-nio-8080-exec-10] org.apache.openejb.core.managed.SimplePassivater.init Using directory C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\temp for stateful session passivation
+03-Nov-2019 22:08:34.493 INFO [http-nio-8080-exec-10] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+03-Nov-2019 22:08:34.495 INFO [http-nio-8080-exec-10] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default JDBC Database, type=Resource, provider-id=Default JDBC Database)
+03-Nov-2019 22:08:34.496 INFO [http-nio-8080-exec-10] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default JDBC Database' of type 'DataSource for 'Opportunity'.
+03-Nov-2019 22:08:34.496 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default JDBC Database)
+03-Nov-2019 22:08:35.478 INFO [http-nio-8080-exec-10] org.hsqldb.persist.Logger.logInfoEvent checkpointClose start
+03-Nov-2019 22:08:35.587 INFO [http-nio-8080-exec-10] org.hsqldb.persist.Logger.logInfoEvent checkpointClose end
+03-Nov-2019 22:08:35.635 INFO [http-nio-8080-exec-10] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Unmanaged JDBC Database, type=Resource, provider-id=Default Unmanaged JDBC Database)
+03-Nov-2019 22:08:35.636 INFO [http-nio-8080-exec-10] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default Unmanaged JDBC Database' of type 'DataSource for 'Opportunity'.
+03-Nov-2019 22:08:35.636 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default Unmanaged JDBC Database)
+03-Nov-2019 22:08:35.655 INFO [http-nio-8080-exec-10] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+03-Nov-2019 22:08:35.655 INFO [http-nio-8080-exec-10] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+03-Nov-2019 22:08:35.691 INFO [http-nio-8080-exec-10] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+03-Nov-2019 22:08:35.693 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:08:37.625 INFO [http-nio-8080-exec-10] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+03-Nov-2019 22:08:37.656 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 1951ms
+03-Nov-2019 22:08:37.750 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:08:37.750 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:08:37.750 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:08:37.750 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:08:37.750 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:08:37.750 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:08:37.750 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:08:37.750 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:08:37.750 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:08:37.813 INFO [http-nio-8080-exec-10] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@48f2bd5b
+03-Nov-2019 22:08:37.992 INFO [http-nio-8080-exec-10] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+03-Nov-2019 22:08:38.006 INFO [http-nio-8080-exec-10] org.apache.webbeans.plugins.PluginLoader.startUp Adding OpenWebBeansPlugin : [CdiPlugin]
+03-Nov-2019 22:08:38.010 INFO [http-nio-8080-exec-10] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+03-Nov-2019 22:08:38.416 INFO [http-nio-8080-exec-10] org.apache.webbeans.config.BeansDeployer.validateInjectionPoints All injection points were validated successfully.
+03-Nov-2019 22:08:38.416 INFO [http-nio-8080-exec-10] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 424 ms.
+03-Nov-2019 22:08:38.416 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:08:38.416 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:08:38.416 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:08:38.432 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:08:38.447 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:08:38.447 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:08:38.447 INFO [http-nio-8080-exec-10] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+03-Nov-2019 22:08:38.447 INFO [http-nio-8080-exec-10] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+03-Nov-2019 22:08:39.682 INFO [http-nio-8080-exec-10] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:08:39.760 INFO [http-nio-8080-exec-10] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml] has finished in [17,492] ms
+03-Nov-2019 22:08:39.760 INFO [http-nio-8080-exec-2] sun.reflect.DelegatingMethodAccessorImpl.invoke The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Opportunity]] after start() had already been called. The second call will be ignored.
+03-Nov-2019 22:10:50.337 INFO [http-nio-8080-exec-2] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+03-Nov-2019 22:10:50.351 INFO [http-nio-8080-exec-2] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.1.Final}
+03-Nov-2019 22:10:50.355 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+03-Nov-2019 22:10:50.370 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+03-Nov-2019 22:10:50.412 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:10:50.412 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:10:50.463 WARN [http-nio-8080-exec-2] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:10:50.487 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:10:50.736 WARN [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:10:50.737 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:10:50.738 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:10:50.738 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:10:50.741 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:10:50.839 INFO [http-nio-8080-exec-2] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:10:51.080 INFO [http-nio-8080-exec-2] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:10:51.094 INFO [http-nio-8080-exec-2] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:10:51.746 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:11:26.909 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:11:26.909 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:11:26.912 WARN [http-nio-8080-exec-2] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:11:26.913 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:11:26.917 WARN [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:11:26.917 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:11:26.917 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:11:26.917 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:11:26.918 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:11:26.921 INFO [http-nio-8080-exec-2] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:11:26.929 INFO [http-nio-8080-exec-2] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:11:26.929 INFO [http-nio-8080-exec-2] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:11:26.942 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:11:38.485 INFO [http-nio-8080-exec-5] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:11:38.485 INFO [http-nio-8080-exec-5] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:11:38.490 WARN [http-nio-8080-exec-5] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:11:38.491 INFO [http-nio-8080-exec-5] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:11:38.495 WARN [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:11:38.495 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:11:38.495 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:11:38.495 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:11:38.495 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:11:38.499 INFO [http-nio-8080-exec-5] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:11:38.512 INFO [http-nio-8080-exec-5] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:11:38.513 INFO [http-nio-8080-exec-5] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:11:38.525 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:13:21.911 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:13:21.911 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:13:21.920 WARN [http-nio-8080-exec-2] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:13:21.922 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:13:21.927 WARN [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:13:21.927 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:13:21.927 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:13:21.927 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:13:21.927 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:13:21.932 INFO [http-nio-8080-exec-2] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:13:21.943 INFO [http-nio-8080-exec-2] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:13:21.943 INFO [http-nio-8080-exec-2] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:13:21.954 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:13:39.542 INFO [http-nio-8080-exec-3] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:13:39.542 INFO [http-nio-8080-exec-3] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:13:39.548 WARN [http-nio-8080-exec-3] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:13:39.549 INFO [http-nio-8080-exec-3] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:13:39.553 WARN [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:13:39.553 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:13:39.554 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:13:39.554 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:13:39.554 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:13:39.558 INFO [http-nio-8080-exec-3] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:13:39.564 INFO [http-nio-8080-exec-3] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:13:39.565 INFO [http-nio-8080-exec-3] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:13:39.574 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:13:39.577 INFO [http-nio-8080-exec-3] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:13:39.577 INFO [http-nio-8080-exec-3] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:13:39.577 WARN [http-nio-8080-exec-3] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:13:39.578 INFO [http-nio-8080-exec-3] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:13:39.579 WARN [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:13:39.579 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:13:39.580 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:13:39.580 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:13:39.580 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:13:39.583 INFO [http-nio-8080-exec-3] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:13:39.587 INFO [http-nio-8080-exec-3] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:13:39.587 INFO [http-nio-8080-exec-3] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:13:39.697 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:13:41.126 INFO [http-nio-8080-exec-5] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:13:41.127 INFO [http-nio-8080-exec-5] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:13:41.129 WARN [http-nio-8080-exec-5] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:13:41.132 INFO [http-nio-8080-exec-5] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:13:41.137 WARN [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:13:41.138 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:13:41.138 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:13:41.139 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:13:41.139 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:13:41.144 INFO [http-nio-8080-exec-5] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:13:41.149 INFO [http-nio-8080-exec-5] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:13:41.149 INFO [http-nio-8080-exec-5] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:13:41.160 INFO [http-nio-8080-exec-5] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:14:09.671 INFO [http-nio-8080-exec-9] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:14:09.672 INFO [http-nio-8080-exec-9] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:14:09.676 WARN [http-nio-8080-exec-9] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:14:09.677 INFO [http-nio-8080-exec-9] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:14:09.679 WARN [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:14:09.679 INFO [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:14:09.680 INFO [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:14:09.680 INFO [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:14:09.680 INFO [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:14:09.683 INFO [http-nio-8080-exec-9] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:14:09.690 INFO [http-nio-8080-exec-9] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:14:09.691 INFO [http-nio-8080-exec-9] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:14:09.698 INFO [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:14:40.188 INFO [http-nio-8080-exec-7] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:14:40.188 INFO [http-nio-8080-exec-7] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:14:40.196 WARN [http-nio-8080-exec-7] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:14:40.198 INFO [http-nio-8080-exec-7] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:14:40.234 WARN [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:14:40.235 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:14:40.235 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:14:40.235 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:14:40.235 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:14:40.239 INFO [http-nio-8080-exec-7] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:14:40.251 INFO [http-nio-8080-exec-7] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:14:40.252 INFO [http-nio-8080-exec-7] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:14:40.269 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:14:40.270 INFO [http-nio-8080-exec-7] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:14:40.270 INFO [http-nio-8080-exec-7] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:14:40.270 WARN [http-nio-8080-exec-7] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:14:40.271 INFO [http-nio-8080-exec-7] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:14:40.272 WARN [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:14:40.272 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:14:40.272 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:14:40.272 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:14:40.273 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:14:40.275 INFO [http-nio-8080-exec-7] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:14:40.280 INFO [http-nio-8080-exec-7] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:14:40.280 INFO [http-nio-8080-exec-7] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:14:40.287 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:14:48.576 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:14:48.577 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:14:48.586 WARN [http-nio-8080-exec-2] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:14:48.589 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:14:48.594 WARN [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:14:48.594 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:14:48.594 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:14:48.594 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:14:48.594 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:14:48.598 INFO [http-nio-8080-exec-2] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:14:48.610 INFO [http-nio-8080-exec-2] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:14:48.611 INFO [http-nio-8080-exec-2] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:14:48.621 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:14:48.622 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:14:48.622 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:14:48.623 WARN [http-nio-8080-exec-2] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:14:48.624 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:14:48.624 WARN [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:14:48.624 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:14:48.624 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:14:48.624 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:14:48.624 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:14:48.627 INFO [http-nio-8080-exec-2] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:14:48.631 INFO [http-nio-8080-exec-2] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:14:48.631 INFO [http-nio-8080-exec-2] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:14:48.638 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:15:02.047 INFO [http-nio-8080-exec-3] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:15:02.047 INFO [http-nio-8080-exec-3] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:15:02.049 WARN [http-nio-8080-exec-3] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:15:02.050 INFO [http-nio-8080-exec-3] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:15:02.052 WARN [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:15:02.052 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:15:02.052 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:15:02.052 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:15:02.052 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:15:02.055 INFO [http-nio-8080-exec-3] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:15:02.058 INFO [http-nio-8080-exec-3] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:15:02.058 INFO [http-nio-8080-exec-3] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:15:02.064 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:15:17.163 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:15:17.164 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:15:17.174 WARN [http-nio-8080-exec-2] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:15:17.176 INFO [http-nio-8080-exec-2] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:15:17.179 WARN [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:15:17.179 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:15:17.179 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:15:17.179 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:15:17.179 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:15:17.183 INFO [http-nio-8080-exec-2] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:15:17.189 INFO [http-nio-8080-exec-2] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:15:17.190 INFO [http-nio-8080-exec-2] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:15:17.197 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:15:22.496 INFO [http-nio-8080-exec-3] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:15:22.497 INFO [http-nio-8080-exec-3] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:15:22.502 WARN [http-nio-8080-exec-3] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:15:22.503 INFO [http-nio-8080-exec-3] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:15:22.508 WARN [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:15:22.508 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:15:22.508 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:15:22.508 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:15:22.508 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:15:22.510 INFO [http-nio-8080-exec-3] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:15:22.517 INFO [http-nio-8080-exec-3] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:15:22.517 INFO [http-nio-8080-exec-3] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:15:22.525 INFO [http-nio-8080-exec-3] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:15:58.257 INFO [http-nio-8080-exec-6] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:15:58.257 INFO [http-nio-8080-exec-6] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:15:58.263 WARN [http-nio-8080-exec-6] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:15:58.265 INFO [http-nio-8080-exec-6] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:15:58.269 WARN [http-nio-8080-exec-6] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:15:58.270 INFO [http-nio-8080-exec-6] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:15:58.270 INFO [http-nio-8080-exec-6] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:15:58.270 INFO [http-nio-8080-exec-6] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:15:58.270 INFO [http-nio-8080-exec-6] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:15:58.274 INFO [http-nio-8080-exec-6] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:15:58.281 INFO [http-nio-8080-exec-6] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:15:58.282 INFO [http-nio-8080-exec-6] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:15:58.290 INFO [http-nio-8080-exec-6] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:15:58.293 INFO [http-nio-8080-exec-6] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:15:58.293 INFO [http-nio-8080-exec-6] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:15:58.294 WARN [http-nio-8080-exec-6] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:15:58.294 INFO [http-nio-8080-exec-6] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:15:58.296 WARN [http-nio-8080-exec-6] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:15:58.296 INFO [http-nio-8080-exec-6] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:15:58.296 INFO [http-nio-8080-exec-6] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:15:58.296 INFO [http-nio-8080-exec-6] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:15:58.296 INFO [http-nio-8080-exec-6] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:15:58.299 INFO [http-nio-8080-exec-6] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:15:58.304 INFO [http-nio-8080-exec-6] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:15:58.304 INFO [http-nio-8080-exec-6] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:15:58.401 INFO [http-nio-8080-exec-6] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:15:59.840 INFO [http-nio-8080-exec-4] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:15:59.840 INFO [http-nio-8080-exec-4] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:15:59.842 WARN [http-nio-8080-exec-4] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:15:59.843 INFO [http-nio-8080-exec-4] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:15:59.845 WARN [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:15:59.845 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:15:59.845 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:15:59.845 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:15:59.846 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:15:59.852 INFO [http-nio-8080-exec-4] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:15:59.855 INFO [http-nio-8080-exec-4] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:15:59.855 INFO [http-nio-8080-exec-4] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:15:59.863 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:16:13.366 INFO [http-nio-8080-exec-4] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:16:13.366 INFO [http-nio-8080-exec-4] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:16:13.369 WARN [http-nio-8080-exec-4] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:16:13.370 INFO [http-nio-8080-exec-4] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:16:13.372 WARN [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:16:13.372 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:16:13.372 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:16:13.372 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:16:13.372 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:16:13.375 INFO [http-nio-8080-exec-4] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:16:13.379 INFO [http-nio-8080-exec-4] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:16:13.379 INFO [http-nio-8080-exec-4] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:16:13.385 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:19:19.522 INFO [http-nio-8080-exec-7] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] has started
+03-Nov-2019 22:19:19.600 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:19:19.929 WARNING [http-nio-8080-exec-7] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Opportunity] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+03-Nov-2019 22:19:19.929 WARNING [http-nio-8080-exec-7] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.io.WinNTFileSystem.getBooleanAttributes(Native Method)
+ java.io.File.exists(File.java:819)
+ org.apache.catalina.webresources.FileResource.getURL(FileResource.java:259)
+ org.apache.catalina.webresources.CachedResource.getURL(CachedResource.java:317)
+ org.apache.catalina.loader.WebappClassLoaderBase.findResource(WebappClassLoaderBase.java:904)
+ org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1023)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+03-Nov-2019 22:19:20.413 INFO [http-nio-8080-exec-7] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:19:20.569 INFO [http-nio-8080-exec-7] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:19:20.569 INFO [http-nio-8080-exec-7] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+03-Nov-2019 22:19:20.569 INFO [http-nio-8080-exec-7] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:19:20.569 INFO [http-nio-8080-exec-7] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+03-Nov-2019 22:19:20.585 INFO [http-nio-8080-exec-7] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+03-Nov-2019 22:19:20.585 INFO [http-nio-8080-exec-7] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+03-Nov-2019 22:19:20.585 INFO [http-nio-8080-exec-7] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+03-Nov-2019 22:19:20.585 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:19:20.694 INFO [http-nio-8080-exec-7] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+03-Nov-2019 22:19:20.694 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 102ms
+03-Nov-2019 22:19:20.710 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:19:20.710 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:19:20.710 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:19:20.710 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:19:20.710 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:19:20.710 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:19:20.710 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:19:20.710 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:19:20.710 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:19:20.725 INFO [http-nio-8080-exec-7] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@48f2bd5b
+03-Nov-2019 22:19:20.741 INFO [http-nio-8080-exec-7] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+03-Nov-2019 22:19:20.741 INFO [http-nio-8080-exec-7] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+03-Nov-2019 22:19:20.850 INFO [http-nio-8080-exec-7] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 109 ms.
+03-Nov-2019 22:19:20.850 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:19:20.850 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:19:20.850 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:19:20.850 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:19:20.866 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:19:20.866 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:19:20.866 INFO [http-nio-8080-exec-7] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+03-Nov-2019 22:19:20.866 INFO [http-nio-8080-exec-7] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+03-Nov-2019 22:19:21.506 INFO [http-nio-8080-exec-7] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:19:21.600 INFO [http-nio-8080-exec-7] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] is completed
+03-Nov-2019 22:19:24.959 INFO [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1004)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+03-Nov-2019 22:19:25.287 INFO [http-nio-8080-exec-4] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] has started
+03-Nov-2019 22:19:25.302 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:19:25.833 INFO [http-nio-8080-exec-4] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:19:26.005 INFO [http-nio-8080-exec-4] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:19:26.005 INFO [http-nio-8080-exec-4] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+03-Nov-2019 22:19:26.005 INFO [http-nio-8080-exec-4] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:19:26.005 INFO [http-nio-8080-exec-4] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+03-Nov-2019 22:19:26.005 INFO [http-nio-8080-exec-4] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+03-Nov-2019 22:19:26.005 INFO [http-nio-8080-exec-4] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+03-Nov-2019 22:19:26.005 INFO [http-nio-8080-exec-4] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+03-Nov-2019 22:19:26.005 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:19:26.083 INFO [http-nio-8080-exec-4] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+03-Nov-2019 22:19:26.083 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 74ms
+03-Nov-2019 22:19:26.099 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:19:26.099 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:19:26.099 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:19:26.099 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:19:26.099 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:19:26.099 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:19:26.099 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:19:26.099 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:19:26.099 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:19:26.115 INFO [http-nio-8080-exec-4] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@48f2bd5b
+03-Nov-2019 22:19:26.115 INFO [http-nio-8080-exec-4] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+03-Nov-2019 22:19:26.115 INFO [http-nio-8080-exec-4] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+03-Nov-2019 22:19:26.161 INFO [http-nio-8080-exec-4] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 46 ms.
+03-Nov-2019 22:19:26.161 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:19:26.161 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:19:26.161 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:19:26.177 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:19:26.177 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:19:26.177 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:19:26.177 INFO [http-nio-8080-exec-4] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+03-Nov-2019 22:19:26.177 INFO [http-nio-8080-exec-4] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+03-Nov-2019 22:19:26.693 INFO [http-nio-8080-exec-4] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:19:26.724 INFO [http-nio-8080-exec-4] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] is completed
+03-Nov-2019 22:20:49.112 INFO [http-nio-8080-exec-5] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] has started
+03-Nov-2019 22:20:49.112 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:20:49.596 INFO [http-nio-8080-exec-5] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:20:49.736 INFO [http-nio-8080-exec-5] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:20:49.736 INFO [http-nio-8080-exec-5] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:20:49.736 INFO [http-nio-8080-exec-5] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+03-Nov-2019 22:20:49.736 INFO [http-nio-8080-exec-5] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+03-Nov-2019 22:20:49.736 INFO [http-nio-8080-exec-5] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+03-Nov-2019 22:20:49.736 INFO [http-nio-8080-exec-5] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+03-Nov-2019 22:20:49.736 INFO [http-nio-8080-exec-5] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+03-Nov-2019 22:20:49.736 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:20:49.861 INFO [http-nio-8080-exec-5] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+03-Nov-2019 22:20:49.861 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 109ms
+03-Nov-2019 22:20:49.877 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:20:49.877 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:20:49.877 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:20:49.877 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:20:49.877 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:20:49.877 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:20:49.877 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:20:49.877 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:20:49.877 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:20:49.893 INFO [http-nio-8080-exec-5] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@48f2bd5b
+03-Nov-2019 22:20:49.893 INFO [http-nio-8080-exec-5] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+03-Nov-2019 22:20:49.893 INFO [http-nio-8080-exec-5] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+03-Nov-2019 22:20:49.924 INFO [http-nio-8080-exec-5] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 31 ms.
+03-Nov-2019 22:20:49.924 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:20:49.924 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:20:49.924 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:20:49.924 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:20:49.924 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:20:49.924 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:20:49.924 INFO [http-nio-8080-exec-5] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+03-Nov-2019 22:20:49.924 INFO [http-nio-8080-exec-5] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+03-Nov-2019 22:20:50.330 INFO [http-nio-8080-exec-5] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:20:50.346 INFO [http-nio-8080-exec-5] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] is completed
+03-Nov-2019 22:21:26.545 INFO [http-nio-8080-exec-16] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] has started
+03-Nov-2019 22:21:26.545 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:21:27.045 INFO [http-nio-8080-exec-16] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:21:27.170 INFO [http-nio-8080-exec-16] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+03-Nov-2019 22:21:27.170 INFO [http-nio-8080-exec-16] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:21:27.170 INFO [http-nio-8080-exec-16] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:21:27.170 INFO [http-nio-8080-exec-16] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+03-Nov-2019 22:21:27.170 INFO [http-nio-8080-exec-16] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+03-Nov-2019 22:21:27.170 INFO [http-nio-8080-exec-16] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+03-Nov-2019 22:21:27.170 INFO [http-nio-8080-exec-16] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+03-Nov-2019 22:21:27.170 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:21:27.248 INFO [http-nio-8080-exec-16] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+03-Nov-2019 22:21:27.248 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 77ms
+03-Nov-2019 22:21:27.264 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:21:27.264 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:21:27.264 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:21:27.264 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:21:27.264 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:21:27.264 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:21:27.264 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:21:27.264 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:21:27.264 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:21:27.279 INFO [http-nio-8080-exec-16] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@48f2bd5b
+03-Nov-2019 22:21:27.279 INFO [http-nio-8080-exec-16] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+03-Nov-2019 22:21:27.279 INFO [http-nio-8080-exec-16] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+03-Nov-2019 22:21:27.326 INFO [http-nio-8080-exec-16] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 47 ms.
+03-Nov-2019 22:21:27.326 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:21:27.326 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:21:27.326 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:21:27.326 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:21:27.326 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:21:27.326 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:21:27.326 INFO [http-nio-8080-exec-16] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+03-Nov-2019 22:21:27.326 INFO [http-nio-8080-exec-16] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+03-Nov-2019 22:21:27.842 INFO [http-nio-8080-exec-16] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:21:27.873 INFO [http-nio-8080-exec-16] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] is completed
+03-Nov-2019 22:22:02.489 INFO [http-nio-8080-exec-9] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] has started
+03-Nov-2019 22:22:02.489 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:22:03.160 INFO [http-nio-8080-exec-9] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:22:03.395 INFO [http-nio-8080-exec-9] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:22:03.395 INFO [http-nio-8080-exec-9] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+03-Nov-2019 22:22:03.395 INFO [http-nio-8080-exec-9] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:22:03.395 INFO [http-nio-8080-exec-9] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+03-Nov-2019 22:22:03.410 INFO [http-nio-8080-exec-9] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+03-Nov-2019 22:22:03.410 INFO [http-nio-8080-exec-9] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+03-Nov-2019 22:22:03.410 INFO [http-nio-8080-exec-9] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+03-Nov-2019 22:22:03.410 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:22:03.629 INFO [http-nio-8080-exec-9] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+03-Nov-2019 22:22:03.629 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 214ms
+03-Nov-2019 22:22:03.692 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:22:03.692 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:22:03.692 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:22:03.692 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:22:03.707 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:22:03.707 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:22:03.707 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:22:03.707 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:22:03.707 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:22:03.723 INFO [http-nio-8080-exec-9] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@48f2bd5b
+03-Nov-2019 22:22:03.738 INFO [http-nio-8080-exec-9] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+03-Nov-2019 22:22:03.738 INFO [http-nio-8080-exec-9] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+03-Nov-2019 22:22:04.145 INFO [http-nio-8080-exec-9] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 407 ms.
+03-Nov-2019 22:22:04.145 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:22:04.145 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:22:04.145 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:22:04.145 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:22:04.145 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:22:04.191 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:22:04.191 INFO [http-nio-8080-exec-9] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+03-Nov-2019 22:22:04.207 INFO [http-nio-8080-exec-9] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+03-Nov-2019 22:22:04.957 INFO [http-nio-8080-exec-9] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:22:04.988 INFO [http-nio-8080-exec-9] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] is completed
+03-Nov-2019 22:27:06.315 INFO [http-nio-8080-exec-29] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] has started
+03-Nov-2019 22:27:06.315 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:27:09.565 INFO [http-nio-8080-exec-29] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:27:09.674 INFO [http-nio-8080-exec-29] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:09.674 INFO [http-nio-8080-exec-29] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:09.674 INFO [http-nio-8080-exec-29] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:09.674 INFO [http-nio-8080-exec-29] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+03-Nov-2019 22:27:09.674 INFO [http-nio-8080-exec-29] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+03-Nov-2019 22:27:09.674 INFO [http-nio-8080-exec-29] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+03-Nov-2019 22:27:09.674 INFO [http-nio-8080-exec-29] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+03-Nov-2019 22:27:09.674 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:27:09.736 INFO [http-nio-8080-exec-29] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+03-Nov-2019 22:27:09.736 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 66ms
+03-Nov-2019 22:27:09.752 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:09.752 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:09.752 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:09.768 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:09.768 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:09.768 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:09.768 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:09.768 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:09.768 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:09.768 INFO [http-nio-8080-exec-29] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@48f2bd5b
+03-Nov-2019 22:27:09.768 INFO [http-nio-8080-exec-29] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+03-Nov-2019 22:27:09.768 INFO [http-nio-8080-exec-29] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+03-Nov-2019 22:27:09.815 INFO [http-nio-8080-exec-29] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 47 ms.
+03-Nov-2019 22:27:09.815 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:27:09.815 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:27:09.815 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:27:09.815 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:27:09.815 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:27:09.815 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:27:09.815 INFO [http-nio-8080-exec-29] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+03-Nov-2019 22:27:09.815 INFO [http-nio-8080-exec-29] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+03-Nov-2019 22:27:10.205 INFO [http-nio-8080-exec-29] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:27:10.236 INFO [http-nio-8080-exec-29] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] is completed
+03-Nov-2019 22:27:21.235 INFO [http-nio-8080-exec-34] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] has started
+03-Nov-2019 22:27:21.235 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:27:21.610 INFO [http-nio-8080-exec-34] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:27:21.703 INFO [http-nio-8080-exec-34] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:21.703 INFO [http-nio-8080-exec-34] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:21.703 INFO [http-nio-8080-exec-34] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:21.703 INFO [http-nio-8080-exec-34] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+03-Nov-2019 22:27:21.703 INFO [http-nio-8080-exec-34] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+03-Nov-2019 22:27:21.703 INFO [http-nio-8080-exec-34] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+03-Nov-2019 22:27:21.703 INFO [http-nio-8080-exec-34] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+03-Nov-2019 22:27:21.703 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:27:21.781 INFO [http-nio-8080-exec-34] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+03-Nov-2019 22:27:21.781 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 74ms
+03-Nov-2019 22:27:21.797 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:21.797 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:21.797 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:21.797 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:21.797 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:21.797 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:21.797 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:21.797 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:21.797 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:21.813 INFO [http-nio-8080-exec-34] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@48f2bd5b
+03-Nov-2019 22:27:21.813 INFO [http-nio-8080-exec-34] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+03-Nov-2019 22:27:21.813 INFO [http-nio-8080-exec-34] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+03-Nov-2019 22:27:21.844 INFO [http-nio-8080-exec-34] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 31 ms.
+03-Nov-2019 22:27:21.844 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:27:21.844 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:27:21.844 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:27:21.844 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:27:21.844 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:27:21.844 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:27:21.844 INFO [http-nio-8080-exec-34] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+03-Nov-2019 22:27:21.844 INFO [http-nio-8080-exec-34] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+03-Nov-2019 22:27:22.144 INFO [http-nio-8080-exec-34] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:27:22.176 INFO [http-nio-8080-exec-34] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] is completed
+03-Nov-2019 22:27:39.728 INFO [http-nio-8080-exec-37] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] has started
+03-Nov-2019 22:27:39.728 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:27:40.181 INFO [http-nio-8080-exec-37] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:27:40.306 INFO [http-nio-8080-exec-37] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:40.306 INFO [http-nio-8080-exec-37] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:40.306 INFO [http-nio-8080-exec-37] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:40.306 INFO [http-nio-8080-exec-37] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+03-Nov-2019 22:27:40.306 INFO [http-nio-8080-exec-37] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+03-Nov-2019 22:27:40.306 INFO [http-nio-8080-exec-37] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+03-Nov-2019 22:27:40.306 INFO [http-nio-8080-exec-37] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+03-Nov-2019 22:27:40.306 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:27:40.384 INFO [http-nio-8080-exec-37] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+03-Nov-2019 22:27:40.400 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 79ms
+03-Nov-2019 22:27:40.416 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:40.416 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:40.416 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:40.416 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:40.416 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:40.416 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:40.416 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:40.416 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:40.416 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:40.416 INFO [http-nio-8080-exec-37] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@48f2bd5b
+03-Nov-2019 22:27:40.431 INFO [http-nio-8080-exec-37] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+03-Nov-2019 22:27:40.431 INFO [http-nio-8080-exec-37] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+03-Nov-2019 22:27:40.478 INFO [http-nio-8080-exec-37] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 47 ms.
+03-Nov-2019 22:27:40.478 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:27:40.478 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:27:40.478 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:27:40.478 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:27:40.478 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:27:40.478 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:27:40.478 INFO [http-nio-8080-exec-37] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+03-Nov-2019 22:27:40.478 INFO [http-nio-8080-exec-37] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+03-Nov-2019 22:27:40.853 INFO [http-nio-8080-exec-37] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:27:40.869 INFO [http-nio-8080-exec-37] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Opportunity] is completed
+03-Nov-2019 22:27:44.899 INFO [http-nio-8080-exec-40] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:27:45.524 INFO [http-nio-8080-exec-40] sun.reflect.DelegatingMethodAccessorImpl.invoke Undeploying context [/Opportunity]
+03-Nov-2019 22:27:45.602 INFO [http-nio-8080-exec-35] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml]
+03-Nov-2019 22:27:45.602 INFO [http-nio-8080-exec-35] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /Opportunity
+03-Nov-2019 22:27:45.852 INFO [http-nio-8080-exec-35] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:27:45.961 INFO [http-nio-8080-exec-35] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:45.961 INFO [http-nio-8080-exec-35] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:45.961 INFO [http-nio-8080-exec-35] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:45.961 INFO [http-nio-8080-exec-35] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+03-Nov-2019 22:27:45.961 INFO [http-nio-8080-exec-35] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+03-Nov-2019 22:27:45.961 INFO [http-nio-8080-exec-35] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+03-Nov-2019 22:27:45.961 INFO [http-nio-8080-exec-35] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+03-Nov-2019 22:27:45.961 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:27:46.039 INFO [http-nio-8080-exec-35] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+03-Nov-2019 22:27:46.039 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 77ms
+03-Nov-2019 22:27:46.055 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:46.055 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:46.055 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:27:46.055 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:46.055 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:46.055 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:27:46.055 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:46.055 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:46.055 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:27:46.070 INFO [http-nio-8080-exec-35] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@48f2bd5b
+03-Nov-2019 22:27:46.070 INFO [http-nio-8080-exec-35] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+03-Nov-2019 22:27:46.070 INFO [http-nio-8080-exec-35] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+03-Nov-2019 22:27:46.102 INFO [http-nio-8080-exec-35] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 32 ms.
+03-Nov-2019 22:27:46.102 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:27:46.102 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:27:46.102 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:27:46.102 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:27:46.102 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:27:46.102 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:27:46.102 INFO [http-nio-8080-exec-35] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+03-Nov-2019 22:27:46.102 INFO [http-nio-8080-exec-35] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+03-Nov-2019 22:27:46.461 INFO [http-nio-8080-exec-35] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:27:46.477 INFO [http-nio-8080-exec-35] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml] has finished in [875] ms
+03-Nov-2019 22:27:46.477 INFO [http-nio-8080-exec-27] sun.reflect.DelegatingMethodAccessorImpl.invoke The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Opportunity]] after start() had already been called. The second call will be ignored.
+03-Nov-2019 22:27:51.334 INFO [http-nio-8080-exec-31] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+03-Nov-2019 22:27:51.344 INFO [http-nio-8080-exec-31] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.1.Final}
+03-Nov-2019 22:27:51.346 INFO [http-nio-8080-exec-31] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+03-Nov-2019 22:27:51.348 INFO [http-nio-8080-exec-31] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+03-Nov-2019 22:27:51.379 INFO [http-nio-8080-exec-31] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:27:51.379 INFO [http-nio-8080-exec-31] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:27:51.411 WARN [http-nio-8080-exec-31] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:27:51.428 INFO [http-nio-8080-exec-31] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:27:51.544 WARN [http-nio-8080-exec-31] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:27:51.546 INFO [http-nio-8080-exec-31] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:27:51.546 INFO [http-nio-8080-exec-31] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:27:51.546 INFO [http-nio-8080-exec-31] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:27:51.548 INFO [http-nio-8080-exec-31] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:27:51.596 INFO [http-nio-8080-exec-31] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:27:51.760 INFO [http-nio-8080-exec-31] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:27:51.767 INFO [http-nio-8080-exec-31] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:27:52.273 INFO [http-nio-8080-exec-31] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:28:05.867 INFO [http-nio-8080-exec-27] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:28:05.867 INFO [http-nio-8080-exec-27] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:28:05.870 WARN [http-nio-8080-exec-27] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:28:05.872 INFO [http-nio-8080-exec-27] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:28:05.922 WARN [http-nio-8080-exec-27] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:28:05.922 INFO [http-nio-8080-exec-27] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:28:05.923 INFO [http-nio-8080-exec-27] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:28:05.923 INFO [http-nio-8080-exec-27] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:28:05.923 INFO [http-nio-8080-exec-27] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:28:05.931 INFO [http-nio-8080-exec-27] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:28:05.952 INFO [http-nio-8080-exec-27] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:28:05.953 INFO [http-nio-8080-exec-27] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:28:05.987 INFO [http-nio-8080-exec-27] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:30:21.821 INFO [http-nio-8080-exec-44] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+03-Nov-2019 22:30:21.821 INFO [http-nio-8080-exec-44] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+03-Nov-2019 22:30:21.828 WARN [http-nio-8080-exec-44] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+03-Nov-2019 22:30:21.829 INFO [http-nio-8080-exec-44] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+03-Nov-2019 22:30:21.832 WARN [http-nio-8080-exec-44] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+03-Nov-2019 22:30:21.832 INFO [http-nio-8080-exec-44] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:30:21.832 INFO [http-nio-8080-exec-44] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+03-Nov-2019 22:30:21.832 INFO [http-nio-8080-exec-44] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+03-Nov-2019 22:30:21.832 INFO [http-nio-8080-exec-44] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+03-Nov-2019 22:30:21.836 INFO [http-nio-8080-exec-44] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-Nov-2019 22:30:21.847 INFO [http-nio-8080-exec-44] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+03-Nov-2019 22:30:21.847 INFO [http-nio-8080-exec-44] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+03-Nov-2019 22:30:21.862 INFO [http-nio-8080-exec-44] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+03-Nov-2019 22:30:53.323 INFO [http-nio-8080-exec-47] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:30:53.448 WARNING [http-nio-8080-exec-47] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Opportunity] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+03-Nov-2019 22:30:53.448 WARNING [http-nio-8080-exec-47] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.io.WinNTFileSystem.getBooleanAttributes(Native Method)
+ java.io.File.exists(File.java:819)
+ org.apache.catalina.webresources.FileResource.getURL(FileResource.java:259)
+ org.apache.catalina.webresources.CachedResource.getURL(CachedResource.java:317)
+ org.apache.catalina.loader.WebappClassLoaderBase.findResource(WebappClassLoaderBase.java:904)
+ org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1023)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+03-Nov-2019 22:30:53.808 INFO [http-nio-8080-exec-44] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:30:54.026 INFO [http-nio-8080-exec-44] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:30:54.026 INFO [http-nio-8080-exec-44] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+03-Nov-2019 22:30:54.026 INFO [http-nio-8080-exec-44] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:30:54.026 INFO [http-nio-8080-exec-44] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+03-Nov-2019 22:30:54.026 INFO [http-nio-8080-exec-44] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+03-Nov-2019 22:30:54.026 INFO [http-nio-8080-exec-44] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+03-Nov-2019 22:30:54.026 INFO [http-nio-8080-exec-44] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+03-Nov-2019 22:30:54.026 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:30:54.136 INFO [http-nio-8080-exec-44] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+03-Nov-2019 22:30:54.136 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 104ms
+03-Nov-2019 22:30:54.167 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:30:54.167 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:30:54.167 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+03-Nov-2019 22:30:54.167 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:30:54.167 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:30:54.167 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+03-Nov-2019 22:30:54.167 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:30:54.167 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:30:54.167 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+03-Nov-2019 22:30:54.182 INFO [http-nio-8080-exec-44] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@48f2bd5b
+03-Nov-2019 22:30:54.182 INFO [http-nio-8080-exec-44] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+03-Nov-2019 22:30:54.182 INFO [http-nio-8080-exec-44] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+03-Nov-2019 22:30:54.229 INFO [http-nio-8080-exec-44] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 47 ms.
+03-Nov-2019 22:30:54.229 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:30:54.229 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:30:54.229 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:30:54.229 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+03-Nov-2019 22:30:54.229 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+03-Nov-2019 22:30:54.229 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+03-Nov-2019 22:30:54.229 INFO [http-nio-8080-exec-44] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+03-Nov-2019 22:30:54.229 INFO [http-nio-8080-exec-44] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+03-Nov-2019 22:30:54.667 INFO [http-nio-8080-exec-44] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Nov-2019 22:30:58.478 INFO [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1004)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+03-Nov-2019 22:31:01.415 INFO [http-nio-8080-exec-42] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+03-Nov-2019 22:31:01.556 WARNING [http-nio-8080-exec-42] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+03-Nov-2019 22:31:01.556 WARNING [http-nio-8080-exec-42] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+03-Nov-2019 22:31:01.556 WARNING [http-nio-8080-exec-42] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+03-Nov-2019 22:31:01.556 WARNING [http-nio-8080-exec-42] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+03-Nov-2019 22:31:01.556 WARNING [http-nio-8080-exec-42] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+03-Nov-2019 22:31:02.071 INFO [http-nio-8080-exec-42] sun.reflect.DelegatingMethodAccessorImpl.invoke Undeploying context [/Opportunity]
+03-Nov-2019 22:31:24.695 INFO [Timer-0] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [java.lang.StringBuilder]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [java.lang.StringBuilder]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.EventClosingDateRoutine$RemindTask.run(EventClosingDateRoutine.java:60)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+03-Nov-2019 22:31:54.683 INFO [Timer-1] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+03-Nov-2019 22:31:54.683 INFO [Timer-2] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [java.lang.StringBuilder]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [java.lang.StringBuilder]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.CRM.Scheduler.CRMGetOpportunityRoutine$RemindTask.run(CRMGetOpportunityRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+03-Nov-2019 22:31:54.699 INFO [Timer-3] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [java.lang.StringBuilder]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [java.lang.StringBuilder]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.TimeSheetFridayRoutine$RemindTask.run(TimeSheetFridayRoutine.java:59)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+03-Nov-2019 22:31:54.699 INFO [442] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [java.lang.StringBuilder]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [java.lang.StringBuilder]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.SAPCodeRoutine$RemindTask.run(SAPCodeRoutine.java:60)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+

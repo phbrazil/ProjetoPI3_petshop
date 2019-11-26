@@ -1,0 +1,79 @@
+16-Aug-2019 11:08:47.317 INFO [1379] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+16-Aug-2019 11:17:45.371 INFO [Timer-194] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+16-Aug-2019 11:18:02.551 INFO [Timer-197] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+16-Aug-2019 14:25:02.363 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+16-Aug-2019 14:25:02.418 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["http-nio-8080"]
+16-Aug-2019 14:25:02.889 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["ajp-nio-8009"]
+16-Aug-2019 14:25:03.277 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping service [Catalina]
+16-Aug-2019 14:25:03.581 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\OpportunityComercial\target\OpportunityComercial-1.0
+16-Aug-2019 14:25:14.244 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [OpportunityComercial] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:70)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+16-Aug-2019 14:25:14.263 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Testes\build\web
+16-Aug-2019 14:25:14.887 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs
+16-Aug-2019 14:25:15.518 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager
+16-Aug-2019 14:25:15.925 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager
+16-Aug-2019 14:25:16.298 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\ROOT
+16-Aug-2019 14:25:16.729 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+16-Aug-2019 14:25:17.127 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Opportunity] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+16-Aug-2019 14:25:17.127 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Opportunity] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+16-Aug-2019 14:25:17.129 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-232] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+16-Aug-2019 14:25:17.130 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:70)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+16-Aug-2019 14:25:17.130 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-235] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+16-Aug-2019 14:25:17.131 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-236] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+16-Aug-2019 14:25:17.132 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["http-nio-8080"]
+16-Aug-2019 14:25:17.139 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["ajp-nio-8009"]
+16-Aug-2019 14:25:17.145 INFO [main] org.apache.openejb.server.SimpleServiceManager.stop Stopping server services
+16-Aug-2019 14:25:17.183 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default JDBC Database
+16-Aug-2019 14:25:17.221 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default Unmanaged JDBC Database
+16-Aug-2019 14:25:17.245 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["http-nio-8080"]
+16-Aug-2019 14:25:17.253 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["ajp-nio-8009"]

@@ -1,0 +1,277 @@
+28-Aug-2019 18:19:42.700 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server version:        Apache Tomcat (TomEE)/8.5.32 (7.1.0)
+28-Aug-2019 18:19:42.701 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server built:          Jun 20 2018 19:50:35 UTC
+28-Aug-2019 18:19:42.701 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server number:         8.5.32.0
+28-Aug-2019 18:19:42.701 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Name:               Windows 10
+28-Aug-2019 18:19:42.701 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Version:            10.0
+28-Aug-2019 18:19:42.701 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Architecture:          amd64
+28-Aug-2019 18:19:42.701 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Java Home:             C:\Program Files\Java\jdk1.8.0_171\jre
+28-Aug-2019 18:19:42.701 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Version:           1.8.0_171-b11
+28-Aug-2019 18:19:42.701 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Vendor:            Oracle Corporation
+28-Aug-2019 18:19:42.701 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_BASE:         C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+28-Aug-2019 18:19:42.701 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_HOME:         C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+28-Aug-2019 18:19:42.701 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.config.file=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\logging.properties
+28-Aug-2019 18:19:42.701 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Aug-2019 18:19:42.701 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -javaagent:C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\lib\openejb-javaagent.jar
+28-Aug-2019 18:19:42.702 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-Aug-2019 18:19:42.702 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-Aug-2019 18:19:42.702 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dignore.endorsed.dirs=
+28-Aug-2019 18:19:42.702 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.base=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+28-Aug-2019 18:19:42.702 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.home=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+28-Aug-2019 18:19:42.702 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.io.tmpdir=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\temp
+28-Aug-2019 18:19:42.702 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\nodejs\;C:\Users\paulo.bezerra\AppData\Local\Microsoft\WindowsApps;;C:\Users\paulo.bezerra\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\paulo.bezerra\AppData\Roaming\npm;.]
+28-Aug-2019 18:19:43.084 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["http-nio-8080"]
+28-Aug-2019 18:19:43.422 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+28-Aug-2019 18:19:43.439 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["ajp-nio-8009"]
+28-Aug-2019 18:19:43.441 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+28-Aug-2019 18:19:43.772 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+28-Aug-2019 18:19:43.877 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+28-Aug-2019 18:19:43.878 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> OpenEJB http://tomee.apache.org/
+28-Aug-2019 18:19:43.878 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Startup: Wed Aug 28 18:19:43 BRT 2019
+28-Aug-2019 18:19:43.878 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Copyright 1999-2018 (C) Apache OpenEJB Project, All Rights Reserved.
+28-Aug-2019 18:19:43.878 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Version: 7.1.0
+28-Aug-2019 18:19:43.878 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build date: 20180902
+28-Aug-2019 18:19:43.878 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build time: 09:50
+28-Aug-2019 18:19:43.878 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+28-Aug-2019 18:19:43.878 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.home = C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+28-Aug-2019 18:19:43.878 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.base = C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+28-Aug-2019 18:19:43.879 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@4c15e7fd
+28-Aug-2019 18:19:43.880 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Succeeded in installing singleton service
+28-Aug-2019 18:19:43.913 INFO [main] org.apache.openejb.config.ConfigurationFactory.init TomEE configuration file is 'C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\tomee.xml'
+28-Aug-2019 18:19:43.952 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+28-Aug-2019 18:19:43.953 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+28-Aug-2019 18:19:43.958 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.deployments.classpath=false'
+28-Aug-2019 18:19:43.960 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating TransactionManager(id=Default Transaction Manager)
+28-Aug-2019 18:19:44.018 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating SecurityService(id=Tomcat Security Service)
+28-Aug-2019 18:19:44.261 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf-rs)
+28-Aug-2019 18:19:44.516 INFO [main] org.apache.openejb.server.SimpleServiceManager.start   ** Bound Services **
+28-Aug-2019 18:19:44.517 INFO [main] org.apache.openejb.server.SimpleServiceManager.printRow   NAME                 IP              PORT  
+28-Aug-2019 18:19:44.517 INFO [main] org.apache.openejb.server.SimpleServiceManager.start -------
+28-Aug-2019 18:19:44.517 INFO [main] org.apache.openejb.server.SimpleServiceManager.start Ready!
+28-Aug-2019 18:19:44.517 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initialization processed in 2582 ms
+28-Aug-2019 18:19:44.555 INFO [main] org.apache.tomee.catalina.OpenEJBNamingContextListener.bindResource Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+28-Aug-2019 18:19:44.556 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=UserDatabase)
+28-Aug-2019 18:19:44.561 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting service [Catalina]
+28-Aug-2019 18:19:44.561 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting Servlet Engine: Apache Tomcat (TomEE)/8.5.32 (7.1.0)
+28-Aug-2019 18:19:44.574 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\OpportunityComercial.xml]
+28-Aug-2019 18:19:44.591 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /OpportunityComercial
+28-Aug-2019 18:19:48.502 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\OpportunityComercial\target\OpportunityComercial-1.0
+28-Aug-2019 18:19:49.067 INFO [localhost-startStop-1] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailPasswordReset: EjbDeployment(deployment-id=EmailPasswordReset)
+28-Aug-2019 18:19:49.067 INFO [localhost-startStop-1] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailNewTask: EjbDeployment(deployment-id=EmailNewTask)
+28-Aug-2019 18:19:49.067 INFO [localhost-startStop-1] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailBean: EjbDeployment(deployment-id=EmailBean)
+28-Aug-2019 18:19:49.071 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Stateless Container, type=Container, provider-id=Default Stateless Container)
+28-Aug-2019 18:19:49.071 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean EmailPasswordReset: Container(type=STATELESS, id=Default Stateless Container)
+28-Aug-2019 18:19:49.071 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Stateless Container)
+28-Aug-2019 18:19:49.088 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+28-Aug-2019 18:19:49.088 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean OpportunityComercial.Comp391661187: Container(type=MANAGED, id=Default Managed Container)
+28-Aug-2019 18:19:49.088 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Managed Container)
+28-Aug-2019 18:19:49.100 INFO [localhost-startStop-1] org.apache.openejb.core.managed.SimplePassivater.init Using directory C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\temp for stateful session passivation
+28-Aug-2019 18:19:49.112 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=com.mcibrasil_OpportunityComercial)
+28-Aug-2019 18:19:49.114 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default JDBC Database, type=Resource, provider-id=Default JDBC Database)
+28-Aug-2019 18:19:49.114 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default JDBC Database' of type 'DataSource for 'com.mcibrasil_OpportunityComercial'.
+28-Aug-2019 18:19:49.114 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default JDBC Database)
+28-Aug-2019 18:19:49.462 INFO [localhost-startStop-1] org.hsqldb.persist.Logger.logInfoEvent checkpointClose start
+28-Aug-2019 18:19:49.523 INFO [localhost-startStop-1] org.hsqldb.persist.Logger.logInfoEvent checkpointClose end
+28-Aug-2019 18:19:49.542 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Unmanaged JDBC Database, type=Resource, provider-id=Default Unmanaged JDBC Database)
+28-Aug-2019 18:19:49.542 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default Unmanaged JDBC Database' of type 'DataSource for 'com.mcibrasil_OpportunityComercial'.
+28-Aug-2019 18:19:49.543 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default Unmanaged JDBC Database)
+28-Aug-2019 18:19:49.550 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit com.mcibrasil_OpportunityComercial <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+28-Aug-2019 18:19:49.550 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit com.mcibrasil_OpportunityComercial <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+28-Aug-2019 18:19:49.578 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\OpportunityComercial\target\OpportunityComercial-1.0" loaded.
+28-Aug-2019 18:19:49.582 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\OpportunityComercial\target\OpportunityComercial-1.0
+28-Aug-2019 18:19:50.150 INFO [localhost-startStop-1] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+28-Aug-2019 18:19:50.165 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=com.mcibrasil_OpportunityComercial, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 556ms
+28-Aug-2019 18:19:50.228 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailPasswordResetLocalBean) --> Ejb(deployment-id=EmailPasswordReset)
+28-Aug-2019 18:19:50.228 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/OpportunityComercial/EmailPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailPasswordReset) --> Ejb(deployment-id=EmailPasswordReset)
+28-Aug-2019 18:19:50.229 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/OpportunityComercial/EmailPasswordReset) --> Ejb(deployment-id=EmailPasswordReset)
+28-Aug-2019 18:19:50.230 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailNewTaskLocalBean) --> Ejb(deployment-id=EmailNewTask)
+28-Aug-2019 18:19:50.230 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/OpportunityComercial/EmailNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailNewTask) --> Ejb(deployment-id=EmailNewTask)
+28-Aug-2019 18:19:50.230 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/OpportunityComercial/EmailNewTask) --> Ejb(deployment-id=EmailNewTask)
+28-Aug-2019 18:19:50.231 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailBeanLocalBean) --> Ejb(deployment-id=EmailBean)
+28-Aug-2019 18:19:50.231 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/OpportunityComercial/EmailBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailBean) --> Ejb(deployment-id=EmailBean)
+28-Aug-2019 18:19:50.231 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/OpportunityComercial/EmailBean) --> Ejb(deployment-id=EmailBean)
+28-Aug-2019 18:19:50.255 INFO [localhost-startStop-1] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@4c15e7fd
+28-Aug-2019 18:19:50.367 INFO [localhost-startStop-1] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+28-Aug-2019 18:19:50.375 INFO [localhost-startStop-1] org.apache.webbeans.plugins.PluginLoader.startUp Adding OpenWebBeansPlugin : [CdiPlugin]
+28-Aug-2019 18:19:50.377 INFO [localhost-startStop-1] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/OpportunityComercial/target/OpportunityComercial-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+28-Aug-2019 18:19:50.574 INFO [localhost-startStop-1] org.apache.webbeans.config.BeansDeployer.validateInjectionPoints All injection points were validated successfully.
+28-Aug-2019 18:19:50.576 INFO [localhost-startStop-1] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 209 ms.
+28-Aug-2019 18:19:50.577 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailBean, ejb-name=EmailBean, container=Default Stateless Container)
+28-Aug-2019 18:19:50.583 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailNewTask, ejb-name=EmailNewTask, container=Default Stateless Container)
+28-Aug-2019 18:19:50.583 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailPasswordReset, ejb-name=EmailPasswordReset, container=Default Stateless Container)
+28-Aug-2019 18:19:50.594 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailBean, ejb-name=EmailBean, container=Default Stateless Container)
+28-Aug-2019 18:19:50.596 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailNewTask, ejb-name=EmailNewTask, container=Default Stateless Container)
+28-Aug-2019 18:19:50.598 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailPasswordReset, ejb-name=EmailPasswordReset, container=Default Stateless Container)
+28-Aug-2019 18:19:50.598 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\OpportunityComercial\target\OpportunityComercial-1.0\META-INF\context.xml
+28-Aug-2019 18:19:50.601 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\OpportunityComercial\target\OpportunityComercial-1.0)
+28-Aug-2019 18:19:51.644 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Aug-2019 18:19:51.706 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\OpportunityComercial.xml] has finished in [7,132] ms
+28-Aug-2019 18:19:51.706 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Testes.xml]
+28-Aug-2019 18:19:51.711 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /Testes
+28-Aug-2019 18:19:51.742 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Testes\build\web
+28-Aug-2019 18:19:51.758 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Testes\build\web" loaded.
+28-Aug-2019 18:19:51.758 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Testes\build\web
+28-Aug-2019 18:19:51.766 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Testes\build\web\META-INF\context.xml
+28-Aug-2019 18:19:51.766 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Testes\build\web)
+28-Aug-2019 18:19:51.789 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Aug-2019 18:19:51.806 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Testes.xml] has finished in [100] ms
+28-Aug-2019 18:19:51.808 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs]
+28-Aug-2019 18:19:51.809 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /docs
+28-Aug-2019 18:19:51.921 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs
+28-Aug-2019 18:19:51.927 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs" loaded.
+28-Aug-2019 18:19:51.927 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs
+28-Aug-2019 18:19:51.931 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs)
+28-Aug-2019 18:19:51.946 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Aug-2019 18:19:51.962 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs] has finished in [154] ms
+28-Aug-2019 18:19:51.962 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager]
+28-Aug-2019 18:19:51.980 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /host-manager
+28-Aug-2019 18:19:52.035 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager
+28-Aug-2019 18:19:52.039 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager" loaded.
+28-Aug-2019 18:19:52.039 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager
+28-Aug-2019 18:19:52.044 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager\META-INF\context.xml
+28-Aug-2019 18:19:52.044 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager)
+28-Aug-2019 18:19:52.064 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Aug-2019 18:19:52.083 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager] has finished in [121] ms
+28-Aug-2019 18:19:52.083 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager]
+28-Aug-2019 18:19:52.089 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /manager
+28-Aug-2019 18:19:52.124 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager
+28-Aug-2019 18:19:52.128 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager" loaded.
+28-Aug-2019 18:19:52.128 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager
+28-Aug-2019 18:19:52.132 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager\META-INF\context.xml
+28-Aug-2019 18:19:52.132 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager)
+28-Aug-2019 18:19:52.148 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Aug-2019 18:19:52.167 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager] has finished in [83] ms
+28-Aug-2019 18:19:52.167 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\ROOT]
+28-Aug-2019 18:19:52.168 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /
+28-Aug-2019 18:19:52.197 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\ROOT
+28-Aug-2019 18:19:52.201 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\ROOT" loaded.
+28-Aug-2019 18:19:52.202 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\ROOT
+28-Aug-2019 18:19:52.211 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\ROOT)
+28-Aug-2019 18:19:52.230 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Aug-2019 18:19:52.246 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\ROOT] has finished in [78] ms
+28-Aug-2019 18:19:52.250 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["http-nio-8080"]
+28-Aug-2019 18:19:52.259 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["ajp-nio-8009"]
+28-Aug-2019 18:19:52.262 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Server startup in 7744 ms
+28-Aug-2019 18:19:52.894 INFO [http-nio-8080-exec-2] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml]
+28-Aug-2019 18:19:52.896 INFO [http-nio-8080-exec-2] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /Opportunity
+28-Aug-2019 18:19:54.551 INFO [http-nio-8080-exec-2] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+28-Aug-2019 18:19:54.683 INFO [http-nio-8080-exec-2] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+28-Aug-2019 18:19:54.683 INFO [http-nio-8080-exec-2] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+28-Aug-2019 18:19:54.684 INFO [http-nio-8080-exec-2] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+28-Aug-2019 18:19:54.685 INFO [http-nio-8080-exec-2] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=com.mcibrasil_Opportunity_war_1.0PU)
+28-Aug-2019 18:19:54.686 INFO [http-nio-8080-exec-2] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit com.mcibrasil_Opportunity_war_1.0PU <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+28-Aug-2019 18:19:54.687 INFO [http-nio-8080-exec-2] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit com.mcibrasil_Opportunity_war_1.0PU <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+28-Aug-2019 18:19:54.690 INFO [http-nio-8080-exec-2] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+28-Aug-2019 18:19:54.691 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+28-Aug-2019 18:19:54.766 INFO [http-nio-8080-exec-2] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+28-Aug-2019 18:19:54.767 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=com.mcibrasil_Opportunity_war_1.0PU, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 73ms
+28-Aug-2019 18:19:54.798 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+28-Aug-2019 18:19:54.799 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+28-Aug-2019 18:19:54.799 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+28-Aug-2019 18:19:54.799 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+28-Aug-2019 18:19:54.799 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+28-Aug-2019 18:19:54.799 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+28-Aug-2019 18:19:54.799 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+28-Aug-2019 18:19:54.799 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+28-Aug-2019 18:19:54.800 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+28-Aug-2019 18:19:54.806 INFO [http-nio-8080-exec-2] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@4c15e7fd
+28-Aug-2019 18:19:54.810 INFO [http-nio-8080-exec-2] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+28-Aug-2019 18:19:54.811 INFO [http-nio-8080-exec-2] org.apache.webbeans.plugins.PluginLoader.startUp Adding OpenWebBeansPlugin : [CdiPlugin]
+28-Aug-2019 18:19:54.811 INFO [http-nio-8080-exec-2] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+28-Aug-2019 18:19:54.860 INFO [http-nio-8080-exec-2] org.apache.webbeans.config.BeansDeployer.validateInjectionPoints All injection points were validated successfully.
+28-Aug-2019 18:19:54.860 INFO [http-nio-8080-exec-2] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 50 ms.
+28-Aug-2019 18:19:54.861 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+28-Aug-2019 18:19:54.861 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+28-Aug-2019 18:19:54.861 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+28-Aug-2019 18:19:54.867 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+28-Aug-2019 18:19:54.869 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+28-Aug-2019 18:19:54.872 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+28-Aug-2019 18:19:54.872 INFO [http-nio-8080-exec-2] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+28-Aug-2019 18:19:54.875 INFO [http-nio-8080-exec-2] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+28-Aug-2019 18:19:55.260 INFO [http-nio-8080-exec-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Aug-2019 18:19:55.548 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using readers:
+28-Aug-2019 18:19:55.549 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@4c4d7cc3
+28-Aug-2019 18:19:55.549 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@2a2c63
+28-Aug-2019 18:19:55.549 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@78692599
+28-Aug-2019 18:19:55.549 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@502ce689
+28-Aug-2019 18:19:55.549 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@2a715932
+28-Aug-2019 18:19:55.549 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@7b69312b
+28-Aug-2019 18:19:55.549 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@57cd75b9
+28-Aug-2019 18:19:55.549 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@4ed76d35
+28-Aug-2019 18:19:55.549 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@37e05d3c
+28-Aug-2019 18:19:55.549 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@7eba596
+28-Aug-2019 18:19:55.549 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@20677acc
+28-Aug-2019 18:19:55.550 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using writers:
+28-Aug-2019 18:19:55.550 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.johnzon.jaxrs.WadlDocumentMessageBodyWriter@55ac1530
+28-Aug-2019 18:19:55.550 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.olingo.odata2.core.rest.app.ODataApplication$MyProvider@6010bb04
+28-Aug-2019 18:19:55.550 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@37e05d3c
+28-Aug-2019 18:19:55.550 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@2a715932
+28-Aug-2019 18:19:55.550 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@4c4d7cc3
+28-Aug-2019 18:19:55.550 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@2a2c63
+28-Aug-2019 18:19:55.550 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@78692599
+28-Aug-2019 18:19:55.550 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@502ce689
+28-Aug-2019 18:19:55.550 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@7b69312b
+28-Aug-2019 18:19:55.550 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@57cd75b9
+28-Aug-2019 18:19:55.550 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@4ed76d35
+28-Aug-2019 18:19:55.551 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@7eba596
+28-Aug-2019 18:19:55.551 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@20677acc
+28-Aug-2019 18:19:55.551 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using exception mappers:
+28-Aug-2019 18:19:55.551 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper@7d1fdd16
+28-Aug-2019 18:19:55.551 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.olingo.odata2.core.rest.ODataExceptionMapperImpl@63114b82
+28-Aug-2019 18:19:55.551 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.EJBExceptionMapper@3d9fe8f2
+28-Aug-2019 18:19:55.551 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.validation.ValidationExceptionMapper@2a44db7b
+28-Aug-2019 18:19:55.552 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints REST Application: http://localhost:8080/Opportunity/                   -> org.apache.olingo.odata2.core.rest.app.ODataApplication@6549f92a
+28-Aug-2019 18:19:55.553 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints      Service URI: http://localhost:8080/Opportunity/                   -> Pojo org.apache.olingo.odata2.core.rest.ODataRootLocator
+28-Aug-2019 18:19:55.553 INFO [http-nio-8080-exec-2] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints                   http://localhost:8080/Opportunity/{pathSegments: .*} ->      Object handleRequest(List<PathSegment>, String, String) throws ODataException,ClassNotFoundException,InstantiationException,IllegalAccessException
+28-Aug-2019 18:19:55.559 INFO [http-nio-8080-exec-2] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml] has finished in [2,665] ms
+28-Aug-2019 18:19:55.564 INFO [http-nio-8080-exec-4] sun.reflect.DelegatingMethodAccessorImpl.invoke The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Opportunity]] after start() had already been called. The second call will be ignored.
+28-Aug-2019 18:21:20.284 SEVERE [Timer-2] com.mcibrasil.opportunity.controller.Scheduler.SAPCodeRoutine$RemindTask.run null
+ java.io.IOException: Cannot run program "curl": \home\opportunity\harvest\newProjectHarvest.txt (The system cannot find the path specified)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at com.mcibrasil.opportunity.controller.Harvest.CurlExecutorCreateProject.CriarProjetoHarvest(CurlExecutorCreateProject.java:65)
+	at com.mcibrasil.opportunity.dao.SAP.SAPDAOUpdateSAPCode.SAPUpdateCode(SAPDAOUpdateSAPCode.java:109)
+	at com.mcibrasil.opportunity.controller.Scheduler.SAPCodeRoutine$RemindTask.run(SAPCodeRoutine.java:64)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: java.io.FileNotFoundException: \home\opportunity\harvest\newProjectHarvest.txt (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at java.lang.ProcessImpl.newFileOutputStream(ProcessImpl.java:82)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:121)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 5 more
+
+28-Aug-2019 18:29:24.783 INFO [http-nio-8080-exec-6] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+28-Aug-2019 18:29:25.182 WARNING [http-nio-8080-exec-6] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Opportunity] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+28-Aug-2019 18:29:25.183 WARNING [http-nio-8080-exec-6] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Opportunity] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+28-Aug-2019 18:29:25.184 WARNING [http-nio-8080-exec-6] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+28-Aug-2019 18:29:25.184 WARNING [http-nio-8080-exec-6] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+28-Aug-2019 18:29:25.185 WARNING [http-nio-8080-exec-6] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:70)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+28-Aug-2019 18:29:25.185 WARNING [http-nio-8080-exec-6] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+28-Aug-2019 18:29:25.702 INFO [http-nio-8080-exec-6] sun.reflect.DelegatingMethodAccessorImpl.invoke Undeploying context [/Opportunity]
+28-Aug-2019 18:29:30.184 INFO [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1004)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+

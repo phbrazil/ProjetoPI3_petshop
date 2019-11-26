@@ -1,0 +1,17 @@
+127.0.0.1 - - [23/Nov/2019:20:45:38 -0200] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [23/Nov/2019:20:45:38 -0200] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [23/Nov/2019:20:45:38 -0200] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [23/Nov/2019:20:45:38 -0200] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [23/Nov/2019:20:45:38 -0200] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - root [23/Nov/2019:20:45:38 -0200] "GET /manager/text/list HTTP/1.1" 200 283
+127.0.0.1 - root [23/Nov/2019:20:45:38 -0200] "GET /manager/text/list HTTP/1.1" 200 283
+127.0.0.1 - root [23/Nov/2019:20:46:10 -0200] "GET /manager/text/deploy?config=file%3A%2FC%3A%2FUsers%2FPAULO%7E1.BEZ%2FAppData%2FLocal%2FTemp%2Fcontext3099105303845509576.xml&path=/Opportunity HTTP/1.1" 200 69
+127.0.0.1 - root [23/Nov/2019:20:46:10 -0200] "GET /manager/text/start?path=/Opportunity HTTP/1.1" 200 68
+0:0:0:0:0:0:0:1 - - [23/Nov/2019:20:46:13 -0200] "GET /Opportunity HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [23/Nov/2019:20:46:13 -0200] "GET /Opportunity/ HTTP/1.1" 302 -
+127.0.0.1 - - [23/Nov/2019:20:46:22 -0200] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [23/Nov/2019:20:46:22 -0200] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [23/Nov/2019:20:46:25 -0200] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [23/Nov/2019:20:46:25 -0200] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [23/Nov/2019:20:46:25 -0200] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [23/Nov/2019:20:46:26 -0200] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -

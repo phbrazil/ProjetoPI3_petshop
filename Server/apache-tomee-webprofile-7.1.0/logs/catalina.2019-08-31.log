@@ -1,0 +1,55 @@
+31-Aug-2019 22:22:23.852 INFO [562] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+31-Aug-2019 22:46:47.214 INFO [Timer-75] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+31-Aug-2019 23:22:28.507 INFO [Timer-81] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+31-Aug-2019 23:23:37.883 INFO [Timer-86] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+31-Aug-2019 23:23:41.044 INFO [Timer-89] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+

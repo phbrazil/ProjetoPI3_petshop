@@ -42,7 +42,9 @@ public class AcessoLogin {
             java.sql.Statement st = conexao.createStatement();
 
             //select = "select count(*) validado from usuarios where username = '" + logindados.getUserName() + "' and password = '" + logindados.getPassword() + "'";
-            select = "select nomeuser, username, password, idloja, idgrupo from usuarios where username = '" + logindados.getUserName() + "' and password = '" + logindados.getPassword() + "'";
+            select = "select nomeuser, username, password, idloja, idgrupo "
+                    + "from usuarios where username = '" + logindados.getUserName() + "' "
+                    + "and password = '" + logindados.getPassword() + "'";
 
             ResultSet result = st.executeQuery(select);
 

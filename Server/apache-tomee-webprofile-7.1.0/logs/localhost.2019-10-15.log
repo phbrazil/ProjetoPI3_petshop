@@ -1,0 +1,1 @@
+15-Oct-2019 10:35:49.731 SEVERE [http-nio-8080-exec-83] org.apache.tomcat.util.descriptor.web.SecurityConstraint.findUncoveredHttpMethods For security constraints with URL pattern [/*] only the HTTP methods [GET] are covered. All other methods are uncovered.

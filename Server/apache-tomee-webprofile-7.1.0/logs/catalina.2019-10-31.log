@@ -1,0 +1,18 @@
+31-Oct-2019 23:19:10.092 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+31-Oct-2019 23:19:10.095 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["http-nio-8080"]
+31-Oct-2019 23:19:10.474 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["https-jsse-nio-8443"]
+31-Oct-2019 23:19:10.474 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["ajp-nio-8009"]
+31-Oct-2019 23:19:10.760 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping service [Catalina]
+31-Oct-2019 23:19:10.892 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs
+31-Oct-2019 23:19:11.544 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager
+31-Oct-2019 23:19:11.810 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager
+31-Oct-2019 23:19:12.017 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["http-nio-8080"]
+31-Oct-2019 23:19:12.027 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["ajp-nio-8009"]
+31-Oct-2019 23:19:12.041 INFO [main] org.apache.openejb.server.SimpleServiceManager.stop Stopping server services
+31-Oct-2019 23:19:12.145 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\BlackJack.jar
+31-Oct-2019 23:19:12.463 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default JDBC Database
+31-Oct-2019 23:19:12.502 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default Unmanaged JDBC Database
+31-Oct-2019 23:19:12.524 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["http-nio-8080"]
+31-Oct-2019 23:19:12.526 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["https-jsse-nio-8443"]
+31-Oct-2019 23:19:12.526 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["https-jsse-nio-8443"]
+31-Oct-2019 23:19:12.526 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["ajp-nio-8009"]

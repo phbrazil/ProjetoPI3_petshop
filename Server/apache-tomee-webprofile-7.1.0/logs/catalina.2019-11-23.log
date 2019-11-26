@@ -1,0 +1,656 @@
+23-Nov-2019 20:45:33.420 WARNING [main] sun.reflect.NativeMethodAccessorImpl.invoke [SetAllPropertiesRule]{Server/Service/Connector/SSLHostConfig/Certificate} Setting property 'KeystoreFile' to 'C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\src\main\webapp\SSL\localhost.jks' did not find a matching property.
+23-Nov-2019 20:45:33.430 WARNING [main] sun.reflect.NativeMethodAccessorImpl.invoke [SetAllPropertiesRule]{Server/Service/Connector/SSLHostConfig/Certificate} Setting property 'KeystorePass' to 'mortadela1' did not find a matching property.
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server version:        Apache Tomcat (TomEE)/8.5.32 (7.1.0)
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server built:          Jun 20 2018 19:50:35 UTC
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server number:         8.5.32.0
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Name:               Windows 10
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Version:            10.0
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Architecture:          amd64
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Java Home:             C:\Program Files\Java\jdk1.8.0_171\jre
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Version:           1.8.0_171-b11
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Vendor:            Oracle Corporation
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_BASE:         C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_HOME:         C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.config.file=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\logging.properties
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -javaagent:C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\lib\openejb-javaagent.jar
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dignore.endorsed.dirs=
+23-Nov-2019 20:45:33.571 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.base=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+23-Nov-2019 20:45:33.579 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.home=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+23-Nov-2019 20:45:33.579 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.io.tmpdir=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\temp
+23-Nov-2019 20:45:33.579 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\nodejs\;C:\Users\paulo.bezerra\AppData\Local\Microsoft\WindowsApps;;C:\Users\paulo.bezerra\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\paulo.bezerra\AppData\Roaming\npm;.]
+23-Nov-2019 20:45:33.884 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["http-nio-8080"]
+23-Nov-2019 20:45:34.310 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+23-Nov-2019 20:45:34.320 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["https-jsse-nio-8443"]
+23-Nov-2019 20:45:34.320 SEVERE [main] sun.reflect.NativeMethodAccessorImpl.invoke Failed to initialize connector [Connector[HTTP/1.1-8443]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8443]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:112)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:632)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:309)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:995)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1086)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:268)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:68)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:993)
+	... 13 more
+
+23-Nov-2019 20:45:34.320 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["ajp-nio-8009"]
+23-Nov-2019 20:45:34.320 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+23-Nov-2019 20:45:34.997 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+23-Nov-2019 20:45:35.169 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+23-Nov-2019 20:45:35.169 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> OpenEJB http://tomee.apache.org/
+23-Nov-2019 20:45:35.169 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Startup: Sat Nov 23 20:45:35 BRST 2019
+23-Nov-2019 20:45:35.169 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Copyright 1999-2018 (C) Apache OpenEJB Project, All Rights Reserved.
+23-Nov-2019 20:45:35.169 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Version: 7.1.0
+23-Nov-2019 20:45:35.169 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build date: 20180902
+23-Nov-2019 20:45:35.169 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build time: 09:50
+23-Nov-2019 20:45:35.169 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+23-Nov-2019 20:45:35.169 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.home = C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+23-Nov-2019 20:45:35.169 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.base = C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0
+23-Nov-2019 20:45:35.169 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@78e94dcf
+23-Nov-2019 20:45:35.169 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Succeeded in installing singleton service
+23-Nov-2019 20:45:35.229 INFO [main] org.apache.openejb.config.ConfigurationFactory.init TomEE configuration file is 'C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\tomee.xml'
+23-Nov-2019 20:45:35.300 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+23-Nov-2019 20:45:35.300 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+23-Nov-2019 20:45:35.310 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.deployments.classpath=false'
+23-Nov-2019 20:45:35.310 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating TransactionManager(id=Default Transaction Manager)
+23-Nov-2019 20:45:35.401 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating SecurityService(id=Tomcat Security Service)
+23-Nov-2019 20:45:35.623 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf-rs)
+23-Nov-2019 20:45:35.896 INFO [main] org.apache.openejb.server.SimpleServiceManager.start   ** Bound Services **
+23-Nov-2019 20:45:35.896 INFO [main] org.apache.openejb.server.SimpleServiceManager.printRow   NAME                 IP              PORT  
+23-Nov-2019 20:45:35.896 INFO [main] org.apache.openejb.server.SimpleServiceManager.start -------
+23-Nov-2019 20:45:35.896 INFO [main] org.apache.openejb.server.SimpleServiceManager.start Ready!
+23-Nov-2019 20:45:35.904 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initialization processed in 3176 ms
+23-Nov-2019 20:45:35.956 INFO [main] org.apache.tomee.catalina.OpenEJBNamingContextListener.bindResource Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+23-Nov-2019 20:45:35.956 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=UserDatabase)
+23-Nov-2019 20:45:35.966 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting service [Catalina]
+23-Nov-2019 20:45:35.966 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting Servlet Engine: Apache Tomcat (TomEE)/8.5.32 (7.1.0)
+23-Nov-2019 20:45:35.987 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\MusicasSpringBoot.xml]
+23-Nov-2019 20:45:36.025 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /MusicasSpringBoot
+23-Nov-2019 20:45:36.066 SEVERE [localhost-startStop-1] sun.reflect.NativeMethodAccessorImpl.invoke ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/MusicasSpringBoot]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:754)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:730)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:629)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1839)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@4968527c]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4907)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5042)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\paulo.bezerra\Documents\NetBeansProjects\Musicas\target\MusicasSpringBoot-0.0.1-SNAPSHOT] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:748)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:706)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+
+23-Nov-2019 20:45:36.066 SEVERE [localhost-startStop-1] sun.reflect.NativeMethodAccessorImpl.invoke Error deploying configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\MusicasSpringBoot.xml]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/MusicasSpringBoot]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:758)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:730)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:629)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1839)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+23-Nov-2019 20:45:36.068 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\MusicasSpringBoot.xml] has finished in [81] ms
+23-Nov-2019 20:45:36.068 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs]
+23-Nov-2019 20:45:36.068 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /docs
+23-Nov-2019 20:45:36.332 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs
+23-Nov-2019 20:45:36.421 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs" loaded.
+23-Nov-2019 20:45:36.423 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs
+23-Nov-2019 20:45:36.625 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs)
+23-Nov-2019 20:45:37.191 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+23-Nov-2019 20:45:37.492 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs] has finished in [1,424] ms
+23-Nov-2019 20:45:37.492 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager]
+23-Nov-2019 20:45:37.514 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /host-manager
+23-Nov-2019 20:45:37.626 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager
+23-Nov-2019 20:45:37.646 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager" loaded.
+23-Nov-2019 20:45:37.646 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager
+23-Nov-2019 20:45:37.666 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager\META-INF\context.xml
+23-Nov-2019 20:45:37.666 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager)
+23-Nov-2019 20:45:37.727 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+23-Nov-2019 20:45:37.767 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager] has finished in [275] ms
+23-Nov-2019 20:45:37.767 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager]
+23-Nov-2019 20:45:37.777 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /manager
+23-Nov-2019 20:45:37.866 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager
+23-Nov-2019 20:45:37.876 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager" loaded.
+23-Nov-2019 20:45:37.876 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager
+23-Nov-2019 20:45:37.886 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager\META-INF\context.xml
+23-Nov-2019 20:45:37.886 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager)
+23-Nov-2019 20:45:37.937 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+23-Nov-2019 20:45:37.969 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application directory [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager] has finished in [202] ms
+23-Nov-2019 20:45:37.977 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["http-nio-8080"]
+23-Nov-2019 20:45:37.989 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["ajp-nio-8009"]
+23-Nov-2019 20:45:37.989 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Server startup in 2091 ms
+23-Nov-2019 20:45:38.485 INFO [http-nio-8080-exec-8] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml]
+23-Nov-2019 20:45:38.487 INFO [http-nio-8080-exec-8] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /Opportunity
+23-Nov-2019 20:45:45.124 INFO [http-nio-8080-exec-8] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+23-Nov-2019 20:45:45.972 INFO [http-nio-8080-exec-8] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+23-Nov-2019 20:45:45.974 INFO [http-nio-8080-exec-8] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+23-Nov-2019 20:45:45.974 INFO [http-nio-8080-exec-8] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+23-Nov-2019 20:45:45.974 INFO [http-nio-8080-exec-8] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Stateless Container, type=Container, provider-id=Default Stateless Container)
+23-Nov-2019 20:45:45.974 INFO [http-nio-8080-exec-8] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean EmailSessionPasswordReset: Container(type=STATELESS, id=Default Stateless Container)
+23-Nov-2019 20:45:45.974 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Stateless Container)
+23-Nov-2019 20:45:45.994 INFO [http-nio-8080-exec-8] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+23-Nov-2019 20:45:46.013 INFO [http-nio-8080-exec-8] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean Opportunity.Comp512323095: Container(type=MANAGED, id=Default Managed Container)
+23-Nov-2019 20:45:46.015 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Managed Container)
+23-Nov-2019 20:45:46.035 INFO [http-nio-8080-exec-8] org.apache.openejb.core.managed.SimplePassivater.init Using directory C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\temp for stateful session passivation
+23-Nov-2019 20:45:46.055 INFO [http-nio-8080-exec-8] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+23-Nov-2019 20:45:46.055 INFO [http-nio-8080-exec-8] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default JDBC Database, type=Resource, provider-id=Default JDBC Database)
+23-Nov-2019 20:45:46.055 INFO [http-nio-8080-exec-8] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default JDBC Database' of type 'DataSource for 'Opportunity'.
+23-Nov-2019 20:45:46.055 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default JDBC Database)
+23-Nov-2019 20:45:47.997 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\BlackJack.jar
+23-Nov-2019 20:45:57.038 SEVERE [http-nio-8080-exec-8] org.apache.tomcat.jdbc.pool.ConnectionPool.init Unable to create initial connections of pool.
+ java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9422ffea[file =C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\data\hsqldb\hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2019-11-23 22:45:56 heartbeat - read: -3278 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:736)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:668)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:483)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEConnectionPool.<init>(TomEEDataSourceCreator.java:221)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.createPool(TomEEDataSourceCreator.java:154)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.<init>(TomEEDataSourceCreator.java:131)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator.pool(TomEEDataSourceCreator.java:68)
+	at org.apache.openejb.resource.jdbc.pool.PoolDataSourceCreator.poolManaged(PoolDataSourceCreator.java:80)
+	at org.apache.openejb.resource.jdbc.DataSourceFactory.create(DataSourceFactory.java:213)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.xbean.recipe.ReflectionUtil$StaticFactory.create(ReflectionUtil.java:999)
+	at org.apache.xbean.recipe.ObjectRecipe.internalCreate(ObjectRecipe.java:276)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:96)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:61)
+	at org.apache.openejb.assembler.classic.Assembler.doCreateResource(Assembler.java:3131)
+	at org.apache.openejb.assembler.classic.Assembler.createResource(Assembler.java:2966)
+	at org.apache.openejb.config.ConfigurationFactory.doInstall(ConfigurationFactory.java:466)
+	at org.apache.openejb.config.ConfigurationFactory.install(ConfigurationFactory.java:459)
+	at org.apache.openejb.config.AutoConfig.installResource(AutoConfig.java:2193)
+	at org.apache.openejb.config.AutoConfig.autoCreateResource(AutoConfig.java:2068)
+	at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:1804)
+	at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:209)
+	at org.apache.openejb.config.ConfigurationFactory$Chain.deploy(ConfigurationFactory.java:420)
+	at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1037)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1281)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1125)
+	at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:133)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:754)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:730)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:629)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:501)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1650)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1525)
+	at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:946)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:347)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:610)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:52)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.tomee.catalina.OpenEJBSecurityListener$RequestCapturer.invoke(OpenEJBSecurityListener.java:97)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9422ffea[file =C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\data\hsqldb\hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2019-11-23 22:45:56 heartbeat - read: -3278 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.open(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 86 more
+
+23-Nov-2019 20:45:57.046 SEVERE [http-nio-8080-exec-8] org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.<init> Can't create DataSource
+ java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9422ffea[file =C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\data\hsqldb\hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2019-11-23 22:45:56 heartbeat - read: -3278 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:736)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:668)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:483)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEConnectionPool.<init>(TomEEDataSourceCreator.java:221)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.createPool(TomEEDataSourceCreator.java:154)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.<init>(TomEEDataSourceCreator.java:131)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator.pool(TomEEDataSourceCreator.java:68)
+	at org.apache.openejb.resource.jdbc.pool.PoolDataSourceCreator.poolManaged(PoolDataSourceCreator.java:80)
+	at org.apache.openejb.resource.jdbc.DataSourceFactory.create(DataSourceFactory.java:213)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.xbean.recipe.ReflectionUtil$StaticFactory.create(ReflectionUtil.java:999)
+	at org.apache.xbean.recipe.ObjectRecipe.internalCreate(ObjectRecipe.java:276)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:96)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:61)
+	at org.apache.openejb.assembler.classic.Assembler.doCreateResource(Assembler.java:3131)
+	at org.apache.openejb.assembler.classic.Assembler.createResource(Assembler.java:2966)
+	at org.apache.openejb.config.ConfigurationFactory.doInstall(ConfigurationFactory.java:466)
+	at org.apache.openejb.config.ConfigurationFactory.install(ConfigurationFactory.java:459)
+	at org.apache.openejb.config.AutoConfig.installResource(AutoConfig.java:2193)
+	at org.apache.openejb.config.AutoConfig.autoCreateResource(AutoConfig.java:2068)
+	at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:1804)
+	at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:209)
+	at org.apache.openejb.config.ConfigurationFactory$Chain.deploy(ConfigurationFactory.java:420)
+	at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1037)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1281)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1125)
+	at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:133)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:754)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:730)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:629)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:501)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1650)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1525)
+	at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:946)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:347)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:610)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:52)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.tomee.catalina.OpenEJBSecurityListener$RequestCapturer.invoke(OpenEJBSecurityListener.java:97)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9422ffea[file =C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\data\hsqldb\hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2019-11-23 22:45:56 heartbeat - read: -3278 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.open(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 86 more
+
+23-Nov-2019 20:45:57.048 INFO [http-nio-8080-exec-8] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Unmanaged JDBC Database, type=Resource, provider-id=Default Unmanaged JDBC Database)
+23-Nov-2019 20:45:57.048 INFO [http-nio-8080-exec-8] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default Unmanaged JDBC Database' of type 'DataSource for 'Opportunity'.
+23-Nov-2019 20:45:57.048 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default Unmanaged JDBC Database)
+23-Nov-2019 20:46:07.413 SEVERE [http-nio-8080-exec-8] org.apache.tomcat.jdbc.pool.ConnectionPool.init Unable to create initial connections of pool.
+ java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9422ffea[file =C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\data\hsqldb\hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2019-11-23 22:46:06 heartbeat - read: -3643 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:736)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:668)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:483)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEConnectionPool.<init>(TomEEDataSourceCreator.java:221)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.createPool(TomEEDataSourceCreator.java:154)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.<init>(TomEEDataSourceCreator.java:131)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator.pool(TomEEDataSourceCreator.java:68)
+	at org.apache.openejb.resource.jdbc.DataSourceFactory.create(DataSourceFactory.java:216)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.xbean.recipe.ReflectionUtil$StaticFactory.create(ReflectionUtil.java:999)
+	at org.apache.xbean.recipe.ObjectRecipe.internalCreate(ObjectRecipe.java:276)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:96)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:61)
+	at org.apache.openejb.assembler.classic.Assembler.doCreateResource(Assembler.java:3131)
+	at org.apache.openejb.assembler.classic.Assembler.createResource(Assembler.java:2966)
+	at org.apache.openejb.config.ConfigurationFactory.doInstall(ConfigurationFactory.java:466)
+	at org.apache.openejb.config.ConfigurationFactory.install(ConfigurationFactory.java:459)
+	at org.apache.openejb.config.AutoConfig.installResource(AutoConfig.java:2193)
+	at org.apache.openejb.config.AutoConfig.autoCreateResource(AutoConfig.java:2068)
+	at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:1808)
+	at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:209)
+	at org.apache.openejb.config.ConfigurationFactory$Chain.deploy(ConfigurationFactory.java:420)
+	at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1037)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1281)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1125)
+	at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:133)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:754)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:730)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:629)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:501)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1650)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1525)
+	at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:946)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:347)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:610)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:52)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.tomee.catalina.OpenEJBSecurityListener$RequestCapturer.invoke(OpenEJBSecurityListener.java:97)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9422ffea[file =C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\data\hsqldb\hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2019-11-23 22:46:06 heartbeat - read: -3643 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.open(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 85 more
+
+23-Nov-2019 20:46:07.413 SEVERE [http-nio-8080-exec-8] org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.<init> Can't create DataSource
+ java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9422ffea[file =C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\data\hsqldb\hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2019-11-23 22:46:06 heartbeat - read: -3643 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:736)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:668)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:483)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEConnectionPool.<init>(TomEEDataSourceCreator.java:221)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.createPool(TomEEDataSourceCreator.java:154)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator$TomEEDataSource.<init>(TomEEDataSourceCreator.java:131)
+	at org.apache.tomee.jdbc.TomEEDataSourceCreator.pool(TomEEDataSourceCreator.java:68)
+	at org.apache.openejb.resource.jdbc.DataSourceFactory.create(DataSourceFactory.java:216)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.xbean.recipe.ReflectionUtil$StaticFactory.create(ReflectionUtil.java:999)
+	at org.apache.xbean.recipe.ObjectRecipe.internalCreate(ObjectRecipe.java:276)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:96)
+	at org.apache.xbean.recipe.AbstractRecipe.create(AbstractRecipe.java:61)
+	at org.apache.openejb.assembler.classic.Assembler.doCreateResource(Assembler.java:3131)
+	at org.apache.openejb.assembler.classic.Assembler.createResource(Assembler.java:2966)
+	at org.apache.openejb.config.ConfigurationFactory.doInstall(ConfigurationFactory.java:466)
+	at org.apache.openejb.config.ConfigurationFactory.install(ConfigurationFactory.java:459)
+	at org.apache.openejb.config.AutoConfig.installResource(AutoConfig.java:2193)
+	at org.apache.openejb.config.AutoConfig.autoCreateResource(AutoConfig.java:2068)
+	at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:1808)
+	at org.apache.openejb.config.AutoConfig.deploy(AutoConfig.java:209)
+	at org.apache.openejb.config.ConfigurationFactory$Chain.deploy(ConfigurationFactory.java:420)
+	at org.apache.openejb.config.ConfigurationFactory.configureApplication(ConfigurationFactory.java:1037)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.startInternal(TomcatWebAppBuilder.java:1281)
+	at org.apache.tomee.catalina.TomcatWebAppBuilder.configureStart(TomcatWebAppBuilder.java:1125)
+	at org.apache.tomee.catalina.GlobalListenerSupport.lifecycleEvent(GlobalListenerSupport.java:133)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:754)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:730)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:629)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:501)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1650)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1525)
+	at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:946)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:347)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.tomee.catalina.OpenEJBValve.invoke(OpenEJBValve.java:44)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:610)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:348)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:52)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.tomee.catalina.OpenEJBSecurityListener$RequestCapturer.invoke(OpenEJBSecurityListener.java:97)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9422ffea[file =C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\data\hsqldb\hsqldb.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2019-11-23 22:46:06 heartbeat - read: -3643 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.open(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 85 more
+
+23-Nov-2019 20:46:07.413 INFO [http-nio-8080-exec-8] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+23-Nov-2019 20:46:07.413 INFO [http-nio-8080-exec-8] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+23-Nov-2019 20:46:07.423 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.config.ReportValidationResults.logResults WARN ... client:	Missing Main-Class: InterfaceGrafica.TelaInicial
+23-Nov-2019 20:46:07.423 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.config.ReportValidationResults.logResults 1 warning for ClientModule(path=BlackJack)
+23-Nov-2019 20:46:07.423 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\BlackJack.jar" loaded.
+23-Nov-2019 20:46:07.434 INFO [http-nio-8080-exec-8] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+23-Nov-2019 20:46:07.434 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+23-Nov-2019 20:46:07.434 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.assembler.classic.Assembler.createAppClassLoader Creating dedicated application classloader for BlackJack
+23-Nov-2019 20:46:07.434 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\BlackJack.jar
+23-Nov-2019 20:46:07.444 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\BlackJack.jar)
+23-Nov-2019 20:46:08.108 INFO [http-nio-8080-exec-8] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+23-Nov-2019 20:46:08.130 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 689ms
+23-Nov-2019 20:46:08.262 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+23-Nov-2019 20:46:08.262 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+23-Nov-2019 20:46:08.262 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+23-Nov-2019 20:46:08.270 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+23-Nov-2019 20:46:08.270 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+23-Nov-2019 20:46:08.270 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+23-Nov-2019 20:46:08.270 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+23-Nov-2019 20:46:08.272 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+23-Nov-2019 20:46:08.272 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+23-Nov-2019 20:46:08.312 INFO [http-nio-8080-exec-8] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@78e94dcf
+23-Nov-2019 20:46:08.423 INFO [http-nio-8080-exec-8] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+23-Nov-2019 20:46:08.433 INFO [http-nio-8080-exec-8] org.apache.webbeans.plugins.PluginLoader.startUp Adding OpenWebBeansPlugin : [CdiPlugin]
+23-Nov-2019 20:46:08.433 INFO [http-nio-8080-exec-8] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+23-Nov-2019 20:46:08.756 INFO [http-nio-8080-exec-8] org.apache.webbeans.config.BeansDeployer.validateInjectionPoints All injection points were validated successfully.
+23-Nov-2019 20:46:08.766 INFO [http-nio-8080-exec-8] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 343 ms.
+23-Nov-2019 20:46:08.766 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+23-Nov-2019 20:46:08.766 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+23-Nov-2019 20:46:08.766 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+23-Nov-2019 20:46:08.795 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+23-Nov-2019 20:46:08.797 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+23-Nov-2019 20:46:08.807 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+23-Nov-2019 20:46:08.807 INFO [http-nio-8080-exec-8] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+23-Nov-2019 20:46:08.807 INFO [http-nio-8080-exec-8] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+23-Nov-2019 20:46:09.907 INFO [http-nio-8080-exec-8] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+23-Nov-2019 20:46:10.010 INFO [http-nio-8080-exec-8] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml] has finished in [31,525] ms
+23-Nov-2019 20:46:10.018 INFO [http-nio-8080-exec-9] sun.reflect.DelegatingMethodAccessorImpl.invoke The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Opportunity]] after start() had already been called. The second call will be ignored.
+23-Nov-2019 20:46:26.399 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+23-Nov-2019 20:46:26.400 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["http-nio-8080"]
+23-Nov-2019 20:46:26.787 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["https-jsse-nio-8443"]
+23-Nov-2019 20:46:26.787 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["ajp-nio-8009"]
+23-Nov-2019 20:46:27.240 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping service [Catalina]
+23-Nov-2019 20:46:27.270 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\docs
+23-Nov-2019 20:46:27.493 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\host-manager
+23-Nov-2019 20:46:27.690 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\manager
+23-Nov-2019 20:46:27.933 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+23-Nov-2019 20:46:28.145 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+23-Nov-2019 20:46:28.145 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+23-Nov-2019 20:46:28.153 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+23-Nov-2019 20:46:28.155 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["http-nio-8080"]
+23-Nov-2019 20:46:28.163 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["ajp-nio-8009"]
+23-Nov-2019 20:46:28.165 INFO [main] org.apache.openejb.server.SimpleServiceManager.stop Stopping server services
+23-Nov-2019 20:46:28.185 INFO [main] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\webapps\BlackJack.jar
+23-Nov-2019 20:46:28.386 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default JDBC Database
+23-Nov-2019 20:46:28.388 INFO [main] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default Unmanaged JDBC Database
+23-Nov-2019 20:46:28.388 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["http-nio-8080"]
+23-Nov-2019 20:46:28.388 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["https-jsse-nio-8443"]
+23-Nov-2019 20:46:28.388 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["https-jsse-nio-8443"]
+23-Nov-2019 20:46:28.388 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["ajp-nio-8009"]

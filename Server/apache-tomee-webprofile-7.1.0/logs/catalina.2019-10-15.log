@@ -1,0 +1,452 @@
+15-Oct-2019 00:02:00.587 INFO [578] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+15-Oct-2019 00:02:03.060 INFO [613] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+15-Oct-2019 00:02:21.126 INFO [649] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+15-Oct-2019 00:02:34.332 INFO [Timer-18] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+15-Oct-2019 00:02:42.931 INFO [Timer-23] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+15-Oct-2019 00:03:17.800 INFO [771] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+15-Oct-2019 00:03:28.419 INFO [Timer-45] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.controller.Harvest.UpdateHarvest]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.HarvestHoursRoutine$RemindTask.run(HarvestHoursRoutine.java:53)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+15-Oct-2019 10:35:34.366 INFO [http-nio-8080-exec-83] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml]
+15-Oct-2019 10:35:34.462 INFO [http-nio-8080-exec-83] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /Opportunity
+15-Oct-2019 10:35:43.739 INFO [http-nio-8080-exec-83] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+15-Oct-2019 10:35:44.498 INFO [http-nio-8080-exec-83] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+15-Oct-2019 10:35:44.499 INFO [http-nio-8080-exec-83] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+15-Oct-2019 10:35:44.499 INFO [http-nio-8080-exec-83] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+15-Oct-2019 10:35:44.510 INFO [http-nio-8080-exec-83] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+15-Oct-2019 10:35:44.515 INFO [http-nio-8080-exec-83] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+15-Oct-2019 10:35:44.516 INFO [http-nio-8080-exec-83] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+15-Oct-2019 10:35:44.534 INFO [http-nio-8080-exec-83] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+15-Oct-2019 10:35:44.537 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+15-Oct-2019 10:35:44.838 INFO [http-nio-8080-exec-83] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+15-Oct-2019 10:35:44.841 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 268ms
+15-Oct-2019 10:35:44.962 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+15-Oct-2019 10:35:44.962 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+15-Oct-2019 10:35:44.962 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+15-Oct-2019 10:35:44.964 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+15-Oct-2019 10:35:44.964 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+15-Oct-2019 10:35:44.964 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+15-Oct-2019 10:35:44.966 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+15-Oct-2019 10:35:44.966 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+15-Oct-2019 10:35:44.966 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+15-Oct-2019 10:35:44.999 INFO [http-nio-8080-exec-83] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@7b2bbc3
+15-Oct-2019 10:35:45.028 INFO [http-nio-8080-exec-83] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+15-Oct-2019 10:35:45.036 INFO [http-nio-8080-exec-83] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+15-Oct-2019 10:35:45.148 INFO [http-nio-8080-exec-83] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 119 ms.
+15-Oct-2019 10:35:45.149 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+15-Oct-2019 10:35:45.149 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+15-Oct-2019 10:35:45.150 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+15-Oct-2019 10:35:45.161 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+15-Oct-2019 10:35:45.165 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+15-Oct-2019 10:35:45.167 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+15-Oct-2019 10:35:45.167 INFO [http-nio-8080-exec-83] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+15-Oct-2019 10:35:45.169 INFO [http-nio-8080-exec-83] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+15-Oct-2019 10:35:48.786 INFO [http-nio-8080-exec-83] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Oct-2019 10:35:50.181 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using readers:
+15-Oct-2019 10:35:50.182 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@36831ec0
+15-Oct-2019 10:35:50.183 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@37adb95e
+15-Oct-2019 10:35:50.183 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@3dfc7330
+15-Oct-2019 10:35:50.183 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@78a28c8a
+15-Oct-2019 10:35:50.183 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@70ebc02a
+15-Oct-2019 10:35:50.184 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@2a56e020
+15-Oct-2019 10:35:50.184 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@2d715e88
+15-Oct-2019 10:35:50.184 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@63c84f80
+15-Oct-2019 10:35:50.184 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@2bc9afd0
+15-Oct-2019 10:35:50.184 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@3426f12b
+15-Oct-2019 10:35:50.184 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@17796c2a
+15-Oct-2019 10:35:50.185 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using writers:
+15-Oct-2019 10:35:50.185 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.johnzon.jaxrs.WadlDocumentMessageBodyWriter@3922151b
+15-Oct-2019 10:35:50.185 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.olingo.odata2.core.rest.app.ODataApplication$MyProvider@5ff39ac0
+15-Oct-2019 10:35:50.185 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@2bc9afd0
+15-Oct-2019 10:35:50.185 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@70ebc02a
+15-Oct-2019 10:35:50.185 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@36831ec0
+15-Oct-2019 10:35:50.185 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@37adb95e
+15-Oct-2019 10:35:50.185 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@3dfc7330
+15-Oct-2019 10:35:50.186 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@78a28c8a
+15-Oct-2019 10:35:50.186 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@2a56e020
+15-Oct-2019 10:35:50.186 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@2d715e88
+15-Oct-2019 10:35:50.186 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@63c84f80
+15-Oct-2019 10:35:50.186 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@3426f12b
+15-Oct-2019 10:35:50.186 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@17796c2a
+15-Oct-2019 10:35:50.187 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using exception mappers:
+15-Oct-2019 10:35:50.187 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper@5cdf87bc
+15-Oct-2019 10:35:50.187 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.olingo.odata2.core.rest.ODataExceptionMapperImpl@746d63a9
+15-Oct-2019 10:35:50.187 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.EJBExceptionMapper@18476772
+15-Oct-2019 10:35:50.187 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.validation.ValidationExceptionMapper@9ba831
+15-Oct-2019 10:35:50.188 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints REST Application: http://localhost:8080/Opportunity/                   -> org.apache.olingo.odata2.core.rest.app.ODataApplication@2cb7ed8e
+15-Oct-2019 10:35:50.190 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints      Service URI: http://localhost:8080/Opportunity/                   -> Pojo org.apache.olingo.odata2.core.rest.ODataRootLocator
+15-Oct-2019 10:35:50.191 INFO [http-nio-8080-exec-83] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints                   http://localhost:8080/Opportunity/{pathSegments: .*} ->      Object handleRequest(List<PathSegment>, String, String) throws ODataException,ClassNotFoundException,InstantiationException,IllegalAccessException
+15-Oct-2019 10:35:50.510 INFO [http-nio-8080-exec-83] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml] has finished in [16,141] ms
+15-Oct-2019 10:35:50.517 INFO [http-nio-8080-exec-89] sun.reflect.DelegatingMethodAccessorImpl.invoke The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Opportunity]] after start() had already been called. The second call will be ignored.
+15-Oct-2019 10:36:30.640 INFO [Timer-105] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+15-Oct-2019 10:36:31.087 INFO [Timer-105] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.1.Final}
+15-Oct-2019 10:36:31.094 INFO [Timer-105] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+15-Oct-2019 10:36:31.099 INFO [Timer-105] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+15-Oct-2019 10:36:31.329 INFO [Timer-105] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+15-Oct-2019 10:36:31.329 INFO [Timer-105] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+15-Oct-2019 10:36:31.479 WARN [Timer-105] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+15-Oct-2019 10:36:31.736 INFO [http-nio-8080-exec-89] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+15-Oct-2019 10:36:31.775 INFO [Timer-105] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+15-Oct-2019 10:36:33.399 WARNING [http-nio-8080-exec-89] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Opportunity] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+15-Oct-2019 10:36:33.401 WARNING [http-nio-8080-exec-89] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-105] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.io.WinNTFileSystem.canonicalize0(Native Method)
+ java.io.WinNTFileSystem.canonicalize(WinNTFileSystem.java:428)
+ java.io.File.getCanonicalPath(File.java:618)
+ org.apache.catalina.webresources.AbstractFileResourceSet.file(AbstractFileResourceSet.java:90)
+ org.apache.catalina.webresources.DirResourceSet.getResource(DirResourceSet.java:101)
+ org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:281)
+ org.apache.catalina.webresources.Cache.getResource(Cache.java:62)
+ org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:216)
+ org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:225)
+ org.apache.catalina.loader.WebappClassLoaderBase.findClassInternal(WebappClassLoaderBase.java:2228)
+ org.apache.catalina.loader.WebappClassLoaderBase.findClass(WebappClassLoaderBase.java:829)
+ org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1278)
+ org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+ org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+ java.lang.ClassLoader.defineClass1(Native Method)
+ java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+ java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+ org.apache.catalina.loader.WebappClassLoaderBase.findClassInternal(WebappClassLoaderBase.java:2339)
+ org.apache.catalina.loader.WebappClassLoaderBase.findClass(WebappClassLoaderBase.java:829)
+ org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1278)
+ org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+ org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+ org.hibernate.annotations.common.reflection.java.JavaReflectionManager$1.caseClass(JavaReflectionManager.java:154)
+ org.hibernate.annotations.common.reflection.java.JavaReflectionManager$1.caseClass(JavaReflectionManager.java:151)
+ org.hibernate.annotations.common.reflection.java.generics.TypeSwitch.doSwitch(TypeSwitch.java:42)
+ org.hibernate.annotations.common.reflection.java.JavaReflectionManager.toXClass(JavaReflectionManager.java:151)
+ org.hibernate.annotations.common.reflection.java.JavaReflectionManager.toXClass(JavaReflectionManager.java:118)
+ org.hibernate.cfg.Configuration.addAnnotatedClass(Configuration.java:798)
+ com.mcibrasil.opportunity.dao.Projetos.GetProjectDAO.getProject(GetProjectDAO.java:23)
+ com.mcibrasil.opportunity.controller.EmailAlert.EventClosingDateTodayAlert.Notification(EventClosingDateTodayAlert.java:121)
+ com.mcibrasil.opportunity.controller.Scheduler.EventClosingDateRoutine$RemindTask.run(EventClosingDateRoutine.java:75)
+ java.util.TimerThread.mainLoop(Timer.java:555)
+ java.util.TimerThread.run(Timer.java:505)
+15-Oct-2019 10:36:33.402 WARNING [http-nio-8080-exec-89] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-106] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+15-Oct-2019 10:36:33.403 WARNING [http-nio-8080-exec-89] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-107] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+15-Oct-2019 10:36:33.407 WARNING [849] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-108] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+15-Oct-2019 10:36:33.410 WARNING [849] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-109] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+15-Oct-2019 10:36:33.413 WARNING [849] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Timer-110] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+15-Oct-2019 10:36:33.413 WARNING [849] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Opportunity] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:70)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+15-Oct-2019 10:36:33.426 INFO [922] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [org.hibernate.boot.registry.selector.spi.StrategySelector]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [org.hibernate.boot.registry.selector.spi.StrategySelector]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at org.hibernate.boot.registry.BootstrapServiceRegistryBuilder.<init>(BootstrapServiceRegistryBuilder.java:56)
+	at org.hibernate.boot.registry.StandardServiceRegistryBuilder.<init>(StandardServiceRegistryBuilder.java:71)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1913)
+	at com.mcibrasil.opportunity.dao.Projetos.GetProjectDAO.getProject(GetProjectDAO.java:24)
+	at com.mcibrasil.opportunity.controller.EmailAlert.EventClosingDateTodayAlert.Notification(EventClosingDateTodayAlert.java:121)
+	at com.mcibrasil.opportunity.controller.Scheduler.EventClosingDateRoutine$RemindTask.run(EventClosingDateRoutine.java:75)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+15-Oct-2019 10:36:33.560 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] sun.reflect.DelegatingMethodAccessorImpl.invoke Reloading context [/Opportunity]
+15-Oct-2019 10:36:34.139 INFO [http-nio-8080-exec-87] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+15-Oct-2019 10:36:34.315 INFO [http-nio-8080-exec-87] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+15-Oct-2019 10:36:34.315 INFO [http-nio-8080-exec-87] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+15-Oct-2019 10:36:34.316 INFO [http-nio-8080-exec-87] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+15-Oct-2019 10:36:34.316 INFO [http-nio-8080-exec-87] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+15-Oct-2019 10:36:34.317 INFO [http-nio-8080-exec-87] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+15-Oct-2019 10:36:34.317 INFO [http-nio-8080-exec-87] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+15-Oct-2019 10:36:34.320 INFO [http-nio-8080-exec-87] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+15-Oct-2019 10:36:34.321 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+15-Oct-2019 10:36:34.422 INFO [http-nio-8080-exec-87] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+15-Oct-2019 10:36:34.423 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 99ms
+15-Oct-2019 10:36:34.460 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+15-Oct-2019 10:36:34.461 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+15-Oct-2019 10:36:34.461 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+15-Oct-2019 10:36:34.461 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+15-Oct-2019 10:36:34.461 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+15-Oct-2019 10:36:34.461 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+15-Oct-2019 10:36:34.461 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+15-Oct-2019 10:36:34.461 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+15-Oct-2019 10:36:34.461 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+15-Oct-2019 10:36:34.467 INFO [http-nio-8080-exec-87] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@7b2bbc3
+15-Oct-2019 10:36:34.472 INFO [http-nio-8080-exec-87] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+15-Oct-2019 10:36:34.473 INFO [http-nio-8080-exec-87] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+15-Oct-2019 10:36:34.524 INFO [http-nio-8080-exec-87] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 51 ms.
+15-Oct-2019 10:36:34.524 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+15-Oct-2019 10:36:34.524 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+15-Oct-2019 10:36:34.525 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+15-Oct-2019 10:36:34.531 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+15-Oct-2019 10:36:34.533 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+15-Oct-2019 10:36:34.534 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+15-Oct-2019 10:36:34.535 INFO [http-nio-8080-exec-87] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+15-Oct-2019 10:36:34.535 INFO [http-nio-8080-exec-87] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+15-Oct-2019 10:36:34.897 INFO [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1004)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+15-Oct-2019 10:36:35.067 INFO [http-nio-8080-exec-87] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Oct-2019 10:36:35.115 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using readers:
+15-Oct-2019 10:36:35.115 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@c81ecfc
+15-Oct-2019 10:36:35.115 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@4a57ff3
+15-Oct-2019 10:36:35.115 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@ec2bd17
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@3cb0e740
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@16a631e
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@2e1fce27
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@2d715e88
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@63c84f80
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@4eca30de
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@3c5876dc
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@1bbd1c52
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using writers:
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.johnzon.jaxrs.WadlDocumentMessageBodyWriter@18d8e5d5
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.olingo.odata2.core.rest.app.ODataApplication$MyProvider@78b6ad0
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@4eca30de
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@16a631e
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@c81ecfc
+15-Oct-2019 10:36:35.116 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@4a57ff3
+15-Oct-2019 10:36:35.117 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@ec2bd17
+15-Oct-2019 10:36:35.117 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@3cb0e740
+15-Oct-2019 10:36:35.117 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@2e1fce27
+15-Oct-2019 10:36:35.117 INFO [http-nio-8080-exec-87] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@2d715e88
+15-Oct-2019 10:36:35.117 INFO [844] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@63c84f80
+15-Oct-2019 10:36:35.117 INFO [844] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@3c5876dc
+15-Oct-2019 10:36:35.117 INFO [844] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@1bbd1c52
+15-Oct-2019 10:36:35.117 INFO [844] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using exception mappers:
+15-Oct-2019 10:36:35.117 INFO [844] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper@781a126b
+15-Oct-2019 10:36:35.117 INFO [844] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.olingo.odata2.core.rest.ODataExceptionMapperImpl@e1f8ff4
+15-Oct-2019 10:36:35.117 INFO [844] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.EJBExceptionMapper@5cbf6fba
+15-Oct-2019 10:36:35.117 INFO [844] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.validation.ValidationExceptionMapper@b36ceb6
+15-Oct-2019 10:36:35.117 INFO [844] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints REST Application: http://localhost:8080/Opportunity/                   -> org.apache.olingo.odata2.core.rest.app.ODataApplication@4eb13ae4
+15-Oct-2019 10:36:35.118 INFO [844] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints      Service URI: http://localhost:8080/Opportunity/                   -> Pojo org.apache.olingo.odata2.core.rest.ODataRootLocator
+15-Oct-2019 10:36:35.118 INFO [844] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints                   http://localhost:8080/Opportunity/{pathSegments: .*} ->      Object handleRequest(List<PathSegment>, String, String) throws ODataException,ClassNotFoundException,InstantiationException,IllegalAccessException
+15-Oct-2019 10:36:35.124 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] sun.reflect.DelegatingMethodAccessorImpl.invoke The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Opportunity]] after start() had already been called. The second call will be ignored.
+15-Oct-2019 10:36:46.598 INFO [http-nio-8080-exec-90] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+15-Oct-2019 10:36:47.448 INFO [http-nio-8080-exec-90] sun.reflect.DelegatingMethodAccessorImpl.invoke Undeploying context [/Opportunity]
+15-Oct-2019 10:36:47.570 INFO [http-nio-8080-exec-82] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml]
+15-Oct-2019 10:36:47.620 INFO [http-nio-8080-exec-82] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /Opportunity
+15-Oct-2019 10:36:48.215 INFO [http-nio-8080-exec-82] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+15-Oct-2019 10:36:48.335 INFO [http-nio-8080-exec-82] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionPasswordReset: EjbDeployment(deployment-id=EmailSessionPasswordReset)
+15-Oct-2019 10:36:48.335 INFO [http-nio-8080-exec-82] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionNewTask: EjbDeployment(deployment-id=EmailSessionNewTask)
+15-Oct-2019 10:36:48.335 INFO [http-nio-8080-exec-82] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb EmailSessionBean: EjbDeployment(deployment-id=EmailSessionBean)
+15-Oct-2019 10:36:48.338 INFO [http-nio-8080-exec-82] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=Opportunity)
+15-Oct-2019 10:36:48.338 INFO [http-nio-8080-exec-82] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit Opportunity <jta-data-source> to Resource ID 'Default JDBC Database' from 'app/mysql'
+15-Oct-2019 10:36:48.338 INFO [http-nio-8080-exec-82] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit Opportunity <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+15-Oct-2019 10:36:48.339 INFO [http-nio-8080-exec-82] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0" loaded.
+15-Oct-2019 10:36:48.339 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0
+15-Oct-2019 10:36:48.413 INFO [http-nio-8080-exec-82] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+15-Oct-2019 10:36:48.417 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=Opportunity, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 75ms
+15-Oct-2019 10:36:48.457 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionPasswordResetLocalBean) --> Ejb(deployment-id=EmailSessionPasswordReset)
+15-Oct-2019 10:36:48.457 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+15-Oct-2019 10:36:48.457 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionPasswordReset) --> Ejb(deployment-id=EmailSessionPasswordReset)
+15-Oct-2019 10:36:48.459 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionNewTaskLocalBean) --> Ejb(deployment-id=EmailSessionNewTask)
+15-Oct-2019 10:36:48.459 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+15-Oct-2019 10:36:48.459 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionNewTask) --> Ejb(deployment-id=EmailSessionNewTask)
+15-Oct-2019 10:36:48.459 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=EmailSessionBeanLocalBean) --> Ejb(deployment-id=EmailSessionBean)
+15-Oct-2019 10:36:48.459 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean!com.mcibrasil.opportunity.controller.EmailAlert.EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+15-Oct-2019 10:36:48.460 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/Opportunity/EmailSessionBean) --> Ejb(deployment-id=EmailSessionBean)
+15-Oct-2019 10:36:48.465 INFO [http-nio-8080-exec-82] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@7b2bbc3
+15-Oct-2019 10:36:48.470 INFO [http-nio-8080-exec-82] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+15-Oct-2019 10:36:48.472 INFO [http-nio-8080-exec-82] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/paulo.bezerra/Documents/NetBeansProjects/Opportunity/target/Opportunity-1.0/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+15-Oct-2019 10:36:48.502 INFO [http-nio-8080-exec-82] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 31 ms.
+15-Oct-2019 10:36:48.503 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+15-Oct-2019 10:36:48.503 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+15-Oct-2019 10:36:48.503 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+15-Oct-2019 10:36:48.503 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionPasswordReset, ejb-name=EmailSessionPasswordReset, container=Default Stateless Container)
+15-Oct-2019 10:36:48.504 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionBean, ejb-name=EmailSessionBean, container=Default Stateless Container)
+15-Oct-2019 10:36:48.504 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=EmailSessionNewTask, ejb-name=EmailSessionNewTask, container=Default Stateless Container)
+15-Oct-2019 10:36:48.505 INFO [http-nio-8080-exec-82] org.apache.tomee.catalina.TomcatWebAppBuilder.deployWebApps using context file C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0\META-INF\context.xml
+15-Oct-2019 10:36:48.505 INFO [http-nio-8080-exec-82] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\paulo.bezerra\Documents\NetBeansProjects\Opportunity\target\Opportunity-1.0)
+15-Oct-2019 10:36:48.939 INFO [http-nio-8080-exec-82] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Oct-2019 10:36:48.977 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using readers:
+15-Oct-2019 10:36:48.977 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@7a4722d0
+15-Oct-2019 10:36:48.977 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@6da9e9fd
+15-Oct-2019 10:36:48.977 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@133f777
+15-Oct-2019 10:36:48.977 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@3b4befb6
+15-Oct-2019 10:36:48.977 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@279e2190
+15-Oct-2019 10:36:48.977 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@55ac29f
+15-Oct-2019 10:36:48.977 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@2d715e88
+15-Oct-2019 10:36:48.977 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@63c84f80
+15-Oct-2019 10:36:48.977 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@1d82cf1
+15-Oct-2019 10:36:48.978 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@d364159
+15-Oct-2019 10:36:48.978 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@768db382
+15-Oct-2019 10:36:48.978 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using writers:
+15-Oct-2019 10:36:48.978 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.johnzon.jaxrs.WadlDocumentMessageBodyWriter@359f4e21
+15-Oct-2019 10:36:48.978 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.olingo.odata2.core.rest.app.ODataApplication$MyProvider@756053c7
+15-Oct-2019 10:36:48.978 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@1d82cf1
+15-Oct-2019 10:36:48.978 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@279e2190
+15-Oct-2019 10:36:48.978 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@7a4722d0
+15-Oct-2019 10:36:48.978 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@6da9e9fd
+15-Oct-2019 10:36:48.978 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@133f777
+15-Oct-2019 10:36:48.978 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@3b4befb6
+15-Oct-2019 10:36:48.978 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@55ac29f
+15-Oct-2019 10:36:48.978 INFO [http-nio-8080-exec-82] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@2d715e88
+15-Oct-2019 10:36:48.978 INFO [834] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@63c84f80
+15-Oct-2019 10:36:48.978 INFO [834] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@d364159
+15-Oct-2019 10:36:48.978 INFO [834] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@768db382
+15-Oct-2019 10:36:48.978 INFO [834] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using exception mappers:
+15-Oct-2019 10:36:48.978 INFO [834] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper@4ae3e8bb
+15-Oct-2019 10:36:48.978 INFO [834] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.olingo.odata2.core.rest.ODataExceptionMapperImpl@1b4c050c
+15-Oct-2019 10:36:48.979 INFO [834] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.EJBExceptionMapper@7f9e7f8c
+15-Oct-2019 10:36:48.979 INFO [834] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.validation.ValidationExceptionMapper@51e943c6
+15-Oct-2019 10:36:48.979 INFO [834] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints REST Application: http://localhost:8080/Opportunity/                   -> org.apache.olingo.odata2.core.rest.app.ODataApplication@41298457
+15-Oct-2019 10:36:48.979 INFO [834] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints      Service URI: http://localhost:8080/Opportunity/                   -> Pojo org.apache.olingo.odata2.core.rest.ODataRootLocator
+15-Oct-2019 10:36:48.979 INFO [834] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints                   http://localhost:8080/Opportunity/{pathSegments: .*} ->      Object handleRequest(List<PathSegment>, String, String) throws ODataException,ClassNotFoundException,InstantiationException,IllegalAccessException
+15-Oct-2019 10:36:48.984 INFO [834] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of configuration descriptor [C:\Users\paulo.bezerra\Documents\apache-tomee-webprofile-7.1.0\conf\Catalina\localhost\Opportunity.xml] has finished in [1,414] ms
+15-Oct-2019 10:36:48.988 INFO [http-nio-8080-exec-81] sun.reflect.DelegatingMethodAccessorImpl.invoke The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Opportunity]] after start() had already been called. The second call will be ignored.
+15-Oct-2019 10:36:49.937 INFO [Timer-107] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.dao.CRM.GetNewCRMOpportunitiesDAO]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.dao.CRM.GetNewCRMOpportunitiesDAO]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.CRM.Scheduler.CRMGetOpportunityRoutine$RemindTask.run(CRMGetOpportunityRoutine.java:59)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+15-Oct-2019 10:36:49.977 INFO [Timer-108] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [java.text.DateFormatSymbols]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [java.text.DateFormatSymbols]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.controller.Scheduler.TimeSheetFridayRoutine$RemindTask.run(TimeSheetFridayRoutine.java:65)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+15-Oct-2019 10:36:50.021 INFO [Timer-109] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.dao.SAP.SAPDAOGetSAPCode]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mcibrasil.opportunity.dao.SAP.SAPDAOGetSAPCode]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1317)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1176)
+	at org.apache.tomee.catalina.TomEEWebappClassLoader.loadClass(TomEEWebappClassLoader.java:208)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1137)
+	at com.mcibrasil.opportunity.dao.SAP.SAPDAOUpdateSAPCode.SAPUpdateCode(SAPDAOUpdateSAPCode.java:39)
+	at com.mcibrasil.opportunity.controller.Scheduler.SAPCodeRoutine$RemindTask.run(SAPCodeRoutine.java:64)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+15-Oct-2019 10:36:52.546 INFO [http-nio-8080-exec-92] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+15-Oct-2019 10:36:52.555 INFO [http-nio-8080-exec-92] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.1.Final}
+15-Oct-2019 10:36:52.558 INFO [http-nio-8080-exec-92] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+15-Oct-2019 10:36:52.560 INFO [http-nio-8080-exec-92] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+15-Oct-2019 10:36:52.944 INFO [http-nio-8080-exec-92] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+15-Oct-2019 10:36:52.944 INFO [http-nio-8080-exec-92] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+15-Oct-2019 10:36:53.013 WARN [http-nio-8080-exec-92] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+15-Oct-2019 10:36:53.067 INFO [http-nio-8080-exec-92] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+15-Oct-2019 10:36:53.393 WARN [http-nio-8080-exec-92] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+15-Oct-2019 10:36:53.395 INFO [http-nio-8080-exec-92] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+15-Oct-2019 10:36:53.395 INFO [http-nio-8080-exec-92] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+15-Oct-2019 10:36:53.395 INFO [http-nio-8080-exec-92] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+15-Oct-2019 10:36:53.398 INFO [http-nio-8080-exec-92] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+15-Oct-2019 10:36:53.476 INFO [http-nio-8080-exec-92] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+15-Oct-2019 10:36:53.714 INFO [http-nio-8080-exec-92] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+15-Oct-2019 10:36:53.724 INFO [http-nio-8080-exec-92] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+15-Oct-2019 10:36:58.978 INFO [http-nio-8080-exec-92] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+15-Oct-2019 10:37:21.378 INFO [http-nio-8080-exec-93] org.hibernate.cfg.Configuration.configure HHH000043: Configuring from resource: /hibernate.cfg.xml
+15-Oct-2019 10:37:21.379 INFO [http-nio-8080-exec-93] org.hibernate.cfg.Configuration.getConfigurationInputStream HHH000040: Configuration resource: /hibernate.cfg.xml
+15-Oct-2019 10:37:21.394 WARN [http-nio-8080-exec-93] org.hibernate.internal.util.xml.DTDEntityResolver.resolveEntity HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+15-Oct-2019 10:37:21.405 INFO [http-nio-8080-exec-93] org.hibernate.cfg.Configuration.doConfigure HHH000041: Configured SessionFactory: null
+15-Oct-2019 10:37:22.470 WARN [http-nio-8080-exec-93] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000402: Using Hibernate built-in connection pool (not for production use!)
+15-Oct-2019 10:37:22.471 INFO [http-nio-8080-exec-93] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000401: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+15-Oct-2019 10:37:22.471 INFO [http-nio-8080-exec-93] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000046: Connection properties: {user=mci, password=****}
+15-Oct-2019 10:37:22.471 INFO [http-nio-8080-exec-93] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH000006: Autocommit mode: false
+15-Oct-2019 10:37:22.471 INFO [http-nio-8080-exec-93] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH000115: Hibernate connection pool size: 20 (min=1)
+15-Oct-2019 10:37:22.487 INFO [http-nio-8080-exec-93] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+15-Oct-2019 10:37:22.537 INFO [http-nio-8080-exec-93] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService HHH000399: Using default transaction strategy (direct JDBC transactions)
+15-Oct-2019 10:37:22.538 INFO [http-nio-8080-exec-93] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+15-Oct-2019 10:37:23.947 INFO [http-nio-8080-exec-93] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.stop HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/opportunity?useSSL=false&serverTimezone=UTC]
+15-Oct-2019 10:37:26.175 WARNING [http-nio-8080-exec-80] org.apache.openejb.InjectionProcessor.construct Injection: No such property 'org.apache.olingo.odata2.core.rest.ODataRootLocator/app' in class org.apache.olingo.odata2.core.rest.ODataRootLocator

@@ -16,24 +16,28 @@ import java.util.Properties;
  */
 public class Conexao {
 
-    private String url = "jdbc:mysql://localhost:3306/petmaster";
-    private String driver = "com.mysql.jdbc.Driver";
-    private String userName = "root";
-    private String password = "admin";
+    private String url = "jdbc:mysql://localhost:3306/petmaster?useTimezone=true&serverTimezone=UTC";
+
+    //private String driver = "com.mysql.jdbc.Driver";
+    private String driver = "com.mysql.cj.jdbc.Driver";
+
     private Connection conexao = null;
 
-    public  Connection getConnection() throws SQLException {
+    private String userName = "senac";
+    private String password = "senac";
+
+    public Connection getConnection() throws SQLException {
 
         try {
             Class.forName(driver);
             if (conexao == null) {
+
                 conexao = DriverManager.getConnection(url, userName, password);
+
             }
-            System.out.print("Conectou");
         } catch (Exception e) {
-            System.out.print("Erro: " + e.getMessage());
+            System.out.print("Erro na conexao: " + e.getMessage());
         }
         return conexao;
     }
-
 }

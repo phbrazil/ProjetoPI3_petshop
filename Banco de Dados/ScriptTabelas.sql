@@ -151,12 +151,7 @@ CREATE TABLE usuarios(
   
 -- Gerenciamento de filiais )
 
-INSERT INTO usuarios(nomeuser, username,password, idgrupo, idloja) VALUES ("Paulo Henrique Bezerra","paulo.bezerra@senac.com","123", 1, 1);
-INSERT INTO usuarios(nomeuser, username,password, idgrupo, idloja) VALUES ("Lucas Medeiros","lucas.medeiros@senac.com","123", 2, 1);
-INSERT INTO usuarios(nomeuser, username,password, idgrupo, idloja) VALUES ("Andre Pereira","andre.pereira@senac.com","123", 1, 1);
-INSERT INTO usuarios(nomeuser, username,password, idgrupo, idloja) VALUES ("Pedro Paulo Olivira","pedro.oliveira@senac.com","123", 1, 1);
-INSERT INTO usuarios(nomeuser, username,password, idgrupo, idloja) VALUES ("Aluno do terceiro semestre","visitante@senac.com","123", 1, 1);
-INSERT INTO usuarios(nomeuser, username,password, idgrupo, idloja) VALUES ("Professor","professor@senac.com","123", 1, 2);
+INSERT INTO usuarios(nomeuser, username,password, idgrupo, idloja) VALUES ("Vitoria Cristina","vitoria@senac.com","123", 1, 1);
 
 
 
